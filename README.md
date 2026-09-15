@@ -18,7 +18,7 @@ O desenvolvimento segue o ciclo de Sprints definido pelo roteiro da disciplina:
 
 | Nome | GitHub | Papel/Foco |
 |---|---|---|
-| [Seu Nome] | [@seuuser](https://github.com/seuuser) | Product Owner |
+| [Nome do Colega] | [@usercolega](https://github.com/usercolega) | Product Owner |
 | [Nome do Colega] | [@usercolega](https://github.com/usercolega) | Scrum Master |
 | [Nome do Colega] | [@usercolega](https://github.com/usercolega) | Equipe de Desenvolvimento |
 | [Nome do Colega] | [@usercolega](https://github.com/usercolega) | Equipe de Desenvolvimento |
