@@ -25,8 +25,6 @@ O desenvolvimento segue o ciclo de Sprints definido pelo roteiro da disciplina:
 | [Nome do Colega] | [@usercolega](https://github.com/usercolega) | Equipe de Desenvolvimento |
 | [Nome do Colega] | [@usercolega](https://github.com/usercolega) | Equipe de Desenvolvimento |
 
-*RAs não são publicados neste README por serem dados pessoais dos integrantes; constam apenas no relatório entregue ao professor.*
-
 ## Tecnologias Utilizadas
 
 - **App:** React Native com Expo, JavaScript
