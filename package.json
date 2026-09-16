@@ -1,24 +1,39 @@
 {
-  "name": "ads-4s-pixelvault",
+  "name": "prjpixelvault",
   "version": "1.0.0",
   "main": "index.js",
-  "dependencies": {
-    "@expo/vector-icons": "^15.0.2",
-    "@react-navigation/native": "^7.4.1",
-    "@react-navigation/native-stack": "^7.19.1",
-    "expo": "~57.0.22",
-    "expo-sqlite": "~57.0.3",
-    "expo-status-bar": "~57.0.1",
-    "react": "19.2.3",
-    "react-native": "0.86.3",
-    "react-native-safe-area-context": "~5.7.0",
-    "react-native-screens": "~4.26.0"
-  },
   "scripts": {
     "start": "expo start",
     "android": "expo start --android",
     "ios": "expo start --ios",
-    "web": "expo start --web"
+    "web": "expo start --web",
+    "build:web:evidence": "expo export --platform web --output-dir dist-web",
+    "evidence:capture": "npm run build:web:evidence && node scripts/capture-evidence.mjs",
+    "evidence:capture:prompt12": "npm run build:web:evidence && node scripts/capture-evidence.mjs prompt-12",
+    "db:init": "node scripts/init-db.mjs",
+    "db:test": "node --test tests/database.test.mjs",
+    "api:start": "node server/index.mjs",
+    "api:test": "node --test tests/api.test.mjs",
+    "lint": "eslint App.js index.js src server scripts tests eslint.config.js --max-warnings=0",
+    "typecheck": "tsc --project jsconfig.json",
+    "test": "node --test tests/project-structure.test.cjs tests/prototype-interactions.test.mjs tests/database.test.mjs tests/api.test.mjs",
+    "build": "expo export --platform android --output-dir dist"
   },
-  "private": true
+  "dependencies": {
+    "@expo/metro-runtime": "~6.1.2",
+    "expo": "~54.0.36",
+    "expo-status-bar": "~3.0.9",
+    "react": "19.1.0",
+    "react-dom": "19.1.0",
+    "react-native": "0.81.5",
+    "react-native-safe-area-context": "~5.6.0",
+    "react-native-web": "^0.21.0"
+  },
+  "private": true,
+  "devDependencies": {
+    "@types/react": "~19.1.10",
+    "eslint": "^9.39.5",
+    "eslint-config-expo": "~10.0.0",
+    "typescript": "~5.9.2"
+  }
 }

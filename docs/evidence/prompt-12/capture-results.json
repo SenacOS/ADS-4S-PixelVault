@@ -1,0 +1,1109 @@
+{
+  "capturedAt": "2026-09-14T20:37:23.279Z",
+  "runtime": "Expo Web + Chrome headless CDP",
+  "results": [
+    {
+      "name": "uxt-01-cadastro-invalido-390x844",
+      "route": "wf01",
+      "width": 390,
+      "height": 844,
+      "options": {
+        "actions": [
+          [
+            "click",
+            "Criar conta"
+          ],
+          [
+            "click",
+            "Cadastrar conta demonstrativa"
+          ],
+          [
+            "expect",
+            "Erro: Campo obrigatório."
+          ]
+        ]
+      },
+      "innerWidth": 390,
+      "innerHeight": 844,
+      "scrollWidth": 390,
+      "scrollHeight": 844,
+      "horizontalOverflowElements": [],
+      "focusedElement": null,
+      "title": "WF-02 · CADASTRO\nCriar conta\nConta fictícia mantida somente durante esta sessão.\nNome\nErro: Campo obrigatório.\nE-mail\nEr"
+    },
+    {
+      "name": "uxt-02-cadastro-valido-390x844",
+      "route": "wf01",
+      "width": 390,
+      "height": 844,
+      "options": {
+        "actions": [
+          [
+            "click",
+            "Criar conta"
+          ],
+          [
+            "fill",
+            "Nome",
+            "Pessoa Fictícia"
+          ],
+          [
+            "fill",
+            "E-mail",
+            "nova@pixelvault.example"
+          ],
+          [
+            "fill",
+            "Senha",
+            "demo456"
+          ],
+          [
+            "click",
+            "Cadastrar conta demonstrativa"
+          ],
+          [
+            "expect",
+            "Cadastro concluído. Entre com as credenciais de demonstração."
+          ]
+        ]
+      },
+      "innerWidth": 390,
+      "innerHeight": 844,
+      "scrollWidth": 390,
+      "scrollHeight": 844,
+      "horizontalOverflowElements": [],
+      "focusedElement": null,
+      "title": "WF-01 · ACESSO\nPixelVault\nProtótipo acadêmico com perfis e dados inteiramente fictícios.\nSeu cofre digital demonstrativo"
+    },
+    {
+      "name": "uxt-03-login-jogador-390x844",
+      "route": "wf01",
+      "width": 390,
+      "height": 844,
+      "options": {
+        "actions": [
+          [
+            "click",
+            "Preencher jogador"
+          ],
+          [
+            "click",
+            "Entrar"
+          ],
+          [
+            "expect",
+            "WF-03"
+          ]
+        ]
+      },
+      "innerWidth": 390,
+      "innerHeight": 844,
+      "scrollWidth": 390,
+      "scrollHeight": 844,
+      "horizontalOverflowElements": [],
+      "focusedElement": null,
+      "title": "WF-03 · CATÁLOGO\nDescobrir jogos\nCatálogo local demonstrativo. Compatibilidade cloud pode mudar.\nSelecionado: Todos\nGeFo"
+    },
+    {
+      "name": "uxt-04-login-admin-390x844",
+      "route": "wf01",
+      "width": 390,
+      "height": 844,
+      "options": {
+        "actions": [
+          [
+            "click",
+            "Preencher administrador"
+          ],
+          [
+            "click",
+            "Entrar"
+          ],
+          [
+            "expect",
+            "WF-09"
+          ]
+        ]
+      },
+      "innerWidth": 390,
+      "innerHeight": 844,
+      "scrollWidth": 390,
+      "scrollHeight": 844,
+      "horizontalOverflowElements": [],
+      "focusedElement": null,
+      "title": "WF-09 · ADMINISTRAÇÃO\nManutenção do catálogo\nPerfil: administrador/curador · Fonte: lista local demonstrativa\nNovo item\n"
+    },
+    {
+      "name": "uxt-05-filtro-vazio-390x844",
+      "route": "wf01",
+      "width": 390,
+      "height": 844,
+      "options": {
+        "actions": [
+          [
+            "click",
+            "Preencher administrador"
+          ],
+          [
+            "click",
+            "Entrar"
+          ],
+          [
+            "expect",
+            "WF-09"
+          ],
+          [
+            "click",
+            "Excluir Orbit Raiders"
+          ],
+          [
+            "click",
+            "Confirmar exclusão"
+          ],
+          [
+            "click",
+            "Sair do perfil administrativo"
+          ],
+          [
+            "click",
+            "Preencher jogador"
+          ],
+          [
+            "click",
+            "Entrar"
+          ],
+          [
+            "click",
+            "Boosteroid"
+          ],
+          [
+            "expect",
+            "Nenhum resultado"
+          ]
+        ]
+      },
+      "innerWidth": 390,
+      "innerHeight": 844,
+      "scrollWidth": 390,
+      "scrollHeight": 844,
+      "horizontalOverflowElements": [],
+      "focusedElement": null,
+      "title": "ST-02 · CATÁLOGO VAZIO\nDescobrir jogos\nCatálogo local demonstrativo. Compatibilidade cloud pode mudar.\nTodos\nGeForce NOW"
+    },
+    {
+      "name": "uxt-05-filtro-limpo-390x844",
+      "route": "wf01",
+      "width": 390,
+      "height": 844,
+      "options": {
+        "actions": [
+          [
+            "click",
+            "Preencher administrador"
+          ],
+          [
+            "click",
+            "Entrar"
+          ],
+          [
+            "expect",
+            "WF-09"
+          ],
+          [
+            "click",
+            "Excluir Orbit Raiders"
+          ],
+          [
+            "click",
+            "Confirmar exclusão"
+          ],
+          [
+            "click",
+            "Sair do perfil administrativo"
+          ],
+          [
+            "click",
+            "Preencher jogador"
+          ],
+          [
+            "click",
+            "Entrar"
+          ],
+          [
+            "click",
+            "Boosteroid"
+          ],
+          [
+            "click",
+            "Limpar filtro"
+          ],
+          [
+            "expect",
+            "Neon Expansion"
+          ]
+        ]
+      },
+      "innerWidth": 390,
+      "innerHeight": 844,
+      "scrollWidth": 390,
+      "scrollHeight": 844,
+      "horizontalOverflowElements": [],
+      "focusedElement": null,
+      "title": "WF-03 · CATÁLOGO\nDescobrir jogos\nCatálogo local demonstrativo. Compatibilidade cloud pode mudar.\nSelecionado: Todos\nGeFo"
+    },
+    {
+      "name": "uxt-06-duplicidade-390x844",
+      "route": "wf01",
+      "width": 390,
+      "height": 844,
+      "options": {
+        "actions": [
+          [
+            "click",
+            "Preencher jogador"
+          ],
+          [
+            "click",
+            "Entrar"
+          ],
+          [
+            "expect",
+            "WF-03"
+          ],
+          [
+            "click",
+            "Ver detalhes de Orbit Raiders"
+          ],
+          [
+            "click",
+            "Adicionar ao carrinho"
+          ],
+          [
+            "click",
+            "Já está no carrinho"
+          ],
+          [
+            "expect",
+            "Este item já está no carrinho."
+          ]
+        ]
+      },
+      "innerWidth": 390,
+      "innerHeight": 844,
+      "scrollWidth": 390,
+      "scrollHeight": 844,
+      "horizontalOverflowElements": [],
+      "focusedElement": null,
+      "title": "WF-04 · DETALHES\nOrbit Raiders\nCAPA ILUSTRATIVA\nOR\nOrbit Raiders\nTipo: Jogo\nR$ 79,90\nCompatível com: GeForce NOW, Booste"
+    },
+    {
+      "name": "uxt-07-carrinho-vazio-390x844",
+      "route": "wf01",
+      "width": 390,
+      "height": 844,
+      "options": {
+        "actions": [
+          [
+            "click",
+            "Preencher jogador"
+          ],
+          [
+            "click",
+            "Entrar"
+          ],
+          [
+            "expect",
+            "WF-03"
+          ],
+          [
+            "click",
+            "Ver detalhes de Orbit Raiders"
+          ],
+          [
+            "click",
+            "Adicionar ao carrinho"
+          ],
+          [
+            "click",
+            "Ver carrinho (1)"
+          ],
+          [
+            "click",
+            "Remover: Orbit Raiders"
+          ],
+          [
+            "expect",
+            "R$ 0,00"
+          ]
+        ]
+      },
+      "innerWidth": 390,
+      "innerHeight": 844,
+      "scrollWidth": 390,
+      "scrollHeight": 844,
+      "horizontalOverflowElements": [],
+      "focusedElement": null,
+      "title": "ST-03 · CARRINHO VAZIO\nSeu carrinho\nNenhum item no carrinho\nAdicione itens para habilitar o checkout. Total atual: R$ 0,"
+    },
+    {
+      "name": "uxt-08-checkout-dois-itens-390x844",
+      "route": "wf01",
+      "width": 390,
+      "height": 844,
+      "options": {
+        "actions": [
+          [
+            "click",
+            "Preencher jogador"
+          ],
+          [
+            "click",
+            "Entrar"
+          ],
+          [
+            "expect",
+            "WF-03"
+          ],
+          [
+            "click",
+            "Ver detalhes de Orbit Raiders"
+          ],
+          [
+            "click",
+            "Adicionar ao carrinho"
+          ],
+          [
+            "click",
+            "Voltar ao catálogo"
+          ],
+          [
+            "click",
+            "Ver detalhes de Neon Expansion"
+          ],
+          [
+            "click",
+            "Adicionar ao carrinho"
+          ],
+          [
+            "click",
+            "Ver carrinho (2)"
+          ],
+          [
+            "click",
+            "Continuar para checkout"
+          ],
+          [
+            "expect",
+            "R$ 104,80"
+          ]
+        ]
+      },
+      "innerWidth": 390,
+      "innerHeight": 844,
+      "scrollWidth": 390,
+      "scrollHeight": 844,
+      "horizontalOverflowElements": [],
+      "focusedElement": null,
+      "title": "WF-06 · CHECKOUT\nFinalizar compra simulada\nCAPA ILUSTRATIVA\nOR\nOrbit Raiders\nTipo: Jogo\nR$ 79,90\nCompatível com: GeForce"
+    },
+    {
+      "name": "uxt-09-checkout-invalido-390x844",
+      "route": "wf01",
+      "width": 390,
+      "height": 844,
+      "options": {
+        "actions": [
+          [
+            "click",
+            "Preencher jogador"
+          ],
+          [
+            "click",
+            "Entrar"
+          ],
+          [
+            "expect",
+            "WF-03"
+          ],
+          [
+            "click",
+            "Ver detalhes de Orbit Raiders"
+          ],
+          [
+            "click",
+            "Adicionar ao carrinho"
+          ],
+          [
+            "click",
+            "Voltar ao catálogo"
+          ],
+          [
+            "click",
+            "Ver detalhes de Neon Expansion"
+          ],
+          [
+            "click",
+            "Adicionar ao carrinho"
+          ],
+          [
+            "click",
+            "Ver carrinho (2)"
+          ],
+          [
+            "click",
+            "Continuar para checkout"
+          ],
+          [
+            "click",
+            "Confirmar simulação"
+          ],
+          [
+            "expect",
+            "Nenhum pedido foi criado."
+          ]
+        ],
+        "scrollToText": "Número do cartão fictício"
+      },
+      "innerWidth": 390,
+      "innerHeight": 844,
+      "scrollWidth": 390,
+      "scrollHeight": 844,
+      "horizontalOverflowElements": [],
+      "focusedElement": null,
+      "title": "ST-05 · CHECKOUT COM ERRO\nFinalizar compra simulada\nCAPA ILUSTRATIVA\nOR\nOrbit Raiders\nTipo: Jogo\nR$ 79,90\nCompatível com"
+    },
+    {
+      "name": "uxt-10-checkout-valido-390x844",
+      "route": "wf01",
+      "width": 390,
+      "height": 844,
+      "options": {
+        "actions": [
+          [
+            "click",
+            "Preencher jogador"
+          ],
+          [
+            "click",
+            "Entrar"
+          ],
+          [
+            "expect",
+            "WF-03"
+          ],
+          [
+            "click",
+            "Ver detalhes de Orbit Raiders"
+          ],
+          [
+            "click",
+            "Adicionar ao carrinho"
+          ],
+          [
+            "click",
+            "Voltar ao catálogo"
+          ],
+          [
+            "click",
+            "Ver detalhes de Neon Expansion"
+          ],
+          [
+            "click",
+            "Adicionar ao carrinho"
+          ],
+          [
+            "click",
+            "Ver carrinho (2)"
+          ],
+          [
+            "click",
+            "Continuar para checkout"
+          ],
+          [
+            "fill",
+            "Número do cartão fictício",
+            "0000 DEMO"
+          ],
+          [
+            "fill",
+            "Nome impresso fictício",
+            "Pessoa Fictícia"
+          ],
+          [
+            "click",
+            "Confirmar simulação"
+          ],
+          [
+            "expect",
+            "WF-07"
+          ]
+        ]
+      },
+      "innerWidth": 390,
+      "innerHeight": 844,
+      "scrollWidth": 390,
+      "scrollHeight": 844,
+      "horizontalOverflowElements": [],
+      "focusedElement": null,
+      "title": "WF-07 · RESULTADO\nSimulação concluída\nSucesso: Resultado demonstrativo. Não houve cobrança.\nPedido\nPEDIDO-DEMO-217302 (i"
+    },
+    {
+      "name": "uxt-11-biblioteca-pos-compra-390x844",
+      "route": "wf01",
+      "width": 390,
+      "height": 844,
+      "options": {
+        "actions": [
+          [
+            "click",
+            "Preencher jogador"
+          ],
+          [
+            "click",
+            "Entrar"
+          ],
+          [
+            "expect",
+            "WF-03"
+          ],
+          [
+            "click",
+            "Ver detalhes de Orbit Raiders"
+          ],
+          [
+            "click",
+            "Adicionar ao carrinho"
+          ],
+          [
+            "click",
+            "Voltar ao catálogo"
+          ],
+          [
+            "click",
+            "Ver detalhes de Neon Expansion"
+          ],
+          [
+            "click",
+            "Adicionar ao carrinho"
+          ],
+          [
+            "click",
+            "Ver carrinho (2)"
+          ],
+          [
+            "click",
+            "Continuar para checkout"
+          ],
+          [
+            "fill",
+            "Número do cartão fictício",
+            "0000 DEMO"
+          ],
+          [
+            "fill",
+            "Nome impresso fictício",
+            "Pessoa Fictícia"
+          ],
+          [
+            "click",
+            "Confirmar simulação"
+          ],
+          [
+            "expect",
+            "WF-07"
+          ],
+          [
+            "click",
+            "Abrir biblioteca"
+          ],
+          [
+            "expect",
+            "PV-NEON-DEMO"
+          ]
+        ]
+      },
+      "innerWidth": 390,
+      "innerHeight": 844,
+      "scrollWidth": 390,
+      "scrollHeight": 844,
+      "horizontalOverflowElements": [],
+      "focusedElement": null,
+      "title": "WF-08 · BIBLIOTECA\nMinha biblioteca\nAquisições simuladas; chaves e lojas são fictícias.\nCAPA ILUSTRATIVA\nOR\nOrbit Raider"
+    },
+    {
+      "name": "uxt-12-crud-criado-390x844",
+      "route": "wf01",
+      "width": 390,
+      "height": 844,
+      "options": {
+        "actions": [
+          [
+            "click",
+            "Preencher administrador"
+          ],
+          [
+            "click",
+            "Entrar"
+          ],
+          [
+            "expect",
+            "WF-09"
+          ],
+          [
+            "click",
+            "Novo item"
+          ],
+          [
+            "fill",
+            "Nome do produto",
+            "Item de teste"
+          ],
+          [
+            "click",
+            "Jogo"
+          ],
+          [
+            "fill",
+            "Preço",
+            "12,50"
+          ],
+          [
+            "fill",
+            "Descrição",
+            "Descrição fictícia"
+          ],
+          [
+            "click",
+            "Boosteroid"
+          ],
+          [
+            "fill",
+            "Ativação em",
+            "Loja fictícia"
+          ],
+          [
+            "click",
+            "Cadastrar item"
+          ],
+          [
+            "expect",
+            "Item cadastrado na lista local."
+          ]
+        ]
+      },
+      "innerWidth": 390,
+      "innerHeight": 844,
+      "scrollWidth": 390,
+      "scrollHeight": 844,
+      "horizontalOverflowElements": [],
+      "focusedElement": null,
+      "title": "WF-09 · ADMINISTRAÇÃO\nManutenção do catálogo\nPerfil: administrador/curador · Fonte: lista local demonstrativa\nSucesso: I"
+    },
+    {
+      "name": "uxt-12-crud-completo-390x844",
+      "route": "wf01",
+      "width": 390,
+      "height": 844,
+      "options": {
+        "actions": [
+          [
+            "click",
+            "Preencher administrador"
+          ],
+          [
+            "click",
+            "Entrar"
+          ],
+          [
+            "expect",
+            "WF-09"
+          ],
+          [
+            "click",
+            "Novo item"
+          ],
+          [
+            "fill",
+            "Nome do produto",
+            "Item de teste"
+          ],
+          [
+            "click",
+            "Jogo"
+          ],
+          [
+            "fill",
+            "Preço",
+            "12,50"
+          ],
+          [
+            "fill",
+            "Descrição",
+            "Descrição fictícia"
+          ],
+          [
+            "click",
+            "Boosteroid"
+          ],
+          [
+            "fill",
+            "Ativação em",
+            "Loja fictícia"
+          ],
+          [
+            "click",
+            "Cadastrar item"
+          ],
+          [
+            "click",
+            "Editar Item de teste"
+          ],
+          [
+            "fill",
+            "Nome do produto",
+            "Item editado"
+          ],
+          [
+            "click",
+            "Salvar alterações"
+          ],
+          [
+            "expect",
+            "Item editado"
+          ],
+          [
+            "click",
+            "Excluir Item editado"
+          ],
+          [
+            "click",
+            "Cancelar"
+          ],
+          [
+            "expect",
+            "Item editado"
+          ],
+          [
+            "click",
+            "Excluir Item editado"
+          ],
+          [
+            "click",
+            "Confirmar exclusão"
+          ],
+          [
+            "expect",
+            "Item excluído da lista local."
+          ]
+        ]
+      },
+      "innerWidth": 390,
+      "innerHeight": 844,
+      "scrollWidth": 390,
+      "scrollHeight": 844,
+      "horizontalOverflowElements": [],
+      "focusedElement": null,
+      "title": "WF-09 · ADMINISTRAÇÃO\nManutenção do catálogo\nPerfil: administrador/curador · Fonte: lista local demonstrativa\nSucesso: I"
+    },
+    {
+      "name": "uxt-13-login-320x568",
+      "route": "wf01",
+      "width": 320,
+      "height": 568,
+      "options": {
+        "actions": [
+          [
+            "click",
+            "Preencher jogador"
+          ],
+          [
+            "click",
+            "Entrar"
+          ],
+          [
+            "expect",
+            "WF-03"
+          ]
+        ]
+      },
+      "innerWidth": 320,
+      "innerHeight": 568,
+      "scrollWidth": 320,
+      "scrollHeight": 568,
+      "horizontalOverflowElements": [],
+      "focusedElement": null,
+      "title": "WF-03 · CATÁLOGO\nDescobrir jogos\nCatálogo local demonstrativo. Compatibilidade cloud pode mudar.\nSelecionado: Todos\nGeFo"
+    },
+    {
+      "name": "uxt-13-duplicidade-320x568",
+      "route": "wf01",
+      "width": 320,
+      "height": 568,
+      "options": {
+        "actions": [
+          [
+            "click",
+            "Preencher jogador"
+          ],
+          [
+            "click",
+            "Entrar"
+          ],
+          [
+            "expect",
+            "WF-03"
+          ],
+          [
+            "click",
+            "Ver detalhes de Orbit Raiders"
+          ],
+          [
+            "click",
+            "Adicionar ao carrinho"
+          ],
+          [
+            "click",
+            "Já está no carrinho"
+          ]
+        ]
+      },
+      "innerWidth": 320,
+      "innerHeight": 568,
+      "scrollWidth": 320,
+      "scrollHeight": 568,
+      "horizontalOverflowElements": [],
+      "focusedElement": null,
+      "title": "WF-04 · DETALHES\nOrbit Raiders\nCAPA ILUSTRATIVA\nOR\nOrbit Raiders\nTipo: Jogo\nR$ 79,90\nCompatível com: GeForce NOW, Booste"
+    },
+    {
+      "name": "uxt-13-checkout-320x568",
+      "route": "wf01",
+      "width": 320,
+      "height": 568,
+      "options": {
+        "actions": [
+          [
+            "click",
+            "Preencher jogador"
+          ],
+          [
+            "click",
+            "Entrar"
+          ],
+          [
+            "expect",
+            "WF-03"
+          ],
+          [
+            "click",
+            "Ver detalhes de Orbit Raiders"
+          ],
+          [
+            "click",
+            "Adicionar ao carrinho"
+          ],
+          [
+            "click",
+            "Voltar ao catálogo"
+          ],
+          [
+            "click",
+            "Ver detalhes de Neon Expansion"
+          ],
+          [
+            "click",
+            "Adicionar ao carrinho"
+          ],
+          [
+            "click",
+            "Ver carrinho (2)"
+          ],
+          [
+            "click",
+            "Continuar para checkout"
+          ]
+        ]
+      },
+      "innerWidth": 320,
+      "innerHeight": 568,
+      "scrollWidth": 320,
+      "scrollHeight": 568,
+      "horizontalOverflowElements": [],
+      "focusedElement": null,
+      "title": "WF-06 · CHECKOUT\nFinalizar compra simulada\nCAPA ILUSTRATIVA\nOR\nOrbit Raiders\nTipo: Jogo\nR$ 79,90\nCompatível com: GeForce"
+    },
+    {
+      "name": "uxt-13-checkout-invalido-320x568",
+      "route": "wf01",
+      "width": 320,
+      "height": 568,
+      "options": {
+        "actions": [
+          [
+            "click",
+            "Preencher jogador"
+          ],
+          [
+            "click",
+            "Entrar"
+          ],
+          [
+            "expect",
+            "WF-03"
+          ],
+          [
+            "click",
+            "Ver detalhes de Orbit Raiders"
+          ],
+          [
+            "click",
+            "Adicionar ao carrinho"
+          ],
+          [
+            "click",
+            "Voltar ao catálogo"
+          ],
+          [
+            "click",
+            "Ver detalhes de Neon Expansion"
+          ],
+          [
+            "click",
+            "Adicionar ao carrinho"
+          ],
+          [
+            "click",
+            "Ver carrinho (2)"
+          ],
+          [
+            "click",
+            "Continuar para checkout"
+          ],
+          [
+            "click",
+            "Confirmar simulação"
+          ]
+        ],
+        "scrollToText": "Número do cartão fictício"
+      },
+      "innerWidth": 320,
+      "innerHeight": 568,
+      "scrollWidth": 320,
+      "scrollHeight": 568,
+      "horizontalOverflowElements": [],
+      "focusedElement": null,
+      "title": "ST-05 · CHECKOUT COM ERRO\nFinalizar compra simulada\nCAPA ILUSTRATIVA\nOR\nOrbit Raiders\nTipo: Jogo\nR$ 79,90\nCompatível com"
+    },
+    {
+      "name": "uxt-13-admin-320x568",
+      "route": "wf01",
+      "width": 320,
+      "height": 568,
+      "options": {
+        "actions": [
+          [
+            "click",
+            "Preencher administrador"
+          ],
+          [
+            "click",
+            "Entrar"
+          ],
+          [
+            "expect",
+            "WF-09"
+          ]
+        ]
+      },
+      "innerWidth": 320,
+      "innerHeight": 568,
+      "scrollWidth": 320,
+      "scrollHeight": 568,
+      "horizontalOverflowElements": [],
+      "focusedElement": null,
+      "title": "WF-09 · ADMINISTRAÇÃO\nManutenção do catálogo\nPerfil: administrador/curador · Fonte: lista local demonstrativa\nNovo item\n"
+    },
+    {
+      "name": "uxt-14-cadastro-fonte-130-390x844",
+      "route": "wf01",
+      "width": 390,
+      "height": 844,
+      "options": {
+        "fontScale": 1.3,
+        "actions": [
+          [
+            "click",
+            "Criar conta"
+          ]
+        ],
+        "focusField": "Nome"
+      },
+      "innerWidth": 390,
+      "innerHeight": 844,
+      "scrollWidth": 390,
+      "scrollHeight": 844,
+      "horizontalOverflowElements": [],
+      "focusedElement": "Nome",
+      "title": "WF-02 · CADASTRO\nCriar conta\nConta fictícia mantida somente durante esta sessão.\nNome\nE-mail\nSenha\nCadastrar conta demon"
+    },
+    {
+      "name": "uxt-14-checkout-fonte-130-360x844",
+      "route": "wf01",
+      "width": 360,
+      "height": 844,
+      "options": {
+        "fontScale": 1.3,
+        "actions": [
+          [
+            "click",
+            "Preencher jogador"
+          ],
+          [
+            "click",
+            "Entrar"
+          ],
+          [
+            "expect",
+            "WF-03"
+          ],
+          [
+            "click",
+            "Ver detalhes de Orbit Raiders"
+          ],
+          [
+            "click",
+            "Adicionar ao carrinho"
+          ],
+          [
+            "click",
+            "Voltar ao catálogo"
+          ],
+          [
+            "click",
+            "Ver detalhes de Neon Expansion"
+          ],
+          [
+            "click",
+            "Adicionar ao carrinho"
+          ],
+          [
+            "click",
+            "Ver carrinho (2)"
+          ],
+          [
+            "click",
+            "Continuar para checkout"
+          ]
+        ],
+        "focusField": "Número do cartão fictício"
+      },
+      "innerWidth": 360,
+      "innerHeight": 844,
+      "scrollWidth": 360,
+      "scrollHeight": 844,
+      "horizontalOverflowElements": [],
+      "focusedElement": "Número do cartão fictício",
+      "title": "WF-06 · CHECKOUT\nFinalizar compra simulada\nCAPA ILUSTRATIVA\nOR\nOrbit Raiders\nTipo: Jogo\nR$ 79,90\nCompatível com: GeForce"
+    }
+  ]
+}

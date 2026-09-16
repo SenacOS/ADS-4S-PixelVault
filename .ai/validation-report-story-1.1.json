@@ -1,0 +1,47 @@
+{
+  "story_id": "1.1",
+  "story_path": "docs/stories/1.1.configuracao-projeto-expo.md",
+  "validated_at": "2026-09-14",
+  "validator": "@po",
+  "mode": "YOLO",
+  "local_only": true,
+  "verdict": "GO",
+  "implementation_readiness_score": 9,
+  "confidence": "High",
+  "status_transition": "Draft -> Ready",
+  "checks": {
+    "template_compliance": "PASS",
+    "executor_assignment": "PASS",
+    "file_structure_clarity": "PASS",
+    "frontend_scope_and_responsiveness": "PASS",
+    "acceptance_criteria_coverage": "PASS",
+    "testing_instructions": "PASS",
+    "security_and_scope_boundaries": "PASS",
+    "task_sequence": "PASS",
+    "anti_hallucination": "PASS",
+    "developer_readiness": "PASS",
+    "coderabbit": "N/A - disabled/not configured",
+    "external_pm_sync": "N/A - MCP/ClickUp disabled"
+  },
+  "critical_issues": [],
+  "should_fix_issues": [],
+  "nice_to_have_improvements": [
+    "Quando os diretórios shardados configurados em core-config.yaml forem criados, manter sua documentação alinhada com a story; a ausência atual não bloqueia porque a story é autocontida e rastreada aos artefatos consolidados."
+  ],
+  "anti_hallucination_findings": [
+    "As versões e a árvore descritas na story foram confirmadas no estado local do repositório.",
+    "A03, A04/HT-01, A06, A09 e o Prompt 10 sustentam o escopo, a sequência, a responsividade e as exclusões declaradas.",
+    "Não há story local anterior para acumulação de contexto do epic.",
+    "Code Intelligence foi auto-ignorado porque isCodeIntelAvailable() retornou false."
+  ],
+  "coderabbit_findings": {
+    "skip_notice_present": true,
+    "coderabbit_quality_gate_tasks_present": false,
+    "manual_review_fallback_present": true
+  },
+  "handoff": {
+    "next_agent": "@dev",
+    "next_command": "*develop 1.1",
+    "condition": "Story Ready"
+  }
+}
