@@ -1,0 +1,9 @@
+name: Labels
+
+on:
+  pull_request_target:
+    types: [opened, edited, synchronize, reopened]
+
+jobs:
+  labeler:
+    uses: SenacOS/core/.github/workflows/pr-labeler.yml@main
