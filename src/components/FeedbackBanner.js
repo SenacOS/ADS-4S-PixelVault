@@ -9,15 +9,18 @@ export default function FeedbackBanner({ message, tone = 'info' }) {
 
   return (
     <View accessibilityRole="alert" accessibilityLiveRegion="polite" style={[styles.base, styles[tone]]}>
-      <AppText style={styles.text}>{prefix}: {message}</AppText>
+      <AppText style={[styles.text, styles[`${tone}Text`]]}>{prefix}: {message}</AppText>
     </View>
   );
 }
 
 const styles = StyleSheet.create({
   base: { width: '100%', borderLeftWidth: 4, borderRadius: radius.sm, padding: spacing.md },
-  info: { backgroundColor: colors.accentDark, borderLeftColor: colors.accent },
-  success: { backgroundColor: '#123c2c', borderLeftColor: colors.success },
-  error: { backgroundColor: '#4a1f2a', borderLeftColor: colors.danger },
+  info: { backgroundColor: colors.accentSurface, borderLeftColor: colors.accentDark },
+  success: { backgroundColor: colors.successSurface, borderLeftColor: colors.success },
+  error: { backgroundColor: colors.dangerSurface, borderLeftColor: colors.danger },
+  infoText: { color: colors.accentDark },
+  successText: { color: colors.success },
+  errorText: { color: colors.danger },
   text: { fontWeight: '700' },
 });

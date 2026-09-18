@@ -58,5 +58,5 @@ function Separator() { return <View style={styles.separator} />; }
 const styles = StyleSheet.create({
   listContent: { flexGrow: 1, paddingBottom: spacing.lg }, listHeader: { gap: spacing.lg, marginBottom: spacing.lg }, listFooter: { marginTop: spacing.lg }, separator: { height: spacing.lg },
   form: { width: '100%', gap: spacing.lg }, choiceGroup: { width: '100%', gap: spacing.sm }, actions: { width: '100%', gap: spacing.md }, error: { color: colors.danger, fontWeight: '700' },
-  confirmation: { width: '100%', padding: spacing.xl, gap: spacing.md, borderRadius: radius.lg, borderWidth: 2, borderColor: colors.danger, backgroundColor: colors.surface },
+  confirmation: { width: '100%', padding: spacing.xl, gap: spacing.md, borderRadius: radius.lg, borderWidth: 2, borderColor: colors.danger, backgroundColor: colors.dangerSurface },
 });

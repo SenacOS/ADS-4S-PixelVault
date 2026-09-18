@@ -15,8 +15,6 @@ export default function AppButton({
   accessibilityHint,
 }) {
   const [focused, setFocused] = useState(false);
-  const usesLightLabel = disabled || variant === 'secondary' || variant === 'ghost';
-
   return (
     <Pressable
       accessibilityRole="button"
@@ -30,12 +28,12 @@ export default function AppButton({
       style={({ pressed }) => [
         styles.base,
         styles[variant],
-        pressed && !disabled && styles.pressed,
+        pressed && !disabled && styles[`${variant}Pressed`],
         disabled && styles.disabled,
         focused && styles.focused,
       ]}
     >
-      <AppText style={[styles.label, usesLightLabel && styles.lightLabel]}>
+      <AppText style={[styles.label, variant === 'danger' && styles.dangerLabel, disabled && styles.disabledLabel]}>
         {label}{disabled ? ' — indisponível' : ''}
       </AppText>
     </Pressable>
@@ -59,9 +57,13 @@ const styles = StyleSheet.create({
   secondary: { backgroundColor: colors.surfaceRaised, borderColor: colors.border },
   ghost: { backgroundColor: 'transparent', borderColor: colors.border },
   danger: { backgroundColor: colors.danger, borderColor: colors.danger },
-  disabled: { backgroundColor: colors.disabled, borderColor: colors.disabled },
-  focused: { borderColor: colors.warning, borderWidth: 3 },
-  pressed: { opacity: 0.72 },
-  label: { width: '100%', color: colors.background, fontWeight: '800', textAlign: 'center' },
-  lightLabel: { color: colors.text },
+  primaryPressed: { backgroundColor: colors.accentPressed, borderColor: colors.accentPressed },
+  secondaryPressed: { backgroundColor: colors.accentSurface, borderColor: colors.accentDark },
+  ghostPressed: { backgroundColor: colors.surfaceRaised, borderColor: colors.accentDark },
+  dangerPressed: { transform: [{ scale: 0.99 }], borderColor: colors.focus },
+  disabled: { backgroundColor: colors.disabled, borderColor: colors.disabledBorder },
+  focused: { borderColor: colors.focus, borderWidth: 3 },
+  label: { width: '100%', color: colors.text, fontWeight: '800', textAlign: 'center' },
+  dangerLabel: { color: colors.background },
+  disabledLabel: { color: colors.disabledText },
 });

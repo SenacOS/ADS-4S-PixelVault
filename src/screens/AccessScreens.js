@@ -57,8 +57,8 @@ function RegisterScreen({ errors, onChangeRegister, onNavigate, onSubmitRegistra
 }
 
 const styles = StyleSheet.create({
-  brandPanel: { width: '100%', alignItems: 'center', gap: spacing.md, padding: spacing.lg, backgroundColor: colors.surface, borderRadius: radius.lg },
-  logo: { width: 88, height: 88, borderRadius: radius.lg },
+  brandPanel: { width: '100%', alignItems: 'center', gap: spacing.md, padding: spacing.lg, backgroundColor: colors.accentSurface, borderWidth: 1, borderColor: colors.border, borderRadius: radius.lg },
+  logo: { width: 88, height: 88, borderRadius: radius.lg, borderWidth: 2, borderColor: colors.accentDark },
   form: { width: '100%', gap: spacing.lg },
   actions: { width: '100%', gap: spacing.md },
 });

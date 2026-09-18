@@ -19,7 +19,7 @@ const variants = StyleSheet.create({
   secondary: { color: colors.textMuted, fontSize: type.secondary, lineHeight: 21 },
   label: { color: colors.textMuted, fontSize: type.body, fontWeight: '700', lineHeight: 22 },
   eyebrow: {
-    color: colors.accent,
+    color: colors.accentDark,
     fontSize: type.secondary,
     fontWeight: '800',
     letterSpacing: 1.2,

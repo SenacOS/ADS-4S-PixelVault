@@ -37,6 +37,7 @@ test('mantém a entrada Expo e aplica área segura dinâmica na raiz', () => {
   assert.equal(packageJson.main, 'index.js');
   assert.match(indexSource, /registerRootComponent\(App\)/);
   assert.match(appSource, /SafeAreaProvider/);
+  assert.match(appSource, /StatusBar style="dark"/);
   assert.match(appSource, /src\/screens\/PixelVaultApp/);
   assert.equal(packageJson.dependencies['react-native-safe-area-context'], '~5.6.0');
 });
@@ -146,22 +147,23 @@ test('expõe contratos estáticos de acessibilidade e responsividade', () => {
   assert.match(readProjectFile('src/components/AppText.js'), /variant === 'title' \|\| variant === 'heading'/);
 });
 
-test('mantém contrastes mínimos para botões, bordas, foco e desabilitado', () => {
+test('mantém contrastes mínimos para superfícies, bordas, foco e desabilitado', () => {
   const source = readProjectFile('src/theme/tokens.js');
   const background = token(source, 'background');
   const surface = token(source, 'surface');
   const surfaceRaised = token(source, 'surfaceRaised');
   const border = token(source, 'border');
   const disabled = token(source, 'disabled');
-  const warning = token(source, 'warning');
+  const focus = token(source, 'focus');
   const text = token(source, 'text');
+  const disabledText = token(source, 'disabledText');
 
   assert.ok(contrastRatio(text, surfaceRaised) >= 4.5, 'texto secondary deve atender WCAG AA');
   assert.ok(contrastRatio(border, background) >= 3, 'borda ghost deve contrastar com o fundo');
   assert.ok(contrastRatio(border, surface) >= 3, 'borda de input/cartão deve contrastar com superfície');
-  assert.ok(contrastRatio(text, disabled) >= 4.5, 'label desabilitado deve atender WCAG AA');
-  assert.ok(contrastRatio(warning, background) >= 3, 'foco deve contrastar com o fundo');
-  assert.ok(contrastRatio(warning, surface) >= 3, 'foco deve contrastar com superfície');
+  assert.ok(contrastRatio(disabledText, disabled) >= 4.5, 'label desabilitado deve atender WCAG AA');
+  assert.ok(contrastRatio(focus, background) >= 3, 'foco deve contrastar com o fundo');
+  assert.ok(contrastRatio(focus, surface) >= 3, 'foco deve contrastar com superfície');
 });
 
 test('expõe todos os comandos de qualidade obrigatórios', () => {
@@ -171,4 +173,68 @@ test('expõe todos os comandos de qualidade obrigatórios', () => {
     assert.equal(typeof scripts[command], 'string');
     assert.ok(scripts[command].length > 0);
   }
+});
+
+test('aplica a paleta clara final aos papéis aprovados', () => {
+  const source = readProjectFile('src/theme/tokens.js');
+  const expectedTokens = {
+    background: '#FFFFFF', surface: '#FAF9F6', surfaceRaised: '#F3F1EA', text: '#171717',
+    textMuted: '#4B5563', textSubtle: '#6B7280', border: '#8A8178', accent: '#C49A32',
+    accentPressed: '#AE8426', accentDark: '#745713', accentSurface: '#FBF3DC', focus: '#5A4310',
+    success: '#166534', successSurface: '#F0FDF4', warning: '#7A4D00', warningSurface: '#FFF8E6',
+    danger: '#B42318', dangerSurface: '#FEF3F2', disabled: '#E7E5E4', disabledText: '#57534E',
+    disabledBorder: '#78716C', shadow: '#171717',
+  };
+
+  for (const [name, value] of Object.entries(expectedTokens)) {
+    assert.equal(token(source, name).toUpperCase(), value.toUpperCase(), `${name} deve manter o papel aprovado`);
+  }
+});
+
+test('valida contrastes das combinações reais da interface clara', () => {
+  const source = readProjectFile('src/theme/tokens.js');
+  const pairs = [
+    ['text', 'background', 4.5], ['text', 'surface', 4.5],
+    ['textMuted', 'background', 4.5], ['textMuted', 'surface', 4.5],
+    ['textSubtle', 'background', 4.5], ['border', 'background', 3], ['border', 'surface', 3],
+    ['text', 'accent', 4.5], ['text', 'accentPressed', 4.5],
+    ['accentDark', 'background', 4.5], ['accentDark', 'accentSurface', 4.5],
+    ['focus', 'background', 3], ['focus', 'accent', 3],
+    ['success', 'successSurface', 4.5], ['warning', 'warningSurface', 4.5],
+    ['danger', 'dangerSurface', 4.5], ['background', 'danger', 4.5],
+    ['disabledText', 'disabled', 4.5], ['disabledBorder', 'background', 3],
+  ];
+
+  for (const [foreground, background, minimum] of pairs) {
+    assert.ok(
+      contrastRatio(token(source, foreground), token(source, background)) >= minimum,
+      `${foreground}/${background} deve atingir ${minimum}:1`,
+    );
+  }
+});
+
+test('usa papéis semânticos e remove destaques azuis e fundos escuros legados', () => {
+  const paths = [
+    'App.js', 'src/theme/tokens.js', 'src/components/AppText.js', 'src/components/AppButton.js',
+    'src/components/LabeledField.js', 'src/components/ProductCard.js', 'src/components/FeedbackBanner.js',
+    'src/components/EmptyState.js', 'src/components/BottomNavigation.js', 'src/components/ScreenShell.js',
+    'src/screens/AccessScreens.js', 'src/screens/StorefrontScreens.js', 'src/screens/AdminScreens.js',
+  ];
+  const sources = paths.map(readProjectFile).join('\n');
+  const buttonSource = readProjectFile('src/components/AppButton.js');
+  const fieldSource = readProjectFile('src/components/LabeledField.js');
+  const bannerSource = readProjectFile('src/components/FeedbackBanner.js');
+  const navigationSource = readProjectFile('src/components/BottomNavigation.js');
+
+  assert.doesNotMatch(sources, /#70d6ff|#12324a|#123c2c|#4a1f2a/i);
+  assert.match(buttonSource, /colors\.accentPressed/);
+  assert.match(buttonSource, /colors\.disabledText/);
+  assert.match(buttonSource, /colors\.focus/);
+  assert.match(fieldSource, /inputFocused/);
+  assert.match(fieldSource, /colors\.focus/);
+  assert.match(fieldSource, /error && styles\.inputError, focused && styles\.inputFocused/);
+  assert.match(bannerSource, /colors\.successSurface/);
+  assert.match(bannerSource, /colors\.dangerSurface/);
+  assert.match(navigationSource, /colors\.accentSurface/);
+  assert.match(navigationSource, /colors\.accentDark/);
 });

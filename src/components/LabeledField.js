@@ -1,3 +1,4 @@
+import { useState } from 'react';
 import { StyleSheet, TextInput, View } from 'react-native';
 
 import { getEvidenceFontScale } from '../data/demoRoutes';
@@ -8,6 +9,7 @@ import AppText from './AppText';
  * @param {import('react-native').TextInputProps & { label: string, error?: string }} props
  */
 export default function LabeledField({ label, error, style, ...inputProps }) {
+  const [focused, setFocused] = useState(false);
   const errorId = `${label.toLowerCase().replace(/[^a-z0-9]+/g, '-')}-error`;
   const evidenceScale = getEvidenceFontScale();
 
@@ -15,12 +17,20 @@ export default function LabeledField({ label, error, style, ...inputProps }) {
     <View style={styles.group}>
       <AppText variant="label">{label}</AppText>
       <TextInput
+        {...inputProps}
         accessibilityLabel={label}
         accessibilityHint={error}
         allowFontScaling
+        onBlur={(event) => {
+          setFocused(false);
+          inputProps.onBlur?.(event);
+        }}
+        onFocus={(event) => {
+          setFocused(true);
+          inputProps.onFocus?.(event);
+        }}
         placeholderTextColor={colors.textSubtle}
-        style={[styles.input, { fontSize: type.body * evidenceScale }, error && styles.inputError, style]}
-        {...inputProps}
+        style={[styles.input, { fontSize: type.body * evidenceScale }, error && styles.inputError, focused && styles.inputFocused, style]}
       />
       {error ? (
         <AppText nativeID={errorId} accessibilityLiveRegion="polite" style={styles.error}>
@@ -45,6 +55,7 @@ const styles = StyleSheet.create({
     paddingHorizontal: spacing.lg,
     paddingVertical: spacing.md,
   },
+  inputFocused: { borderColor: colors.focus, borderWidth: 3 },
   inputError: { borderColor: colors.danger, borderWidth: 2 },
   error: { color: colors.danger, fontWeight: '700' },
 });

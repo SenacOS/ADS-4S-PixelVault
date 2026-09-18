@@ -6,7 +6,7 @@ import PixelVaultApp from './src/screens/PixelVaultApp';
 export default function App() {
   return (
     <SafeAreaProvider initialMetrics={initialWindowMetrics}>
-      <StatusBar style="light" />
+      <StatusBar style="dark" />
       <PixelVaultApp />
     </SafeAreaProvider>
   );

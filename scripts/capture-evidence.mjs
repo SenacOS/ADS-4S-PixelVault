@@ -84,7 +84,34 @@ const prompt12Captures = [
   ['uxt-14-checkout-fonte-130-360x844', 'wf01', 360, 844, { fontScale: 1.3, actions: addBoth, focusField: 'Número do cartão fictício' }],
 ];
 
-const captures = suite === 'prompt-12' ? prompt12Captures : prompt11Captures;
+const story31Captures = [
+  ...prompt11Captures.slice(0, 4),
+  ['wf-05-carrinho-390x844', 'wf01', 390, 844, { actions: [...addOrbit, ['click', 'Ver carrinho (1)'], ['expect', 'WF-05']] }],
+  ['wf-06-checkout-390x844', 'wf01', 390, 844, { actions: addBoth }],
+  ['wf-07-resultado-390x844', 'wf01', 390, 844, { actions: validCheckout }],
+  ['wf-08-biblioteca-390x844', 'wf01', 390, 844, { actions: [...validCheckout, ['click', 'Abrir biblioteca'], ['expect', 'WF-08']] }],
+  ...prompt11Captures.slice(8, 17),
+  ['area-acesso-360x844', 'wf01', 360, 844],
+  ['area-catalogo-360x844', 'wf03', 360, 844],
+  ['area-compra-360x844', 'wf01', 360, 844, { actions: addBoth }],
+  ['area-biblioteca-360x844', 'wf01', 360, 844, { actions: [...validCheckout, ['click', 'Abrir biblioteca'], ['expect', 'WF-08']] }],
+  ['area-administracao-360x844', 'wf09', 360, 844],
+  ['area-acesso-320x568', 'wf01', 320, 568],
+  ['area-catalogo-320x568', 'wf03', 320, 568],
+  ['area-compra-320x568', 'wf01', 320, 568, { actions: addBoth }],
+  ['area-biblioteca-320x568', 'wf01', 320, 568, { actions: [...validCheckout, ['click', 'Abrir biblioteca'], ['expect', 'WF-08']] }],
+  ['area-administracao-320x568', 'wf09', 320, 568],
+  ['fonte-130-cadastro-390x844', 'wf02', 390, 844, { fontScale: 1.3, focusField: 'Nome' }],
+  ['foco-campo-checkout-390x844', 'wf01', 390, 844, { actions: addBoth, focusField: 'Número do cartão fictício' }],
+  ['foco-botao-secundario-390x844', 'wf01', 390, 844, { focusInteractiveLabel: 'Preencher administrador' }],
+  ['foco-navegacao-390x844', 'wf03', 390, 844, { focusInteractiveLabel: 'Carrinho' }],
+];
+
+const captures = suite === 'prompt-12'
+  ? prompt12Captures
+  : suite === 'story-3.1'
+    ? story31Captures
+    : prompt11Captures;
 
 async function waitForDebugger() {
   for (let attempt = 0; attempt < 40; attempt += 1) {

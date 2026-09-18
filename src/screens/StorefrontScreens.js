@@ -125,6 +125,6 @@ function Separator() { return <View style={styles.separator} />; }
 const styles = StyleSheet.create({
   filterGroup: { width: '100%', gap: spacing.sm }, list: { width: '100%', gap: spacing.lg }, listHeader: { gap: spacing.lg, marginBottom: spacing.lg }, listFooter: { gap: spacing.lg, marginTop: spacing.lg }, listContent: { flexGrow: 1, paddingBottom: spacing.lg }, separator: { height: spacing.lg },
   section: { width: '100%', padding: spacing.lg, gap: spacing.sm, backgroundColor: colors.surface, borderRadius: radius.md, borderWidth: 1, borderColor: colors.border },
-  summary: { width: '100%', padding: spacing.lg, gap: spacing.sm, borderRadius: radius.lg, borderWidth: 2, borderColor: colors.accent, backgroundColor: colors.accentDark },
+  summary: { width: '100%', padding: spacing.lg, gap: spacing.sm, borderRadius: radius.lg, borderWidth: 2, borderColor: colors.accentDark, backgroundColor: colors.accentSurface },
   actions: { width: '100%', gap: spacing.md }, form: { width: '100%', gap: spacing.lg },
 });

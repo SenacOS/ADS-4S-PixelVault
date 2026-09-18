@@ -45,6 +45,11 @@ const styles = StyleSheet.create({
     backgroundColor: colors.surface,
     borderTopWidth: 1,
     borderTopColor: colors.border,
+    shadowColor: colors.shadow,
+    shadowOpacity: 0.08,
+    shadowRadius: 8,
+    shadowOffset: { width: 0, height: -2 },
+    elevation: 2,
   },
   item: {
     flex: 1,
@@ -53,8 +58,8 @@ const styles = StyleSheet.create({
     alignItems: 'center',
     justifyContent: 'center',
   },
-  selected: { borderTopWidth: 4, borderTopColor: colors.accent, backgroundColor: colors.accentDark },
-  focused: { borderWidth: 3, borderColor: colors.warning },
+  selected: { borderTopWidth: 4, borderTopColor: colors.accentDark, backgroundColor: colors.accentSurface },
+  focused: { borderWidth: 3, borderColor: colors.focus },
   label: { textAlign: 'center' },
-  selectedLabel: { color: colors.text, fontWeight: '800' },
+  selectedLabel: { color: colors.accentDark, fontWeight: '800' },
 });
