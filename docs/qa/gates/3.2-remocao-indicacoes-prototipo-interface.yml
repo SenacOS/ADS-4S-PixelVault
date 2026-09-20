@@ -1,0 +1,61 @@
+schema: 1
+story: '3.2'
+story_title: 'Remoção de indicações internas e demonstrativas da interface'
+gate: CONCERNS
+status_reason: 'A limpeza da superfície perceptível atende ao escopo sem alterar rotas, papéis, autorizações, estado local ou contratos visuais; permanece somente a limitação conhecida de não haver inspeção com teclado virtual e leitor de tela nativos.'
+reviewer: 'Aria (Architect)'
+reviewed_revision: 'working-tree sobre 3577663729f3154f2ef5f9ddc81229acfc52e7b5'
+updated: '2026-09-18T18:30:31-03:00'
+top_issues:
+  - id: 'TEST-001'
+    severity: medium
+    finding: 'As evidências cobrem Expo Web, atributos acessíveis no DOM, foco e fonte a 130%, mas não comprovam teclado virtual nem leitura por leitor de tela em dispositivo/emulador nativo.'
+    suggested_action: 'Quando houver dispositivo ou emulador, repetir login/cadastro, checkout e CRUD com teclado aberto e leitor de tela, anexando a evidência nativa.'
+    suggested_owner: dev
+waiver: { active: false }
+quality_score: 90
+evidence:
+  tests_reviewed: 37
+  captures_reviewed: 31
+  risks_identified: 1
+  trace:
+    ac_covered: [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 17, 18]
+    ac_partial: [16]
+    ac_gaps: []
+architectural_validation:
+  scope:
+    status: PASS
+    notes: 'Dez arquivos de produto, teste e automação foram ajustados dentro da File List prevista; não houve dependência, API, banco, configuração ou diretório de produção novo.'
+  routing_and_authorization:
+    status: PASS
+    notes: 'ACCESS_ROUTES, ADMIN_ROUTES, destinos por role e separação entre catálogo e manutenção foram preservados; as evidências exercitam login player e admin pelos campos normais.'
+  state_and_flows:
+    status: PASS
+    notes: 'Estado local, carrinho, pedido, biblioteca e CRUD permanecem no controlador existente e os 37 testes confirmam seus contratos.'
+  perceptible_vs_technical_metadata:
+    status: PASS
+    notes: 'Marcadores e termos internos foram removidos de texto, placeholders e atributos acessíveis, enquanto rotas, inventários, credenciais técnicas e nomes de evidência permanecem fora da UI.'
+  external_claims:
+    status: PASS
+    notes: 'A nova copy descreve ações e resultados locais sem afirmar cobrança, entrega, persistência ou integração externa.'
+  story_3_1_contracts:
+    status: PASS
+    notes: 'Tokens, componentes de foco, safe area e hierarquia visual não foram refatorados; as 31 capturas registram zero overflow e preservam a paleta clara.'
+nfr_validation:
+  security:
+    status: PASS
+    notes: 'Nenhum segredo, permissão nova, integração externa ou ampliação da superfície de autenticação foi introduzido.'
+  performance:
+    status: PASS
+    notes: 'Sem dependências ou camadas novas; build Android aprovado e nenhuma regressão estrutural identificada.'
+  reliability:
+    status: PASS
+    notes: 'Lint, typecheck, 37/37 testes, build Android e git diff --check passaram.'
+  maintainability:
+    status: PASS
+    notes: 'A alteração reutiliza componentes e separa explicitamente superfície renderizável de metadados técnicos na regressão e no capturador.'
+recommendations:
+  immediate: []
+  future:
+    - action: 'Completar a inspeção nativa com teclado virtual e leitor de tela quando houver dispositivo/emulador.'
+      refs: ['docs/evidence/story-3.2/README.md', 'docs/qa/gates/3.1-revisao-da-identidade-visual-e-da-paleta-de-cores.yml']

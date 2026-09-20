@@ -42,24 +42,23 @@ test('mantém a entrada Expo e aplica área segura dinâmica na raiz', () => {
   assert.equal(packageJson.dependencies['react-native-safe-area-context'], '~5.6.0');
 });
 
-test('expõe todo o inventário WF-01 a WF-11 e ST-01 a ST-05', () => {
+test('preserva todo o inventário de rotas sem renderizar identificadores documentais', () => {
   const routeSource = readProjectFile('src/data/demoRoutes.js');
-  const source = [
+  const surfaceSource = [
     readProjectFile('src/screens/AccessScreens.js'),
     readProjectFile('src/screens/StorefrontScreens.js'),
     readProjectFile('src/screens/AdminScreens.js'),
   ].join('\n');
 
   for (let index = 1; index <= 11; index += 1) {
-    const id = `WF-${String(index).padStart(2, '0')}`;
-    assert.match(source, new RegExp(id), `${id} deve estar renderizado`);
+    assert.match(routeSource, new RegExp(`'wf${String(index).padStart(2, '0')}(?:-|')`));
   }
 
   for (let index = 1; index <= 5; index += 1) {
-    const id = `ST-${String(index).padStart(2, '0')}`;
-    assert.match(source, new RegExp(id), `${id} deve estar renderizado`);
     assert.match(routeSource, new RegExp(`st0${index}`));
   }
+
+  assert.doesNotMatch(surfaceSource, /(?:WF|ST)-\d+/i);
 });
 
 test('centraliza os dois produtos e preserva quantidade e total', () => {
@@ -91,23 +90,43 @@ test('mantém a ordem textual da navegação do jogador', () => {
   assert.ok(catalog >= 0 && catalog < cart && cart < library);
 });
 
-test('mantém textos críticos e feedbacks distintos aprovados', () => {
+test('mantém textos funcionais e feedbacks distintos aprovados', () => {
   const dataSource = readProjectFile('src/data/pixelVaultData.js');
   const screenSource = readProjectFile('src/screens/StorefrontScreens.js');
 
   for (const expected of [
-    'Pagamento simulado — nenhuma cobrança será realizada',
-    'Cadastro concluído. Entre com as credenciais de demonstração.',
+    'Cadastro concluído. Entre com suas credenciais.',
     'Item adicionado ao carrinho.',
     'Este item já está no carrinho.',
-    'Item cadastrado na lista local.',
-    'Alterações salvas na lista local.',
-    'Item excluído da lista local.',
+    'Item cadastrado com sucesso.',
+    'Alterações salvas com sucesso.',
+    'Item excluído com sucesso.',
   ]) {
     assert.ok(dataSource.includes(expected), `texto aprovado ausente: ${expected}`);
   }
 
   assert.match(screenSource, /Nenhum pedido foi criado/);
+});
+
+test('impede marcadores e terminologia interna na superfície perceptível', () => {
+  const surfacePaths = [
+    'App.js', 'src/screens/AccessScreens.js', 'src/screens/StorefrontScreens.js',
+    'src/screens/AdminScreens.js', 'src/screens/PixelVaultApp.js',
+    'src/components/ScreenShell.js', 'src/components/ProductCard.js',
+  ];
+  const surfaceSource = surfacePaths.map(readProjectFile).join('\n');
+  const dataSource = readProjectFile('src/data/pixelVaultData.js');
+  const renderableData = [
+    dataSource.split('export const CART_SUMMARY')[0],
+    dataSource.split('export const FEEDBACKS')[1],
+    readProjectFile('src/domain/prototypeLogic.mjs'),
+  ].join('\n');
+  const forbidden = /(?:WF|ST)-\d+|prot[oó]tipo|acad[eê]mic|fict[ií]ci|demonstr|simula(?:ç|c)[aã]o|simulad|\bdemo\b|capa ilustrativa|arte final|fonte:\s*lista local|(?:somente|apenas).*(?:sess[aã]o|lista local)|\bperfil\b|curador/i;
+
+  assert.doesNotMatch(surfaceSource, forbidden);
+  assert.doesNotMatch(renderableData, forbidden);
+  assert.match(dataSource, /player-demo/); // Exceção técnica: ID de conta não renderizado.
+  assert.match(readProjectFile('src/data/demoRoutes.js'), /wf01/); // Exceção técnica: rota documental.
 });
 
 test('mantém integrações externas em modo simulado e sem segredos', () => {

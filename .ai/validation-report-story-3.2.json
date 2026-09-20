@@ -1,0 +1,45 @@
+{
+  "story": "3.2",
+  "date": "2026-09-18",
+  "verdict": "GO",
+  "readiness_score": 9,
+  "confidence": "high",
+  "status_transition": "Draft -> Ready",
+  "template_compliance": "PASS",
+  "acceptance_criteria": {
+    "total": 18,
+    "covered": 18,
+    "testable": 18
+  },
+  "tasks": {
+    "total": 6,
+    "coverage": "PASS"
+  },
+  "decisions": [
+    "Conteudo visivel ou anunciado por tecnologia assistiva deve ser limpo; IDs de rota, inventarios, query strings, nomes de evidencias, testes tecnicos e documentacao permanecem.",
+    "Os papeis player/admin, destinos e autorizacoes permanecem funcionais, mas deixam de ser anunciados editorialmente na interface.",
+    "A story foi classificada como implementacao de codigo/feature em UI existente: executor @dev e quality gate @architect.",
+    "A nova copy deve ser neutra e nao pode alegar integracao, persistencia, cobranca ou entrega externas inexistentes."
+  ],
+  "boundaries": [
+    "Sem renomeacao global de simbolos tecnicos ou fixtures nao renderizadas.",
+    "Sem mudanca de modelo de dados, API, autenticacao, persistencia, pagamento ou permissoes.",
+    "Sem regressao da identidade visual, acessibilidade, responsividade ou fluxos entregues na Story 3.1.",
+    "Expo SDK 54 permanece obrigatorio para qualquer implementacao React Native."
+  ],
+  "integrations": {
+    "clickup": "unavailable; MCP disabled",
+    "coderabbit": "disabled; manual quality gate required",
+    "code_intelligence": "unavailable; skipped",
+    "prd_architecture": "configured paths absent; direct user request, current code, Story 3.1 and Story 1.3 used as verified sources"
+  },
+  "critical_issues": [],
+  "should_fix": [],
+  "nice_to_have": [
+    "Quando houver dispositivo ou emulador, repetir a verificacao com teclado virtual nativo registrada como limitacao na Story 3.1."
+  ],
+  "handoff": {
+    "next_agent": "@dev",
+    "next_command": "*develop 3.2"
+  }
+}

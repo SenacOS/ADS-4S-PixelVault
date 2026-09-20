@@ -50,7 +50,16 @@ export function validateProductForm(form) {
 
 export function createProduct(products, form, id) {
   const price = parsePrice(form.price);
-  return [...products, { ...form, id, price, priceLabel: formatCurrency(price), activationKey: `PV-${id.toUpperCase()}-DEMO (chave fictícia)` }];
+  return [
+    ...products,
+    {
+      ...form,
+      id,
+      price,
+      priceLabel: formatCurrency(price),
+      activationKey: `PV-${id.toUpperCase()}`,
+    },
+  ];
 }
 
 export function updateProduct(products, productId, form) {

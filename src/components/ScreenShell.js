@@ -5,13 +5,20 @@ import { colors, layout, spacing } from '../theme/tokens';
 import AppText from './AppText';
 
 /**
- * @param {{ title: string, eyebrow: string, description?: string, children: import('react').ReactNode, footer?: import('react').ReactNode, scroll?: boolean }} props
+ * @param {{
+ *   title: string,
+ *   eyebrow?: string,
+ *   description?: string,
+ *   children: import('react').ReactNode,
+ *   footer?: import('react').ReactNode,
+ *   scroll?: boolean,
+ * }} props
  */
 export default function ScreenShell({ title, eyebrow, description, children, footer, scroll = true }) {
   const content = (
     <View style={[styles.inner, !scroll && styles.flex]}>
       <View style={styles.header}>
-        <AppText variant="eyebrow">{eyebrow}</AppText>
+        {eyebrow ? <AppText variant="eyebrow">{eyebrow}</AppText> : null}
         <AppText variant="title">{title}</AppText>
         {description ? <AppText variant="secondary">{description}</AppText> : null}
       </View>

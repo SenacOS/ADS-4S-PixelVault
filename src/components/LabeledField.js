@@ -30,7 +30,12 @@ export default function LabeledField({ label, error, style, ...inputProps }) {
           inputProps.onFocus?.(event);
         }}
         placeholderTextColor={colors.textSubtle}
-        style={[styles.input, { fontSize: type.body * evidenceScale }, error && styles.inputError, focused && styles.inputFocused, style]}
+        style={[
+          styles.input,
+          { fontSize: type.body * evidenceScale },
+          error && styles.inputError, focused && styles.inputFocused,
+          style,
+        ]}
       />
       {error ? (
         <AppText nativeID={errorId} accessibilityLiveRegion="polite" style={styles.error}>

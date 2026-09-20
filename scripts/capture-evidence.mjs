@@ -9,6 +9,13 @@ const suite = process.env.PIXELVAULT_EVIDENCE_SUITE ?? process.argv[2] ?? 'promp
 const outputDirectory = resolve(`docs/evidence/${suite}`);
 const staticDirectory = resolve('dist-web');
 const debugPort = 9223;
+const routeExpectations = Object.freeze({
+  wf01: 'PixelVault', wf02: 'Criar conta', wf03: 'Descobrir jogos', wf04: 'Orbit Raiders',
+  wf05: 'Seu carrinho', wf06: 'Finalizar pedido', wf07: 'Pedido concluído', wf08: 'Minha biblioteca',
+  wf09: 'Manutenção do catálogo', 'wf10-new': 'Novo item', 'wf10-edit': 'Editar item',
+  wf11: 'Confirmar exclusão', st01: 'PixelVault', st02: 'Descobrir jogos',
+  st03: 'Seu carrinho', st04: 'Minha biblioteca', st05: 'Finalizar pedido',
+});
 
 const prompt11Captures = [
   ['wf-01-login-390x844', 'wf01', 390, 844],
@@ -35,15 +42,13 @@ const prompt11Captures = [
   ['wf-02-cadastro-fonte-130-390x844', 'wf02', 390, 844, { fontScale: 1.3 }],
   ['wf-06-checkout-campo-focado-390x844', 'wf06', 390, 844, { focusFirstField: true }],
   ['uxt-03-jogador-abre-catalogo-390x844', 'wf01', 390, 844, {
-    clickLabel: 'Entrar como jogador',
-    expectedAfterClick: 'WF-03',
+    actions: [['fill', 'E-mail', 'jogador@pixelvault.example'], ['fill', 'Senha', 'demo123'], ['click', 'Entrar'], ['expect', 'Descobrir jogos']],
   }],
   ['uxt-04-admin-abre-manutencao-390x844', 'wf01', 390, 844, {
-    clickLabel: 'Entrar como administrador/curador',
-    expectedAfterClick: 'WF-09',
+    actions: [['fill', 'E-mail', 'admin@pixelvault.example'], ['fill', 'Senha', 'demo123'], ['click', 'Entrar'], ['expect', 'Manutenção do catálogo']],
   }],
   ['ux-foco-botao-secundario-wf01-390x844', 'wf01', 390, 844, {
-    focusInteractiveLabel: 'Entrar como administrador/curador',
+    focusInteractiveLabel: 'Criar conta',
   }],
   ['ux-foco-navegacao-wf03-390x844', 'wf03', 390, 844, {
     focusInteractiveLabel: 'Carrinho',
@@ -51,65 +56,65 @@ const prompt11Captures = [
 ];
 
 const loginPlayer = [
-  ['click', 'Preencher jogador'], ['click', 'Entrar'], ['expect', 'WF-03'],
+  ['fill', 'E-mail', 'jogador@pixelvault.example'], ['fill', 'Senha', 'demo123'], ['click', 'Entrar'], ['expect', 'Descobrir jogos'],
 ];
 const loginAdmin = [
-  ['click', 'Preencher administrador'], ['click', 'Entrar'], ['expect', 'WF-09'],
+  ['fill', 'E-mail', 'admin@pixelvault.example'], ['fill', 'Senha', 'demo123'], ['click', 'Entrar'], ['expect', 'Manutenção do catálogo'],
 ];
 const addOrbit = [...loginPlayer, ['click', 'Ver detalhes de Orbit Raiders'], ['click', 'Adicionar ao carrinho']];
 const addBoth = [...addOrbit, ['click', 'Voltar ao catálogo'], ['click', 'Ver detalhes de Neon Expansion'], ['click', 'Adicionar ao carrinho'], ['click', 'Ver carrinho (2)'], ['click', 'Continuar para checkout']];
-const validCheckout = [...addBoth, ['fill', 'Número do cartão fictício', '0000 DEMO'], ['fill', 'Nome impresso fictício', 'Pessoa Fictícia'], ['click', 'Confirmar simulação'], ['expect', 'WF-07']];
+const validCheckout = [...addBoth, ['fill', 'Número do cartão', '0000 0000 0000 0000'], ['fill', 'Nome impresso', 'Pessoa Compradora'], ['click', 'Confirmar pedido'], ['expect', 'Pedido concluído']];
 
 const prompt12Captures = [
-  ['uxt-01-cadastro-invalido-390x844', 'wf01', 390, 844, { actions: [['click', 'Criar conta'], ['click', 'Cadastrar conta demonstrativa'], ['expect', 'Erro: Campo obrigatório.']] }],
-  ['uxt-02-cadastro-valido-390x844', 'wf01', 390, 844, { actions: [['click', 'Criar conta'], ['fill', 'Nome', 'Pessoa Fictícia'], ['fill', 'E-mail', 'nova@pixelvault.example'], ['fill', 'Senha', 'demo456'], ['click', 'Cadastrar conta demonstrativa'], ['expect', 'Cadastro concluído. Entre com as credenciais de demonstração.']] }],
+  ['uxt-01-cadastro-invalido-390x844', 'wf01', 390, 844, { actions: [['click', 'Criar conta'], ['click', 'Cadastrar conta'], ['expect', 'Erro: Campo obrigatório.']] }],
+  ['uxt-02-cadastro-valido-390x844', 'wf01', 390, 844, { actions: [['click', 'Criar conta'], ['fill', 'Nome', 'Pessoa Compradora'], ['fill', 'E-mail', 'nova@pixelvault.example'], ['fill', 'Senha', 'senha456'], ['click', 'Cadastrar conta'], ['expect', 'Cadastro concluído. Entre com suas credenciais.']] }],
   ['uxt-03-login-jogador-390x844', 'wf01', 390, 844, { actions: loginPlayer }],
   ['uxt-04-login-admin-390x844', 'wf01', 390, 844, { actions: loginAdmin }],
-  ['uxt-05-filtro-vazio-390x844', 'wf01', 390, 844, { actions: [...loginAdmin, ['click', 'Excluir Orbit Raiders'], ['click', 'Confirmar exclusão'], ['click', 'Sair do perfil administrativo'], ['click', 'Preencher jogador'], ['click', 'Entrar'], ['click', 'Boosteroid'], ['expect', 'Nenhum resultado']] }],
-  ['uxt-05-filtro-limpo-390x844', 'wf01', 390, 844, { actions: [...loginAdmin, ['click', 'Excluir Orbit Raiders'], ['click', 'Confirmar exclusão'], ['click', 'Sair do perfil administrativo'], ['click', 'Preencher jogador'], ['click', 'Entrar'], ['click', 'Boosteroid'], ['click', 'Limpar filtro'], ['expect', 'Neon Expansion']] }],
+  ['uxt-05-filtro-vazio-390x844', 'wf01', 390, 844, { actions: [...loginAdmin, ['click', 'Excluir Orbit Raiders'], ['click', 'Confirmar exclusão'], ['click', 'Sair'], ...loginPlayer, ['click', 'Boosteroid'], ['expect', 'Nenhum resultado']] }],
+  ['uxt-05-filtro-limpo-390x844', 'wf01', 390, 844, { actions: [...loginAdmin, ['click', 'Excluir Orbit Raiders'], ['click', 'Confirmar exclusão'], ['click', 'Sair'], ...loginPlayer, ['click', 'Boosteroid'], ['click', 'Limpar filtro'], ['expect', 'Neon Expansion']] }],
   ['uxt-06-duplicidade-390x844', 'wf01', 390, 844, { actions: [...addOrbit, ['click', 'Já está no carrinho'], ['expect', 'Este item já está no carrinho.']] }],
   ['uxt-07-carrinho-vazio-390x844', 'wf01', 390, 844, { actions: [...addOrbit, ['click', 'Ver carrinho (1)'], ['click', 'Remover: Orbit Raiders'], ['expect', 'R$ 0,00']] }],
   ['uxt-08-checkout-dois-itens-390x844', 'wf01', 390, 844, { actions: [...addBoth, ['expect', 'R$ 104,80']] }],
-  ['uxt-09-checkout-invalido-390x844', 'wf01', 390, 844, { actions: [...addBoth, ['click', 'Confirmar simulação'], ['expect', 'Nenhum pedido foi criado.']], scrollToText: 'Número do cartão fictício' }],
+  ['uxt-09-checkout-invalido-390x844', 'wf01', 390, 844, { actions: [...addBoth, ['click', 'Confirmar pedido'], ['expect', 'Nenhum pedido foi criado.']], scrollToText: 'Número do cartão' }],
   ['uxt-10-checkout-valido-390x844', 'wf01', 390, 844, { actions: validCheckout }],
-  ['uxt-11-biblioteca-pos-compra-390x844', 'wf01', 390, 844, { actions: [...validCheckout, ['click', 'Abrir biblioteca'], ['expect', 'PV-NEON-DEMO']] }],
-  ['uxt-12-crud-criado-390x844', 'wf01', 390, 844, { actions: [...loginAdmin, ['click', 'Novo item'], ['fill', 'Nome do produto', 'Item de teste'], ['click', 'Jogo'], ['fill', 'Preço', '12,50'], ['fill', 'Descrição', 'Descrição fictícia'], ['click', 'Boosteroid'], ['fill', 'Ativação em', 'Loja fictícia'], ['click', 'Cadastrar item'], ['expect', 'Item cadastrado na lista local.']] }],
-  ['uxt-12-crud-completo-390x844', 'wf01', 390, 844, { actions: [...loginAdmin, ['click', 'Novo item'], ['fill', 'Nome do produto', 'Item de teste'], ['click', 'Jogo'], ['fill', 'Preço', '12,50'], ['fill', 'Descrição', 'Descrição fictícia'], ['click', 'Boosteroid'], ['fill', 'Ativação em', 'Loja fictícia'], ['click', 'Cadastrar item'], ['click', 'Editar Item de teste'], ['fill', 'Nome do produto', 'Item editado'], ['click', 'Salvar alterações'], ['expect', 'Item editado'], ['click', 'Excluir Item editado'], ['click', 'Cancelar'], ['expect', 'Item editado'], ['click', 'Excluir Item editado'], ['click', 'Confirmar exclusão'], ['expect', 'Item excluído da lista local.']] }],
+  ['uxt-11-biblioteca-pos-compra-390x844', 'wf01', 390, 844, { actions: [...validCheckout, ['click', 'Abrir biblioteca'], ['expect', 'PV-NEON-4P8R']] }],
+  ['uxt-12-crud-criado-390x844', 'wf01', 390, 844, { actions: [...loginAdmin, ['click', 'Novo item'], ['fill', 'Nome do produto', 'Item de teste'], ['click', 'Jogo'], ['fill', 'Preço', '12,50'], ['fill', 'Descrição', 'Descrição do item'], ['click', 'Boosteroid'], ['fill', 'Ativação em', 'PixelVault'], ['click', 'Cadastrar item'], ['expect', 'Item cadastrado com sucesso.']] }],
+  ['uxt-12-crud-completo-390x844', 'wf01', 390, 844, { actions: [...loginAdmin, ['click', 'Novo item'], ['fill', 'Nome do produto', 'Item de teste'], ['click', 'Jogo'], ['fill', 'Preço', '12,50'], ['fill', 'Descrição', 'Descrição do item'], ['click', 'Boosteroid'], ['fill', 'Ativação em', 'PixelVault'], ['click', 'Cadastrar item'], ['click', 'Editar Item de teste'], ['fill', 'Nome do produto', 'Item editado'], ['click', 'Salvar alterações'], ['expect', 'Item editado'], ['click', 'Excluir Item editado'], ['click', 'Cancelar'], ['expect', 'Item editado'], ['click', 'Excluir Item editado'], ['click', 'Confirmar exclusão'], ['expect', 'Item excluído com sucesso.']] }],
   ['uxt-13-login-320x568', 'wf01', 320, 568, { actions: loginPlayer }],
   ['uxt-13-duplicidade-320x568', 'wf01', 320, 568, { actions: [...addOrbit, ['click', 'Já está no carrinho']] }],
   ['uxt-13-checkout-320x568', 'wf01', 320, 568, { actions: addBoth }],
-  ['uxt-13-checkout-invalido-320x568', 'wf01', 320, 568, { actions: [...addBoth, ['click', 'Confirmar simulação']], scrollToText: 'Número do cartão fictício' }],
+  ['uxt-13-checkout-invalido-320x568', 'wf01', 320, 568, { actions: [...addBoth, ['click', 'Confirmar pedido']], scrollToText: 'Número do cartão' }],
   ['uxt-13-admin-320x568', 'wf01', 320, 568, { actions: loginAdmin }],
   ['uxt-14-cadastro-fonte-130-390x844', 'wf01', 390, 844, { fontScale: 1.3, actions: [['click', 'Criar conta']], focusField: 'Nome' }],
-  ['uxt-14-checkout-fonte-130-360x844', 'wf01', 360, 844, { fontScale: 1.3, actions: addBoth, focusField: 'Número do cartão fictício' }],
+  ['uxt-14-checkout-fonte-130-360x844', 'wf01', 360, 844, { fontScale: 1.3, actions: addBoth, focusField: 'Número do cartão' }],
 ];
 
 const story31Captures = [
   ...prompt11Captures.slice(0, 4),
-  ['wf-05-carrinho-390x844', 'wf01', 390, 844, { actions: [...addOrbit, ['click', 'Ver carrinho (1)'], ['expect', 'WF-05']] }],
+  ['wf-05-carrinho-390x844', 'wf01', 390, 844, { actions: [...addOrbit, ['click', 'Ver carrinho (1)'], ['expect', 'Seu carrinho']] }],
   ['wf-06-checkout-390x844', 'wf01', 390, 844, { actions: addBoth }],
   ['wf-07-resultado-390x844', 'wf01', 390, 844, { actions: validCheckout }],
-  ['wf-08-biblioteca-390x844', 'wf01', 390, 844, { actions: [...validCheckout, ['click', 'Abrir biblioteca'], ['expect', 'WF-08']] }],
+  ['wf-08-biblioteca-390x844', 'wf01', 390, 844, { actions: [...validCheckout, ['click', 'Abrir biblioteca'], ['expect', 'Minha biblioteca']] }],
   ...prompt11Captures.slice(8, 17),
   ['area-acesso-360x844', 'wf01', 360, 844],
   ['area-catalogo-360x844', 'wf03', 360, 844],
   ['area-compra-360x844', 'wf01', 360, 844, { actions: addBoth }],
-  ['area-biblioteca-360x844', 'wf01', 360, 844, { actions: [...validCheckout, ['click', 'Abrir biblioteca'], ['expect', 'WF-08']] }],
+  ['area-biblioteca-360x844', 'wf01', 360, 844, { actions: [...validCheckout, ['click', 'Abrir biblioteca'], ['expect', 'Minha biblioteca']] }],
   ['area-administracao-360x844', 'wf09', 360, 844],
   ['area-acesso-320x568', 'wf01', 320, 568],
   ['area-catalogo-320x568', 'wf03', 320, 568],
   ['area-compra-320x568', 'wf01', 320, 568, { actions: addBoth }],
-  ['area-biblioteca-320x568', 'wf01', 320, 568, { actions: [...validCheckout, ['click', 'Abrir biblioteca'], ['expect', 'WF-08']] }],
+  ['area-biblioteca-320x568', 'wf01', 320, 568, { actions: [...validCheckout, ['click', 'Abrir biblioteca'], ['expect', 'Minha biblioteca']] }],
   ['area-administracao-320x568', 'wf09', 320, 568],
   ['fonte-130-cadastro-390x844', 'wf02', 390, 844, { fontScale: 1.3, focusField: 'Nome' }],
-  ['foco-campo-checkout-390x844', 'wf01', 390, 844, { actions: addBoth, focusField: 'Número do cartão fictício' }],
-  ['foco-botao-secundario-390x844', 'wf01', 390, 844, { focusInteractiveLabel: 'Preencher administrador' }],
+  ['foco-campo-checkout-390x844', 'wf01', 390, 844, { actions: addBoth, focusField: 'Número do cartão' }],
+  ['foco-botao-secundario-390x844', 'wf01', 390, 844, { focusInteractiveLabel: 'Criar conta' }],
   ['foco-navegacao-390x844', 'wf03', 390, 844, { focusInteractiveLabel: 'Carrinho' }],
 ];
 
 const captures = suite === 'prompt-12'
   ? prompt12Captures
-  : suite === 'story-3.1'
+  : suite === 'story-3.1' || suite === 'story-3.2'
     ? story31Captures
     : prompt11Captures;
 
@@ -185,9 +190,7 @@ async function capture(name, route, width, height, options = {}) {
       screenHeight: height,
     });
     await client.call('Page.navigate', { url: pageUrl });
-    const expectedMarker = route.startsWith('st')
-      ? `ST-${route.slice(2).padStart(2, '0')}`
-      : `WF-${route.slice(2, 4).padStart(2, '0')}`;
+    const expectedText = routeExpectations[route];
     let bodyText = '';
     for (let attempt = 0; attempt < 40; attempt += 1) {
       const body = await client.call('Runtime.evaluate', {
@@ -195,11 +198,11 @@ async function capture(name, route, width, height, options = {}) {
         returnByValue: true,
       });
       bodyText = body.result.value;
-      if (bodyText.includes(expectedMarker)) break;
+      if (bodyText.includes(expectedText)) break;
       await new Promise((resolveDelay) => setTimeout(resolveDelay, 250));
     }
-    if (!bodyText.includes(expectedMarker)) {
-      throw new Error(`Rota ${route} não renderizou ${expectedMarker}: ${bodyText.slice(0, 80)}`);
+    if (!bodyText.includes(expectedText)) {
+      throw new Error(`Rota ${route} não renderizou ${expectedText}: ${bodyText.slice(0, 80)}`);
     }
     for (const [action, label, value] of options.actions ?? []) {
       if (action === 'fill') {
@@ -289,6 +292,25 @@ async function capture(name, route, width, height, options = {}) {
         if (attempt === 19) throw new Error(`Navegação não alcançou ${options.expectedAfterClick}`);
       }
     }
+    const perceptibleContent = await client.call('Runtime.evaluate', {
+      expression: `JSON.stringify([
+        document.body?.innerText ?? '',
+        ...[...document.querySelectorAll('[aria-label], [aria-description], [placeholder], [alt]')]
+          .flatMap(element => ['aria-label', 'aria-description', 'placeholder', 'alt']
+            .map(attribute => element.getAttribute(attribute))
+            .filter(Boolean))
+      ])`,
+      returnByValue: true,
+    });
+    const normalizedContent = JSON.parse(perceptibleContent.result.value)
+      .join('\n')
+      .normalize('NFD')
+      .replace(/[\u0300-\u036f]/g, '')
+      .toLowerCase();
+    const forbiddenContent = /(?:wf|st)-\d+|prototip|academic|fictici|demonstr|simul|\bdemo\b|capa ilustrativa|arte final|fonte:\s*lista local|(?:somente|apenas).*(?:sessao|lista local)|\bperfil\b|curador/;
+    if (forbiddenContent.test(normalizedContent)) {
+      throw new Error(`Conteúdo interno exposto na rota ${route}.`);
+    }
     await client.call('Runtime.evaluate', {
       expression: 'document.fonts.ready.then(() => new Promise(resolve => setTimeout(resolve, 400)))',
       awaitPromise: true,
@@ -348,10 +370,12 @@ const chrome = spawn(
   chromePath,
   [
     '--headless=new',
+    '--no-first-run',
+    '--no-default-browser-check',
     '--disable-gpu',
     '--hide-scrollbars',
     `--remote-debugging-port=${debugPort}`,
-    `--user-data-dir=${resolve('.expo/chrome-evidence')}`,
+    `--user-data-dir=${resolve(`.expo/chrome-evidence-${suite}-${process.pid}`)}`,
     'about:blank',
   ],
   { stdio: 'ignore' },

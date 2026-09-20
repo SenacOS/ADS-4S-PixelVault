@@ -4,17 +4,21 @@ import { colors, radius, spacing } from '../theme/tokens';
 import AppText from './AppText';
 
 /**
- * @param {{ product: import('../data/pixelVaultData').PRODUCTS[number], context?: 'catalog'|'cart'|'library'|'admin', children?: import('react').ReactNode }} props
+ * @param {{
+ *   product: import('../data/pixelVaultData').PRODUCTS[number],
+ *   context?: 'catalog'|'cart'|'library'|'admin',
+ *   children?: import('react').ReactNode,
+ * }} props
  */
 export default function ProductCard({ product, context = 'catalog', children }) {
   return (
     <View accessibilityLabel={`${product.name}, ${product.type}, ${product.priceLabel}`} style={styles.card}>
       <View
-        accessibilityLabel={`Capa ilustrativa neutra de ${product.name}; arte final não aprovada`}
+        accessibilityLabel={`Capa de ${product.name}`}
         accessibilityRole="image"
         style={styles.cover}
       >
-        <AppText variant="eyebrow" style={styles.coverText}>CAPA ILUSTRATIVA</AppText>
+        <AppText variant="eyebrow" style={styles.coverText}>{product.type}</AppText>
         <AppText variant="heading" style={styles.coverInitial}>{product.name.slice(0, 2).toUpperCase()}</AppText>
       </View>
       <View style={styles.content}>

@@ -5,7 +5,13 @@ import { colors, layout, radius, spacing } from '../theme/tokens';
 import AppText from './AppText';
 
 /**
- * @param {{ label: string, onPress: () => void, variant?: 'primary'|'secondary'|'ghost'|'danger', disabled?: boolean, accessibilityHint?: string }} props
+ * @param {{
+ *   label: string,
+ *   onPress: () => void,
+ *   variant?: 'primary'|'secondary'|'ghost'|'danger',
+ *   disabled?: boolean,
+ *   accessibilityHint?: string,
+ * }} props
  */
 export default function AppButton({
   label,
