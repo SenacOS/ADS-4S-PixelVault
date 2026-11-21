@@ -1,5 +1,6 @@
 import { existsSync } from 'node:fs';
 import { DatabaseSync } from 'node:sqlite';
+import { applyCatalogExpansion } from './catalog-expansion.mjs';
 
 const REQUIRED_TABLES = [
   'biblioteca',
@@ -41,6 +42,7 @@ export function openDatabase(databasePath) {
       throw new Error('O esquema do banco local é incompatível.');
     }
 
+    applyCatalogExpansion(database);
     return database;
   } catch (error) {
     database?.close();

@@ -62,7 +62,7 @@ function LoginScreen({ errors, feedback, loginForm, onChangeLogin, onNavigate, o
 
 function RegisterScreen({ errors, onChangeRegister, onNavigate, onSubmitRegistration, registerForm }) {
   return (
-    <ScreenShell title="Criar conta">
+    <ScreenShell title="Criar conta" description="Esta conta é local e vale apenas nesta sessão. Ela não será cadastrada no servidor.">
       <View style={styles.form}>
         <LabeledField
           error={errors.name}

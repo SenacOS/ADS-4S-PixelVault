@@ -1,0 +1,1760 @@
+{
+  "capturedAt": "2026-11-20T23:53:33.287Z",
+  "runtime": "Expo Web + Chrome headless CDP",
+  "results": [
+    {
+      "name": "crud-servidor",
+      "route": "wf01",
+      "width": 390,
+      "height": 844,
+      "options": {
+        "actions": [
+          [
+            "click",
+            "Preencher administrador"
+          ],
+          [
+            "click",
+            "Entrar"
+          ],
+          [
+            "expect",
+            "WF-09"
+          ],
+          [
+            "click",
+            "Novo item"
+          ],
+          [
+            "fill",
+            "Nome do produto",
+            "CRUD integrado"
+          ],
+          [
+            "click",
+            "Jogo"
+          ],
+          [
+            "fill",
+            "Preço",
+            "12,50"
+          ],
+          [
+            "fill",
+            "Descrição",
+            "Descrição fictícia"
+          ],
+          [
+            "click",
+            "Boosteroid"
+          ],
+          [
+            "fill",
+            "Ativação em",
+            "Loja fictícia"
+          ],
+          [
+            "click",
+            "Cadastrar item"
+          ],
+          [
+            "expect",
+            "Item cadastrado na lista local."
+          ],
+          [
+            "click",
+            "Sincronizar catálogo"
+          ],
+          [
+            "expect",
+            "Catálogo sincronizado com o servidor."
+          ],
+          [
+            "server-expect",
+            "CRUD integrado",
+            true
+          ],
+          [
+            "click",
+            "Editar CRUD integrado"
+          ],
+          [
+            "fill",
+            "Nome do produto",
+            "CRUD alterado"
+          ],
+          [
+            "fill",
+            "Preço",
+            "25,90"
+          ],
+          [
+            "click",
+            "Salvar alterações"
+          ],
+          [
+            "click",
+            "Sincronizar catálogo"
+          ],
+          [
+            "expect",
+            "Catálogo sincronizado com o servidor."
+          ],
+          [
+            "server-expect",
+            "CRUD alterado",
+            true
+          ],
+          [
+            "reload",
+            "WF-01"
+          ],
+          [
+            "click",
+            "Preencher administrador"
+          ],
+          [
+            "click",
+            "Entrar"
+          ],
+          [
+            "expect",
+            "WF-09"
+          ],
+          [
+            "expect",
+            "CRUD alterado"
+          ],
+          [
+            "click",
+            "Excluir CRUD alterado"
+          ],
+          [
+            "click",
+            "Confirmar exclusão"
+          ],
+          [
+            "click",
+            "Sincronizar catálogo"
+          ],
+          [
+            "expect",
+            "Catálogo sincronizado com o servidor."
+          ],
+          [
+            "server-expect",
+            "CRUD alterado",
+            false
+          ],
+          [
+            "safe-storage"
+          ]
+        ]
+      },
+      "innerWidth": 390,
+      "innerHeight": 844,
+      "scrollWidth": 390,
+      "scrollHeight": 844,
+      "horizontalOverflowElements": [],
+      "focusedElement": null,
+      "title": "WF-09 · ADMINISTRAÇÃO\nManutenção do catálogo\nPerfil: administrador/curador · Catálogo local e sincronização\nInformação: ",
+      "controls": [
+        {
+          "kind": "field",
+          "label": "E-mail",
+          "disabled": false,
+          "type": "email"
+        },
+        {
+          "kind": "field",
+          "label": "Senha",
+          "disabled": false,
+          "type": "password"
+        },
+        {
+          "kind": "button",
+          "label": "Entrar",
+          "disabled": false,
+          "type": "button"
+        },
+        {
+          "kind": "button",
+          "label": "Preencher jogador",
+          "disabled": false,
+          "type": "button"
+        },
+        {
+          "kind": "button",
+          "label": "Preencher administrador",
+          "disabled": false,
+          "type": "button"
+        },
+        {
+          "kind": "button",
+          "label": "Criar conta",
+          "disabled": false,
+          "type": "button"
+        },
+        {
+          "kind": "button",
+          "label": "Sincronizar catálogo",
+          "disabled": false,
+          "type": "button"
+        },
+        {
+          "kind": "button",
+          "label": "Exportar dados em JSON",
+          "disabled": false,
+          "type": "button"
+        },
+        {
+          "kind": "button",
+          "label": "Novo item",
+          "disabled": false,
+          "type": "button"
+        },
+        {
+          "kind": "button",
+          "label": "Editar Neon Expansion",
+          "disabled": false,
+          "type": "button"
+        },
+        {
+          "kind": "button",
+          "label": "Excluir Neon Expansion",
+          "disabled": false,
+          "type": "button"
+        },
+        {
+          "kind": "button",
+          "label": "Editar Orbit Raiders",
+          "disabled": false,
+          "type": "button"
+        },
+        {
+          "kind": "button",
+          "label": "Excluir Orbit Raiders",
+          "disabled": false,
+          "type": "button"
+        },
+        {
+          "kind": "button",
+          "label": "Sair do perfil administrativo",
+          "disabled": false,
+          "type": "button"
+        },
+        {
+          "kind": "field",
+          "label": "Nome do produto",
+          "disabled": false,
+          "type": null
+        },
+        {
+          "kind": "button",
+          "label": "Jogo",
+          "disabled": false,
+          "type": "button"
+        },
+        {
+          "kind": "button",
+          "label": "DLC",
+          "disabled": false,
+          "type": "button"
+        },
+        {
+          "kind": "field",
+          "label": "Preço",
+          "disabled": false,
+          "type": null
+        },
+        {
+          "kind": "field",
+          "label": "Descrição",
+          "disabled": false,
+          "type": null
+        },
+        {
+          "kind": "button",
+          "label": "GeForce NOW",
+          "disabled": false,
+          "type": "button"
+        },
+        {
+          "kind": "button",
+          "label": "Boosteroid",
+          "disabled": false,
+          "type": "button"
+        },
+        {
+          "kind": "field",
+          "label": "Ativação em",
+          "disabled": false,
+          "type": null
+        },
+        {
+          "kind": "button",
+          "label": "Cadastrar item",
+          "disabled": false,
+          "type": "button"
+        },
+        {
+          "kind": "button",
+          "label": "Cancelar",
+          "disabled": false,
+          "type": "button"
+        },
+        {
+          "kind": "button",
+          "label": "Selecionado: Jogo",
+          "disabled": false,
+          "type": "button"
+        },
+        {
+          "kind": "button",
+          "label": "Selecionado: Boosteroid",
+          "disabled": false,
+          "type": "button"
+        },
+        {
+          "kind": "button",
+          "label": "Recarregar versão do servidor",
+          "disabled": false,
+          "type": "button"
+        },
+        {
+          "kind": "button",
+          "label": "Editar CRUD integrado",
+          "disabled": false,
+          "type": "button"
+        },
+        {
+          "kind": "button",
+          "label": "Excluir CRUD integrado",
+          "disabled": false,
+          "type": "button"
+        },
+        {
+          "kind": "button",
+          "label": "Salvar alterações",
+          "disabled": false,
+          "type": "button"
+        },
+        {
+          "kind": "button",
+          "label": "Editar CRUD alterado",
+          "disabled": false,
+          "type": "button"
+        },
+        {
+          "kind": "button",
+          "label": "Excluir CRUD alterado",
+          "disabled": false,
+          "type": "button"
+        },
+        {
+          "kind": "button",
+          "label": "Confirmar exclusão",
+          "disabled": false,
+          "type": "button"
+        }
+      ]
+    },
+    {
+      "name": "retomada-offline",
+      "route": "wf01",
+      "width": 390,
+      "height": 844,
+      "options": {
+        "actions": [
+          [
+            "click",
+            "Preencher administrador"
+          ],
+          [
+            "click",
+            "Entrar"
+          ],
+          [
+            "expect",
+            "WF-09"
+          ],
+          [
+            "api-offline"
+          ],
+          [
+            "click",
+            "Novo item"
+          ],
+          [
+            "fill",
+            "Nome do produto",
+            "Criado offline"
+          ],
+          [
+            "click",
+            "Jogo"
+          ],
+          [
+            "fill",
+            "Preço",
+            "12,50"
+          ],
+          [
+            "fill",
+            "Descrição",
+            "Descrição fictícia"
+          ],
+          [
+            "click",
+            "Boosteroid"
+          ],
+          [
+            "fill",
+            "Ativação em",
+            "Loja fictícia"
+          ],
+          [
+            "click",
+            "Cadastrar item"
+          ],
+          [
+            "expect",
+            "Item cadastrado na lista local."
+          ],
+          [
+            "click",
+            "Sincronizar catálogo"
+          ],
+          [
+            "expect",
+            "Sincronização pendente"
+          ],
+          [
+            "reload",
+            "WF-01"
+          ],
+          [
+            "click",
+            "Preencher administrador"
+          ],
+          [
+            "click",
+            "Entrar"
+          ],
+          [
+            "expect",
+            "WF-09"
+          ],
+          [
+            "expect",
+            "1 alterações pendentes"
+          ],
+          [
+            "api-online"
+          ],
+          [
+            "click",
+            "Sair do perfil administrativo"
+          ],
+          [
+            "click",
+            "Preencher administrador"
+          ],
+          [
+            "click",
+            "Entrar"
+          ],
+          [
+            "expect",
+            "WF-09"
+          ],
+          [
+            "click",
+            "Sincronizar catálogo"
+          ],
+          [
+            "expect",
+            "Catálogo sincronizado com o servidor."
+          ],
+          [
+            "server-expect",
+            "Criado offline",
+            true
+          ],
+          [
+            "safe-storage"
+          ]
+        ],
+        "scrollToText": "Criado offline"
+      },
+      "innerWidth": 390,
+      "innerHeight": 844,
+      "scrollWidth": 390,
+      "scrollHeight": 844,
+      "horizontalOverflowElements": [],
+      "focusedElement": null,
+      "title": "WF-09 · ADMINISTRAÇÃO\nManutenção do catálogo\nPerfil: administrador/curador · Catálogo local e sincronização\nInformação: ",
+      "controls": [
+        {
+          "kind": "field",
+          "label": "E-mail",
+          "disabled": false,
+          "type": "email"
+        },
+        {
+          "kind": "field",
+          "label": "Senha",
+          "disabled": false,
+          "type": "password"
+        },
+        {
+          "kind": "button",
+          "label": "Entrar",
+          "disabled": false,
+          "type": "button"
+        },
+        {
+          "kind": "button",
+          "label": "Preencher jogador",
+          "disabled": false,
+          "type": "button"
+        },
+        {
+          "kind": "button",
+          "label": "Preencher administrador",
+          "disabled": false,
+          "type": "button"
+        },
+        {
+          "kind": "button",
+          "label": "Criar conta",
+          "disabled": false,
+          "type": "button"
+        },
+        {
+          "kind": "button",
+          "label": "Sincronizar catálogo",
+          "disabled": false,
+          "type": "button"
+        },
+        {
+          "kind": "button",
+          "label": "Exportar dados em JSON",
+          "disabled": false,
+          "type": "button"
+        },
+        {
+          "kind": "button",
+          "label": "Novo item",
+          "disabled": false,
+          "type": "button"
+        },
+        {
+          "kind": "button",
+          "label": "Editar Neon Expansion",
+          "disabled": false,
+          "type": "button"
+        },
+        {
+          "kind": "button",
+          "label": "Excluir Neon Expansion",
+          "disabled": false,
+          "type": "button"
+        },
+        {
+          "kind": "button",
+          "label": "Editar Orbit Raiders",
+          "disabled": false,
+          "type": "button"
+        },
+        {
+          "kind": "button",
+          "label": "Excluir Orbit Raiders",
+          "disabled": false,
+          "type": "button"
+        },
+        {
+          "kind": "button",
+          "label": "Sair do perfil administrativo",
+          "disabled": false,
+          "type": "button"
+        },
+        {
+          "kind": "field",
+          "label": "Nome do produto",
+          "disabled": false,
+          "type": null
+        },
+        {
+          "kind": "button",
+          "label": "Jogo",
+          "disabled": false,
+          "type": "button"
+        },
+        {
+          "kind": "button",
+          "label": "DLC",
+          "disabled": false,
+          "type": "button"
+        },
+        {
+          "kind": "field",
+          "label": "Preço",
+          "disabled": false,
+          "type": null
+        },
+        {
+          "kind": "field",
+          "label": "Descrição",
+          "disabled": false,
+          "type": null
+        },
+        {
+          "kind": "button",
+          "label": "GeForce NOW",
+          "disabled": false,
+          "type": "button"
+        },
+        {
+          "kind": "button",
+          "label": "Boosteroid",
+          "disabled": false,
+          "type": "button"
+        },
+        {
+          "kind": "field",
+          "label": "Ativação em",
+          "disabled": false,
+          "type": null
+        },
+        {
+          "kind": "button",
+          "label": "Cadastrar item",
+          "disabled": false,
+          "type": "button"
+        },
+        {
+          "kind": "button",
+          "label": "Cancelar",
+          "disabled": false,
+          "type": "button"
+        },
+        {
+          "kind": "button",
+          "label": "Selecionado: Jogo",
+          "disabled": false,
+          "type": "button"
+        },
+        {
+          "kind": "button",
+          "label": "Selecionado: Boosteroid",
+          "disabled": false,
+          "type": "button"
+        },
+        {
+          "kind": "button",
+          "label": "Recarregar versão do servidor",
+          "disabled": false,
+          "type": "button"
+        },
+        {
+          "kind": "button",
+          "label": "Editar Criado offline",
+          "disabled": false,
+          "type": "button"
+        },
+        {
+          "kind": "button",
+          "label": "Excluir Criado offline",
+          "disabled": false,
+          "type": "button"
+        }
+      ]
+    },
+    {
+      "name": "conflito-resolvido",
+      "route": "wf01",
+      "width": 320,
+      "height": 568,
+      "options": {
+        "actions": [
+          [
+            "click",
+            "Preencher administrador"
+          ],
+          [
+            "click",
+            "Entrar"
+          ],
+          [
+            "expect",
+            "WF-09"
+          ],
+          [
+            "click",
+            "Novo item"
+          ],
+          [
+            "fill",
+            "Nome do produto",
+            "Item conflito"
+          ],
+          [
+            "click",
+            "Jogo"
+          ],
+          [
+            "fill",
+            "Preço",
+            "12,50"
+          ],
+          [
+            "fill",
+            "Descrição",
+            "Descrição fictícia"
+          ],
+          [
+            "click",
+            "Boosteroid"
+          ],
+          [
+            "fill",
+            "Ativação em",
+            "Loja fictícia"
+          ],
+          [
+            "click",
+            "Cadastrar item"
+          ],
+          [
+            "expect",
+            "Item cadastrado na lista local."
+          ],
+          [
+            "click",
+            "Sincronizar catálogo"
+          ],
+          [
+            "expect",
+            "Catálogo sincronizado com o servidor."
+          ],
+          [
+            "click",
+            "Editar Item conflito"
+          ],
+          [
+            "fill",
+            "Nome do produto",
+            "Versão local"
+          ],
+          [
+            "click",
+            "Salvar alterações"
+          ],
+          [
+            "server-edit",
+            "Item conflito",
+            "Versão remota"
+          ],
+          [
+            "click",
+            "Sincronizar catálogo"
+          ],
+          [
+            "expect",
+            "O produto mudou no servidor"
+          ],
+          [
+            "server-expect",
+            "Versão remota",
+            true
+          ],
+          [
+            "click",
+            "Recarregar versão do servidor"
+          ],
+          [
+            "click",
+            "Confirmar descarte e recarregar"
+          ],
+          [
+            "expect",
+            "Catálogo do servidor recuperado"
+          ],
+          [
+            "expect",
+            "0 alterações pendentes"
+          ],
+          [
+            "expect",
+            "Versão remota"
+          ]
+        ],
+        "scrollToText": "Versão remota"
+      },
+      "innerWidth": 320,
+      "innerHeight": 568,
+      "scrollWidth": 320,
+      "scrollHeight": 568,
+      "horizontalOverflowElements": [],
+      "focusedElement": null,
+      "title": "WF-09 · ADMINISTRAÇÃO\nManutenção do catálogo\nPerfil: administrador/curador · Catálogo local e sincronização\nInformação: ",
+      "controls": [
+        {
+          "kind": "field",
+          "label": "E-mail",
+          "disabled": false,
+          "type": "email"
+        },
+        {
+          "kind": "field",
+          "label": "Senha",
+          "disabled": false,
+          "type": "password"
+        },
+        {
+          "kind": "button",
+          "label": "Entrar",
+          "disabled": false,
+          "type": "button"
+        },
+        {
+          "kind": "button",
+          "label": "Preencher jogador",
+          "disabled": false,
+          "type": "button"
+        },
+        {
+          "kind": "button",
+          "label": "Preencher administrador",
+          "disabled": false,
+          "type": "button"
+        },
+        {
+          "kind": "button",
+          "label": "Criar conta",
+          "disabled": false,
+          "type": "button"
+        },
+        {
+          "kind": "button",
+          "label": "Sincronizar catálogo",
+          "disabled": false,
+          "type": "button"
+        },
+        {
+          "kind": "button",
+          "label": "Exportar dados em JSON",
+          "disabled": false,
+          "type": "button"
+        },
+        {
+          "kind": "button",
+          "label": "Novo item",
+          "disabled": false,
+          "type": "button"
+        },
+        {
+          "kind": "button",
+          "label": "Editar Criado offline",
+          "disabled": false,
+          "type": "button"
+        },
+        {
+          "kind": "button",
+          "label": "Excluir Criado offline",
+          "disabled": false,
+          "type": "button"
+        },
+        {
+          "kind": "button",
+          "label": "Editar Neon Expansion",
+          "disabled": false,
+          "type": "button"
+        },
+        {
+          "kind": "button",
+          "label": "Excluir Neon Expansion",
+          "disabled": false,
+          "type": "button"
+        },
+        {
+          "kind": "button",
+          "label": "Editar Orbit Raiders",
+          "disabled": false,
+          "type": "button"
+        },
+        {
+          "kind": "button",
+          "label": "Excluir Orbit Raiders",
+          "disabled": false,
+          "type": "button"
+        },
+        {
+          "kind": "button",
+          "label": "Sair do perfil administrativo",
+          "disabled": false,
+          "type": "button"
+        },
+        {
+          "kind": "field",
+          "label": "Nome do produto",
+          "disabled": false,
+          "type": null
+        },
+        {
+          "kind": "button",
+          "label": "Jogo",
+          "disabled": false,
+          "type": "button"
+        },
+        {
+          "kind": "button",
+          "label": "DLC",
+          "disabled": false,
+          "type": "button"
+        },
+        {
+          "kind": "field",
+          "label": "Preço",
+          "disabled": false,
+          "type": null
+        },
+        {
+          "kind": "field",
+          "label": "Descrição",
+          "disabled": false,
+          "type": null
+        },
+        {
+          "kind": "button",
+          "label": "GeForce NOW",
+          "disabled": false,
+          "type": "button"
+        },
+        {
+          "kind": "button",
+          "label": "Boosteroid",
+          "disabled": false,
+          "type": "button"
+        },
+        {
+          "kind": "field",
+          "label": "Ativação em",
+          "disabled": false,
+          "type": null
+        },
+        {
+          "kind": "button",
+          "label": "Cadastrar item",
+          "disabled": false,
+          "type": "button"
+        },
+        {
+          "kind": "button",
+          "label": "Cancelar",
+          "disabled": false,
+          "type": "button"
+        },
+        {
+          "kind": "button",
+          "label": "Selecionado: Jogo",
+          "disabled": false,
+          "type": "button"
+        },
+        {
+          "kind": "button",
+          "label": "Selecionado: Boosteroid",
+          "disabled": false,
+          "type": "button"
+        },
+        {
+          "kind": "button",
+          "label": "Recarregar versão do servidor",
+          "disabled": false,
+          "type": "button"
+        },
+        {
+          "kind": "button",
+          "label": "Editar Item conflito",
+          "disabled": false,
+          "type": "button"
+        },
+        {
+          "kind": "button",
+          "label": "Excluir Item conflito",
+          "disabled": false,
+          "type": "button"
+        },
+        {
+          "kind": "button",
+          "label": "Salvar alterações",
+          "disabled": false,
+          "type": "button"
+        },
+        {
+          "kind": "button",
+          "label": "Editar Versão local",
+          "disabled": false,
+          "type": "button"
+        },
+        {
+          "kind": "button",
+          "label": "Excluir Versão local",
+          "disabled": false,
+          "type": "button"
+        },
+        {
+          "kind": "button",
+          "label": "Confirmar descarte e recarregar",
+          "disabled": false,
+          "type": "button"
+        },
+        {
+          "kind": "button",
+          "label": "Cancelar descarte",
+          "disabled": false,
+          "type": "button"
+        },
+        {
+          "kind": "button",
+          "label": "Editar Versão remota",
+          "disabled": false,
+          "type": "button"
+        },
+        {
+          "kind": "button",
+          "label": "Excluir Versão remota",
+          "disabled": false,
+          "type": "button"
+        }
+      ]
+    },
+    {
+      "name": "api-campos-multilinha-ocupado",
+      "route": "wf01",
+      "width": 390,
+      "height": 844,
+      "options": {
+        "actions": [
+          [
+            "click",
+            "Preencher administrador"
+          ],
+          [
+            "click",
+            "Entrar"
+          ],
+          [
+            "expect",
+            "WF-09"
+          ],
+          [
+            "click",
+            "Novo item"
+          ],
+          [
+            "fill",
+            "Nome do produto",
+            "Campos API"
+          ],
+          [
+            "click",
+            "Jogo"
+          ],
+          [
+            "fill",
+            "Preço",
+            "12,50"
+          ],
+          [
+            "fill",
+            "Descrição",
+            "Descrição fictícia"
+          ],
+          [
+            "click",
+            "Boosteroid"
+          ],
+          [
+            "fill",
+            "Ativação em",
+            "Loja fictícia"
+          ],
+          [
+            "click",
+            "Cadastrar item"
+          ],
+          [
+            "expect",
+            "Item cadastrado na lista local."
+          ],
+          [
+            "click",
+            "Editar Campos API"
+          ],
+          [
+            "click",
+            "DLC"
+          ],
+          [
+            "fill",
+            "Descrição",
+            "Primeira linha\nSegunda linha"
+          ],
+          [
+            "fill",
+            "Ativação em",
+            "Loja Árvore"
+          ],
+          [
+            "fill",
+            "Preço",
+            "25,90"
+          ],
+          [
+            "click",
+            "GeForce NOW"
+          ],
+          [
+            "click",
+            "Selecionado: Boosteroid"
+          ],
+          [
+            "click",
+            "Salvar alterações"
+          ],
+          [
+            "slow-api"
+          ],
+          [
+            "click",
+            "Sincronizar catálogo"
+          ],
+          [
+            "disabled",
+            "Sincronizando..."
+          ],
+          [
+            "click-disabled",
+            "Sincronizando..."
+          ],
+          [
+            "expect",
+            "Catálogo sincronizado com o servidor."
+          ],
+          [
+            "fast-api"
+          ],
+          [
+            "server-fields",
+            "Campos API",
+            {
+              "type": "DLC",
+              "priceCents": 2590,
+              "description": "Primeira linha\nSegunda linha",
+              "store": "Loja Árvore",
+              "platforms": [
+                "GeForce NOW"
+              ]
+            }
+          ]
+        ]
+      },
+      "innerWidth": 390,
+      "innerHeight": 844,
+      "scrollWidth": 390,
+      "scrollHeight": 844,
+      "horizontalOverflowElements": [],
+      "focusedElement": null,
+      "title": "WF-09 · ADMINISTRAÇÃO\nManutenção do catálogo\nPerfil: administrador/curador · Catálogo local e sincronização\nInformação: ",
+      "controls": [
+        {
+          "kind": "field",
+          "label": "E-mail",
+          "disabled": false,
+          "type": "email"
+        },
+        {
+          "kind": "field",
+          "label": "Senha",
+          "disabled": false,
+          "type": "password"
+        },
+        {
+          "kind": "button",
+          "label": "Entrar",
+          "disabled": false,
+          "type": "button"
+        },
+        {
+          "kind": "button",
+          "label": "Preencher jogador",
+          "disabled": false,
+          "type": "button"
+        },
+        {
+          "kind": "button",
+          "label": "Preencher administrador",
+          "disabled": false,
+          "type": "button"
+        },
+        {
+          "kind": "button",
+          "label": "Criar conta",
+          "disabled": false,
+          "type": "button"
+        },
+        {
+          "kind": "button",
+          "label": "Sincronizar catálogo",
+          "disabled": false,
+          "type": "button"
+        },
+        {
+          "kind": "button",
+          "label": "Exportar dados em JSON",
+          "disabled": false,
+          "type": "button"
+        },
+        {
+          "kind": "button",
+          "label": "Novo item",
+          "disabled": false,
+          "type": "button"
+        },
+        {
+          "kind": "button",
+          "label": "Editar Criado offline",
+          "disabled": false,
+          "type": "button"
+        },
+        {
+          "kind": "button",
+          "label": "Excluir Criado offline",
+          "disabled": false,
+          "type": "button"
+        },
+        {
+          "kind": "button",
+          "label": "Editar Neon Expansion",
+          "disabled": false,
+          "type": "button"
+        },
+        {
+          "kind": "button",
+          "label": "Excluir Neon Expansion",
+          "disabled": false,
+          "type": "button"
+        },
+        {
+          "kind": "button",
+          "label": "Editar Orbit Raiders",
+          "disabled": false,
+          "type": "button"
+        },
+        {
+          "kind": "button",
+          "label": "Excluir Orbit Raiders",
+          "disabled": false,
+          "type": "button"
+        },
+        {
+          "kind": "button",
+          "label": "Editar Versão remota",
+          "disabled": false,
+          "type": "button"
+        },
+        {
+          "kind": "button",
+          "label": "Excluir Versão remota",
+          "disabled": false,
+          "type": "button"
+        },
+        {
+          "kind": "button",
+          "label": "Sair do perfil administrativo",
+          "disabled": false,
+          "type": "button"
+        },
+        {
+          "kind": "field",
+          "label": "Nome do produto",
+          "disabled": false,
+          "type": null
+        },
+        {
+          "kind": "button",
+          "label": "Jogo",
+          "disabled": false,
+          "type": "button"
+        },
+        {
+          "kind": "button",
+          "label": "DLC",
+          "disabled": false,
+          "type": "button"
+        },
+        {
+          "kind": "field",
+          "label": "Preço",
+          "disabled": false,
+          "type": null
+        },
+        {
+          "kind": "field",
+          "label": "Descrição",
+          "disabled": false,
+          "type": null
+        },
+        {
+          "kind": "button",
+          "label": "GeForce NOW",
+          "disabled": false,
+          "type": "button"
+        },
+        {
+          "kind": "button",
+          "label": "Boosteroid",
+          "disabled": false,
+          "type": "button"
+        },
+        {
+          "kind": "field",
+          "label": "Ativação em",
+          "disabled": false,
+          "type": null
+        },
+        {
+          "kind": "button",
+          "label": "Cadastrar item",
+          "disabled": false,
+          "type": "button"
+        },
+        {
+          "kind": "button",
+          "label": "Cancelar",
+          "disabled": false,
+          "type": "button"
+        },
+        {
+          "kind": "button",
+          "label": "Selecionado: Jogo",
+          "disabled": false,
+          "type": "button"
+        },
+        {
+          "kind": "button",
+          "label": "Selecionado: Boosteroid",
+          "disabled": false,
+          "type": "button"
+        },
+        {
+          "kind": "button",
+          "label": "Recarregar versão do servidor",
+          "disabled": true,
+          "type": "button"
+        },
+        {
+          "kind": "button",
+          "label": "Editar Campos API",
+          "disabled": false,
+          "type": "button"
+        },
+        {
+          "kind": "button",
+          "label": "Excluir Campos API",
+          "disabled": false,
+          "type": "button"
+        },
+        {
+          "kind": "button",
+          "label": "Salvar alterações",
+          "disabled": false,
+          "type": "button"
+        },
+        {
+          "kind": "button",
+          "label": "Selecionado: DLC",
+          "disabled": false,
+          "type": "button"
+        },
+        {
+          "kind": "button",
+          "label": "Selecionado: GeForce NOW",
+          "disabled": false,
+          "type": "button"
+        },
+        {
+          "kind": "button",
+          "label": "Sincronizando...",
+          "disabled": true,
+          "type": "button"
+        }
+      ]
+    },
+    {
+      "name": "api-jogador-atualiza-catalogo",
+      "route": "wf01",
+      "width": 320,
+      "height": 568,
+      "options": {
+        "actions": [
+          [
+            "click",
+            "Preencher jogador"
+          ],
+          [
+            "click",
+            "Entrar"
+          ],
+          [
+            "expect",
+            "WF-03"
+          ],
+          [
+            "click",
+            "Atualizar catálogo da API"
+          ],
+          [
+            "expect",
+            "Catálogo atualizado pela API."
+          ],
+          [
+            "absent",
+            "Novo item"
+          ]
+        ]
+      },
+      "innerWidth": 320,
+      "innerHeight": 568,
+      "scrollWidth": 320,
+      "scrollHeight": 568,
+      "horizontalOverflowElements": [],
+      "focusedElement": null,
+      "title": "WF-03 · CATÁLOGO\nDescobrir jogos\nCatálogo local demonstrativo. Compatibilidade cloud pode mudar.\nCatálogo atualizado pel",
+      "controls": [
+        {
+          "kind": "field",
+          "label": "E-mail",
+          "disabled": false,
+          "type": "email"
+        },
+        {
+          "kind": "field",
+          "label": "Senha",
+          "disabled": false,
+          "type": "password"
+        },
+        {
+          "kind": "button",
+          "label": "Entrar",
+          "disabled": false,
+          "type": "button"
+        },
+        {
+          "kind": "button",
+          "label": "Preencher jogador",
+          "disabled": false,
+          "type": "button"
+        },
+        {
+          "kind": "button",
+          "label": "Preencher administrador",
+          "disabled": false,
+          "type": "button"
+        },
+        {
+          "kind": "button",
+          "label": "Criar conta",
+          "disabled": false,
+          "type": "button"
+        },
+        {
+          "kind": "button",
+          "label": "Atualizar catálogo da API",
+          "disabled": false,
+          "type": "button"
+        },
+        {
+          "kind": "button",
+          "label": "Exportar dados em JSON",
+          "disabled": false,
+          "type": "button"
+        },
+        {
+          "kind": "button",
+          "label": "Selecionado: Todos",
+          "disabled": false,
+          "type": "button"
+        },
+        {
+          "kind": "button",
+          "label": "GeForce NOW",
+          "disabled": false,
+          "type": "button"
+        },
+        {
+          "kind": "button",
+          "label": "Boosteroid",
+          "disabled": false,
+          "type": "button"
+        },
+        {
+          "kind": "button",
+          "label": "Ver detalhes de Campos API",
+          "disabled": false,
+          "type": "button"
+        },
+        {
+          "kind": "button",
+          "label": "Ver detalhes de Criado offline",
+          "disabled": false,
+          "type": "button"
+        },
+        {
+          "kind": "button",
+          "label": "Ver detalhes de Neon Expansion",
+          "disabled": false,
+          "type": "button"
+        },
+        {
+          "kind": "button",
+          "label": "Ver detalhes de Orbit Raiders",
+          "disabled": false,
+          "type": "button"
+        },
+        {
+          "kind": "button",
+          "label": "Ver detalhes de Versão remota",
+          "disabled": false,
+          "type": "button"
+        },
+        {
+          "kind": "button",
+          "label": "Sair do perfil",
+          "disabled": false,
+          "type": "button"
+        },
+        {
+          "kind": "button",
+          "label": "Catálogo",
+          "disabled": false,
+          "type": null
+        },
+        {
+          "kind": "button",
+          "label": "Carrinho",
+          "disabled": false,
+          "type": null
+        },
+        {
+          "kind": "button",
+          "label": "Biblioteca",
+          "disabled": false,
+          "type": null
+        }
+      ]
+    },
+    {
+      "name": "api-cadastro-local-explicito",
+      "route": "wf01",
+      "width": 390,
+      "height": 844,
+      "options": {
+        "actions": [
+          [
+            "click",
+            "Criar conta"
+          ],
+          [
+            "fill",
+            "Nome",
+            "Conta local"
+          ],
+          [
+            "fill",
+            "E-mail",
+            " local-api@pixelvault.example "
+          ],
+          [
+            "fill",
+            "Senha",
+            "demo456"
+          ],
+          [
+            "click",
+            "Cadastrar conta demonstrativa"
+          ],
+          [
+            "click",
+            "Entrar"
+          ],
+          [
+            "expect",
+            "WF-03"
+          ],
+          [
+            "expect",
+            "Conta local demonstrativa, não cadastrada no servidor."
+          ],
+          [
+            "absent",
+            "Novo item"
+          ],
+          [
+            "safe-storage"
+          ]
+        ]
+      },
+      "innerWidth": 390,
+      "innerHeight": 844,
+      "scrollWidth": 390,
+      "scrollHeight": 844,
+      "horizontalOverflowElements": [],
+      "focusedElement": null,
+      "title": "WF-03 · CATÁLOGO\nDescobrir jogos\nCatálogo local demonstrativo. Compatibilidade cloud pode mudar.\nConta local demonstrati",
+      "controls": [
+        {
+          "kind": "field",
+          "label": "E-mail",
+          "disabled": false,
+          "type": "email"
+        },
+        {
+          "kind": "field",
+          "label": "Senha",
+          "disabled": false,
+          "type": "password"
+        },
+        {
+          "kind": "button",
+          "label": "Entrar",
+          "disabled": false,
+          "type": "button"
+        },
+        {
+          "kind": "button",
+          "label": "Preencher jogador",
+          "disabled": false,
+          "type": "button"
+        },
+        {
+          "kind": "button",
+          "label": "Preencher administrador",
+          "disabled": false,
+          "type": "button"
+        },
+        {
+          "kind": "button",
+          "label": "Criar conta",
+          "disabled": false,
+          "type": "button"
+        },
+        {
+          "kind": "field",
+          "label": "Nome",
+          "disabled": false,
+          "type": null
+        },
+        {
+          "kind": "button",
+          "label": "Cadastrar conta demonstrativa",
+          "disabled": false,
+          "type": "button"
+        },
+        {
+          "kind": "button",
+          "label": "Voltar ao login",
+          "disabled": false,
+          "type": "button"
+        },
+        {
+          "kind": "button",
+          "label": "Atualizar catálogo da API",
+          "disabled": false,
+          "type": "button"
+        },
+        {
+          "kind": "button",
+          "label": "Exportar dados em JSON",
+          "disabled": false,
+          "type": "button"
+        },
+        {
+          "kind": "button",
+          "label": "Selecionado: Todos",
+          "disabled": false,
+          "type": "button"
+        },
+        {
+          "kind": "button",
+          "label": "GeForce NOW",
+          "disabled": false,
+          "type": "button"
+        },
+        {
+          "kind": "button",
+          "label": "Boosteroid",
+          "disabled": false,
+          "type": "button"
+        },
+        {
+          "kind": "button",
+          "label": "Ver detalhes de Campos API",
+          "disabled": false,
+          "type": "button"
+        },
+        {
+          "kind": "button",
+          "label": "Ver detalhes de Criado offline",
+          "disabled": false,
+          "type": "button"
+        },
+        {
+          "kind": "button",
+          "label": "Ver detalhes de Neon Expansion",
+          "disabled": false,
+          "type": "button"
+        },
+        {
+          "kind": "button",
+          "label": "Ver detalhes de Orbit Raiders",
+          "disabled": false,
+          "type": "button"
+        },
+        {
+          "kind": "button",
+          "label": "Ver detalhes de Versão remota",
+          "disabled": false,
+          "type": "button"
+        },
+        {
+          "kind": "button",
+          "label": "Sair do perfil",
+          "disabled": false,
+          "type": "button"
+        },
+        {
+          "kind": "button",
+          "label": "Catálogo",
+          "disabled": false,
+          "type": null
+        },
+        {
+          "kind": "button",
+          "label": "Carrinho",
+          "disabled": false,
+          "type": null
+        },
+        {
+          "kind": "button",
+          "label": "Biblioteca",
+          "disabled": false,
+          "type": null
+        }
+      ]
+    }
+  ],
+  "failures": []
+}

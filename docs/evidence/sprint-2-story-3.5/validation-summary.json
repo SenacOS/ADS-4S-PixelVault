@@ -1,0 +1,54 @@
+{
+  "checkedAt": "2026-11-21T03:25:43.890Z",
+  "tests": {
+    "passed": 82,
+    "failed": 0
+  },
+  "lint": "PASS",
+  "typecheck": "PASS",
+  "androidBuild": {
+    "status": "PASS",
+    "modules": 633
+  },
+  "suites": [
+    {
+      "suite": "qa-full-payment",
+      "pass": 10,
+      "fail": 0,
+      "overflow": 0,
+      "downloads": 1
+    },
+    {
+      "suite": "qa-full-local-checkout-regression",
+      "pass": 45,
+      "fail": 0,
+      "overflow": 0,
+      "downloads": 6
+    },
+    {
+      "suite": "qa-full-api-checkout-regression",
+      "pass": 6,
+      "fail": 0,
+      "overflow": 0,
+      "downloads": 0
+    }
+  ],
+  "externalApproval": "PASS",
+  "nativeDevice": "NOT_RUN",
+  "webhook": "NOT_CONFIGURED",
+  "externalPaymentId": "190842627252",
+  "externalReconciliationAndIdempotency": "PASS",
+  "externalRealWebAppRestore": "PASS",
+  "additionalRealWebJourneys": 1,
+  "externalEvidence": [
+    "mercadopago-approved.json",
+    "mercadopago-approved-app-restore.json",
+    "mercadopago-approved-library-web.png"
+  ],
+  "qaGate": "CONCERNS",
+  "qualityScore": 90,
+  "storyStatus": "Done",
+  "openIssues": [
+    "TEST-002: native Android/iOS validation"
+  ]
+}

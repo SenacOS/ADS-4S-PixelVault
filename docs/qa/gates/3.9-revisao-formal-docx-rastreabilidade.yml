@@ -1,0 +1,79 @@
+schema: 1
+story: '3.9'
+story_title: 'Revisar linguagem formal e rastreabilidade do relatório DOCX'
+gate: PASS
+status_reason: 'Redação formal e rastreabilidade conferidas no DOCX de 106 páginas. Sete figuras e três trechos vinculados a itens/arquivos reais; mídias, original Sprint 1 e PDF preservados. Nenhum PDF gerado.'
+reviewer: 'Quinn (Test Architect)'
+reviewed_revision: 'docx-sha256:b244dc2f880c7ee0afc4b14c20ba00fe7b7e74589b8d15e7b1c5ff1c29bf41f6'
+updated: '2026-11-21T15:45:37Z'
+quality_score: 100
+waiver:
+  active: false
+top_issues: []
+resolved_issues:
+  - id: 'DOC-001'
+    finding: 'Quebras manuais em legendas/anotações herdavam justificação, produzindo espaçamento excessivo.'
+    resolution: 'Sete legendas e três anotações alinhadas à esquerda em Arial 10 normal. Versão final capturada diretamente no Word e páginas afetadas reinspecionadas.'
+
+evidence:
+  scope: 'Conteúdo alterado somente no DOCX atual; demais alterações limitadas à story/evidências/gate. Sem mudança de aplicativo ou nova emissão de PDF.'
+  trace:
+    ac_covered: [1, 2, 3, 4, 5, 6, 7, 8]
+    ac_gaps: []
+  wording:
+    editable_simulation_matches: 0
+    verification: 'QA verificou o texto w:t final, incluindo sumário. Imagens e código histórico não foram adulterados para eliminar rótulos técnicos.'
+    facts: 'Ambiente de teste do Mercado Pago, chaves fictícias, HU-12 pendente, ausência de apontamento de horas reais e preparação de vídeo/pacote permanecem descritos. Redação não atribui nova reunião, aprovação pessoal ou entrega inexistente.'
+  traceability:
+    figures: 7
+    code_excerpts: 3
+    code_map_groups: 10
+    destination_items: ['2.1', '2.2', '2.6']
+    verification: 'Todos informam item de destino e caminho absoluto existente; figuras incluem posição sugerida, trechos incluem linhas. QA comparou SHA dos sete PNGs de origem com mídias embutidas e conferiu três transcrições/numeração contra os módulos, considerando quebras de layout.'
+    code_map: 'API, SQL/migrações, persistência, checkout/reconciliação, catálogo/capas, JSON e testes com arquivos específicos, sem atribuir o módulo inteiro a trecho curto.'
+  preservation:
+    media_byte_identical: 73
+    media_verification: 'QA comparou independentemente bytes de todas as mídias com before.docx após a última edição.'
+    sprint1_sha256: '5c959ea731a5bd8d9fd347c0b88bfbd071baa8c8e31b7ad877dd4d4c7caddccd'
+    unchanged_pdf_sha256: '99af87775b80830d54748f3b287417275d0ba4e9555ec5e4ee05669f605a1233'
+    protected_hash_verification: 'QA recomputou hashes dos dois arquivos protegidos; iguais aos anteriores.'
+    pdf_generated: false
+  visual_review:
+    status: PASS
+    word_pages: 106
+    rendering: 'Microsoft Word oculto, atualização de campos/sumário, repaginação e Page.EnhMetaFileBits convertido diretamente para PNG a 144 dpi. Sem PDF intermediário.'
+    initial_review: '64 páginas mantiveram identidade de pixels de conteúdo com a edição anterior; 42 alteradas conferidas individualmente entre QA/executor, incluindo suas versões finais.'
+    qa_initial_pages: [3, 4, 9, 10, 11, 13, 15, 16, 17, 18, 19, 22, 23, 24, 75, 76, 77, 79, 80, 82, 83]
+    final_review: 'Após correção de alinhamento, 93 páginas iguais à revisão intermediária; QA recomputou esses 93 pares e os 64 pares iniciais, excluindo apenas 100 px inferiores de rodapé. As 13 alteradas finais foram reinspecionadas: QA18/75/90; executor96–102/104–106. Mapa103 também inspecionado em sua versão final pelo executor.'
+    result: 'Sumário e paginação coerentes; caminhos, legendas, mapa e código legíveis, sem novo corte, sobreposição ou cabeçalho órfão.'
+  commands:
+    lint: 'PASS conforme logs da rodada.'
+    typecheck: 'PASS conforme logs da rodada.'
+    test: '93/93 PASS, zero falhas/skips/cancelamentos; nenhum cenário web novo alegado.'
+    coderabbit: 'NOT RUN; desabilitado na story, revisão documental manual.'
+  refs:
+    - 'docs/evidence/sprint-2-story-3.9/README.md'
+    - 'docs/evidence/sprint-2-story-3.9/validation-summary.json'
+    - 'documentos/PixelVault_Relatorio_Final_Sprint2.docx'
+  working_refs:
+    - 'tmp/docx-editorial-3.9/edit_docx.py'
+    - 'tmp/docx-editorial-3.9/changes.json'
+    - 'tmp/docx-editorial-3.9/word_png.ps1'
+    - 'tmp/docx-editorial-3.9/visual-diff.json'
+    - 'tmp/docx-editorial-3.9/final-visual-diff.json'
+    - 'tmp/docx-editorial-3.9/final-render/'
+
+nfr_validation:
+  reliability:
+    status: PASS
+    notes: 'Texto editável formalizado sem converter planejamento em entrega ou ambiente de teste em produção; fatos e pendências preservados.'
+  maintainability:
+    status: PASS
+    notes: 'Vínculos por item/arquivo e mapa complementar permitem localizar e incorporar evidências verificáveis.'
+  security:
+    status: PASS
+    notes: 'Caminhos referem-se a fontes/evidências reais, sem copiar ambientes privados ou alterar credenciais; PDF e original protegidos por hashes.'
+
+recommendations:
+  immediate: []
+  future: []

@@ -37,29 +37,43 @@ export function validateRequired(values, fields) {
 }
 
 export function authenticate(accounts, email, password) {
-  return accounts.find((account) => account.email === email.trim() && account.password === password) ?? null;
+  return accounts.find((account) => account.email.trim().toLowerCase() === email.trim().toLowerCase() && account.password === password) ?? null;
+}
+
+export function validateRegistration(accounts, form) {
+  const errors = validateRequired(form, ['name', 'email', 'password']);
+  if (!errors.email && accounts.some((account) => account.email.trim().toLowerCase() === form.email.trim().toLowerCase())) errors.email = 'E-mail já cadastrado.';
+  return errors;
+}
+
+export function authenticateLocalPlayer(accounts, email, password) {
+  return authenticate(accounts.filter((account) => account.role === 'player' && account.id?.startsWith('registered-')), email, password);
 }
 
 export function validateProductForm(form) {
   const errors = validateRequired(form, ['name', 'type', 'price', 'description', 'activationStore']);
   if (!['Jogo', 'DLC'].includes(form.type)) errors.type = 'Selecione Jogo ou DLC.';
-  if (parsePrice(form.price) === null) errors.price = 'Informe um preço numérico positivo.';
+  const price = parsePrice(form.price);
+  if (price === null) errors.price = 'Informe um preço numérico positivo.';
+  else {
+    const cents = Math.round(price * 100);
+    if (!Number.isSafeInteger(cents) || cents > 100000000) errors.price = 'Preço máximo permitido: R$ 1.000.000,00.';
+    else if (Math.abs(price * 100 - cents) > 0.000001) errors.price = 'Use no máximo duas casas decimais.';
+    else if (cents < 1) errors.price = 'Informe um preço de pelo menos R$ 0,01.';
+  }
+  for (const [field, max] of Object.entries({ name: 200, activationStore: 200, description: 2000 })) {
+    const text = String(form[field] ?? '');
+    if (text.length > max) errors[field] = `Use até ${max} caracteres.`;
+    const invalidControl = field === 'description' ? /[\u0000-\u0008\u000b\u000c\u000e-\u001f]/u : /[\u0000-\u001f]/u;
+    if (invalidControl.test(text)) errors[field] = 'Remova os caracteres de controle inválidos.';
+  }
   if (!form.compatibleWith?.length) errors.compatibleWith = 'Selecione ao menos um serviço cloud.';
   return errors;
 }
 
 export function createProduct(products, form, id) {
   const price = parsePrice(form.price);
-  return [
-    ...products,
-    {
-      ...form,
-      id,
-      price,
-      priceLabel: formatCurrency(price),
-      activationKey: `PV-${id.toUpperCase()}`,
-    },
-  ];
+  return [...products, { ...form, id, price, priceLabel: formatCurrency(price), activationKey: `PV-${id.toUpperCase()}-DEMO (chave fictícia)` }];
 }
 
 export function updateProduct(products, productId, form) {

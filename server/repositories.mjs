@@ -1,3 +1,5 @@
+import { createHash } from 'node:crypto';
+
 export function createRepositories(database) {
   const productRows = database.prepare(`
     SELECT
@@ -90,7 +92,9 @@ export function createRepositories(database) {
           product.cloudPlatforms.push({ id: row.platform_id, name: row.platform_name });
         }
       }
-      return [...products.values()];
+      return [...products.values()].map((product) => ({ ...product,
+        revision: createHash('sha256').update(JSON.stringify({ ...product, cloudPlatforms: [...product.cloudPlatforms].sort((a, b) => a.id.localeCompare(b.id)) })).digest('hex'),
+      }));
     },
 
     findUser(userId) {

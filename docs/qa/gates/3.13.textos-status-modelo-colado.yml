@@ -1,0 +1,69 @@
+schema: 1
+story: '3.13'
+story_title: 'Adaptar somente textos do modelo de Status colado para a Sprint 2'
+gate: PASS
+status_reason: 'Adaptação limitada a textos do bloco colado; prova independente confirma estrutura e formatação byte idênticas ao neutralizar w:t, sem alterações fora do escopo. Páginas finais conferidas.'
+reviewer: 'Quinn (Test Architect)'
+reviewed_revision: 'docx-sha256:fabc97d2af7193e2e279cc2ce07a92166ad85e4c7c10ac15a7ddf059b7bb7f41'
+updated: '2026-11-21'
+waiver:
+  active: false
+top_issues: []
+evidence:
+  trace:
+    ac_covered: [1, 2, 3, 4, 5, 6]
+    ac_gaps: []
+  independent_ooxml_verification:
+    changed_zip_parts: ['word/document.xml']
+    xml_identical_except_text_payloads: true
+    body_blocks_before: 721
+    body_blocks_after: 721
+    changed_blocks: 33
+    permitted_block_range: [671, 719]
+    changed_blocks_outside_scope: 0
+    formatting: 'pPr/rPr, estrutura de tabelas, atributos, fontes, propriedades RAG e quebras byte idênticos.'
+  content:
+    facts: '5 itens planejados, 4 concluídos, 80,0%; 93 testes executados/aprovados; HU-12 pendente; Mercado Pago de teste; 32 produtos/33 capas.'
+    attribution: 'Responsável substitui Aprovador; sem alegação de aprovação, reuniões ou resultados novos.'
+    rag: 'Valor textual do status geral verde para amarelo; representação, runs e propriedades preservados. AC 2/5 clarificados para distinguir valor de apresentação.'
+  visual_review:
+    runtime: 'Microsoft Word somente leitura, EMF para PNG direto.'
+    before_pages: [108, 109, 110, 111]
+    final_pages: [108, 109, 110, 111]
+    total_document_pages: 111
+    result: 'Sem novos cortes/sobreposições; mesma apresentação do bloco colado. Quebra preexistente do cabeçalho Versão preservada.'
+    scope_limit: 'Apenas as quatro páginas finais inspecionadas; sem revisão visual integral.'
+  preservation:
+    sprint1_sha256: '5c959ea731a5bd8d9fd347c0b88bfbd071baa8c8e31b7ad877dd4d4c7caddccd'
+    unchanged_pdf_sha256: '99af87775b80830d54748f3b287417275d0ba4e9555ec5e4ee05669f605a1233'
+    source_docx_sha256: '1a5070884cec8f6be562d8047e8033b6c93165e3a942c8fd431baebf0cd09e3b'
+    media_byte_identical: 73
+    other_zip_parts_byte_identical: true
+    hash_verification: 'Recalculados independentemente pela QA.'
+    pdf_generated: false
+    fields_or_toc_updated: false
+  commands:
+    application_tests: 'Não executados; edição estritamente documental.'
+    coderabbit: 'Não aplicado à revisão documental.'
+  refs:
+    - 'docs/evidence/sprint-2-story-3.13/README.md'
+    - 'documentos/PixelVault_Relatorio_Final_Sprint2.docx'
+  working_refs:
+    - 'tmp/docx-text-3.13/audit.json'
+    - 'tmp/docx-text-3.13/changes.json'
+    - 'tmp/docx-text-3.13/update_text_only.py'
+    - 'tmp/docx-text-3.13/before-render/'
+    - 'tmp/docx-text-3.13/final-render/'
+nfr_validation:
+  reliability:
+    status: PASS
+    notes: 'Conteúdo atualizado sem recriar estrutura, estilos ou tabelas e sem modificar blocos fora do escopo.'
+  maintainability:
+    status: PASS
+    notes: 'Mudanças por célula/parágrafo registradas e comparáveis ao modelo do usuário.'
+  security:
+    status: PASS
+    notes: 'Sem alteração de aplicativo ou credenciais; original e PDF protegidos por hash.'
+recommendations:
+  immediate: []
+  future: []

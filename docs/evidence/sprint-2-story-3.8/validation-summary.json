@@ -1,0 +1,95 @@
+{
+  "checkedAt": "2026-11-21T15:16:28.009209+00:00",
+  "source": "C:/PI4/ADS-4S-PixelVault",
+  "sourceBaselineFilesUnchanged": 42,
+  "protectedDestinationFilesUnchanged": 74,
+  "mainDatabaseUnchanged": true,
+  "tests": {
+    "passed": 93,
+    "failed": 0
+  },
+  "lint": "PASS",
+  "typecheck": "PASS",
+  "webBuildLocal": "PASS",
+  "webBuildApi": "PASS",
+  "webJourneys": 110,
+  "suites": [
+    {
+      "suite": "qa-visual-3.8",
+      "passed": 36,
+      "failed": 0,
+      "pageOverflow": 0,
+      "internalMarkers": 0,
+      "elementOverflowReports": 0,
+      "downloads": 0
+    },
+    {
+      "suite": "qa-full-local-visual-3.8",
+      "passed": 45,
+      "failed": 0,
+      "pageOverflow": 0,
+      "internalMarkers": 0,
+      "elementOverflowReports": 0,
+      "downloads": 6
+    },
+    {
+      "suite": "qa-full-api-visual-3.8",
+      "passed": 6,
+      "failed": 0,
+      "pageOverflow": 0,
+      "internalMarkers": 0,
+      "elementOverflowReports": 0,
+      "downloads": 0
+    },
+    {
+      "suite": "qa-full-payment-visual-3.8",
+      "passed": 10,
+      "failed": 0,
+      "pageOverflow": 0,
+      "internalMarkers": 0,
+      "elementOverflowReports": 0,
+      "downloads": 1
+    },
+    {
+      "suite": "qa-catalog-local-visual-3.8",
+      "passed": 7,
+      "failed": 0,
+      "pageOverflow": 0,
+      "internalMarkers": 0,
+      "elementOverflowReports": 0,
+      "downloads": 0
+    },
+    {
+      "suite": "qa-catalog-api-visual-3.8",
+      "passed": 6,
+      "failed": 0,
+      "pageOverflow": 0,
+      "internalMarkers": 0,
+      "elementOverflowReports": 0,
+      "downloads": 0
+    }
+  ],
+  "keyboardAndPressedEvidence": [
+    {
+      "primaryPressed": {
+        "background": "rgb(174, 132, 38)",
+        "border": "rgb(90, 67, 16)"
+      },
+      "keyboardFocus": {
+        "label": "Entrar",
+        "border": "rgb(90, 67, 16)",
+        "width": "3px"
+      },
+      "activation": "Enter; rota de destino verificada pela próxima asserção"
+    }
+  ],
+  "baseProducts": 32,
+  "localCovers": 33,
+  "previousReportPreserved": true,
+  "livePaymentExecuted": false,
+  "pendingUnchanged": [
+    "HU-12",
+    "Vídeo",
+    "Pacote e submissão"
+  ]
+}

@@ -58,7 +58,8 @@ test('consulta catálogo, compatibilidades, pedido e pagamento da demonstração
       GROUP BY p.id, p.nome, p.tipo, p.preco_centavos
       ORDER BY p.id DESC
     `);
-    assert.deepEqual(catalog, [
+    assert.equal(catalog.length, 32);
+    assert.deepEqual(catalog.filter(p=>['orbit-raiders','neon-expansion'].includes(p.id)), [
       { id: 'orbit-raiders', nome: 'Orbit Raiders', tipo: 'JOGO', preco_centavos: 7990, plataformas: 'GeForce NOW, Boosteroid' },
       { id: 'neon-expansion', nome: 'Neon Expansion', tipo: 'DLC', preco_centavos: 2490, plataformas: 'GeForce NOW' },
     ]);

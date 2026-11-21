@@ -2,25 +2,15 @@ import { StyleSheet, View } from 'react-native';
 
 import { colors, radius, spacing } from '../theme/tokens';
 import AppText from './AppText';
+import ProductCover from './ProductCover';
 
 /**
- * @param {{
- *   product: import('../data/pixelVaultData').PRODUCTS[number],
- *   context?: 'catalog'|'cart'|'library'|'admin',
- *   children?: import('react').ReactNode,
- * }} props
+ * @param {{ product: import('../data/pixelVaultData').PRODUCTS[number], context?: 'catalog'|'cart'|'library'|'admin', children?: import('react').ReactNode }} props
  */
 export default function ProductCard({ product, context = 'catalog', children }) {
   return (
     <View accessibilityLabel={`${product.name}, ${product.type}, ${product.priceLabel}`} style={styles.card}>
-      <View
-        accessibilityLabel={`Capa de ${product.name}`}
-        accessibilityRole="image"
-        style={styles.cover}
-      >
-        <AppText variant="eyebrow" style={styles.coverText}>{product.type}</AppText>
-        <AppText variant="heading" style={styles.coverInitial}>{product.name.slice(0, 2).toUpperCase()}</AppText>
-      </View>
+      <ProductCover product={product} />
       <View style={styles.content}>
         <View style={styles.titleRow}>
           <View style={styles.flex}>
@@ -56,14 +46,6 @@ const styles = StyleSheet.create({
     shadowOffset: { width: 0, height: 2 },
     elevation: 2,
   },
-  cover: {
-    minHeight: 112,
-    padding: spacing.lg,
-    backgroundColor: colors.surfaceRaised,
-    justifyContent: 'space-between',
-  },
-  coverText: { color: colors.textMuted },
-  coverInitial: { color: colors.accentDark },
   content: { padding: spacing.lg, gap: spacing.sm },
   titleRow: { flexDirection: 'row', flexWrap: 'wrap', gap: spacing.md, alignItems: 'flex-start' },
   flex: { flexGrow: 1, flexShrink: 1, minWidth: 180 },

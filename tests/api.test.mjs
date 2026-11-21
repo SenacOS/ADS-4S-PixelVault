@@ -53,24 +53,30 @@ test('GET /api/products preserva UX-10, agrupa e ordena produtos e plataformas',
   await withApi(async ({ baseUrl }) => {
     const { response, body } = await jsonRequest(baseUrl, '/api/products');
     assert.equal(response.status, 200);
-    assert.deepEqual(body.products.map(({ id }) => id), ['neon-expansion', 'orbit-raiders']);
-    assert.equal(body.products[0].priceCents, 2490);
-    assert.equal(body.products[0].type, 'DLC');
-    assert.deepEqual(body.products[0].activationStore, {
+    assert.equal(body.products.length, 32);
+    assert.deepEqual(body.products.map(p=>p.name), [...body.products.map(p=>p.name)].sort());
+    const neon = body.products.find(p=>p.id==='neon-expansion');
+    const orbit = body.products.find(p=>p.id==='orbit-raiders');
+    assert.equal(neon.priceCents, 2490);
+    assert.equal(neon.type, 'DLC');
+    assert.deepEqual(neon.activationStore, {
       id: 'loja-demo',
       name: 'Loja de demonstração (fictícia)',
     });
-    assert.deepEqual(body.products[1].cloudPlatforms.map(({ id }) => id), [
+    assert.deepEqual(orbit.cloudPlatforms.map(({ id }) => id), [
       'boosteroid',
       'geforce-now',
     ]);
-    assert.equal(new Set(body.products.map(({ id }) => id)).size, 2);
+    assert.equal(new Set(body.products.map(({ id }) => id)).size, 32);
   });
 });
 
 test('biblioteca diferencia usuário existente com itens, vazia e inexistente', async () => {
   await withApi(async ({ baseUrl }) => {
-    const player = await jsonRequest(baseUrl, '/api/users/player-demo/library');
+    const login = async (email) => (await jsonRequest(baseUrl, '/api/sessions', { method: 'POST', headers: { 'Content-Type': 'application/json' }, body: JSON.stringify({ email, password: 'demo123' }) })).body.token;
+    const token = await login('jogador@pixelvault.example');
+    const ownHeaders = { headers: { Authorization: `Bearer ${token}` } };
+    const player = await jsonRequest(baseUrl, '/api/users/player-demo/library', ownHeaders);
     assert.equal(player.response.status, 200);
     assert.deepEqual(player.body.items.map(({ product }) => product.name), [
       'Neon Expansion',
@@ -78,15 +84,15 @@ test('biblioteca diferencia usuário existente com itens, vazia e inexistente', 
     ]);
     assert.ok(player.body.items.every(({ activationKey }) => activationKey.fictional));
 
-    const admin = await jsonRequest(baseUrl, '/api/users/admin-demo/library');
+    const admin = await jsonRequest(baseUrl, '/api/users/admin-demo/library', { headers: { Authorization: `Bearer ${await login('admin@pixelvault.example')}` } });
     assert.equal(admin.response.status, 200);
     assert.deepEqual(admin.body, { userId: 'admin-demo', items: [] });
 
-    const missing = await jsonRequest(baseUrl, '/api/users/unknown/library');
-    assert.equal(missing.response.status, 404);
-    assert.equal(missing.body.error.code, 'USER_NOT_FOUND');
+    const missing = await jsonRequest(baseUrl, '/api/users/unknown/library', ownHeaders);
+    assert.equal(missing.response.status, 403);
+    assert.equal(missing.body.error.code, 'LIBRARY_OWNER_REQUIRED');
 
-    const invalid = await jsonRequest(baseUrl, '/api/users/%ZZ/library');
+    const invalid = await jsonRequest(baseUrl, '/api/users/%ZZ/library', ownHeaders);
     assert.equal(invalid.response.status, 400);
     assert.equal(invalid.body.error.code, 'INVALID_USER_ID');
   });
@@ -262,7 +268,7 @@ test('limite de corpo, rota inexistente e método incorreto usam erros estáveis
   });
 });
 
-test('modo mercadopago permanece observável e falha 503 sem fallback', async () => {
+test('modo mercadopago sem configuração não usa pagamento simulado', async () => {
   await withApi(async ({ baseUrl }) => {
     const health = await jsonRequest(baseUrl, '/health');
     assert.deepEqual(health.body, {
@@ -275,8 +281,8 @@ test('modo mercadopago permanece observável e falha 503 sem fallback', async ()
       method: 'POST', headers: { 'Content-Type': 'application/json' },
       body: JSON.stringify({ pedidoId: 'pedido-demo-001' }),
     });
-    assert.equal(payment.response.status, 503);
-    assert.equal(payment.body.error.code, 'PAYMENT_MODE_NOT_IMPLEMENTED');
+    assert.equal(payment.response.status, 409);
+    assert.equal(payment.body.error.code, 'CHECKOUT_REQUIRED');
     assert.doesNotMatch(JSON.stringify(payment.body), /FICTICIA-SIMULADA/);
   }, { paymentMode: 'mercadopago' });
 });

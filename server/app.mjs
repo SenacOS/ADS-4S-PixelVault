@@ -6,6 +6,9 @@ import { AppError, errorResponse } from './errors.mjs';
 import { createPaymentGateway } from './payment-gateway.mjs';
 import { createPaymentService } from './payment-service.mjs';
 import { createRepositories } from './repositories.mjs';
+import { createCatalogService } from './catalog-service.mjs';
+import { createMercadoPagoGateway } from './mercadopago-gateway.mjs';
+import { createCheckoutService } from './checkout-service.mjs';
 
 const JSON_CONTENT_TYPE = 'application/json; charset=utf-8';
 const MAX_BODY_BYTES = 16 * 1024;
@@ -37,6 +40,7 @@ function normalizedRoute(pathname) {
   if (/^\/api\/users\/[^/]*\/library$/u.test(pathname)) {
     return '/api/users/:userId/library';
   }
+  if (/^\/api\/checkouts\/[^/]+(\/reconcile)?$/u.test(pathname)) return pathname.endsWith('/reconcile') ? '/api/checkouts/:id/reconcile' : '/api/checkouts/:id';
   return pathname;
 }
 
@@ -125,9 +129,14 @@ export function createApplication({
   paymentMode = 'simulated',
   logger = console,
   gateway = createPaymentGateway(paymentMode),
+  webOrigin = process.env.API_WEB_ORIGIN,
+  mercadoPago,
+  checkoutGateway = paymentMode === 'mercadopago' && mercadoPago ? createMercadoPagoGateway(mercadoPago) : null,
 } = {}) {
   const database = openDatabase(databasePath);
   const repositories = createRepositories(database);
+  const catalogService = createCatalogService(database, repositories);
+  const checkoutService = createCheckoutService({ database, repositories, gateway: checkoutGateway });
   const paymentService = createPaymentService({ database, repositories, gateway, paymentMode });
 
   const server = createServer(async (request, response) => {
@@ -148,6 +157,54 @@ export function createApplication({
     });
 
     try {
+      const origin = request.headers.origin;
+      const allowedOrigin = origin && (origin === webOrigin || /^http:\/\/(localhost|127\.0\.0\.1)(:\d+)?$/u.test(origin));
+      if (origin && request.method !== 'GET' && !allowedOrigin) throw new AppError(403, 'ORIGIN_DENIED', 'Origem não autorizada.');
+      if (allowedOrigin) {
+        response.setHeader('Access-Control-Allow-Origin', origin);
+        response.setHeader('Vary', 'Origin');
+      }
+      if (request.method === 'OPTIONS') {
+        response.writeHead(204, { 'Access-Control-Allow-Methods': 'GET, POST, PUT, DELETE, OPTIONS', 'Access-Control-Allow-Headers': 'Content-Type, Authorization' });
+        response.end(); return;
+      }
+      const checkoutMatch = /^\/api\/checkouts\/([\w-]{16,100})(\/reconcile)?$/u.exec(pathname);
+      if (pathname === '/api/checkouts' || checkoutMatch || pathname === '/api/me/library') {
+        const user = catalogService.authenticate(request.headers.authorization);
+        if (pathname === '/api/me/library') {
+          if (request.method !== 'GET') { methodNotAllowed(response, 'GET'); return; }
+          sendJson(response, 200, checkoutService.library(user)); return;
+        }
+        if (paymentMode !== 'mercadopago') throw new AppError(503, 'CHECKOUT_NOT_CONFIGURED', 'Inicie o backend no modo Mercado Pago de teste.');
+        if (pathname === '/api/checkouts') {
+          if (request.method !== 'POST') { methodNotAllowed(response, 'POST'); return; }
+          sendJson(response, 200, await checkoutService.create(await readJsonBody(request), user)); return;
+        }
+        if (checkoutMatch[2]) {
+          if (request.method !== 'POST') { methodNotAllowed(response, 'POST'); return; }
+          const body = await readJsonBody(request);
+          if (!body || Array.isArray(body) || Object.keys(body).length) throw new AppError(400, 'INVALID_RECONCILIATION', 'A consulta não aceita dados de pagamento do cliente.');
+          sendJson(response, 200, await checkoutService.reconcile(checkoutMatch[1], user)); return;
+        }
+        if (request.method !== 'GET') { methodNotAllowed(response, 'GET'); return; }
+        sendJson(response, 200, checkoutService.get(checkoutMatch[1], user)); return;
+      }
+      if (pathname === '/api/sessions' && request.method === 'POST') {
+        sendJson(response, 201, catalogService.login(await readJsonBody(request), request.socket.remoteAddress)); return;
+      }
+      if (pathname === '/api/sessions/current' && request.method === 'DELETE') {
+        catalogService.logout(request.headers.authorization);
+        sendJson(response, 200, { signedOut: true }); return;
+      }
+      const productMatch = /^\/api\/products\/([a-zA-Z0-9._-]+)$/u.exec(pathname);
+      if (productMatch && request.method === 'GET') {
+        sendJson(response, 200, { product: catalogService.getProduct(productMatch[1]) }); return;
+      }
+      if ((pathname === '/api/products' && request.method === 'POST') || (productMatch && ['PUT', 'DELETE'].includes(request.method))) {
+        sendJson(response, request.method === 'POST' ? 201 : 200,
+          catalogService.mutate(request.method, productMatch?.[1], await readJsonBody(request), request.headers.authorization)); return;
+      }
+      if (productMatch) { methodNotAllowed(response, 'GET, PUT, DELETE'); return; }
       if (pathname === '/health') {
         if (request.method !== 'GET') {
           methodNotAllowed(response, 'GET');
@@ -156,7 +213,7 @@ export function createApplication({
         sendJson(response, 200, {
           status: 'ok',
           paymentMode,
-          paymentAvailable: paymentMode === 'simulated',
+          paymentAvailable: paymentMode === 'simulated' || Boolean(checkoutGateway),
         });
         return;
       }
@@ -166,7 +223,7 @@ export function createApplication({
           methodNotAllowed(response, 'GET');
           return;
         }
-        sendJson(response, 200, { products: repositories.listProducts() });
+        sendJson(response, 200, { products: repositories.listProducts() }, { 'Access-Control-Allow-Origin': '*' });
         return;
       }
 
@@ -176,6 +233,7 @@ export function createApplication({
           methodNotAllowed(response, 'GET');
           return;
         }
+        const actor = catalogService.authenticate(request.headers.authorization);
         let userId;
         try {
           userId = decodeURIComponent(libraryMatch[1]);
@@ -183,6 +241,7 @@ export function createApplication({
           throw new AppError(400, 'INVALID_USER_ID', 'Identificador de usuário inválido.');
         }
         validateIdentifier(userId, 'INVALID_USER_ID');
+        if (actor.id !== userId) throw new AppError(403, 'LIBRARY_OWNER_REQUIRED', 'Consulte somente a biblioteca do seu perfil.');
         if (!repositories.findUser(userId)) {
           throw new AppError(404, 'USER_NOT_FOUND', 'Usuário não encontrado.');
         }
@@ -195,8 +254,10 @@ export function createApplication({
           methodNotAllowed(response, 'POST');
           return;
         }
+        if (paymentMode === 'mercadopago') throw new AppError(409, 'CHECKOUT_REQUIRED', 'Use o checkout autenticado de teste em /api/checkouts.');
         const body = await readJsonBody(request);
         const orderId = parsePaymentBody(body);
+        if (database.prepare('SELECT id FROM checkout_operation WHERE pedido_id = ?').get(orderId)) throw new AppError(409, 'CHECKOUT_REQUIRED', 'Pedidos do Mercado Pago só podem ser confirmados por consulta autenticada.');
         const result = paymentService.create(orderId);
         sendJson(response, result.created ? 201 : 200, result.payment);
         return;

@@ -1,0 +1,159 @@
+{
+  "checkedAt": "2026-11-21T07:57:21.691Z",
+  "baseProducts": 32,
+  "newGames": 30,
+  "totalGames": 31,
+  "dlcCount": 1,
+  "coverCount": 33,
+  "tests": {
+    "passed": 89,
+    "failed": 0
+  },
+  "lint": "PASS",
+  "typecheck": "PASS",
+  "androidBuild": {
+    "status": "PASS",
+    "modules": 669,
+    "allCoversPackaged": true
+  },
+  "suites": [
+    {
+      "suite": "qa-catalog-local",
+      "passed": 7,
+      "failed": 0,
+      "overflow": 0,
+      "downloads": 0,
+      "catalogScans": [
+        {
+          "filter": "Todos",
+          "count": 32,
+          "loaded": 32,
+          "uniqueImageUrls": 32
+        },
+        {
+          "filter": "Todos",
+          "count": 32,
+          "loaded": 32,
+          "uniqueImageUrls": 32
+        },
+        {
+          "filter": "GeForce NOW",
+          "count": 22,
+          "loaded": 22,
+          "uniqueImageUrls": 22
+        },
+        {
+          "filter": "Boosteroid",
+          "count": 21,
+          "loaded": 21,
+          "uniqueImageUrls": 21
+        },
+        {
+          "filter": "Todos",
+          "count": 32,
+          "loaded": 32,
+          "uniqueImageUrls": 32
+        },
+        {
+          "filter": "Todos",
+          "count": 32,
+          "loaded": 32,
+          "uniqueImageUrls": 32
+        },
+        {
+          "filter": "Todos",
+          "count": 32,
+          "loaded": 32,
+          "uniqueImageUrls": 32
+        },
+        {
+          "filter": "Todos",
+          "count": 32,
+          "loaded": 32,
+          "uniqueImageUrls": 32
+        }
+      ]
+    },
+    {
+      "suite": "qa-catalog-api",
+      "passed": 6,
+      "failed": 0,
+      "overflow": 0,
+      "downloads": 0,
+      "catalogScans": [
+        {
+          "filter": "Todos",
+          "count": 32,
+          "loaded": 32,
+          "uniqueImageUrls": 32
+        },
+        {
+          "filter": "Todos",
+          "count": 32,
+          "loaded": 32,
+          "uniqueImageUrls": 32
+        },
+        {
+          "filter": "GeForce NOW",
+          "count": 22,
+          "loaded": 22,
+          "uniqueImageUrls": 22
+        },
+        {
+          "filter": "Boosteroid",
+          "count": 21,
+          "loaded": 21,
+          "uniqueImageUrls": 21
+        },
+        {
+          "filter": "Todos",
+          "count": 32,
+          "loaded": 32,
+          "uniqueImageUrls": 32
+        },
+        {
+          "filter": "Todos",
+          "count": 32,
+          "loaded": 32,
+          "uniqueImageUrls": 32
+        },
+        {
+          "filter": "Todos",
+          "count": 32,
+          "loaded": 32,
+          "uniqueImageUrls": 32
+        }
+      ]
+    },
+    {
+      "suite": "qa-full-local-catalog-regression",
+      "passed": 45,
+      "failed": 0,
+      "overflow": 0,
+      "downloads": 6,
+      "catalogScans": []
+    },
+    {
+      "suite": "qa-full-api-catalog-regression",
+      "passed": 6,
+      "failed": 0,
+      "overflow": 0,
+      "downloads": 0,
+      "catalogScans": []
+    },
+    {
+      "suite": "qa-full-payment-catalog-regression",
+      "passed": 10,
+      "failed": 0,
+      "overflow": 0,
+      "downloads": 1,
+      "catalogScans": []
+    }
+  ],
+  "nativeRuntime": "NOT_RUN",
+  "localApiDomainEquivalent": true,
+  "webJourneys": 74,
+  "qaGate": "CONCERNS",
+  "qualityScore": 90,
+  "storyStatus": "Done"
+}

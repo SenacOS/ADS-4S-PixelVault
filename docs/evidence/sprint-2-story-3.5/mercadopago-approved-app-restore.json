@@ -1,0 +1,18 @@
+{
+  "checkedAt": "2026-11-21T03:23:52.917Z",
+  "environment": "test",
+  "runtime": "Expo Web + Chrome CDP + real PixelVault API/SQLite",
+  "providerMock": false,
+  "acquisitionSource": "Real test payment 190842627252, independently validated by backend",
+  "loginAndLibrary": "PASS",
+  "restartApiReloadAppAndReauthenticate": "PASS",
+  "explicitLibraryRefresh": "PASS",
+  "confirmedProducts": [
+    "neon-expansion",
+    "orbit-raiders"
+  ],
+  "successfulLibraryApiReads": 3,
+  "cacheContainsSecrets": false,
+  "horizontalOverflow": false,
+  "nativeDeviceTested": false
+}

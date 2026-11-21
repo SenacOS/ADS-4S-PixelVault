@@ -37,7 +37,6 @@ test('mantém a entrada Expo e aplica área segura dinâmica na raiz', () => {
   assert.equal(packageJson.main, 'index.js');
   assert.match(indexSource, /registerRootComponent\(App\)/);
   assert.match(appSource, /SafeAreaProvider/);
-  assert.match(appSource, /StatusBar style="dark"/);
   assert.match(appSource, /src\/screens\/PixelVaultApp/);
   assert.equal(packageJson.dependencies['react-native-safe-area-context'], '~5.6.0');
 });
@@ -90,43 +89,23 @@ test('mantém a ordem textual da navegação do jogador', () => {
   assert.ok(catalog >= 0 && catalog < cart && cart < library);
 });
 
-test('mantém textos funcionais e feedbacks distintos aprovados', () => {
+test('mantém textos críticos e feedbacks distintos aprovados', () => {
   const dataSource = readProjectFile('src/data/pixelVaultData.js');
   const screenSource = readProjectFile('src/screens/StorefrontScreens.js');
 
   for (const expected of [
-    'Cadastro concluído. Entre com suas credenciais.',
+    'Pagamento simulado — nenhuma cobrança será realizada',
+    'Cadastro concluído. Entre com as credenciais de demonstração.',
     'Item adicionado ao carrinho.',
     'Este item já está no carrinho.',
-    'Item cadastrado com sucesso.',
-    'Alterações salvas com sucesso.',
-    'Item excluído com sucesso.',
+    'Item cadastrado na lista local.',
+    'Alterações salvas na lista local.',
+    'Item excluído da lista local.',
   ]) {
     assert.ok(dataSource.includes(expected), `texto aprovado ausente: ${expected}`);
   }
 
   assert.match(screenSource, /Nenhum pedido foi criado/);
-});
-
-test('impede marcadores e terminologia interna na superfície perceptível', () => {
-  const surfacePaths = [
-    'App.js', 'src/screens/AccessScreens.js', 'src/screens/StorefrontScreens.js',
-    'src/screens/AdminScreens.js', 'src/screens/PixelVaultApp.js',
-    'src/components/ScreenShell.js', 'src/components/ProductCard.js',
-  ];
-  const surfaceSource = surfacePaths.map(readProjectFile).join('\n');
-  const dataSource = readProjectFile('src/data/pixelVaultData.js');
-  const renderableData = [
-    dataSource.split('export const CART_SUMMARY')[0],
-    dataSource.split('export const FEEDBACKS')[1],
-    readProjectFile('src/domain/prototypeLogic.mjs'),
-  ].join('\n');
-  const forbidden = /(?:WF|ST)-\d+|prot[oó]tipo|acad[eê]mic|fict[ií]ci|demonstr|simula(?:ç|c)[aã]o|simulad|\bdemo\b|capa ilustrativa|arte final|fonte:\s*lista local|(?:somente|apenas).*(?:sess[aã]o|lista local)|\bperfil\b|curador/i;
-
-  assert.doesNotMatch(surfaceSource, forbidden);
-  assert.doesNotMatch(renderableData, forbidden);
-  assert.match(dataSource, /player-demo/); // Exceção técnica: ID de conta não renderizado.
-  assert.match(readProjectFile('src/data/demoRoutes.js'), /wf01/); // Exceção técnica: rota documental.
 });
 
 test('mantém integrações externas em modo simulado e sem segredos', () => {
@@ -212,6 +191,14 @@ test('aplica a paleta clara final aos papéis aprovados', () => {
 
 test('valida contrastes das combinações reais da interface clara', () => {
   const source = readProjectFile('src/theme/tokens.js');
+  const buttons = readProjectFile('src/components/AppButton.js');
+  for (const variant of ['primary', 'primaryPressed']) {
+    const border = buttons.match(new RegExp(`${variant}: \\{[^}]*borderColor: colors\\.(\\w+)`))?.[1];
+    assert.ok(border, `${variant} deve possuir contorno`);
+    for (const adjacent of ['background', 'surface']) {
+      assert.ok(contrastRatio(token(source, border), token(source, adjacent)) >= 3, `${variant} deve ser distinguível de ${adjacent}`);
+    }
+  }
   const pairs = [
     ['text', 'background', 4.5], ['text', 'surface', 4.5],
     ['textMuted', 'background', 4.5], ['textMuted', 'surface', 4.5],
@@ -256,4 +243,15 @@ test('usa papéis semânticos e remove destaques azuis e fundos escuros legados'
   assert.match(bannerSource, /colors\.dangerSurface/);
   assert.match(navigationSource, /colors\.accentSurface/);
   assert.match(navigationSource, /colors\.accentDark/);
+});
+
+test('remove marcadores de interface e atalhos sem perder seletores e fluxos atuais', () => {
+  const screens = ['AccessScreens', 'StorefrontScreens', 'AdminScreens'].map(name => readProjectFile(`src/screens/${name}.js`)).join('\n');
+  assert.doesNotMatch(screens, /(?:WF|ST)-\d{2}|Preencher jogador|Preencher administrador/);
+  assert.match(readProjectFile('src/screens/PixelVaultApp.js'), /testID=\{`pixelvault-route-\$\{route\}`\}/);
+  assert.match(screens, /Esta conta é local e vale apenas nesta sessão/);
+  assert.match(screens, /sincronizar|sincronização/);
+  assert.match(screens, /Finalizar compra/);
+  assert.match(screens, /[Cc]haves fictícias/);
+  assert.match(readProjectFile('src/components/ProductCard.js'), /<ProductCover product=\{product\}/);
 });

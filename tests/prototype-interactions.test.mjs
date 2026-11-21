@@ -2,9 +2,9 @@ import assert from 'node:assert/strict';
 import test from 'node:test';
 
 import {
-  addCartItem, addOrderToLibrary, authenticate, calculateTotal, createProduct,
+  addCartItem, addOrderToLibrary, authenticate, authenticateLocalPlayer, calculateTotal, createProduct,
   deleteProduct, filterProducts, parsePrice, removeCartItem, updateProduct,
-  validateProductForm, validateRequired,
+  validateProductForm, validateRegistration, validateRequired,
 } from '../src/domain/prototypeLogic.mjs';
 
 const orbit = { id: 'orbit', name: 'Orbit Raiders', type: 'Jogo', price: 79.9, compatibleWith: ['GeForce NOW', 'Boosteroid'] };
@@ -55,6 +55,29 @@ test('valida formulário administrativo completo e preço positivo', () => {
   assert.deepEqual(validateProductForm(valid), {});
   const errors = validateProductForm({ ...valid, type: 'Outro', price: '-1', compatibleWith: [] });
   assert.deepEqual(Object.keys(errors).sort(), ['compatibleWith', 'price', 'type']);
+});
+
+test('rejeita subcentavos e valores fora do contrato do servidor antes de salvar', () => {
+  const form = { name: 'Item', type: 'Jogo', price: '12,50', description: 'Teste', compatibleWith: ['Boosteroid'], activationStore: 'Loja' };
+  for (const price of ['1,005', '1000000,01']) assert.equal(typeof validateProductForm({ ...form, price }).price, 'string');
+  assert.deepEqual(validateProductForm({ ...form, price: '1000000,00' }), {});
+  for (const [field, count] of [['name', 201], ['activationStore', 201], ['description', 2001]]) assert.equal(typeof validateProductForm({ ...form, [field]: 'a'.repeat(count) })[field], 'string');
+});
+
+test('cadastro rejeita e-mail repetido normalizado sem alterar a exigência de senha exata', () => {
+  const accounts = [{ email: 'jogador@pixelvault.example', password: 'demo123' }];
+  assert.equal(validateRegistration(accounts, { name: 'Outro', email: ' JOGADOR@PIXELVAULT.EXAMPLE ', password: 'outra456' }).email, 'E-mail já cadastrado.');
+  assert.deepEqual(validateRegistration(accounts, { name: 'Novo', email: 'novo@pixelvault.example', password: 'demo456' }), {});
+  assert.equal(authenticate(accounts, ' JOGADOR@PIXELVAULT.EXAMPLE ', 'demo123')?.email, accounts[0].email);
+  assert.equal(authenticate(accounts, accounts[0].email, 'Demo123'), null);
+});
+
+test('perfil local reconhece apenas jogador cadastrado nesta sessão, nunca admin ou seed', () => {
+  const local = { id: 'registered-1', role: 'player', email: 'local@pixelvault.example', password: 'demo456' };
+  assert.equal(authenticateLocalPlayer([local], ' LOCAL@PIXELVAULT.EXAMPLE ', 'demo456'), local);
+  assert.equal(authenticateLocalPlayer([local], local.email, 'Demo456'), null);
+  assert.equal(authenticateLocalPlayer([{ ...local, role: 'admin' }], local.email, local.password), null);
+  assert.equal(authenticateLocalPlayer([{ ...local, id: 'player-demo' }], local.email, local.password), null);
 });
 
 test('CRUD local cria, edita e exclui sem mutar lista anterior', () => {

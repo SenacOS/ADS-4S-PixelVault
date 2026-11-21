@@ -1,3 +1,5 @@
+import catalogExpansion from './catalogExpansion.json';
+
 export const PRODUCTS = Object.freeze([
   Object.freeze({
     id: 'orbit-raiders',
@@ -6,9 +8,9 @@ export const PRODUCTS = Object.freeze([
     price: 79.9,
     priceLabel: 'R$ 79,90',
     compatibleWith: Object.freeze(['GeForce NOW', 'Boosteroid']),
-    activationStore: 'PixelVault',
-    activationKey: 'PV-ORBIT-7K2M',
-    description: 'Aventura cooperativa entre estações orbitais e mundos distantes.',
+    activationStore: 'Loja de demonstração (fictícia)',
+    activationKey: 'PV-ORBIT-DEMO (chave fictícia)',
+    description: 'Descrição demonstrativa. O conteúdo final ainda não foi aprovado.',
   }),
   Object.freeze({
     id: 'neon-expansion',
@@ -17,10 +19,15 @@ export const PRODUCTS = Object.freeze([
     price: 24.9,
     priceLabel: 'R$ 24,90',
     compatibleWith: Object.freeze(['GeForce NOW']),
-    activationStore: 'PixelVault',
-    activationKey: 'PV-NEON-4P8R',
-    description: 'Expansão com novas missões, cenários e desafios em Neon City.',
+    activationStore: 'Loja de demonstração (fictícia)',
+    activationKey: 'PV-NEON-DEMO (chave fictícia)',
+    description: 'Expansão demonstrativa para a jornada visual do PixelVault.',
   }),
+  ...catalogExpansion.map(({ priceCents, ...entry }) => Object.freeze({ ...entry,
+    type: 'Jogo', price: priceCents / 100, priceLabel: new Intl.NumberFormat('pt-BR', { style: 'currency', currency: 'BRL' }).format(priceCents / 100),
+    compatibleWith: Object.freeze(entry.compatibleWith), activationStore: 'Loja de demonstração (fictícia)',
+    activationKey: 'Chave fictícia de demonstração',
+  })),
 ]);
 
 export const CART_SUMMARY = Object.freeze({
@@ -31,19 +38,21 @@ export const CART_SUMMARY = Object.freeze({
 
 // Credenciais exclusivamente acadêmicas: não são segredos nem autenticação real.
 export const DEMO_ACCOUNTS = Object.freeze([
+  Object.freeze({ id: 'player-demo', name: 'Jogador de demonstração', email: 'jogador@pixelvault.example', password: 'demo123', role: 'player' }),
+  Object.freeze({ id: 'admin-demo', name: 'Curador de demonstração', email: 'admin@pixelvault.example', password: 'demo123', role: 'admin' }),
+]);
+
+export const DEMO_ORDER = Object.freeze({
+  id: 'PEDIDO-DEMO-001 (identificador fictício)',
+  paymentNotice: 'Pagamento simulado — nenhuma cobrança será realizada',
+});
+
+export const DEMO_PROFILES = Object.freeze([
+  Object.freeze({ id: 'player', label: 'Preencher jogador', accountId: 'player-demo' }),
   Object.freeze({
-    id: 'player-demo',
-    name: 'Jogador de demonstração',
-    email: 'jogador@pixelvault.example',
-    password: 'demo123',
-    role: 'player',
-  }),
-  Object.freeze({
-    id: 'admin-demo',
-    name: 'Curador de demonstração',
-    email: 'admin@pixelvault.example',
-    password: 'demo123',
-    role: 'admin',
+    id: 'admin',
+    label: 'Preencher administrador',
+    accountId: 'admin-demo',
   }),
 ]);
 
@@ -54,10 +63,11 @@ export const PLAYER_NAVIGATION = Object.freeze([
 ]);
 
 export const FEEDBACKS = Object.freeze({
-  registration: 'Cadastro concluído. Entre com suas credenciais.',
+  registration: 'Cadastro concluído. Entre com as credenciais de demonstração.',
   added: 'Item adicionado ao carrinho.',
   duplicate: 'Este item já está no carrinho.',
-  created: 'Item cadastrado com sucesso.',
-  updated: 'Alterações salvas com sucesso.',
-  deleted: 'Item excluído com sucesso.',
+  created: 'Item cadastrado na lista local.',
+  updated: 'Alterações salvas na lista local.',
+  deleted: 'Item excluído da lista local.',
 });
+

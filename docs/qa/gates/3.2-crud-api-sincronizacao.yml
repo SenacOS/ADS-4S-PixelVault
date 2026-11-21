@@ -1,0 +1,80 @@
+schema: 1
+story: '3.2'
+story_title: 'CRUD REST e sincronização durável do catálogo'
+gate: CONCERNS
+status_reason: 'CRUD, autorização demonstrativa e sincronização do cadastro principal passaram os gates, 56 testes, três E2E com API real e 21 jornadas de regressão web. A execução do driver expo-sqlite em aparelho/emulador continua pendente por ausência de dispositivo no ADB.'
+reviewer: 'Quinn (Test Architect)'
+reviewed_revision: 'wt-sha256:7901dfa73628ca9c10ef62024c469b43cda85e546ebbd7e0970476506c1e0a24'
+updated: '2026-11-20T16:30:39Z'
+expires: '2026-12-04T16:30:39Z'
+
+top_issues:
+  - id: 'TEST-001'
+    severity: medium
+    finding: 'O ADB reconferido não possui aparelho ou emulador. HTTP/SQLite Node, E2E web com localStorage e export Android não comprovam o driver expo-sqlite nem a reabertura nativa.'
+    suggested_action: 'Executar em dispositivo reabertura, CRUD, fila offline, reconexão, conflito e isolamento, incluindo teclado e acessibilidade, antes da apresentação final.'
+    suggested_owner: dev
+waiver:
+  active: false
+quality_score: 90
+
+evidence:
+  tests_reviewed: 56
+  risks_identified: 1
+  trace:
+    ac_covered: [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12]
+    ac_gaps: []
+    native_runtime_validation: 'PENDING — limitação explícita do AC 12; não bloqueia este recorte acadêmico.'
+    resolved_during_review:
+      - 'ACK 2xx inválido mantém operação pendente; ID e revisão/deleted são verificados antes da confirmação local.'
+      - 'Login atrasado é cancelado após logout/cleanup e token retornado é revogado; sessão inválida não libera acesso.'
+      - 'JSON HTTP inválido mantém status e não é confundido com indisponibilidade para fallback offline.'
+      - 'catalogEpoch impede GET anterior ao CRUD de sobrescrever catálogo mesmo após ACK limpar dirty.'
+  commands:
+    lint: 'PASS (exit 0; zero warnings)'
+    typecheck: 'PASS (exit 0)'
+    test: 'PASS (exit 0; 56/56, incluindo 12 testes de sincronização)'
+    build: 'PASS (exit 0; Android --clear, 618 módulos)'
+    build_web_with_api: 'PASS (export --clear com API configurada)'
+    build_web_without_api: 'PASS (export --clear para regressão demonstrativa offline)'
+    git_diff_check: 'PASS (exit 0; apenas avisos de normalização LF/CRLF)'
+    native_device_inventory: 'adb devices: lista vazia; execução nativa não realizada'
+    coderabbit: 'NOT RUN (integração desabilitada no padrão anterior; revisão manual e arquitetural registradas)'
+  integration:
+    crud: 'POST/GET/PUT/DELETE reais, compatibilidades e FKs preservadas; dados inválidos/histórico rejeitados sem alteração parcial.'
+    authorization: 'ADMIN por sessão em memória; jogador e ausência de sessão não autorizam escrita; migração seletiva de hashes preserva valor personalizado.'
+    idempotency: 'Recibo durável antes de existência/revisão; replay após reinício, perda HTTP e falha do save local confirmados.'
+    concurrency: 'Três operações encadeadas, edição durante envio, conflito, descarte confirmado e leituras atrasadas preservam dados e pendências.'
+    migration: 'Snapshot v1 preservado em v2; dirty legado não é inferido como sincronizado; descarte explícito preserva dados por usuário.'
+  e2e:
+    integrated_api: 'PASS (3/3 — CRUD no servidor, offline/reload/reautenticação/replay e conflito com descarte confirmado)'
+    regression: 'PASS (21/21 — jornadas existentes no build final)'
+    horizontal_overflow_failures: 0
+    inspected_integrated_pngs: 3
+    runtime: 'Expo Web + Chrome headless CDP; API Node real com banco temporário nos três cenários integrados'
+    refs:
+      - 'docs/evidence/sprint-2-story-3.2/README.md'
+      - 'docs/evidence/sprint-2-story-3.2/capture-results.json'
+      - 'docs/evidence/sprint-2-regression-3.2/capture-results.json'
+
+nfr_validation:
+  security:
+    status: PASS
+    notes: 'Papel administrativo derivado da sessão do servidor, SQL parametrizado, scrypt verificável, bearer em memória e logout. Snapshot/outbox/logs não persistem token nem senha; não implementa autenticação persistente ou autorização de todos os domínios.'
+  performance:
+    status: PASS
+    notes: 'Massa acadêmica pequena; rede fora da fila de gravações locais. Testes e exports passaram sem novas dependências.'
+  reliability:
+    status: CONCERNS
+    notes: 'CRUD/recibo atômicos, revisão otimista, replay durável, ACK validado, migração sem reset e proteção contra GET atrasado cobertos. Driver e retomada nativos aguardam dispositivo.'
+  maintainability:
+    status: PASS
+    notes: 'Serviço, sessão, cliente HTTP, outbox e adaptadores separados; contratos, migração, ADR, reprodução e limites documentados.'
+
+recommendations:
+  immediate: []
+  future:
+    - action: 'Concluir TEST-001 em aparelho/emulador e anexar resultados reais antes da apresentação.'
+      refs: ['docs/evidence/sprint-2-story-3.2/README.md', 'docs/evidence/sprint-2-story-3.1/README.md']
+    - action: 'Implementar sessão persistente, cadastro, carrinho/pedido no backend e Mercado Pago nas respectivas stories; limitar o aceite do item 2.1 ao cadastro principal e sua sincronização.'
+      refs: ['docs/stories/3.2.crud-api-sincronizacao.md', 'documentos/PixelVault_Sprint2_Item_2.1_CRUD_e_Sincronizacao.md']
