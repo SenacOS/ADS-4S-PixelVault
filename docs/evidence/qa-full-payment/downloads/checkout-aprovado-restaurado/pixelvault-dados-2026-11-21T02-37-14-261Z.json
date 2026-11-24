@@ -1,0 +1,121 @@
+{
+  "formato": "pixelvault-dados",
+  "versao": 1,
+  "geradoEm": "2026-11-21T02:37:14.261Z",
+  "demonstrativo": true,
+  "origem": "cache-local",
+  "moeda": "BRL",
+  "sincronizacao": {
+    "catalogoAlteradoLocalmente": false,
+    "alteracoesPendentes": 0,
+    "legadoSemHistorico": false
+  },
+  "catalogo": [
+    {
+      "id": "neon-expansion",
+      "nome": "Neon Expansion",
+      "tipo": "DLC",
+      "precoCentavos": 2490,
+      "descricao": "Expansão demonstrativa para a jornada visual do PixelVault.",
+      "lojaAtivacao": "Loja de demonstração (fictícia)",
+      "plataformasCloud": [
+        "GeForce NOW"
+      ]
+    },
+    {
+      "id": "orbit-raiders",
+      "nome": "Orbit Raiders",
+      "tipo": "Jogo",
+      "precoCentavos": 7990,
+      "descricao": "Descrição demonstrativa. O conteúdo final ainda não foi aprovado.",
+      "lojaAtivacao": "Loja de demonstração (fictícia)",
+      "plataformasCloud": [
+        "Boosteroid",
+        "GeForce NOW"
+      ]
+    }
+  ],
+  "carrinho": [
+    {
+      "id": "orbit-raiders",
+      "nome": "Orbit Raiders",
+      "tipo": "Jogo",
+      "precoCentavos": 7990,
+      "descricao": "Descrição demonstrativa. O conteúdo final ainda não foi aprovado.",
+      "lojaAtivacao": "Loja de demonstração (fictícia)",
+      "plataformasCloud": [
+        "Boosteroid",
+        "GeForce NOW"
+      ]
+    },
+    {
+      "id": "neon-expansion",
+      "nome": "Neon Expansion",
+      "tipo": "DLC",
+      "precoCentavos": 2490,
+      "descricao": "Expansão demonstrativa para a jornada visual do PixelVault.",
+      "lojaAtivacao": "Loja de demonstração (fictícia)",
+      "plataformasCloud": [
+        "GeForce NOW"
+      ]
+    }
+  ],
+  "totalCarrinhoCentavos": 10480,
+  "biblioteca": [
+    {
+      "id": "neon-expansion",
+      "nome": "Neon Expansion",
+      "tipo": "DLC",
+      "precoCentavos": 2490,
+      "descricao": "Expansão demonstrativa para a jornada visual do PixelVault.",
+      "lojaAtivacao": "Loja de demonstração (fictícia)",
+      "plataformasCloud": [
+        "GeForce NOW"
+      ]
+    },
+    {
+      "id": "orbit-raiders",
+      "nome": "Orbit Raiders",
+      "tipo": "Jogo",
+      "precoCentavos": 7990,
+      "descricao": "Descrição demonstrativa. O conteúdo final ainda não foi aprovado.",
+      "lojaAtivacao": "Loja de demonstração (fictícia)",
+      "plataformasCloud": [
+        "Boosteroid",
+        "GeForce NOW"
+      ]
+    }
+  ],
+  "pedido": {
+    "id": "b335ad88-2b25-4eca-8481-fcc9a07a5d97",
+    "simulado": false,
+    "ambiente": "teste",
+    "itens": [
+      {
+        "id": "neon-expansion",
+        "nome": "Neon Expansion",
+        "tipo": "DLC",
+        "precoCentavos": 2490,
+        "descricao": "Expansão demonstrativa para a jornada visual do PixelVault.",
+        "lojaAtivacao": "Loja de demonstração (fictícia)",
+        "plataformasCloud": [
+          "GeForce NOW"
+        ]
+      },
+      {
+        "id": "orbit-raiders",
+        "nome": "Orbit Raiders",
+        "tipo": "Jogo",
+        "precoCentavos": 7990,
+        "descricao": "Descrição demonstrativa. O conteúdo final ainda não foi aprovado.",
+        "lojaAtivacao": "Loja de demonstração (fictícia)",
+        "plataformasCloud": [
+          "Boosteroid",
+          "GeForce NOW"
+        ]
+      }
+    ],
+    "quantidade": 2,
+    "totalCentavos": 10480
+  }
+}

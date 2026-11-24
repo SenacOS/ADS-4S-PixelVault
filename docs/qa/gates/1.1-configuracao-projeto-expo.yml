@@ -1,0 +1,81 @@
+schema: 1
+story: '1.1'
+story_title: 'Configuração do projeto Expo e organização do código'
+gate: CONCERNS
+status_reason: 'Os gates, o Expo Doctor e a inicialização do Metro foram revalidados; restam concerns não bloqueantes de legibilidade/área segura e da árvore transitiva do Expo SDK 54.'
+reviewer: 'Quinn (Test Architect)'
+reviewed_revision: 'working-tree-sha256:c1f00558cc9182f4dde08cf6663d80bac25994962863ef730d00b123a068acef'
+updated: '2026-09-14T11:30:50-03:00'
+expires: '2026-09-28T11:30:50-03:00'
+
+top_issues:
+  - id: 'REQ-001'
+    severity: medium
+    finding: 'A tela de preparação usa texto secundário com 12 e 13 dp, abaixo do mínimo de 14 de RESP-10, e padding vertical fixo não garante RESP-07 no Android com edge-to-edge.'
+    suggested_action: 'Antes de reutilizar esta tela nos Prompts 11/12, elevar os textos secundários para pelo menos 14 dp e aplicar insets reais de área segura no topo e na base.'
+    suggested_owner: dev
+    refs:
+      - 'src/screens/ProjectReadyScreen.js:55'
+      - 'src/components/StatusCard.js:27'
+      - 'src/screens/ProjectReadyScreen.js:44'
+      - 'app.json:23'
+  - id: 'SEC-001'
+    severity: medium
+    finding: '`npm audit --omit=dev` reporta 16 vulnerabilidades transitivas na árvore Expo/Metro (7 moderadas, 9 altas, 0 críticas); a correção automática disponível migra para Expo 57 e conflita com o SDK 54 exigido.'
+    suggested_action: 'Manter entradas de build sob controle, acompanhar correções upstream e reavaliar a árvore quando uma migração de SDK for autorizada; não aplicar `npm audit fix --force` nesta story.'
+    suggested_owner: po
+    refs:
+      - 'package.json'
+      - 'package-lock.json'
+
+waiver:
+  active: false
+
+quality_score: 80
+
+evidence:
+  tests_reviewed: 4
+  risks_identified: 2
+  trace:
+    ac_covered: [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12]
+    ac_gaps: []
+  automated_gates:
+    lint: 'PASS (exit 0)'
+    typecheck: 'PASS (exit 0)'
+    test: 'PASS (exit 0; 4/4)'
+    build: 'PASS (exit 0; Android, 577 módulos, bundle Hermes 1.73 MB)'
+    expo_doctor: 'PASS (18/18)'
+  runtime:
+    expo_start: 'PASS (`npx expo start --offline --port 8101` alcançou Metro waiting; encerramento controlado exit 0)'
+  review_method: 'Revisão manual; CodeRabbit desabilitado na configuração efetiva do projeto.'
+
+nfr_validation:
+  security:
+    status: CONCERNS
+    notes: 'Nenhum segredo ou integração real foi encontrado no app; a dívida transitiva do SDK 54 permanece documentada e sem correção compatível com o AC 2.'
+  performance:
+    status: PASS
+    notes: 'A base é pequena, rolável e o bundle Android foi gerado sem erro; não há fluxo de dados ou integração real neste incremento.'
+  reliability:
+    status: PASS
+    notes: 'Instalação por lockfile está registrada, Expo Doctor passou 18/18 e Metro iniciou e encerrou de forma controlada.'
+  maintainability:
+    status: CONCERNS
+    notes: 'Estrutura e testes são claros, mas os contratos RESP-07/RESP-10 da tela-base ainda não estão codificados nem cobertos por teste.'
+
+recommendations:
+  immediate: []
+  future:
+    - action: 'Corrigir tipografia secundária e insets de área segura antes de transformar a tela-base em interface dos Prompts 11/12.'
+      refs:
+        - 'src/screens/ProjectReadyScreen.js'
+        - 'src/components/StatusCard.js'
+    - action: 'Monitorar os advisories transitivos e planejar a atualização do SDK somente após revisão do requisito que fixa Expo 54.'
+      refs:
+        - 'package.json'
+        - 'package-lock.json'
+
+review_limitations:
+  - 'O checklist declarado `.aiox-core/development/checklists/qa-master-checklist.md` não está disponível; foram aplicadas as regras completas de `qa-review-story.md`, `qa-gate.md`, da story e da Constitution.'
+  - 'As preferências declaradas `.aiox-core/development/data/technical-preferences.md` não estão disponíveis; foi usada a fórmula padrão de qualidade do workflow.'
+  - 'O template declarado `.aiox-core/development/templates/qa-gate-tmpl.yaml` não está disponível; o gate usa o schema obrigatório embutido nos workflows de QA.'

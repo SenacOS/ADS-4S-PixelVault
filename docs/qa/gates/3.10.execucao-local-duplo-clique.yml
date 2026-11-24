@@ -1,0 +1,50 @@
+schema: 1
+story: '3.10'
+story_title: 'Documentar e automatizar a execução local por duplo clique'
+gate: PASS
+status_reason: 'Iniciador e guia coerentes com o projeto; bootstrap condicionado, credenciais isoladas no backend e processos gerenciados. Gates e smokes aprovados, com limites explícitos.'
+reviewer: 'Quinn (Test Architect)'
+updated: '2026-11-21'
+waiver:
+  active: false
+top_issues: []
+evidence:
+  trace:
+    ac_covered: [1, 2, 3, 4, 5, 6, 7, 8]
+    ac_gaps: []
+  commands:
+    lint: 'PASS, conforme execução do desenvolvedor.'
+    typecheck: 'PASS, conforme execução do desenvolvedor.'
+    test: '93/93 PASS; log tmp/launcher-tests.log conferido pela QA.'
+    coderabbit: 'Indisponível; revisão local realizada, sem alegação de aprovação automática.'
+  smoke:
+    source: 'docs/evidence/sprint-2-story-3.10/README.md'
+    verified: 'Batch real; bootstrap temporário, API e bundle web, modo local e Mercado Pago de teste, preservação de edição no reinício, conflito de porta e Ctrl+C.'
+    payment_requested: false
+  preservation:
+    primary_database_sha256: '5FE47CFFAC178E2BA7CA440D897BAE3432A42A91668534E294A587A39A7553B0'
+    verification: 'Hash recalculado pela QA e igual ao registrado antes dos smokes.'
+  limits:
+    - 'Dependências existentes; instalação limpa em outro computador não exercitada.'
+    - 'Batch executado em terminal; clique visual no Explorador e abertura visual do navegador não exercitados.'
+    - 'Caminhos com espaços revisados por inspeção; sem cópia integral para outro caminho.'
+    - 'Smokes usaram --no-open; abertura automática delegada ao --web do Expo local.'
+  refs:
+    - 'Iniciar-PixelVault.cmd'
+    - 'scripts/start-local.mjs'
+    - 'documentos/PixelVault_Como_Executar.md'
+    - 'README.md'
+    - 'docs/stories/3.10.execucao-local-duplo-clique.md'
+nfr_validation:
+  reliability:
+    status: PASS
+    notes: 'Falhas propagadas; banco existente preservado; portas verificadas antes do bootstrap; encerramento restrito a filhos próprios.'
+  security:
+    status: PASS
+    notes: 'Sem credenciais no código/guia; arquivo privado carregado somente no backend; sem novos endpoints ou alteração do checkout.'
+  maintainability:
+    status: PASS
+    notes: 'Usa Node e Expo locais, sem dependência adicional; instruções e diagnóstico de falhas disponíveis.'
+recommendations:
+  immediate: []
+  future: []

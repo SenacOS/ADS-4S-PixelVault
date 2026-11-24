@@ -1,0 +1,206 @@
+{
+  "checkedAt": "2026-11-21T07:53:41.885Z",
+  "coverCount": 33,
+  "totalBytes": 262727,
+  "androidExportVerified": true,
+  "images": [
+    {
+      "file": "catalog-generic.png",
+      "bytes": 10195,
+      "sha256": "d0d169c0b5fe0b16e3cd9c1d7adc6be9bd4f8a765a84df5b886436cf9b2cabdf",
+      "includedInAndroidExport": true
+    },
+    {
+      "file": "neon-expansion.png",
+      "bytes": 9010,
+      "sha256": "5de016aadca7854fcdea4b4636008607b485251261865f87b89314960e6e6dec",
+      "includedInAndroidExport": true
+    },
+    {
+      "file": "orbit-raiders.png",
+      "bytes": 6972,
+      "sha256": "0bf43a84d4f3a42e91558be972c9049de9f1e02bd93b4808f5ae3fb4c11e9acb",
+      "includedInAndroidExport": true
+    },
+    {
+      "file": "pv-aurora-quest.png",
+      "bytes": 10096,
+      "sha256": "5b46355e5b92ee4926419663a3f7ea623a145fe5b4078bf318d1db5d7e8a85f3",
+      "includedInAndroidExport": true
+    },
+    {
+      "file": "pv-celestial-forge.png",
+      "bytes": 7015,
+      "sha256": "e1870c9e6804b068dd52143f69e7f2b1073182650ed057b7f5fe7bcb46bf857e",
+      "includedInAndroidExport": true
+    },
+    {
+      "file": "pv-clockwork-haven.png",
+      "bytes": 9091,
+      "sha256": "7d8779bb85daee5656cd1a0b3c19bbb1125b6795828e5ea891f849a2c948b60f",
+      "includedInAndroidExport": true
+    },
+    {
+      "file": "pv-comet-trails.png",
+      "bytes": 6979,
+      "sha256": "5fbec2dae88afe5160df55ffb1537b02a09e694c7b48f55545311b0fe1a49b42",
+      "includedInAndroidExport": true
+    },
+    {
+      "file": "pv-copper-canyon.png",
+      "bytes": 6587,
+      "sha256": "0d704e5ff462ad8d38eebcbd28ec07c2163b092a8c865cddb03c830c2de73133",
+      "includedInAndroidExport": true
+    },
+    {
+      "file": "pv-coral-odyssey.png",
+      "bytes": 7405,
+      "sha256": "2545e11474d3ac19002817f72150889af079f4cddb260df7802100ab2ad16868",
+      "includedInAndroidExport": true
+    },
+    {
+      "file": "pv-crimson-bastion.png",
+      "bytes": 7374,
+      "sha256": "393561f6d81900da1d74d983aa4e10f8b8f51f3a51706a8eaa1f11ad432d89e4",
+      "includedInAndroidExport": true
+    },
+    {
+      "file": "pv-crystal-harbor.png",
+      "bytes": 7488,
+      "sha256": "4592cf37b36704a4c4b18dae172b25f83b87267630671b318549bafee5b891fb",
+      "includedInAndroidExport": true
+    },
+    {
+      "file": "pv-desert-horizon.png",
+      "bytes": 7097,
+      "sha256": "4a404c20b34a07e2cd1303096da8473ff933a79af24213e24d80f1d6f5d74b32",
+      "includedInAndroidExport": true
+    },
+    {
+      "file": "pv-ember-citadel.png",
+      "bytes": 6948,
+      "sha256": "36059efa8a8982bd9fb69dc2ca9fbe9a8aaba8f0d04e31b61ff78478738af50c",
+      "includedInAndroidExport": true
+    },
+    {
+      "file": "pv-frostfall-keep.png",
+      "bytes": 7206,
+      "sha256": "d067d8c543983bc6b2d74d60011b8c5cba36450d62682f468c46332d11cb16b0",
+      "includedInAndroidExport": true
+    },
+    {
+      "file": "pv-glacier-voyage.png",
+      "bytes": 7296,
+      "sha256": "78dcadaae1c851890153ebafbcb0049fe928a75cb8994c8179773aea85ff7841",
+      "includedInAndroidExport": true
+    },
+    {
+      "file": "pv-iron-circuit.png",
+      "bytes": 9377,
+      "sha256": "dbd0e1d7af3a58ff53a799804b49379124ba6900a2ecffb890e746bfbb2978a5",
+      "includedInAndroidExport": true
+    },
+    {
+      "file": "pv-jade-expedition.png",
+      "bytes": 10042,
+      "sha256": "b09dd4f03d6c7661dfe0fac5757ccd3872ed7911bd46d75517374d4759b6c86b",
+      "includedInAndroidExport": true
+    },
+    {
+      "file": "pv-midnight-metro.png",
+      "bytes": 9929,
+      "sha256": "25a1430719e46fce70977854c6d3e8ca682b23d4d1e509d6d8646d0978d7a2db",
+      "includedInAndroidExport": true
+    },
+    {
+      "file": "pv-misty-outpost.png",
+      "bytes": 10131,
+      "sha256": "82d996fb90df079f4defd508d1c0ab27af4845062408e4ac4f52ea7899127921",
+      "includedInAndroidExport": true
+    },
+    {
+      "file": "pv-moonlight-valley.png",
+      "bytes": 9280,
+      "sha256": "2892a0d2f931443b368f71c7172c5981a15ca36030288b882699803415556a5d",
+      "includedInAndroidExport": true
+    },
+    {
+      "file": "pv-obsidian-knights.png",
+      "bytes": 7196,
+      "sha256": "ab560749e1fb6d2e2d913b0ae4cc2a10e9035452111dfbde7a907197cde71bcf",
+      "includedInAndroidExport": true
+    },
+    {
+      "file": "pv-ocean-echoes.png",
+      "bytes": 7438,
+      "sha256": "741f18b420ca16b2f19b1e0db4d5ed1ec85db8a29257c440fa6d53af5add92fd",
+      "includedInAndroidExport": true
+    },
+    {
+      "file": "pv-prism-runner.png",
+      "bytes": 8730,
+      "sha256": "ac2e67e563e971e4ab8a3a7237ed2d9ebe0fe20145b8b4082236796c406a9715",
+      "includedInAndroidExport": true
+    },
+    {
+      "file": "pv-saffron-dunes.png",
+      "bytes": 6652,
+      "sha256": "27a22e1a9da3b82fab9732136c79ae23795f16b4aea0834c29d863dfe094a72b",
+      "includedInAndroidExport": true
+    },
+    {
+      "file": "pv-silver-summit.png",
+      "bytes": 7383,
+      "sha256": "43c5e0fe5086a393fd9d65188a7f55f577ca392eaca0f993b0924d2f032bd3a1",
+      "includedInAndroidExport": true
+    },
+    {
+      "file": "pv-skybound-isles.png",
+      "bytes": 7169,
+      "sha256": "3b12ae1a939541eabb9e00442290ef761f19d394fd0c969581b24156a061d892",
+      "includedInAndroidExport": true
+    },
+    {
+      "file": "pv-solar-drifters.png",
+      "bytes": 6900,
+      "sha256": "fb9f3a91e5f5ae89fe0c19f9cce4ab1760bb39a63c219c4c1eadd81bc3d1769b",
+      "includedInAndroidExport": true
+    },
+    {
+      "file": "pv-starlight-nomads.png",
+      "bytes": 6887,
+      "sha256": "acb841e986d82ff444bfd3711f4b02857103652eaec2097acaaa35ff99e055ac",
+      "includedInAndroidExport": true
+    },
+    {
+      "file": "pv-sunken-compass.png",
+      "bytes": 7408,
+      "sha256": "fbc096324cbbde34ff18f7667c9ff1bf698970c2036462093395dad441ad4003",
+      "includedInAndroidExport": true
+    },
+    {
+      "file": "pv-thunder-peaks.png",
+      "bytes": 7300,
+      "sha256": "2cc1a5089663e844c37b90fa8b4e1800542ab241745ca1fc5d21153693080d30",
+      "includedInAndroidExport": true
+    },
+    {
+      "file": "pv-tidal-legends.png",
+      "bytes": 7136,
+      "sha256": "7043901184549cb34d4b52ec4f4a5cd5b023ebc3dc6a826d52e27d4385ed719d",
+      "includedInAndroidExport": true
+    },
+    {
+      "file": "pv-verdant-guardians.png",
+      "bytes": 9944,
+      "sha256": "7a69286bc983178f000f493c9d03e0cce189bed704d278eb06d5db71ada131df",
+      "includedInAndroidExport": true
+    },
+    {
+      "file": "pv-zenith-frontier.png",
+      "bytes": 7066,
+      "sha256": "666b39d98f1fc93b7900198b44d127367283f30e2ad5c8f0fb7c2e22e545278c",
+      "includedInAndroidExport": true
+    }
+  ]
+}

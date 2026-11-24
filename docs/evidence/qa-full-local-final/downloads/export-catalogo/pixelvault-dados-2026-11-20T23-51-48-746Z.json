@@ -1,0 +1,42 @@
+{
+  "formato": "pixelvault-dados",
+  "versao": 1,
+  "geradoEm": "2026-11-20T23:51:48.746Z",
+  "demonstrativo": true,
+  "origem": "cache-local",
+  "moeda": "BRL",
+  "sincronizacao": {
+    "catalogoAlteradoLocalmente": false,
+    "alteracoesPendentes": 0,
+    "legadoSemHistorico": false
+  },
+  "catalogo": [
+    {
+      "id": "orbit-raiders",
+      "nome": "Orbit Raiders",
+      "tipo": "Jogo",
+      "precoCentavos": 7990,
+      "descricao": "Descrição demonstrativa. O conteúdo final ainda não foi aprovado.",
+      "lojaAtivacao": "Loja de demonstração (fictícia)",
+      "plataformasCloud": [
+        "GeForce NOW",
+        "Boosteroid"
+      ]
+    },
+    {
+      "id": "neon-expansion",
+      "nome": "Neon Expansion",
+      "tipo": "DLC",
+      "precoCentavos": 2490,
+      "descricao": "Expansão demonstrativa para a jornada visual do PixelVault.",
+      "lojaAtivacao": "Loja de demonstração (fictícia)",
+      "plataformasCloud": [
+        "GeForce NOW"
+      ]
+    }
+  ],
+  "carrinho": [],
+  "totalCarrinhoCentavos": 0,
+  "biblioteca": [],
+  "pedido": null
+}

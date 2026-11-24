@@ -1,0 +1,70 @@
+schema: 1
+story: '3.1'
+story_title: 'Persistência local e integração inicial do catálogo'
+gate: CONCERNS
+status_reason: 'O recorte implementado passou lint, typecheck, 44 testes, exports Android/web e 25 cenários E2E web. Permanece pendente a execução do driver expo-sqlite em aparelho/emulador, indisponível no ADB, sem bloquear este incremento limitado.'
+reviewer: 'Quinn (Test Architect)'
+reviewed_revision: 'wt-sha256:923dcd30e90e8cba661d4a511d01bc32657216870b5e6ea6971c9b5b4250ae75'
+updated: '2026-11-20T15:52:03Z'
+expires: '2026-12-04T15:52:03Z'
+
+top_issues:
+  - id: 'TEST-001'
+    severity: medium
+    finding: 'O SQL e o contrato assíncrono foram exercitados com SQLite Node, e a persistência após reload com localStorage no Chrome. O driver expo-sqlite e a reabertura nativa não foram executados porque adb devices retornou lista vazia.'
+    suggested_action: 'Executar o procedimento nativo documentado, incluindo encerramento completo, reabertura, CRUD, carrinho, pedido/biblioteca, offline e isolamento, antes da demonstração final.'
+    suggested_owner: dev
+
+waiver:
+  active: false
+quality_score: 90
+
+evidence:
+  tests_reviewed: 44
+  risks_identified: 1
+  trace:
+    ac_covered: [1, 2, 3, 4, 5, 6, 7, 8, 9, 10]
+    ac_gaps: []
+    native_runtime_validation: 'PENDING — explicitamente distinguida de implementação, SQL Node, web e export no AC 10 e nas evidências.'
+    lifecycle_fix: 'RESOLVED — dispose bloqueia instância obsoleta, load verifica descarte após leitura, fechamento aguarda fila e é idempotente; regressões automatizadas incluídas.'
+  commands:
+    lint: 'PASS (exit 0; zero warnings)'
+    typecheck: 'PASS (exit 0)'
+    test: 'PASS (exit 0; 44/44, incluindo 11 testes novos)'
+    build: 'PASS (exit 0; Android, 617 módulos; TEMP/TMP no workspace)'
+    build_web: 'PASS (exit 0)'
+    expo_install_check: 'PASS (mapa local offline do SDK 54; sem alegar validação online)'
+    native_device_inventory: 'adb devices: lista vazia; driver e UI nativos não executados'
+    coderabbit: 'NOT RUN (integração desabilitada no padrão documentado da Story 2.3; revisão manual nesta story)'
+  e2e:
+    persistence: 'PASS (4/4 — carrinho, biblioteca, CRUD e isolamento com reload)'
+    regression: 'PASS (21/21 — jornadas existentes)'
+    horizontal_overflow_failures: 0
+    inspected_persistence_pngs: 4
+    runtime: 'Expo Web + Chrome headless CDP; localStorage, sem alegar SQLite nativo'
+    refs:
+      - 'docs/evidence/sprint-2-story-3.1/README.md'
+      - 'docs/evidence/sprint-2-story-3.1/capture-results.json'
+      - 'docs/evidence/sprint-2-regression/capture-results.json'
+
+nfr_validation:
+  security:
+    status: PASS
+    notes: 'Lista explícita de campos impede persistir senha, sessão e formulário financeiro; SQL parametrizado; dados separados por identidade demonstrativa. Isso não implementa autenticação. CORS é liberado apenas na leitura pública do catálogo.'
+  performance:
+    status: PASS
+    notes: 'Snapshot pequeno e serializado é adequado à massa demonstrativa; exports e jornadas web passaram. Crescimento do cache exige reavaliação posterior.'
+  reliability:
+    status: CONCERNS
+    notes: 'Fila, erro sem falso sucesso, catálogo vazio, cache offline, dirty guard e descarte estão testados. Falta confirmar o driver móvel no ambiente nativo.'
+  maintainability:
+    status: PASS
+    notes: 'Adaptadores de plataforma, domínio persistido e cliente HTTP separados; decisão arquitetural, limites, story e procedimento de reprodução registrados.'
+
+recommendations:
+  immediate: []
+  future:
+    - action: 'Concluir TEST-001 em aparelho ou emulador e anexar evidência nativa antes da apresentação.'
+      refs: ['docs/evidence/sprint-2-story-3.1/README.md']
+    - action: 'Implementar autenticação e sincronização de escrita em stories próprias; manter catalogDirty até uma política de envio/conflito validada.'
+      refs: ['docs/architecture/project-decisions/3.1-persistencia-local.md', 'docs/stories/3.1.persistencia-local-integracao-catalogo.md']

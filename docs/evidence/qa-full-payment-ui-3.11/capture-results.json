@@ -1,0 +1,519 @@
+{
+  "capturedAt": "2026-11-21T16:14:00.630Z",
+  "runtime": "Expo Web + Chrome headless CDP",
+  "catalogFixture": "original-two-items",
+  "results": [
+    {
+      "name": "jogador-compra-sem-avisos",
+      "route": "wf01",
+      "width": 390,
+      "height": 844,
+      "options": {
+        "actions": [
+          [
+            "fill",
+            "E-mail",
+            "jogador@pixelvault.example"
+          ],
+          [
+            "fill",
+            "Senha",
+            "demo123"
+          ],
+          [
+            "click",
+            "Entrar"
+          ],
+          [
+            "expect",
+            "WF-03"
+          ],
+          [
+            "absent",
+            "Atualizar catálogo da API"
+          ],
+          [
+            "absent",
+            "Exportar dados em JSON"
+          ],
+          [
+            "click",
+            "Ver detalhes de Orbit Raiders"
+          ],
+          [
+            "click",
+            "Adicionar ao carrinho"
+          ],
+          [
+            "click",
+            "Ver carrinho (1)"
+          ],
+          [
+            "click",
+            "Continuar para checkout"
+          ],
+          [
+            "expect",
+            "Finalizar compra"
+          ],
+          [
+            "no-text",
+            "ambiente de teste"
+          ],
+          [
+            "no-text",
+            "Uso acadêmico"
+          ],
+          [
+            "no-text",
+            "simulad"
+          ],
+          [
+            "click",
+            "Preparar pedido"
+          ],
+          [
+            "expect",
+            "Resumo confirmado pelo servidor"
+          ],
+          [
+            "expect",
+            "Abrir Mercado Pago"
+          ],
+          [
+            "expect",
+            "Consultar pagamento"
+          ],
+          [
+            "no-text",
+            "de teste"
+          ],
+          [
+            "payment-state",
+            "APROVADO"
+          ],
+          [
+            "click",
+            "Consultar pagamento"
+          ],
+          [
+            "expect",
+            "Pagamento confirmado"
+          ],
+          [
+            "no-text",
+            "de teste"
+          ],
+          [
+            "safe-storage"
+          ]
+        ]
+      },
+      "innerWidth": 390,
+      "innerHeight": 844,
+      "scrollWidth": 390,
+      "scrollHeight": 844,
+      "horizontalOverflowElements": [],
+      "focusedElement": null,
+      "focusedBorderColor": "rgb(0, 0, 0)",
+      "focusedBorderWidth": "0px",
+      "interfaceMarkers": false,
+      "title": "Pagamento confirmado\nSucesso: Pagamento confirmado. Seus itens estão disponíveis na biblioteca.\nPedido\n58f4a43e-6780-492",
+      "controls": [
+        {
+          "kind": "field",
+          "label": "E-mail",
+          "disabled": false,
+          "type": "email"
+        },
+        {
+          "kind": "field",
+          "label": "Senha",
+          "disabled": false,
+          "type": "password"
+        },
+        {
+          "kind": "button",
+          "label": "Entrar",
+          "disabled": false,
+          "type": "button"
+        },
+        {
+          "kind": "button",
+          "label": "Criar conta",
+          "disabled": false,
+          "type": "button"
+        },
+        {
+          "kind": "button",
+          "label": "Selecionado: Todos",
+          "disabled": false,
+          "type": "button"
+        },
+        {
+          "kind": "button",
+          "label": "GeForce NOW",
+          "disabled": false,
+          "type": "button"
+        },
+        {
+          "kind": "button",
+          "label": "Boosteroid",
+          "disabled": false,
+          "type": "button"
+        },
+        {
+          "kind": "button",
+          "label": "Ver detalhes de Neon Expansion",
+          "disabled": false,
+          "type": "button"
+        },
+        {
+          "kind": "button",
+          "label": "Ver detalhes de Orbit Raiders",
+          "disabled": false,
+          "type": "button"
+        },
+        {
+          "kind": "button",
+          "label": "Sair",
+          "disabled": false,
+          "type": "button"
+        },
+        {
+          "kind": "button",
+          "label": "Catálogo",
+          "disabled": false,
+          "type": null
+        },
+        {
+          "kind": "button",
+          "label": "Carrinho",
+          "disabled": false,
+          "type": null
+        },
+        {
+          "kind": "button",
+          "label": "Biblioteca",
+          "disabled": false,
+          "type": null
+        },
+        {
+          "kind": "button",
+          "label": "Adicionar ao carrinho",
+          "disabled": false,
+          "type": "button"
+        },
+        {
+          "kind": "button",
+          "label": "Ver carrinho (0)",
+          "disabled": false,
+          "type": "button"
+        },
+        {
+          "kind": "button",
+          "label": "Voltar ao catálogo",
+          "disabled": false,
+          "type": "button"
+        },
+        {
+          "kind": "button",
+          "label": "Já está no carrinho",
+          "disabled": false,
+          "type": "button"
+        },
+        {
+          "kind": "button",
+          "label": "Ver carrinho (1)",
+          "disabled": false,
+          "type": "button"
+        },
+        {
+          "kind": "button",
+          "label": "Remover: Orbit Raiders",
+          "disabled": false,
+          "type": "button"
+        },
+        {
+          "kind": "button",
+          "label": "Continuar para checkout",
+          "disabled": false,
+          "type": "button"
+        },
+        {
+          "kind": "button",
+          "label": "Preparar pedido",
+          "disabled": false,
+          "type": "button"
+        },
+        {
+          "kind": "button",
+          "label": "Voltar ao carrinho",
+          "disabled": false,
+          "type": "button"
+        },
+        {
+          "kind": "button",
+          "label": "Retomar pedido",
+          "disabled": false,
+          "type": "button"
+        },
+        {
+          "kind": "button",
+          "label": "Abrir Mercado Pago",
+          "disabled": false,
+          "type": "button"
+        },
+        {
+          "kind": "button",
+          "label": "Consultar pagamento",
+          "disabled": false,
+          "type": "button"
+        },
+        {
+          "kind": "button",
+          "label": "Abrir biblioteca",
+          "disabled": false,
+          "type": "button"
+        },
+        {
+          "kind": "button",
+          "label": "Iniciar outro pedido",
+          "disabled": false,
+          "type": "button"
+        }
+      ]
+    },
+    {
+      "name": "admin-acoes-preservadas",
+      "route": "wf01",
+      "width": 320,
+      "height": 568,
+      "options": {
+        "actions": [
+          [
+            "fill",
+            "E-mail",
+            "admin@pixelvault.example"
+          ],
+          [
+            "fill",
+            "Senha",
+            "demo123"
+          ],
+          [
+            "click",
+            "Entrar"
+          ],
+          [
+            "expect",
+            "WF-09"
+          ],
+          [
+            "expect",
+            "Atualizar catálogo da API"
+          ],
+          [
+            "click",
+            "Atualizar catálogo da API"
+          ],
+          [
+            "expect",
+            "Catálogo sincronizado com o servidor."
+          ],
+          [
+            "export-json",
+            {
+              "catalogo": 2,
+              "carrinho": 0,
+              "biblioteca": 0
+            }
+          ],
+          [
+            "expect",
+            "Download do arquivo JSON solicitado."
+          ],
+          [
+            "click",
+            "Sair"
+          ],
+          [
+            "fill",
+            "E-mail",
+            "jogador@pixelvault.example"
+          ],
+          [
+            "fill",
+            "Senha",
+            "demo123"
+          ],
+          [
+            "click",
+            "Entrar"
+          ],
+          [
+            "expect",
+            "WF-03"
+          ],
+          [
+            "absent",
+            "Atualizar catálogo da API"
+          ],
+          [
+            "absent",
+            "Exportar dados em JSON"
+          ]
+        ]
+      },
+      "innerWidth": 320,
+      "innerHeight": 568,
+      "scrollWidth": 320,
+      "scrollHeight": 568,
+      "horizontalOverflowElements": [],
+      "focusedElement": null,
+      "focusedBorderColor": "rgb(0, 0, 0)",
+      "focusedBorderWidth": "0px",
+      "interfaceMarkers": false,
+      "title": "Descobrir jogos\nEncontre jogos e DLCs para seus serviços de cloud gaming. Compatibilidade ilustrativa.\n2 itens encontrad",
+      "controls": [
+        {
+          "kind": "field",
+          "label": "E-mail",
+          "disabled": false,
+          "type": "email"
+        },
+        {
+          "kind": "field",
+          "label": "Senha",
+          "disabled": false,
+          "type": "password"
+        },
+        {
+          "kind": "button",
+          "label": "Entrar",
+          "disabled": false,
+          "type": "button"
+        },
+        {
+          "kind": "button",
+          "label": "Criar conta",
+          "disabled": false,
+          "type": "button"
+        },
+        {
+          "kind": "button",
+          "label": "Atualizar catálogo da API",
+          "disabled": false,
+          "type": "button"
+        },
+        {
+          "kind": "button",
+          "label": "Sincronizar catálogo",
+          "disabled": false,
+          "type": "button"
+        },
+        {
+          "kind": "button",
+          "label": "Exportar dados em JSON",
+          "disabled": false,
+          "type": "button"
+        },
+        {
+          "kind": "button",
+          "label": "Novo item",
+          "disabled": false,
+          "type": "button"
+        },
+        {
+          "kind": "button",
+          "label": "Editar Neon Expansion",
+          "disabled": false,
+          "type": "button"
+        },
+        {
+          "kind": "button",
+          "label": "Excluir Neon Expansion",
+          "disabled": false,
+          "type": "button"
+        },
+        {
+          "kind": "button",
+          "label": "Editar Orbit Raiders",
+          "disabled": false,
+          "type": "button"
+        },
+        {
+          "kind": "button",
+          "label": "Excluir Orbit Raiders",
+          "disabled": false,
+          "type": "button"
+        },
+        {
+          "kind": "button",
+          "label": "Sair",
+          "disabled": false,
+          "type": "button"
+        },
+        {
+          "kind": "button",
+          "label": "Selecionado: Todos",
+          "disabled": false,
+          "type": "button"
+        },
+        {
+          "kind": "button",
+          "label": "GeForce NOW",
+          "disabled": false,
+          "type": "button"
+        },
+        {
+          "kind": "button",
+          "label": "Boosteroid",
+          "disabled": false,
+          "type": "button"
+        },
+        {
+          "kind": "button",
+          "label": "Ver detalhes de Neon Expansion",
+          "disabled": false,
+          "type": "button"
+        },
+        {
+          "kind": "button",
+          "label": "Ver detalhes de Orbit Raiders",
+          "disabled": false,
+          "type": "button"
+        },
+        {
+          "kind": "button",
+          "label": "Catálogo",
+          "disabled": false,
+          "type": null
+        },
+        {
+          "kind": "button",
+          "label": "Carrinho",
+          "disabled": false,
+          "type": null
+        },
+        {
+          "kind": "button",
+          "label": "Biblioteca",
+          "disabled": false,
+          "type": null
+        }
+      ],
+      "downloadedFiles": [
+        {
+          "name": "pixelvault-dados-2026-11-21T16-13-58-344Z.json",
+          "bytes": 1080,
+          "catalogo": 2,
+          "carrinho": 0,
+          "biblioteca": 0,
+          "pendentes": 0
+        }
+      ]
+    }
+  ],
+  "failures": []
+}

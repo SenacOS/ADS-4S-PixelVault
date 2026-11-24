@@ -1,0 +1,102 @@
+schema: 1
+story: '3.7'
+story_title: 'Consolidar documentação final e preparação da segunda entrega'
+gate: PASS
+status_reason: 'Documentação consolidada e inspecionada, com fontes e métricas consistentes, histórico preservado e pendências de entrega explicitadas. Sem defeito documental bloqueante.'
+reviewer: 'Quinn (Test Architect)'
+reviewed_revision: 'wt-sha256:47de150ef14b465a534aa8b6ba85dc4766754099570f16bfe7c0e50a67d64b3f'
+updated: '2026-11-21T14:25:47Z'
+quality_score: 100
+waiver:
+  active: false
+top_issues: []
+
+resolved_issues:
+  - id: 'DOC-001'
+    finding: 'A descrição da base mencionava categorias não existentes no modelo.'
+    resolution: 'Texto ajustado aos tipos JOGO/DLC e ao esquema implementado.'
+  - id: 'DOC-002'
+    finding: 'Novos estilos de código, tabelas e legendas divergiam da formatação especificada.'
+    resolution: 'Novos estilos padronizados em Arial 10, espaçamento 1,5 e títulos 12; larguras das tabelas ajustadas.'
+  - id: 'DOC-003'
+    finding: 'Tabela histórica flutuante aparecia antes do título e legenda de figura atual passava para outra página.'
+    resolution: 'Posicionamento inline das tabelas na cópia derivada e dimensionamento/agrupamento das figuras corrigidos; renderização final conferida.'
+  - id: 'DOC-004'
+    finding: 'Capturas de fixtures e da biblioteca anteriores à expansão precisavam de contexto.'
+    resolution: 'Legendas identificam a massa de dois itens e o registro anterior às novas capas, evitando representá-los como catálogo atual completo.'
+
+evidence:
+  scope: 'Revisão documental; sem alteração de produto, gravação, criação de pacote ou submissão.'
+  trace:
+    ac_covered: [1, 2, 3, 4, 5, 6, 7]
+    ac_gaps: []
+  revision_method: 'SHA256 do texto UTF-8 das linhas caminho:sha256 ordenadas e unidas por LF, considerando os quatro MDs complementares e o DOCX/PDF finais. Story e saídas QA excluídas.'
+  artifacts:
+    - 'documentos/PixelVault_Sprint2_Comunicacao_Review_Retrospectiva_Status.md'
+    - 'documentos/PixelVault_Sprint2_Encerramento_Licoes_Aprendidas.md'
+    - 'documentos/PixelVault_Sprint2_Roteiro_Pitch_Video.md'
+    - 'documentos/PixelVault_Sprint2_Matriz_Checklist_Entrega.md'
+    - 'documentos/PixelVault_Relatorio_Final_Sprint2.docx'
+    - 'documentos/PixelVault_Relatorio_Final_Sprint2.pdf'
+  preservation:
+    original_sha256: '5c959ea731a5bd8d9fd347c0b88bfbd071baa8c8e31b7ad877dd4d4c7caddccd'
+    original_unchanged: true
+    historical_media_byte_identical: 66
+    members_and_ra_checked: 6
+    note: 'Imagens históricas mantêm sua resolução e recortes de origem. Anexos atuais têm fontes identificadas e código selecionável.'
+  final_artifacts:
+    docx_sha256: '4cf9c7f5bc26643de4ee968e62e7add1a19efa106e3e7505450d121bd67f08a4'
+    pdf_sha256: '3845493adf54fef0e2c422b388636acc86181ab56854c89ca495f3281a7d91a7'
+    pages: 104
+    toc_refreshed: true
+    required_sections: '2.1–2.8, introdução, desenvolvimento histórico, conclusão, bibliografia e anexos de código/telas.'
+  visual_review:
+    status: PASS
+    method: 'Inspeção em resolução original das 105 páginas da renderização anterior, dividida entre QA (1–80) e executor (81–105). Na versão final de 104 páginas, as 30 páginas alteradas foram reinspecionadas; identidade dos pixels de conteúdo das outras 74 páginas foi recomputada independentemente pelo QA, excluindo apenas rodapés de paginação.'
+    changed_pages_qa: [2, 3, 4, 14, 15, 16, 17, 18, 19, 20, 21, 22, 23, 24, 25, 26, 27, 28, 77, 78, 79]
+    changed_pages_executor: [82, 85, 86, 96, 97, 98, 99, 100, 101]
+    result: 'Sem novos cortes, sobreposição, páginas em branco acidentais ou legendas separadas. Sumário atualizado e tabelas legíveis.'
+  factual_review:
+    original_backlog: '17 itens / 53 SP'
+    sprint_1: '12/13 itens; 22/27 SP'
+    sprint_2: '4/5 itens; 26/31 SP'
+    accumulated: '16/17 itens; 48/53 SP'
+    original_label_inversion: 'Explicada por nota de consistência, preservando o documento original.'
+    catalog: '32 produtos-base; 32 capas específicas e uma genérica.'
+    checkout: 'Exclusivamente ambiente acadêmico de teste; aprovação/reconciliação/restauração citadas com evidências existentes.'
+    meetings_hours_acceptance: 'Review/Retrospectiva documentais; sem atribuição de reuniões, horas reais ou aceite coletivo/PO não comprovados.'
+    pitch: 'Roteiro de nove minutos com seis participantes e rostos visíveis; gravação não declarada realizada.'
+  commands:
+    lint: 'PASS nesta rodada, conforme evidência do executor.'
+    typecheck: 'PASS nesta rodada, conforme evidência do executor.'
+    test: 'PASS 89/89 nesta rodada, conforme evidência do executor.'
+    web: '74 jornadas aprovadas da story 3.6; não executadas novamente nem somadas a rodadas anteriores.'
+    coderabbit: 'NOT RUN; desabilitado na story, revisão documental manual.'
+  refs:
+    - 'docs/evidence/sprint-2-story-3.7/README.md'
+    - 'docs/evidence/sprint-2-story-3.7/validation-summary.json'
+    - 'docs/evidence/sprint-2-story-3.6/validation-summary.json'
+  working_refs:
+    - 'tmp/docs-sprint2/build_report.py'
+    - 'tmp/docs-sprint2/check_report.py'
+    - 'tmp/docs-sprint2/final-render3/'
+    - 'tmp/docs-sprint2/final-visual-diff.json'
+
+nfr_validation:
+  security:
+    status: PASS
+    notes: 'Relatórios sem credenciais privadas identificadas; checklist exige exclusão de ambientes privados, tokens e bancos no pacote futuro. Nenhum ZIP foi criado ou inspecionado nesta story.'
+  reliability:
+    status: PASS
+    notes: 'Métricas conferidas nas fontes, limitações e registros históricos diferenciados de resultados atuais.'
+  maintainability:
+    status: PASS
+    notes: 'Quatro complementos, matriz de rastreabilidade e referências permitem revisar e preparar a entrega com estados explícitos.'
+
+recommendations:
+  immediate: []
+  future:
+    - action: 'Equipe revisar coletivamente a documentação, gravar o vídeo, criar/inspecionar o pacote único e confirmar prazo/submissão no Blackboard.'
+      refs: ['documentos/PixelVault_Sprint2_Matriz_Checklist_Entrega.md']
+    - action: 'Tratar HU-12 separadamente; o aceite documental não conclui a pendência funcional nem declara entrega acadêmica final.'
+      refs: ['documentos/PixelVault_Sprint2_Comunicacao_Review_Retrospectiva_Status.md']

@@ -1,0 +1,41 @@
+{
+  "checkedAt": "2026-11-21",
+  "referenceSha256": "5c959ea731a5bd8d9fd347c0b88bfbd071baa8c8e31b7ad877dd4d4c7caddccd",
+  "referenceUnchanged": true,
+  "historicalMediaPreserved": 66,
+  "docxSha256": "4cf9c7f5bc26643de4ee968e62e7add1a19efa106e3e7505450d121bd67f08a4",
+  "pdfSha256": "3845493adf54fef0e2c422b388636acc86181ab56854c89ca495f3281a7d91a7",
+  "pdfPages": 104,
+  "coverMembersChecked": 6,
+  "requiredSectionsPresent": true,
+  "tocRefreshed": true,
+  "placeholders": 0,
+  "replacementGlyphs": 0,
+  "qualityCommands": {
+    "npm run lint": "PASS",
+    "npm run typecheck": "PASS",
+    "npm test": {
+      "passed": 89,
+      "failed": 0
+    }
+  },
+  "webJourneys": {
+    "passed": 74,
+    "failed": 0,
+    "source": "docs/evidence/sprint-2-story-3.6/validation-summary.json"
+  },
+  "deliveryPending": [
+    "HU-12",
+    "Gravação do vídeo",
+    "Pacote único e submissão"
+  ],
+  "visualReview": {
+    "status": "PASS",
+    "finalPages": 104,
+    "identicalPagesComparedToInspectedPreviousRevision": 74,
+    "changedPagesInspectedIndividually": 30,
+    "comparison": "SHA256 dos pixels de conteúdo, excluindo apenas os 65 pixels inferiores do rodapé; paginação e sumário conferidos na revisão final",
+    "credentialScan": "Nenhum token privado do backend no XML do relatório",
+    "gate": "docs/qa/gates/3.7-documentacao-final-sprint2.yml"
+  }
+}

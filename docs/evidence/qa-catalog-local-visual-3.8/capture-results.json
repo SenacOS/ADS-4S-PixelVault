@@ -1,0 +1,5473 @@
+{
+  "capturedAt": "2026-11-21T15:15:23.859Z",
+  "runtime": "Expo Web + Chrome headless CDP",
+  "catalogFixture": "expanded-default-32",
+  "results": [
+    {
+      "name": "catalogo-lista-inicio-390",
+      "route": "wf01",
+      "width": 390,
+      "height": 844,
+      "options": {
+        "actions": [
+          [
+            "fill",
+            "E-mail",
+            "jogador@pixelvault.example"
+          ],
+          [
+            "fill",
+            "Senha",
+            "demo123"
+          ],
+          [
+            "click",
+            "Entrar"
+          ],
+          [
+            "expect",
+            "WF-03"
+          ],
+          [
+            "expect",
+            "32 itens encontrados"
+          ]
+        ]
+      },
+      "innerWidth": 390,
+      "innerHeight": 844,
+      "scrollWidth": 390,
+      "scrollHeight": 844,
+      "horizontalOverflowElements": [],
+      "focusedElement": null,
+      "focusedBorderColor": "rgb(0, 0, 0)",
+      "focusedBorderWidth": "0px",
+      "interfaceMarkers": false,
+      "title": "Descobrir jogos\nEncontre jogos e DLCs para seus serviços de cloud gaming. Compatibilidade ilustrativa.\n32 itens encontra",
+      "catalogChecks": [],
+      "controls": [
+        {
+          "kind": "field",
+          "label": "E-mail",
+          "disabled": false,
+          "type": "email"
+        },
+        {
+          "kind": "field",
+          "label": "Senha",
+          "disabled": false,
+          "type": "password"
+        },
+        {
+          "kind": "button",
+          "label": "Entrar",
+          "disabled": false,
+          "type": "button"
+        },
+        {
+          "kind": "button",
+          "label": "Criar conta",
+          "disabled": false,
+          "type": "button"
+        },
+        {
+          "kind": "button",
+          "label": "Atualizar catálogo da API",
+          "disabled": false,
+          "type": "button"
+        },
+        {
+          "kind": "button",
+          "label": "Exportar dados em JSON",
+          "disabled": false,
+          "type": "button"
+        },
+        {
+          "kind": "button",
+          "label": "Selecionado: Todos",
+          "disabled": false,
+          "type": "button"
+        },
+        {
+          "kind": "button",
+          "label": "GeForce NOW",
+          "disabled": false,
+          "type": "button"
+        },
+        {
+          "kind": "button",
+          "label": "Boosteroid",
+          "disabled": false,
+          "type": "button"
+        },
+        {
+          "kind": "button",
+          "label": "Ver detalhes de Orbit Raiders",
+          "disabled": false,
+          "type": "button"
+        },
+        {
+          "kind": "button",
+          "label": "Ver detalhes de Neon Expansion",
+          "disabled": false,
+          "type": "button"
+        },
+        {
+          "kind": "button",
+          "label": "Ver detalhes de Aurora Quest",
+          "disabled": false,
+          "type": "button"
+        },
+        {
+          "kind": "button",
+          "label": "Ver detalhes de Crystal Harbor",
+          "disabled": false,
+          "type": "button"
+        },
+        {
+          "kind": "button",
+          "label": "Ver detalhes de Solar Drifters",
+          "disabled": false,
+          "type": "button"
+        },
+        {
+          "kind": "button",
+          "label": "Ver detalhes de Ember Citadel",
+          "disabled": false,
+          "type": "button"
+        },
+        {
+          "kind": "button",
+          "label": "Ver detalhes de Moonlight Valley",
+          "disabled": false,
+          "type": "button"
+        },
+        {
+          "kind": "button",
+          "label": "Ver detalhes de Iron Circuit",
+          "disabled": false,
+          "type": "button"
+        },
+        {
+          "kind": "button",
+          "label": "Ver detalhes de Skybound Isles",
+          "disabled": false,
+          "type": "button"
+        },
+        {
+          "kind": "button",
+          "label": "Ver detalhes de Ocean Echoes",
+          "disabled": false,
+          "type": "button"
+        },
+        {
+          "kind": "button",
+          "label": "Ver detalhes de Frostfall Keep",
+          "disabled": false,
+          "type": "button"
+        },
+        {
+          "kind": "button",
+          "label": "Ver detalhes de Desert Horizon",
+          "disabled": false,
+          "type": "button"
+        },
+        {
+          "kind": "button",
+          "label": "Ver detalhes de Prism Runner",
+          "disabled": false,
+          "type": "button"
+        },
+        {
+          "kind": "button",
+          "label": "Ver detalhes de Starlight Nomads",
+          "disabled": false,
+          "type": "button"
+        },
+        {
+          "kind": "button",
+          "label": "Ver detalhes de Verdant Guardians",
+          "disabled": false,
+          "type": "button"
+        },
+        {
+          "kind": "button",
+          "label": "Ver detalhes de Thunder Peaks",
+          "disabled": false,
+          "type": "button"
+        },
+        {
+          "kind": "button",
+          "label": "Sair",
+          "disabled": false,
+          "type": "button"
+        },
+        {
+          "kind": "button",
+          "label": "Catálogo",
+          "disabled": false,
+          "type": null
+        },
+        {
+          "kind": "button",
+          "label": "Carrinho",
+          "disabled": false,
+          "type": null
+        },
+        {
+          "kind": "button",
+          "label": "Biblioteca",
+          "disabled": false,
+          "type": null
+        }
+      ]
+    },
+    {
+      "name": "catalogo-lista-final-320",
+      "route": "wf01",
+      "width": 320,
+      "height": 568,
+      "options": {
+        "actions": [
+          [
+            "fill",
+            "E-mail",
+            "jogador@pixelvault.example"
+          ],
+          [
+            "fill",
+            "Senha",
+            "demo123"
+          ],
+          [
+            "click",
+            "Entrar"
+          ],
+          [
+            "expect",
+            "WF-03"
+          ],
+          [
+            "catalog-scan",
+            "Todos"
+          ]
+        ]
+      },
+      "innerWidth": 320,
+      "innerHeight": 568,
+      "scrollWidth": 320,
+      "scrollHeight": 568,
+      "horizontalOverflowElements": [],
+      "focusedElement": null,
+      "focusedBorderColor": "rgb(0, 0, 0)",
+      "focusedBorderWidth": "0px",
+      "interfaceMarkers": false,
+      "title": "Descobrir jogos\nEncontre jogos e DLCs para seus serviços de cloud gaming. Compatibilidade ilustrativa.\n32 itens encontra",
+      "catalogChecks": [
+        {
+          "filter": "Todos",
+          "count": 32,
+          "imagesLoaded": 32,
+          "uniqueImageUrls": 32,
+          "items": [
+            {
+              "id": "orbit-raiders",
+              "name": "Orbit Raiders",
+              "loaded": true,
+              "src": "http://127.0.0.1:8097/assets/assets/covers/orbit-raiders.80c98d8cccd3bb595447985e3a51057e.png"
+            },
+            {
+              "id": "neon-expansion",
+              "name": "Neon Expansion",
+              "loaded": true,
+              "src": "http://127.0.0.1:8097/assets/assets/covers/neon-expansion.6d71c8641cbd9a15c9ab922646e56367.png"
+            },
+            {
+              "id": "pv-aurora-quest",
+              "name": "Aurora Quest",
+              "loaded": true,
+              "src": "http://127.0.0.1:8097/assets/assets/covers/pv-aurora-quest.5f1ce20e9d096ef74854c8ff394ed262.png"
+            },
+            {
+              "id": "pv-crystal-harbor",
+              "name": "Crystal Harbor",
+              "loaded": true,
+              "src": "http://127.0.0.1:8097/assets/assets/covers/pv-crystal-harbor.255a66068ec94e71168f5190af45895d.png"
+            },
+            {
+              "id": "pv-solar-drifters",
+              "name": "Solar Drifters",
+              "loaded": true,
+              "src": "http://127.0.0.1:8097/assets/assets/covers/pv-solar-drifters.9b01944da88ff115bbfc53ac2531e0c0.png"
+            },
+            {
+              "id": "pv-ember-citadel",
+              "name": "Ember Citadel",
+              "loaded": true,
+              "src": "http://127.0.0.1:8097/assets/assets/covers/pv-ember-citadel.c1f673999d4d204d96aa519c9e3fcebf.png"
+            },
+            {
+              "id": "pv-moonlight-valley",
+              "name": "Moonlight Valley",
+              "loaded": true,
+              "src": "http://127.0.0.1:8097/assets/assets/covers/pv-moonlight-valley.6042b08d963fada7ff784e5211b326b9.png"
+            },
+            {
+              "id": "pv-iron-circuit",
+              "name": "Iron Circuit",
+              "loaded": true,
+              "src": "http://127.0.0.1:8097/assets/assets/covers/pv-iron-circuit.4962ba6cf70ab21d95add4d19f70dfc9.png"
+            },
+            {
+              "id": "pv-skybound-isles",
+              "name": "Skybound Isles",
+              "loaded": true,
+              "src": "http://127.0.0.1:8097/assets/assets/covers/pv-skybound-isles.58d48d3d1ab46251b8a1585c3d9aba7b.png"
+            },
+            {
+              "id": "pv-ocean-echoes",
+              "name": "Ocean Echoes",
+              "loaded": true,
+              "src": "http://127.0.0.1:8097/assets/assets/covers/pv-ocean-echoes.54f2412db7206d81df4068a04eeb6e69.png"
+            },
+            {
+              "id": "pv-frostfall-keep",
+              "name": "Frostfall Keep",
+              "loaded": true,
+              "src": "http://127.0.0.1:8097/assets/assets/covers/pv-frostfall-keep.28336fff7cb8e9a841cf02a883d4a82c.png"
+            },
+            {
+              "id": "pv-desert-horizon",
+              "name": "Desert Horizon",
+              "loaded": true,
+              "src": "http://127.0.0.1:8097/assets/assets/covers/pv-desert-horizon.08989cdca1b2346f37fe9f98e9475ec1.png"
+            },
+            {
+              "id": "pv-prism-runner",
+              "name": "Prism Runner",
+              "loaded": true,
+              "src": "http://127.0.0.1:8097/assets/assets/covers/pv-prism-runner.ad7d9b47624b837c5913786444022ab4.png"
+            },
+            {
+              "id": "pv-starlight-nomads",
+              "name": "Starlight Nomads",
+              "loaded": true,
+              "src": "http://127.0.0.1:8097/assets/assets/covers/pv-starlight-nomads.e544be57a2ce23aa1565db166e0f70a0.png"
+            },
+            {
+              "id": "pv-verdant-guardians",
+              "name": "Verdant Guardians",
+              "loaded": true,
+              "src": "http://127.0.0.1:8097/assets/assets/covers/pv-verdant-guardians.059a13a7d26617594f8f2ef7b9b4b5c3.png"
+            },
+            {
+              "id": "pv-thunder-peaks",
+              "name": "Thunder Peaks",
+              "loaded": true,
+              "src": "http://127.0.0.1:8097/assets/assets/covers/pv-thunder-peaks.f8e9361f272569dd28fb2c1e0556c21a.png"
+            },
+            {
+              "id": "pv-coral-odyssey",
+              "name": "Coral Odyssey",
+              "loaded": true,
+              "src": "http://127.0.0.1:8097/assets/assets/covers/pv-coral-odyssey.469b808f7951dc06427c720201683f5d.png"
+            },
+            {
+              "id": "pv-clockwork-haven",
+              "name": "Clockwork Haven",
+              "loaded": true,
+              "src": "http://127.0.0.1:8097/assets/assets/covers/pv-clockwork-haven.a7f86a1599537c2167d54c6a164d6f13.png"
+            },
+            {
+              "id": "pv-obsidian-knights",
+              "name": "Obsidian Knights",
+              "loaded": true,
+              "src": "http://127.0.0.1:8097/assets/assets/covers/pv-obsidian-knights.0d3e9f2b740404a0d5c6f413e6fa2dd2.png"
+            },
+            {
+              "id": "pv-comet-trails",
+              "name": "Comet Trails",
+              "loaded": true,
+              "src": "http://127.0.0.1:8097/assets/assets/covers/pv-comet-trails.f7f05b35fc1b70fb2a4ec66ea62e4bce.png"
+            },
+            {
+              "id": "pv-saffron-dunes",
+              "name": "Saffron Dunes",
+              "loaded": true,
+              "src": "http://127.0.0.1:8097/assets/assets/covers/pv-saffron-dunes.f6a8fb29668529b0125a9d864a1068ba.png"
+            },
+            {
+              "id": "pv-misty-outpost",
+              "name": "Misty Outpost",
+              "loaded": true,
+              "src": "http://127.0.0.1:8097/assets/assets/covers/pv-misty-outpost.b921151a027d2b2474308f13b89806af.png"
+            },
+            {
+              "id": "pv-glacier-voyage",
+              "name": "Glacier Voyage",
+              "loaded": true,
+              "src": "http://127.0.0.1:8097/assets/assets/covers/pv-glacier-voyage.97a10f487f283876ded9eaa7ea045e25.png"
+            },
+            {
+              "id": "pv-tidal-legends",
+              "name": "Tidal Legends",
+              "loaded": true,
+              "src": "http://127.0.0.1:8097/assets/assets/covers/pv-tidal-legends.bebc9a959aa0c62d00e22f94fdd9a9cb.png"
+            },
+            {
+              "id": "pv-copper-canyon",
+              "name": "Copper Canyon",
+              "loaded": true,
+              "src": "http://127.0.0.1:8097/assets/assets/covers/pv-copper-canyon.23195098725e3f86a6f25993f0308a83.png"
+            },
+            {
+              "id": "pv-celestial-forge",
+              "name": "Celestial Forge",
+              "loaded": true,
+              "src": "http://127.0.0.1:8097/assets/assets/covers/pv-celestial-forge.a199d7a3ded23ea873a97a7424777009.png"
+            },
+            {
+              "id": "pv-jade-expedition",
+              "name": "Jade Expedition",
+              "loaded": true,
+              "src": "http://127.0.0.1:8097/assets/assets/covers/pv-jade-expedition.09e2742f52045a1c7ac3d0a6e95da7e2.png"
+            },
+            {
+              "id": "pv-midnight-metro",
+              "name": "Midnight Metro",
+              "loaded": true,
+              "src": "http://127.0.0.1:8097/assets/assets/covers/pv-midnight-metro.c27a8553989dd8d21c46c85a48575205.png"
+            },
+            {
+              "id": "pv-silver-summit",
+              "name": "Silver Summit",
+              "loaded": true,
+              "src": "http://127.0.0.1:8097/assets/assets/covers/pv-silver-summit.227d53d19197a52689c133fe7147bdc2.png"
+            },
+            {
+              "id": "pv-sunken-compass",
+              "name": "Sunken Compass",
+              "loaded": true,
+              "src": "http://127.0.0.1:8097/assets/assets/covers/pv-sunken-compass.dc7fcba40ada359f15b50baa6d155a59.png"
+            },
+            {
+              "id": "pv-crimson-bastion",
+              "name": "Crimson Bastion",
+              "loaded": true,
+              "src": "http://127.0.0.1:8097/assets/assets/covers/pv-crimson-bastion.c0b856c863313f0b6ecacfbe83fc974d.png"
+            },
+            {
+              "id": "pv-zenith-frontier",
+              "name": "Zenith Frontier",
+              "loaded": true,
+              "src": "http://127.0.0.1:8097/assets/assets/covers/pv-zenith-frontier.0f377773590236475d6c5a129217c3de.png"
+            }
+          ]
+        }
+      ],
+      "catalogSnapshot": [
+        {
+          "id": "neon-expansion",
+          "name": "Neon Expansion",
+          "type": "DLC",
+          "priceCents": 2490,
+          "description": "Expansão demonstrativa para a jornada visual do PixelVault.",
+          "activationStore": "Loja de demonstração (fictícia)",
+          "compatibleWith": [
+            "GeForce NOW"
+          ]
+        },
+        {
+          "id": "orbit-raiders",
+          "name": "Orbit Raiders",
+          "type": "Jogo",
+          "priceCents": 7990,
+          "description": "Descrição demonstrativa. O conteúdo final ainda não foi aprovado.",
+          "activationStore": "Loja de demonstração (fictícia)",
+          "compatibleWith": [
+            "Boosteroid",
+            "GeForce NOW"
+          ]
+        },
+        {
+          "id": "pv-aurora-quest",
+          "name": "Aurora Quest",
+          "type": "Jogo",
+          "priceCents": 1990,
+          "description": "Explore florestas luminosas e encontre relíquias perdidas. Jogo fictício para aprendizado; compatibilidade cloud ilustrativa.",
+          "activationStore": "Loja de demonstração (fictícia)",
+          "compatibleWith": [
+            "Boosteroid",
+            "GeForce NOW"
+          ]
+        },
+        {
+          "id": "pv-celestial-forge",
+          "name": "Celestial Forge",
+          "type": "Jogo",
+          "priceCents": 9690,
+          "description": "Corra por uma cidade futurista repleta de desafios. Jogo fictício para aprendizado; compatibilidade cloud ilustrativa.",
+          "activationStore": "Loja de demonstração (fictícia)",
+          "compatibleWith": [
+            "Boosteroid"
+          ]
+        },
+        {
+          "id": "pv-clockwork-haven",
+          "name": "Clockwork Haven",
+          "type": "Jogo",
+          "priceCents": 4090,
+          "description": "Defenda uma fortaleza e desvende caminhos secretos. Jogo fictício para aprendizado; compatibilidade cloud ilustrativa.",
+          "activationStore": "Loja de demonstração (fictícia)",
+          "compatibleWith": [
+            "Boosteroid",
+            "GeForce NOW"
+          ]
+        },
+        {
+          "id": "pv-comet-trails",
+          "name": "Comet Trails",
+          "type": "Jogo",
+          "priceCents": 5490,
+          "description": "Corra por uma cidade futurista repleta de desafios. Jogo fictício para aprendizado; compatibilidade cloud ilustrativa.",
+          "activationStore": "Loja de demonstração (fictícia)",
+          "compatibleWith": [
+            "Boosteroid"
+          ]
+        },
+        {
+          "id": "pv-copper-canyon",
+          "name": "Copper Canyon",
+          "type": "Jogo",
+          "priceCents": 8990,
+          "description": "Atravesse montanhas e vales em uma jornada de exploração. Jogo fictício para aprendizado; compatibilidade cloud ilustrativa.",
+          "activationStore": "Loja de demonstração (fictícia)",
+          "compatibleWith": [
+            "GeForce NOW"
+          ]
+        },
+        {
+          "id": "pv-coral-odyssey",
+          "name": "Coral Odyssey",
+          "type": "Jogo",
+          "priceCents": 3390,
+          "description": "Pilote uma nave por planetas e estações distantes. Jogo fictício para aprendizado; compatibilidade cloud ilustrativa.",
+          "activationStore": "Loja de demonstração (fictícia)",
+          "compatibleWith": [
+            "Boosteroid"
+          ]
+        },
+        {
+          "id": "pv-crimson-bastion",
+          "name": "Crimson Bastion",
+          "type": "Jogo",
+          "priceCents": 4790,
+          "description": "Atravesse montanhas e vales em uma jornada de exploração. Jogo fictício para aprendizado; compatibilidade cloud ilustrativa.",
+          "activationStore": "Loja de demonstração (fictícia)",
+          "compatibleWith": [
+            "GeForce NOW"
+          ]
+        },
+        {
+          "id": "pv-crystal-harbor",
+          "name": "Crystal Harbor",
+          "type": "Jogo",
+          "priceCents": 2690,
+          "description": "Navegue entre ilhas e descubra histórias à beira-mar. Jogo fictício para aprendizado; compatibilidade cloud ilustrativa.",
+          "activationStore": "Loja de demonstração (fictícia)",
+          "compatibleWith": [
+            "GeForce NOW"
+          ]
+        },
+        {
+          "id": "pv-desert-horizon",
+          "name": "Desert Horizon",
+          "type": "Jogo",
+          "priceCents": 8290,
+          "description": "Defenda uma fortaleza e desvende caminhos secretos. Jogo fictício para aprendizado; compatibilidade cloud ilustrativa.",
+          "activationStore": "Loja de demonstração (fictícia)",
+          "compatibleWith": [
+            "Boosteroid",
+            "GeForce NOW"
+          ]
+        },
+        {
+          "id": "pv-ember-citadel",
+          "name": "Ember Citadel",
+          "type": "Jogo",
+          "priceCents": 4090,
+          "description": "Defenda uma fortaleza e desvende caminhos secretos. Jogo fictício para aprendizado; compatibilidade cloud ilustrativa.",
+          "activationStore": "Loja de demonstração (fictícia)",
+          "compatibleWith": [
+            "Boosteroid",
+            "GeForce NOW"
+          ]
+        },
+        {
+          "id": "pv-frostfall-keep",
+          "name": "Frostfall Keep",
+          "type": "Jogo",
+          "priceCents": 7590,
+          "description": "Pilote uma nave por planetas e estações distantes. Jogo fictício para aprendizado; compatibilidade cloud ilustrativa.",
+          "activationStore": "Loja de demonstração (fictícia)",
+          "compatibleWith": [
+            "Boosteroid"
+          ]
+        },
+        {
+          "id": "pv-glacier-voyage",
+          "name": "Glacier Voyage",
+          "type": "Jogo",
+          "priceCents": 7590,
+          "description": "Pilote uma nave por planetas e estações distantes. Jogo fictício para aprendizado; compatibilidade cloud ilustrativa.",
+          "activationStore": "Loja de demonstração (fictícia)",
+          "compatibleWith": [
+            "Boosteroid"
+          ]
+        },
+        {
+          "id": "pv-iron-circuit",
+          "name": "Iron Circuit",
+          "type": "Jogo",
+          "priceCents": 5490,
+          "description": "Corra por uma cidade futurista repleta de desafios. Jogo fictício para aprendizado; compatibilidade cloud ilustrativa.",
+          "activationStore": "Loja de demonstração (fictícia)",
+          "compatibleWith": [
+            "Boosteroid"
+          ]
+        },
+        {
+          "id": "pv-jade-expedition",
+          "name": "Jade Expedition",
+          "type": "Jogo",
+          "priceCents": 1990,
+          "description": "Explore florestas luminosas e encontre relíquias perdidas. Jogo fictício para aprendizado; compatibilidade cloud ilustrativa.",
+          "activationStore": "Loja de demonstração (fictícia)",
+          "compatibleWith": [
+            "Boosteroid",
+            "GeForce NOW"
+          ]
+        },
+        {
+          "id": "pv-midnight-metro",
+          "name": "Midnight Metro",
+          "type": "Jogo",
+          "priceCents": 2690,
+          "description": "Navegue entre ilhas e descubra histórias à beira-mar. Jogo fictício para aprendizado; compatibilidade cloud ilustrativa.",
+          "activationStore": "Loja de demonstração (fictícia)",
+          "compatibleWith": [
+            "GeForce NOW"
+          ]
+        },
+        {
+          "id": "pv-misty-outpost",
+          "name": "Misty Outpost",
+          "type": "Jogo",
+          "priceCents": 6890,
+          "description": "Navegue entre ilhas e descubra histórias à beira-mar. Jogo fictício para aprendizado; compatibilidade cloud ilustrativa.",
+          "activationStore": "Loja de demonstração (fictícia)",
+          "compatibleWith": [
+            "GeForce NOW"
+          ]
+        },
+        {
+          "id": "pv-moonlight-valley",
+          "name": "Moonlight Valley",
+          "type": "Jogo",
+          "priceCents": 4790,
+          "description": "Atravesse montanhas e vales em uma jornada de exploração. Jogo fictício para aprendizado; compatibilidade cloud ilustrativa.",
+          "activationStore": "Loja de demonstração (fictícia)",
+          "compatibleWith": [
+            "GeForce NOW"
+          ]
+        },
+        {
+          "id": "pv-obsidian-knights",
+          "name": "Obsidian Knights",
+          "type": "Jogo",
+          "priceCents": 4790,
+          "description": "Atravesse montanhas e vales em uma jornada de exploração. Jogo fictício para aprendizado; compatibilidade cloud ilustrativa.",
+          "activationStore": "Loja de demonstração (fictícia)",
+          "compatibleWith": [
+            "GeForce NOW"
+          ]
+        },
+        {
+          "id": "pv-ocean-echoes",
+          "name": "Ocean Echoes",
+          "type": "Jogo",
+          "priceCents": 6890,
+          "description": "Navegue entre ilhas e descubra histórias à beira-mar. Jogo fictício para aprendizado; compatibilidade cloud ilustrativa.",
+          "activationStore": "Loja de demonstração (fictícia)",
+          "compatibleWith": [
+            "GeForce NOW"
+          ]
+        },
+        {
+          "id": "pv-prism-runner",
+          "name": "Prism Runner",
+          "type": "Jogo",
+          "priceCents": 8990,
+          "description": "Atravesse montanhas e vales em uma jornada de exploração. Jogo fictício para aprendizado; compatibilidade cloud ilustrativa.",
+          "activationStore": "Loja de demonstração (fictícia)",
+          "compatibleWith": [
+            "GeForce NOW"
+          ]
+        },
+        {
+          "id": "pv-saffron-dunes",
+          "name": "Saffron Dunes",
+          "type": "Jogo",
+          "priceCents": 6190,
+          "description": "Explore florestas luminosas e encontre relíquias perdidas. Jogo fictício para aprendizado; compatibilidade cloud ilustrativa.",
+          "activationStore": "Loja de demonstração (fictícia)",
+          "compatibleWith": [
+            "Boosteroid",
+            "GeForce NOW"
+          ]
+        },
+        {
+          "id": "pv-silver-summit",
+          "name": "Silver Summit",
+          "type": "Jogo",
+          "priceCents": 3390,
+          "description": "Pilote uma nave por planetas e estações distantes. Jogo fictício para aprendizado; compatibilidade cloud ilustrativa.",
+          "activationStore": "Loja de demonstração (fictícia)",
+          "compatibleWith": [
+            "Boosteroid"
+          ]
+        },
+        {
+          "id": "pv-skybound-isles",
+          "name": "Skybound Isles",
+          "type": "Jogo",
+          "priceCents": 6190,
+          "description": "Explore florestas luminosas e encontre relíquias perdidas. Jogo fictício para aprendizado; compatibilidade cloud ilustrativa.",
+          "activationStore": "Loja de demonstração (fictícia)",
+          "compatibleWith": [
+            "Boosteroid",
+            "GeForce NOW"
+          ]
+        },
+        {
+          "id": "pv-solar-drifters",
+          "name": "Solar Drifters",
+          "type": "Jogo",
+          "priceCents": 3390,
+          "description": "Pilote uma nave por planetas e estações distantes. Jogo fictício para aprendizado; compatibilidade cloud ilustrativa.",
+          "activationStore": "Loja de demonstração (fictícia)",
+          "compatibleWith": [
+            "Boosteroid"
+          ]
+        },
+        {
+          "id": "pv-starlight-nomads",
+          "name": "Starlight Nomads",
+          "type": "Jogo",
+          "priceCents": 9690,
+          "description": "Corra por uma cidade futurista repleta de desafios. Jogo fictício para aprendizado; compatibilidade cloud ilustrativa.",
+          "activationStore": "Loja de demonstração (fictícia)",
+          "compatibleWith": [
+            "Boosteroid"
+          ]
+        },
+        {
+          "id": "pv-sunken-compass",
+          "name": "Sunken Compass",
+          "type": "Jogo",
+          "priceCents": 4090,
+          "description": "Defenda uma fortaleza e desvende caminhos secretos. Jogo fictício para aprendizado; compatibilidade cloud ilustrativa.",
+          "activationStore": "Loja de demonstração (fictícia)",
+          "compatibleWith": [
+            "Boosteroid",
+            "GeForce NOW"
+          ]
+        },
+        {
+          "id": "pv-thunder-peaks",
+          "name": "Thunder Peaks",
+          "type": "Jogo",
+          "priceCents": 2690,
+          "description": "Navegue entre ilhas e descubra histórias à beira-mar. Jogo fictício para aprendizado; compatibilidade cloud ilustrativa.",
+          "activationStore": "Loja de demonstração (fictícia)",
+          "compatibleWith": [
+            "GeForce NOW"
+          ]
+        },
+        {
+          "id": "pv-tidal-legends",
+          "name": "Tidal Legends",
+          "type": "Jogo",
+          "priceCents": 8290,
+          "description": "Defenda uma fortaleza e desvende caminhos secretos. Jogo fictício para aprendizado; compatibilidade cloud ilustrativa.",
+          "activationStore": "Loja de demonstração (fictícia)",
+          "compatibleWith": [
+            "Boosteroid",
+            "GeForce NOW"
+          ]
+        },
+        {
+          "id": "pv-verdant-guardians",
+          "name": "Verdant Guardians",
+          "type": "Jogo",
+          "priceCents": 1990,
+          "description": "Explore florestas luminosas e encontre relíquias perdidas. Jogo fictício para aprendizado; compatibilidade cloud ilustrativa.",
+          "activationStore": "Loja de demonstração (fictícia)",
+          "compatibleWith": [
+            "Boosteroid",
+            "GeForce NOW"
+          ]
+        },
+        {
+          "id": "pv-zenith-frontier",
+          "name": "Zenith Frontier",
+          "type": "Jogo",
+          "priceCents": 5490,
+          "description": "Corra por uma cidade futurista repleta de desafios. Jogo fictício para aprendizado; compatibilidade cloud ilustrativa.",
+          "activationStore": "Loja de demonstração (fictícia)",
+          "compatibleWith": [
+            "Boosteroid"
+          ]
+        }
+      ],
+      "controls": [
+        {
+          "kind": "field",
+          "label": "E-mail",
+          "disabled": false,
+          "type": "email"
+        },
+        {
+          "kind": "field",
+          "label": "Senha",
+          "disabled": false,
+          "type": "password"
+        },
+        {
+          "kind": "button",
+          "label": "Entrar",
+          "disabled": false,
+          "type": "button"
+        },
+        {
+          "kind": "button",
+          "label": "Criar conta",
+          "disabled": false,
+          "type": "button"
+        },
+        {
+          "kind": "button",
+          "label": "Atualizar catálogo da API",
+          "disabled": false,
+          "type": "button"
+        },
+        {
+          "kind": "button",
+          "label": "Exportar dados em JSON",
+          "disabled": false,
+          "type": "button"
+        },
+        {
+          "kind": "button",
+          "label": "Selecionado: Todos",
+          "disabled": false,
+          "type": "button"
+        },
+        {
+          "kind": "button",
+          "label": "GeForce NOW",
+          "disabled": false,
+          "type": "button"
+        },
+        {
+          "kind": "button",
+          "label": "Boosteroid",
+          "disabled": false,
+          "type": "button"
+        },
+        {
+          "kind": "button",
+          "label": "Ver detalhes de Orbit Raiders",
+          "disabled": false,
+          "type": "button"
+        },
+        {
+          "kind": "button",
+          "label": "Ver detalhes de Neon Expansion",
+          "disabled": false,
+          "type": "button"
+        },
+        {
+          "kind": "button",
+          "label": "Ver detalhes de Aurora Quest",
+          "disabled": false,
+          "type": "button"
+        },
+        {
+          "kind": "button",
+          "label": "Ver detalhes de Crystal Harbor",
+          "disabled": false,
+          "type": "button"
+        },
+        {
+          "kind": "button",
+          "label": "Ver detalhes de Solar Drifters",
+          "disabled": false,
+          "type": "button"
+        },
+        {
+          "kind": "button",
+          "label": "Ver detalhes de Ember Citadel",
+          "disabled": false,
+          "type": "button"
+        },
+        {
+          "kind": "button",
+          "label": "Ver detalhes de Moonlight Valley",
+          "disabled": false,
+          "type": "button"
+        },
+        {
+          "kind": "button",
+          "label": "Ver detalhes de Iron Circuit",
+          "disabled": false,
+          "type": "button"
+        },
+        {
+          "kind": "button",
+          "label": "Ver detalhes de Skybound Isles",
+          "disabled": false,
+          "type": "button"
+        },
+        {
+          "kind": "button",
+          "label": "Ver detalhes de Ocean Echoes",
+          "disabled": false,
+          "type": "button"
+        },
+        {
+          "kind": "button",
+          "label": "Sair",
+          "disabled": false,
+          "type": "button"
+        },
+        {
+          "kind": "button",
+          "label": "Catálogo",
+          "disabled": false,
+          "type": null
+        },
+        {
+          "kind": "button",
+          "label": "Carrinho",
+          "disabled": false,
+          "type": null
+        },
+        {
+          "kind": "button",
+          "label": "Biblioteca",
+          "disabled": false,
+          "type": null
+        },
+        {
+          "kind": "button",
+          "label": "Ver detalhes de Tidal Legends",
+          "disabled": false,
+          "type": "button"
+        },
+        {
+          "kind": "button",
+          "label": "Ver detalhes de Copper Canyon",
+          "disabled": false,
+          "type": "button"
+        },
+        {
+          "kind": "button",
+          "label": "Ver detalhes de Celestial Forge",
+          "disabled": false,
+          "type": "button"
+        },
+        {
+          "kind": "button",
+          "label": "Ver detalhes de Jade Expedition",
+          "disabled": false,
+          "type": "button"
+        },
+        {
+          "kind": "button",
+          "label": "Ver detalhes de Midnight Metro",
+          "disabled": false,
+          "type": "button"
+        },
+        {
+          "kind": "button",
+          "label": "Ver detalhes de Silver Summit",
+          "disabled": false,
+          "type": "button"
+        },
+        {
+          "kind": "button",
+          "label": "Ver detalhes de Sunken Compass",
+          "disabled": false,
+          "type": "button"
+        },
+        {
+          "kind": "button",
+          "label": "Ver detalhes de Crimson Bastion",
+          "disabled": false,
+          "type": "button"
+        },
+        {
+          "kind": "button",
+          "label": "Ver detalhes de Zenith Frontier",
+          "disabled": false,
+          "type": "button"
+        }
+      ]
+    },
+    {
+      "name": "catalogo-32-imagens-390",
+      "route": "wf01",
+      "width": 390,
+      "height": 844,
+      "options": {
+        "actions": [
+          [
+            "fill",
+            "E-mail",
+            "jogador@pixelvault.example"
+          ],
+          [
+            "fill",
+            "Senha",
+            "demo123"
+          ],
+          [
+            "click",
+            "Entrar"
+          ],
+          [
+            "expect",
+            "WF-03"
+          ],
+          [
+            "catalog-scan",
+            "Todos"
+          ],
+          [
+            "click",
+            "GeForce NOW"
+          ],
+          [
+            "catalog-scan",
+            "GeForce NOW"
+          ],
+          [
+            "click",
+            "Boosteroid"
+          ],
+          [
+            "catalog-scan",
+            "Boosteroid"
+          ],
+          [
+            "click",
+            "Todos"
+          ],
+          [
+            "catalog-scan",
+            "Todos"
+          ],
+          [
+            "click",
+            "Ver detalhes de Zenith Frontier"
+          ],
+          [
+            "expect",
+            "Zenith Frontier"
+          ],
+          [
+            "click",
+            "Adicionar ao carrinho"
+          ],
+          [
+            "click",
+            "Ver carrinho (1)"
+          ],
+          [
+            "expect",
+            "R$ 54,90"
+          ]
+        ]
+      },
+      "innerWidth": 390,
+      "innerHeight": 844,
+      "scrollWidth": 390,
+      "scrollHeight": 844,
+      "horizontalOverflowElements": [],
+      "focusedElement": null,
+      "focusedBorderColor": "rgb(0, 0, 0)",
+      "focusedBorderWidth": "0px",
+      "interfaceMarkers": false,
+      "title": "Seu carrinho\nZenith Frontier\nTipo: Jogo\nR$ 54,90\nCompatível com: Boosteroid\nAtivação em: Loja de demonstração (fictícia)",
+      "catalogChecks": [
+        {
+          "filter": "Todos",
+          "count": 32,
+          "imagesLoaded": 32,
+          "uniqueImageUrls": 32,
+          "items": [
+            {
+              "id": "orbit-raiders",
+              "name": "Orbit Raiders",
+              "loaded": true,
+              "src": "http://127.0.0.1:8097/assets/assets/covers/orbit-raiders.80c98d8cccd3bb595447985e3a51057e.png"
+            },
+            {
+              "id": "neon-expansion",
+              "name": "Neon Expansion",
+              "loaded": true,
+              "src": "http://127.0.0.1:8097/assets/assets/covers/neon-expansion.6d71c8641cbd9a15c9ab922646e56367.png"
+            },
+            {
+              "id": "pv-aurora-quest",
+              "name": "Aurora Quest",
+              "loaded": true,
+              "src": "http://127.0.0.1:8097/assets/assets/covers/pv-aurora-quest.5f1ce20e9d096ef74854c8ff394ed262.png"
+            },
+            {
+              "id": "pv-crystal-harbor",
+              "name": "Crystal Harbor",
+              "loaded": true,
+              "src": "http://127.0.0.1:8097/assets/assets/covers/pv-crystal-harbor.255a66068ec94e71168f5190af45895d.png"
+            },
+            {
+              "id": "pv-solar-drifters",
+              "name": "Solar Drifters",
+              "loaded": true,
+              "src": "http://127.0.0.1:8097/assets/assets/covers/pv-solar-drifters.9b01944da88ff115bbfc53ac2531e0c0.png"
+            },
+            {
+              "id": "pv-ember-citadel",
+              "name": "Ember Citadel",
+              "loaded": true,
+              "src": "http://127.0.0.1:8097/assets/assets/covers/pv-ember-citadel.c1f673999d4d204d96aa519c9e3fcebf.png"
+            },
+            {
+              "id": "pv-moonlight-valley",
+              "name": "Moonlight Valley",
+              "loaded": true,
+              "src": "http://127.0.0.1:8097/assets/assets/covers/pv-moonlight-valley.6042b08d963fada7ff784e5211b326b9.png"
+            },
+            {
+              "id": "pv-iron-circuit",
+              "name": "Iron Circuit",
+              "loaded": true,
+              "src": "http://127.0.0.1:8097/assets/assets/covers/pv-iron-circuit.4962ba6cf70ab21d95add4d19f70dfc9.png"
+            },
+            {
+              "id": "pv-skybound-isles",
+              "name": "Skybound Isles",
+              "loaded": true,
+              "src": "http://127.0.0.1:8097/assets/assets/covers/pv-skybound-isles.58d48d3d1ab46251b8a1585c3d9aba7b.png"
+            },
+            {
+              "id": "pv-ocean-echoes",
+              "name": "Ocean Echoes",
+              "loaded": true,
+              "src": "http://127.0.0.1:8097/assets/assets/covers/pv-ocean-echoes.54f2412db7206d81df4068a04eeb6e69.png"
+            },
+            {
+              "id": "pv-frostfall-keep",
+              "name": "Frostfall Keep",
+              "loaded": true,
+              "src": "http://127.0.0.1:8097/assets/assets/covers/pv-frostfall-keep.28336fff7cb8e9a841cf02a883d4a82c.png"
+            },
+            {
+              "id": "pv-desert-horizon",
+              "name": "Desert Horizon",
+              "loaded": true,
+              "src": "http://127.0.0.1:8097/assets/assets/covers/pv-desert-horizon.08989cdca1b2346f37fe9f98e9475ec1.png"
+            },
+            {
+              "id": "pv-prism-runner",
+              "name": "Prism Runner",
+              "loaded": true,
+              "src": "http://127.0.0.1:8097/assets/assets/covers/pv-prism-runner.ad7d9b47624b837c5913786444022ab4.png"
+            },
+            {
+              "id": "pv-starlight-nomads",
+              "name": "Starlight Nomads",
+              "loaded": true,
+              "src": "http://127.0.0.1:8097/assets/assets/covers/pv-starlight-nomads.e544be57a2ce23aa1565db166e0f70a0.png"
+            },
+            {
+              "id": "pv-verdant-guardians",
+              "name": "Verdant Guardians",
+              "loaded": true,
+              "src": "http://127.0.0.1:8097/assets/assets/covers/pv-verdant-guardians.059a13a7d26617594f8f2ef7b9b4b5c3.png"
+            },
+            {
+              "id": "pv-thunder-peaks",
+              "name": "Thunder Peaks",
+              "loaded": true,
+              "src": "http://127.0.0.1:8097/assets/assets/covers/pv-thunder-peaks.f8e9361f272569dd28fb2c1e0556c21a.png"
+            },
+            {
+              "id": "pv-coral-odyssey",
+              "name": "Coral Odyssey",
+              "loaded": true,
+              "src": "http://127.0.0.1:8097/assets/assets/covers/pv-coral-odyssey.469b808f7951dc06427c720201683f5d.png"
+            },
+            {
+              "id": "pv-clockwork-haven",
+              "name": "Clockwork Haven",
+              "loaded": true,
+              "src": "http://127.0.0.1:8097/assets/assets/covers/pv-clockwork-haven.a7f86a1599537c2167d54c6a164d6f13.png"
+            },
+            {
+              "id": "pv-obsidian-knights",
+              "name": "Obsidian Knights",
+              "loaded": true,
+              "src": "http://127.0.0.1:8097/assets/assets/covers/pv-obsidian-knights.0d3e9f2b740404a0d5c6f413e6fa2dd2.png"
+            },
+            {
+              "id": "pv-comet-trails",
+              "name": "Comet Trails",
+              "loaded": true,
+              "src": "http://127.0.0.1:8097/assets/assets/covers/pv-comet-trails.f7f05b35fc1b70fb2a4ec66ea62e4bce.png"
+            },
+            {
+              "id": "pv-saffron-dunes",
+              "name": "Saffron Dunes",
+              "loaded": true,
+              "src": "http://127.0.0.1:8097/assets/assets/covers/pv-saffron-dunes.f6a8fb29668529b0125a9d864a1068ba.png"
+            },
+            {
+              "id": "pv-misty-outpost",
+              "name": "Misty Outpost",
+              "loaded": true,
+              "src": "http://127.0.0.1:8097/assets/assets/covers/pv-misty-outpost.b921151a027d2b2474308f13b89806af.png"
+            },
+            {
+              "id": "pv-glacier-voyage",
+              "name": "Glacier Voyage",
+              "loaded": true,
+              "src": "http://127.0.0.1:8097/assets/assets/covers/pv-glacier-voyage.97a10f487f283876ded9eaa7ea045e25.png"
+            },
+            {
+              "id": "pv-tidal-legends",
+              "name": "Tidal Legends",
+              "loaded": true,
+              "src": "http://127.0.0.1:8097/assets/assets/covers/pv-tidal-legends.bebc9a959aa0c62d00e22f94fdd9a9cb.png"
+            },
+            {
+              "id": "pv-copper-canyon",
+              "name": "Copper Canyon",
+              "loaded": true,
+              "src": "http://127.0.0.1:8097/assets/assets/covers/pv-copper-canyon.23195098725e3f86a6f25993f0308a83.png"
+            },
+            {
+              "id": "pv-celestial-forge",
+              "name": "Celestial Forge",
+              "loaded": true,
+              "src": "http://127.0.0.1:8097/assets/assets/covers/pv-celestial-forge.a199d7a3ded23ea873a97a7424777009.png"
+            },
+            {
+              "id": "pv-jade-expedition",
+              "name": "Jade Expedition",
+              "loaded": true,
+              "src": "http://127.0.0.1:8097/assets/assets/covers/pv-jade-expedition.09e2742f52045a1c7ac3d0a6e95da7e2.png"
+            },
+            {
+              "id": "pv-midnight-metro",
+              "name": "Midnight Metro",
+              "loaded": true,
+              "src": "http://127.0.0.1:8097/assets/assets/covers/pv-midnight-metro.c27a8553989dd8d21c46c85a48575205.png"
+            },
+            {
+              "id": "pv-silver-summit",
+              "name": "Silver Summit",
+              "loaded": true,
+              "src": "http://127.0.0.1:8097/assets/assets/covers/pv-silver-summit.227d53d19197a52689c133fe7147bdc2.png"
+            },
+            {
+              "id": "pv-sunken-compass",
+              "name": "Sunken Compass",
+              "loaded": true,
+              "src": "http://127.0.0.1:8097/assets/assets/covers/pv-sunken-compass.dc7fcba40ada359f15b50baa6d155a59.png"
+            },
+            {
+              "id": "pv-crimson-bastion",
+              "name": "Crimson Bastion",
+              "loaded": true,
+              "src": "http://127.0.0.1:8097/assets/assets/covers/pv-crimson-bastion.c0b856c863313f0b6ecacfbe83fc974d.png"
+            },
+            {
+              "id": "pv-zenith-frontier",
+              "name": "Zenith Frontier",
+              "loaded": true,
+              "src": "http://127.0.0.1:8097/assets/assets/covers/pv-zenith-frontier.0f377773590236475d6c5a129217c3de.png"
+            }
+          ]
+        },
+        {
+          "filter": "GeForce NOW",
+          "count": 22,
+          "imagesLoaded": 22,
+          "uniqueImageUrls": 22,
+          "items": [
+            {
+              "id": "orbit-raiders",
+              "name": "Orbit Raiders",
+              "loaded": true,
+              "src": "http://127.0.0.1:8097/assets/assets/covers/orbit-raiders.80c98d8cccd3bb595447985e3a51057e.png"
+            },
+            {
+              "id": "neon-expansion",
+              "name": "Neon Expansion",
+              "loaded": true,
+              "src": "http://127.0.0.1:8097/assets/assets/covers/neon-expansion.6d71c8641cbd9a15c9ab922646e56367.png"
+            },
+            {
+              "id": "pv-aurora-quest",
+              "name": "Aurora Quest",
+              "loaded": true,
+              "src": "http://127.0.0.1:8097/assets/assets/covers/pv-aurora-quest.5f1ce20e9d096ef74854c8ff394ed262.png"
+            },
+            {
+              "id": "pv-crystal-harbor",
+              "name": "Crystal Harbor",
+              "loaded": true,
+              "src": "http://127.0.0.1:8097/assets/assets/covers/pv-crystal-harbor.255a66068ec94e71168f5190af45895d.png"
+            },
+            {
+              "id": "pv-ember-citadel",
+              "name": "Ember Citadel",
+              "loaded": true,
+              "src": "http://127.0.0.1:8097/assets/assets/covers/pv-ember-citadel.c1f673999d4d204d96aa519c9e3fcebf.png"
+            },
+            {
+              "id": "pv-moonlight-valley",
+              "name": "Moonlight Valley",
+              "loaded": true,
+              "src": "http://127.0.0.1:8097/assets/assets/covers/pv-moonlight-valley.6042b08d963fada7ff784e5211b326b9.png"
+            },
+            {
+              "id": "pv-skybound-isles",
+              "name": "Skybound Isles",
+              "loaded": true,
+              "src": "http://127.0.0.1:8097/assets/assets/covers/pv-skybound-isles.58d48d3d1ab46251b8a1585c3d9aba7b.png"
+            },
+            {
+              "id": "pv-ocean-echoes",
+              "name": "Ocean Echoes",
+              "loaded": true,
+              "src": "http://127.0.0.1:8097/assets/assets/covers/pv-ocean-echoes.54f2412db7206d81df4068a04eeb6e69.png"
+            },
+            {
+              "id": "pv-desert-horizon",
+              "name": "Desert Horizon",
+              "loaded": true,
+              "src": "http://127.0.0.1:8097/assets/assets/covers/pv-desert-horizon.08989cdca1b2346f37fe9f98e9475ec1.png"
+            },
+            {
+              "id": "pv-prism-runner",
+              "name": "Prism Runner",
+              "loaded": true,
+              "src": "http://127.0.0.1:8097/assets/assets/covers/pv-prism-runner.ad7d9b47624b837c5913786444022ab4.png"
+            },
+            {
+              "id": "pv-verdant-guardians",
+              "name": "Verdant Guardians",
+              "loaded": true,
+              "src": "http://127.0.0.1:8097/assets/assets/covers/pv-verdant-guardians.059a13a7d26617594f8f2ef7b9b4b5c3.png"
+            },
+            {
+              "id": "pv-thunder-peaks",
+              "name": "Thunder Peaks",
+              "loaded": true,
+              "src": "http://127.0.0.1:8097/assets/assets/covers/pv-thunder-peaks.f8e9361f272569dd28fb2c1e0556c21a.png"
+            },
+            {
+              "id": "pv-clockwork-haven",
+              "name": "Clockwork Haven",
+              "loaded": true,
+              "src": "http://127.0.0.1:8097/assets/assets/covers/pv-clockwork-haven.a7f86a1599537c2167d54c6a164d6f13.png"
+            },
+            {
+              "id": "pv-obsidian-knights",
+              "name": "Obsidian Knights",
+              "loaded": true,
+              "src": "http://127.0.0.1:8097/assets/assets/covers/pv-obsidian-knights.0d3e9f2b740404a0d5c6f413e6fa2dd2.png"
+            },
+            {
+              "id": "pv-saffron-dunes",
+              "name": "Saffron Dunes",
+              "loaded": true,
+              "src": "http://127.0.0.1:8097/assets/assets/covers/pv-saffron-dunes.f6a8fb29668529b0125a9d864a1068ba.png"
+            },
+            {
+              "id": "pv-misty-outpost",
+              "name": "Misty Outpost",
+              "loaded": true,
+              "src": "http://127.0.0.1:8097/assets/assets/covers/pv-misty-outpost.b921151a027d2b2474308f13b89806af.png"
+            },
+            {
+              "id": "pv-tidal-legends",
+              "name": "Tidal Legends",
+              "loaded": true,
+              "src": "http://127.0.0.1:8097/assets/assets/covers/pv-tidal-legends.bebc9a959aa0c62d00e22f94fdd9a9cb.png"
+            },
+            {
+              "id": "pv-copper-canyon",
+              "name": "Copper Canyon",
+              "loaded": true,
+              "src": "http://127.0.0.1:8097/assets/assets/covers/pv-copper-canyon.23195098725e3f86a6f25993f0308a83.png"
+            },
+            {
+              "id": "pv-jade-expedition",
+              "name": "Jade Expedition",
+              "loaded": true,
+              "src": "http://127.0.0.1:8097/assets/assets/covers/pv-jade-expedition.09e2742f52045a1c7ac3d0a6e95da7e2.png"
+            },
+            {
+              "id": "pv-midnight-metro",
+              "name": "Midnight Metro",
+              "loaded": true,
+              "src": "http://127.0.0.1:8097/assets/assets/covers/pv-midnight-metro.c27a8553989dd8d21c46c85a48575205.png"
+            },
+            {
+              "id": "pv-sunken-compass",
+              "name": "Sunken Compass",
+              "loaded": true,
+              "src": "http://127.0.0.1:8097/assets/assets/covers/pv-sunken-compass.dc7fcba40ada359f15b50baa6d155a59.png"
+            },
+            {
+              "id": "pv-crimson-bastion",
+              "name": "Crimson Bastion",
+              "loaded": true,
+              "src": "http://127.0.0.1:8097/assets/assets/covers/pv-crimson-bastion.c0b856c863313f0b6ecacfbe83fc974d.png"
+            }
+          ]
+        },
+        {
+          "filter": "Boosteroid",
+          "count": 21,
+          "imagesLoaded": 21,
+          "uniqueImageUrls": 21,
+          "items": [
+            {
+              "id": "orbit-raiders",
+              "name": "Orbit Raiders",
+              "loaded": true,
+              "src": "http://127.0.0.1:8097/assets/assets/covers/orbit-raiders.80c98d8cccd3bb595447985e3a51057e.png"
+            },
+            {
+              "id": "pv-aurora-quest",
+              "name": "Aurora Quest",
+              "loaded": true,
+              "src": "http://127.0.0.1:8097/assets/assets/covers/pv-aurora-quest.5f1ce20e9d096ef74854c8ff394ed262.png"
+            },
+            {
+              "id": "pv-solar-drifters",
+              "name": "Solar Drifters",
+              "loaded": true,
+              "src": "http://127.0.0.1:8097/assets/assets/covers/pv-solar-drifters.9b01944da88ff115bbfc53ac2531e0c0.png"
+            },
+            {
+              "id": "pv-ember-citadel",
+              "name": "Ember Citadel",
+              "loaded": true,
+              "src": "http://127.0.0.1:8097/assets/assets/covers/pv-ember-citadel.c1f673999d4d204d96aa519c9e3fcebf.png"
+            },
+            {
+              "id": "pv-iron-circuit",
+              "name": "Iron Circuit",
+              "loaded": true,
+              "src": "http://127.0.0.1:8097/assets/assets/covers/pv-iron-circuit.4962ba6cf70ab21d95add4d19f70dfc9.png"
+            },
+            {
+              "id": "pv-skybound-isles",
+              "name": "Skybound Isles",
+              "loaded": true,
+              "src": "http://127.0.0.1:8097/assets/assets/covers/pv-skybound-isles.58d48d3d1ab46251b8a1585c3d9aba7b.png"
+            },
+            {
+              "id": "pv-frostfall-keep",
+              "name": "Frostfall Keep",
+              "loaded": true,
+              "src": "http://127.0.0.1:8097/assets/assets/covers/pv-frostfall-keep.28336fff7cb8e9a841cf02a883d4a82c.png"
+            },
+            {
+              "id": "pv-desert-horizon",
+              "name": "Desert Horizon",
+              "loaded": true,
+              "src": "http://127.0.0.1:8097/assets/assets/covers/pv-desert-horizon.08989cdca1b2346f37fe9f98e9475ec1.png"
+            },
+            {
+              "id": "pv-starlight-nomads",
+              "name": "Starlight Nomads",
+              "loaded": true,
+              "src": "http://127.0.0.1:8097/assets/assets/covers/pv-starlight-nomads.e544be57a2ce23aa1565db166e0f70a0.png"
+            },
+            {
+              "id": "pv-verdant-guardians",
+              "name": "Verdant Guardians",
+              "loaded": true,
+              "src": "http://127.0.0.1:8097/assets/assets/covers/pv-verdant-guardians.059a13a7d26617594f8f2ef7b9b4b5c3.png"
+            },
+            {
+              "id": "pv-coral-odyssey",
+              "name": "Coral Odyssey",
+              "loaded": true,
+              "src": "http://127.0.0.1:8097/assets/assets/covers/pv-coral-odyssey.469b808f7951dc06427c720201683f5d.png"
+            },
+            {
+              "id": "pv-clockwork-haven",
+              "name": "Clockwork Haven",
+              "loaded": true,
+              "src": "http://127.0.0.1:8097/assets/assets/covers/pv-clockwork-haven.a7f86a1599537c2167d54c6a164d6f13.png"
+            },
+            {
+              "id": "pv-comet-trails",
+              "name": "Comet Trails",
+              "loaded": true,
+              "src": "http://127.0.0.1:8097/assets/assets/covers/pv-comet-trails.f7f05b35fc1b70fb2a4ec66ea62e4bce.png"
+            },
+            {
+              "id": "pv-saffron-dunes",
+              "name": "Saffron Dunes",
+              "loaded": true,
+              "src": "http://127.0.0.1:8097/assets/assets/covers/pv-saffron-dunes.f6a8fb29668529b0125a9d864a1068ba.png"
+            },
+            {
+              "id": "pv-glacier-voyage",
+              "name": "Glacier Voyage",
+              "loaded": true,
+              "src": "http://127.0.0.1:8097/assets/assets/covers/pv-glacier-voyage.97a10f487f283876ded9eaa7ea045e25.png"
+            },
+            {
+              "id": "pv-tidal-legends",
+              "name": "Tidal Legends",
+              "loaded": true,
+              "src": "http://127.0.0.1:8097/assets/assets/covers/pv-tidal-legends.bebc9a959aa0c62d00e22f94fdd9a9cb.png"
+            },
+            {
+              "id": "pv-celestial-forge",
+              "name": "Celestial Forge",
+              "loaded": true,
+              "src": "http://127.0.0.1:8097/assets/assets/covers/pv-celestial-forge.a199d7a3ded23ea873a97a7424777009.png"
+            },
+            {
+              "id": "pv-jade-expedition",
+              "name": "Jade Expedition",
+              "loaded": true,
+              "src": "http://127.0.0.1:8097/assets/assets/covers/pv-jade-expedition.09e2742f52045a1c7ac3d0a6e95da7e2.png"
+            },
+            {
+              "id": "pv-silver-summit",
+              "name": "Silver Summit",
+              "loaded": true,
+              "src": "http://127.0.0.1:8097/assets/assets/covers/pv-silver-summit.227d53d19197a52689c133fe7147bdc2.png"
+            },
+            {
+              "id": "pv-sunken-compass",
+              "name": "Sunken Compass",
+              "loaded": true,
+              "src": "http://127.0.0.1:8097/assets/assets/covers/pv-sunken-compass.dc7fcba40ada359f15b50baa6d155a59.png"
+            },
+            {
+              "id": "pv-zenith-frontier",
+              "name": "Zenith Frontier",
+              "loaded": true,
+              "src": "http://127.0.0.1:8097/assets/assets/covers/pv-zenith-frontier.0f377773590236475d6c5a129217c3de.png"
+            }
+          ]
+        },
+        {
+          "filter": "Todos",
+          "count": 32,
+          "imagesLoaded": 32,
+          "uniqueImageUrls": 32,
+          "items": [
+            {
+              "id": "orbit-raiders",
+              "name": "Orbit Raiders",
+              "loaded": true,
+              "src": "http://127.0.0.1:8097/assets/assets/covers/orbit-raiders.80c98d8cccd3bb595447985e3a51057e.png"
+            },
+            {
+              "id": "neon-expansion",
+              "name": "Neon Expansion",
+              "loaded": true,
+              "src": "http://127.0.0.1:8097/assets/assets/covers/neon-expansion.6d71c8641cbd9a15c9ab922646e56367.png"
+            },
+            {
+              "id": "pv-aurora-quest",
+              "name": "Aurora Quest",
+              "loaded": true,
+              "src": "http://127.0.0.1:8097/assets/assets/covers/pv-aurora-quest.5f1ce20e9d096ef74854c8ff394ed262.png"
+            },
+            {
+              "id": "pv-crystal-harbor",
+              "name": "Crystal Harbor",
+              "loaded": true,
+              "src": "http://127.0.0.1:8097/assets/assets/covers/pv-crystal-harbor.255a66068ec94e71168f5190af45895d.png"
+            },
+            {
+              "id": "pv-solar-drifters",
+              "name": "Solar Drifters",
+              "loaded": true,
+              "src": "http://127.0.0.1:8097/assets/assets/covers/pv-solar-drifters.9b01944da88ff115bbfc53ac2531e0c0.png"
+            },
+            {
+              "id": "pv-ember-citadel",
+              "name": "Ember Citadel",
+              "loaded": true,
+              "src": "http://127.0.0.1:8097/assets/assets/covers/pv-ember-citadel.c1f673999d4d204d96aa519c9e3fcebf.png"
+            },
+            {
+              "id": "pv-moonlight-valley",
+              "name": "Moonlight Valley",
+              "loaded": true,
+              "src": "http://127.0.0.1:8097/assets/assets/covers/pv-moonlight-valley.6042b08d963fada7ff784e5211b326b9.png"
+            },
+            {
+              "id": "pv-iron-circuit",
+              "name": "Iron Circuit",
+              "loaded": true,
+              "src": "http://127.0.0.1:8097/assets/assets/covers/pv-iron-circuit.4962ba6cf70ab21d95add4d19f70dfc9.png"
+            },
+            {
+              "id": "pv-skybound-isles",
+              "name": "Skybound Isles",
+              "loaded": true,
+              "src": "http://127.0.0.1:8097/assets/assets/covers/pv-skybound-isles.58d48d3d1ab46251b8a1585c3d9aba7b.png"
+            },
+            {
+              "id": "pv-ocean-echoes",
+              "name": "Ocean Echoes",
+              "loaded": true,
+              "src": "http://127.0.0.1:8097/assets/assets/covers/pv-ocean-echoes.54f2412db7206d81df4068a04eeb6e69.png"
+            },
+            {
+              "id": "pv-frostfall-keep",
+              "name": "Frostfall Keep",
+              "loaded": true,
+              "src": "http://127.0.0.1:8097/assets/assets/covers/pv-frostfall-keep.28336fff7cb8e9a841cf02a883d4a82c.png"
+            },
+            {
+              "id": "pv-desert-horizon",
+              "name": "Desert Horizon",
+              "loaded": true,
+              "src": "http://127.0.0.1:8097/assets/assets/covers/pv-desert-horizon.08989cdca1b2346f37fe9f98e9475ec1.png"
+            },
+            {
+              "id": "pv-prism-runner",
+              "name": "Prism Runner",
+              "loaded": true,
+              "src": "http://127.0.0.1:8097/assets/assets/covers/pv-prism-runner.ad7d9b47624b837c5913786444022ab4.png"
+            },
+            {
+              "id": "pv-starlight-nomads",
+              "name": "Starlight Nomads",
+              "loaded": true,
+              "src": "http://127.0.0.1:8097/assets/assets/covers/pv-starlight-nomads.e544be57a2ce23aa1565db166e0f70a0.png"
+            },
+            {
+              "id": "pv-verdant-guardians",
+              "name": "Verdant Guardians",
+              "loaded": true,
+              "src": "http://127.0.0.1:8097/assets/assets/covers/pv-verdant-guardians.059a13a7d26617594f8f2ef7b9b4b5c3.png"
+            },
+            {
+              "id": "pv-thunder-peaks",
+              "name": "Thunder Peaks",
+              "loaded": true,
+              "src": "http://127.0.0.1:8097/assets/assets/covers/pv-thunder-peaks.f8e9361f272569dd28fb2c1e0556c21a.png"
+            },
+            {
+              "id": "pv-coral-odyssey",
+              "name": "Coral Odyssey",
+              "loaded": true,
+              "src": "http://127.0.0.1:8097/assets/assets/covers/pv-coral-odyssey.469b808f7951dc06427c720201683f5d.png"
+            },
+            {
+              "id": "pv-clockwork-haven",
+              "name": "Clockwork Haven",
+              "loaded": true,
+              "src": "http://127.0.0.1:8097/assets/assets/covers/pv-clockwork-haven.a7f86a1599537c2167d54c6a164d6f13.png"
+            },
+            {
+              "id": "pv-obsidian-knights",
+              "name": "Obsidian Knights",
+              "loaded": true,
+              "src": "http://127.0.0.1:8097/assets/assets/covers/pv-obsidian-knights.0d3e9f2b740404a0d5c6f413e6fa2dd2.png"
+            },
+            {
+              "id": "pv-comet-trails",
+              "name": "Comet Trails",
+              "loaded": true,
+              "src": "http://127.0.0.1:8097/assets/assets/covers/pv-comet-trails.f7f05b35fc1b70fb2a4ec66ea62e4bce.png"
+            },
+            {
+              "id": "pv-saffron-dunes",
+              "name": "Saffron Dunes",
+              "loaded": true,
+              "src": "http://127.0.0.1:8097/assets/assets/covers/pv-saffron-dunes.f6a8fb29668529b0125a9d864a1068ba.png"
+            },
+            {
+              "id": "pv-misty-outpost",
+              "name": "Misty Outpost",
+              "loaded": true,
+              "src": "http://127.0.0.1:8097/assets/assets/covers/pv-misty-outpost.b921151a027d2b2474308f13b89806af.png"
+            },
+            {
+              "id": "pv-glacier-voyage",
+              "name": "Glacier Voyage",
+              "loaded": true,
+              "src": "http://127.0.0.1:8097/assets/assets/covers/pv-glacier-voyage.97a10f487f283876ded9eaa7ea045e25.png"
+            },
+            {
+              "id": "pv-tidal-legends",
+              "name": "Tidal Legends",
+              "loaded": true,
+              "src": "http://127.0.0.1:8097/assets/assets/covers/pv-tidal-legends.bebc9a959aa0c62d00e22f94fdd9a9cb.png"
+            },
+            {
+              "id": "pv-copper-canyon",
+              "name": "Copper Canyon",
+              "loaded": true,
+              "src": "http://127.0.0.1:8097/assets/assets/covers/pv-copper-canyon.23195098725e3f86a6f25993f0308a83.png"
+            },
+            {
+              "id": "pv-celestial-forge",
+              "name": "Celestial Forge",
+              "loaded": true,
+              "src": "http://127.0.0.1:8097/assets/assets/covers/pv-celestial-forge.a199d7a3ded23ea873a97a7424777009.png"
+            },
+            {
+              "id": "pv-jade-expedition",
+              "name": "Jade Expedition",
+              "loaded": true,
+              "src": "http://127.0.0.1:8097/assets/assets/covers/pv-jade-expedition.09e2742f52045a1c7ac3d0a6e95da7e2.png"
+            },
+            {
+              "id": "pv-midnight-metro",
+              "name": "Midnight Metro",
+              "loaded": true,
+              "src": "http://127.0.0.1:8097/assets/assets/covers/pv-midnight-metro.c27a8553989dd8d21c46c85a48575205.png"
+            },
+            {
+              "id": "pv-silver-summit",
+              "name": "Silver Summit",
+              "loaded": true,
+              "src": "http://127.0.0.1:8097/assets/assets/covers/pv-silver-summit.227d53d19197a52689c133fe7147bdc2.png"
+            },
+            {
+              "id": "pv-sunken-compass",
+              "name": "Sunken Compass",
+              "loaded": true,
+              "src": "http://127.0.0.1:8097/assets/assets/covers/pv-sunken-compass.dc7fcba40ada359f15b50baa6d155a59.png"
+            },
+            {
+              "id": "pv-crimson-bastion",
+              "name": "Crimson Bastion",
+              "loaded": true,
+              "src": "http://127.0.0.1:8097/assets/assets/covers/pv-crimson-bastion.c0b856c863313f0b6ecacfbe83fc974d.png"
+            },
+            {
+              "id": "pv-zenith-frontier",
+              "name": "Zenith Frontier",
+              "loaded": true,
+              "src": "http://127.0.0.1:8097/assets/assets/covers/pv-zenith-frontier.0f377773590236475d6c5a129217c3de.png"
+            }
+          ]
+        }
+      ],
+      "catalogSnapshot": [
+        {
+          "id": "neon-expansion",
+          "name": "Neon Expansion",
+          "type": "DLC",
+          "priceCents": 2490,
+          "description": "Expansão demonstrativa para a jornada visual do PixelVault.",
+          "activationStore": "Loja de demonstração (fictícia)",
+          "compatibleWith": [
+            "GeForce NOW"
+          ]
+        },
+        {
+          "id": "orbit-raiders",
+          "name": "Orbit Raiders",
+          "type": "Jogo",
+          "priceCents": 7990,
+          "description": "Descrição demonstrativa. O conteúdo final ainda não foi aprovado.",
+          "activationStore": "Loja de demonstração (fictícia)",
+          "compatibleWith": [
+            "Boosteroid",
+            "GeForce NOW"
+          ]
+        },
+        {
+          "id": "pv-aurora-quest",
+          "name": "Aurora Quest",
+          "type": "Jogo",
+          "priceCents": 1990,
+          "description": "Explore florestas luminosas e encontre relíquias perdidas. Jogo fictício para aprendizado; compatibilidade cloud ilustrativa.",
+          "activationStore": "Loja de demonstração (fictícia)",
+          "compatibleWith": [
+            "Boosteroid",
+            "GeForce NOW"
+          ]
+        },
+        {
+          "id": "pv-celestial-forge",
+          "name": "Celestial Forge",
+          "type": "Jogo",
+          "priceCents": 9690,
+          "description": "Corra por uma cidade futurista repleta de desafios. Jogo fictício para aprendizado; compatibilidade cloud ilustrativa.",
+          "activationStore": "Loja de demonstração (fictícia)",
+          "compatibleWith": [
+            "Boosteroid"
+          ]
+        },
+        {
+          "id": "pv-clockwork-haven",
+          "name": "Clockwork Haven",
+          "type": "Jogo",
+          "priceCents": 4090,
+          "description": "Defenda uma fortaleza e desvende caminhos secretos. Jogo fictício para aprendizado; compatibilidade cloud ilustrativa.",
+          "activationStore": "Loja de demonstração (fictícia)",
+          "compatibleWith": [
+            "Boosteroid",
+            "GeForce NOW"
+          ]
+        },
+        {
+          "id": "pv-comet-trails",
+          "name": "Comet Trails",
+          "type": "Jogo",
+          "priceCents": 5490,
+          "description": "Corra por uma cidade futurista repleta de desafios. Jogo fictício para aprendizado; compatibilidade cloud ilustrativa.",
+          "activationStore": "Loja de demonstração (fictícia)",
+          "compatibleWith": [
+            "Boosteroid"
+          ]
+        },
+        {
+          "id": "pv-copper-canyon",
+          "name": "Copper Canyon",
+          "type": "Jogo",
+          "priceCents": 8990,
+          "description": "Atravesse montanhas e vales em uma jornada de exploração. Jogo fictício para aprendizado; compatibilidade cloud ilustrativa.",
+          "activationStore": "Loja de demonstração (fictícia)",
+          "compatibleWith": [
+            "GeForce NOW"
+          ]
+        },
+        {
+          "id": "pv-coral-odyssey",
+          "name": "Coral Odyssey",
+          "type": "Jogo",
+          "priceCents": 3390,
+          "description": "Pilote uma nave por planetas e estações distantes. Jogo fictício para aprendizado; compatibilidade cloud ilustrativa.",
+          "activationStore": "Loja de demonstração (fictícia)",
+          "compatibleWith": [
+            "Boosteroid"
+          ]
+        },
+        {
+          "id": "pv-crimson-bastion",
+          "name": "Crimson Bastion",
+          "type": "Jogo",
+          "priceCents": 4790,
+          "description": "Atravesse montanhas e vales em uma jornada de exploração. Jogo fictício para aprendizado; compatibilidade cloud ilustrativa.",
+          "activationStore": "Loja de demonstração (fictícia)",
+          "compatibleWith": [
+            "GeForce NOW"
+          ]
+        },
+        {
+          "id": "pv-crystal-harbor",
+          "name": "Crystal Harbor",
+          "type": "Jogo",
+          "priceCents": 2690,
+          "description": "Navegue entre ilhas e descubra histórias à beira-mar. Jogo fictício para aprendizado; compatibilidade cloud ilustrativa.",
+          "activationStore": "Loja de demonstração (fictícia)",
+          "compatibleWith": [
+            "GeForce NOW"
+          ]
+        },
+        {
+          "id": "pv-desert-horizon",
+          "name": "Desert Horizon",
+          "type": "Jogo",
+          "priceCents": 8290,
+          "description": "Defenda uma fortaleza e desvende caminhos secretos. Jogo fictício para aprendizado; compatibilidade cloud ilustrativa.",
+          "activationStore": "Loja de demonstração (fictícia)",
+          "compatibleWith": [
+            "Boosteroid",
+            "GeForce NOW"
+          ]
+        },
+        {
+          "id": "pv-ember-citadel",
+          "name": "Ember Citadel",
+          "type": "Jogo",
+          "priceCents": 4090,
+          "description": "Defenda uma fortaleza e desvende caminhos secretos. Jogo fictício para aprendizado; compatibilidade cloud ilustrativa.",
+          "activationStore": "Loja de demonstração (fictícia)",
+          "compatibleWith": [
+            "Boosteroid",
+            "GeForce NOW"
+          ]
+        },
+        {
+          "id": "pv-frostfall-keep",
+          "name": "Frostfall Keep",
+          "type": "Jogo",
+          "priceCents": 7590,
+          "description": "Pilote uma nave por planetas e estações distantes. Jogo fictício para aprendizado; compatibilidade cloud ilustrativa.",
+          "activationStore": "Loja de demonstração (fictícia)",
+          "compatibleWith": [
+            "Boosteroid"
+          ]
+        },
+        {
+          "id": "pv-glacier-voyage",
+          "name": "Glacier Voyage",
+          "type": "Jogo",
+          "priceCents": 7590,
+          "description": "Pilote uma nave por planetas e estações distantes. Jogo fictício para aprendizado; compatibilidade cloud ilustrativa.",
+          "activationStore": "Loja de demonstração (fictícia)",
+          "compatibleWith": [
+            "Boosteroid"
+          ]
+        },
+        {
+          "id": "pv-iron-circuit",
+          "name": "Iron Circuit",
+          "type": "Jogo",
+          "priceCents": 5490,
+          "description": "Corra por uma cidade futurista repleta de desafios. Jogo fictício para aprendizado; compatibilidade cloud ilustrativa.",
+          "activationStore": "Loja de demonstração (fictícia)",
+          "compatibleWith": [
+            "Boosteroid"
+          ]
+        },
+        {
+          "id": "pv-jade-expedition",
+          "name": "Jade Expedition",
+          "type": "Jogo",
+          "priceCents": 1990,
+          "description": "Explore florestas luminosas e encontre relíquias perdidas. Jogo fictício para aprendizado; compatibilidade cloud ilustrativa.",
+          "activationStore": "Loja de demonstração (fictícia)",
+          "compatibleWith": [
+            "Boosteroid",
+            "GeForce NOW"
+          ]
+        },
+        {
+          "id": "pv-midnight-metro",
+          "name": "Midnight Metro",
+          "type": "Jogo",
+          "priceCents": 2690,
+          "description": "Navegue entre ilhas e descubra histórias à beira-mar. Jogo fictício para aprendizado; compatibilidade cloud ilustrativa.",
+          "activationStore": "Loja de demonstração (fictícia)",
+          "compatibleWith": [
+            "GeForce NOW"
+          ]
+        },
+        {
+          "id": "pv-misty-outpost",
+          "name": "Misty Outpost",
+          "type": "Jogo",
+          "priceCents": 6890,
+          "description": "Navegue entre ilhas e descubra histórias à beira-mar. Jogo fictício para aprendizado; compatibilidade cloud ilustrativa.",
+          "activationStore": "Loja de demonstração (fictícia)",
+          "compatibleWith": [
+            "GeForce NOW"
+          ]
+        },
+        {
+          "id": "pv-moonlight-valley",
+          "name": "Moonlight Valley",
+          "type": "Jogo",
+          "priceCents": 4790,
+          "description": "Atravesse montanhas e vales em uma jornada de exploração. Jogo fictício para aprendizado; compatibilidade cloud ilustrativa.",
+          "activationStore": "Loja de demonstração (fictícia)",
+          "compatibleWith": [
+            "GeForce NOW"
+          ]
+        },
+        {
+          "id": "pv-obsidian-knights",
+          "name": "Obsidian Knights",
+          "type": "Jogo",
+          "priceCents": 4790,
+          "description": "Atravesse montanhas e vales em uma jornada de exploração. Jogo fictício para aprendizado; compatibilidade cloud ilustrativa.",
+          "activationStore": "Loja de demonstração (fictícia)",
+          "compatibleWith": [
+            "GeForce NOW"
+          ]
+        },
+        {
+          "id": "pv-ocean-echoes",
+          "name": "Ocean Echoes",
+          "type": "Jogo",
+          "priceCents": 6890,
+          "description": "Navegue entre ilhas e descubra histórias à beira-mar. Jogo fictício para aprendizado; compatibilidade cloud ilustrativa.",
+          "activationStore": "Loja de demonstração (fictícia)",
+          "compatibleWith": [
+            "GeForce NOW"
+          ]
+        },
+        {
+          "id": "pv-prism-runner",
+          "name": "Prism Runner",
+          "type": "Jogo",
+          "priceCents": 8990,
+          "description": "Atravesse montanhas e vales em uma jornada de exploração. Jogo fictício para aprendizado; compatibilidade cloud ilustrativa.",
+          "activationStore": "Loja de demonstração (fictícia)",
+          "compatibleWith": [
+            "GeForce NOW"
+          ]
+        },
+        {
+          "id": "pv-saffron-dunes",
+          "name": "Saffron Dunes",
+          "type": "Jogo",
+          "priceCents": 6190,
+          "description": "Explore florestas luminosas e encontre relíquias perdidas. Jogo fictício para aprendizado; compatibilidade cloud ilustrativa.",
+          "activationStore": "Loja de demonstração (fictícia)",
+          "compatibleWith": [
+            "Boosteroid",
+            "GeForce NOW"
+          ]
+        },
+        {
+          "id": "pv-silver-summit",
+          "name": "Silver Summit",
+          "type": "Jogo",
+          "priceCents": 3390,
+          "description": "Pilote uma nave por planetas e estações distantes. Jogo fictício para aprendizado; compatibilidade cloud ilustrativa.",
+          "activationStore": "Loja de demonstração (fictícia)",
+          "compatibleWith": [
+            "Boosteroid"
+          ]
+        },
+        {
+          "id": "pv-skybound-isles",
+          "name": "Skybound Isles",
+          "type": "Jogo",
+          "priceCents": 6190,
+          "description": "Explore florestas luminosas e encontre relíquias perdidas. Jogo fictício para aprendizado; compatibilidade cloud ilustrativa.",
+          "activationStore": "Loja de demonstração (fictícia)",
+          "compatibleWith": [
+            "Boosteroid",
+            "GeForce NOW"
+          ]
+        },
+        {
+          "id": "pv-solar-drifters",
+          "name": "Solar Drifters",
+          "type": "Jogo",
+          "priceCents": 3390,
+          "description": "Pilote uma nave por planetas e estações distantes. Jogo fictício para aprendizado; compatibilidade cloud ilustrativa.",
+          "activationStore": "Loja de demonstração (fictícia)",
+          "compatibleWith": [
+            "Boosteroid"
+          ]
+        },
+        {
+          "id": "pv-starlight-nomads",
+          "name": "Starlight Nomads",
+          "type": "Jogo",
+          "priceCents": 9690,
+          "description": "Corra por uma cidade futurista repleta de desafios. Jogo fictício para aprendizado; compatibilidade cloud ilustrativa.",
+          "activationStore": "Loja de demonstração (fictícia)",
+          "compatibleWith": [
+            "Boosteroid"
+          ]
+        },
+        {
+          "id": "pv-sunken-compass",
+          "name": "Sunken Compass",
+          "type": "Jogo",
+          "priceCents": 4090,
+          "description": "Defenda uma fortaleza e desvende caminhos secretos. Jogo fictício para aprendizado; compatibilidade cloud ilustrativa.",
+          "activationStore": "Loja de demonstração (fictícia)",
+          "compatibleWith": [
+            "Boosteroid",
+            "GeForce NOW"
+          ]
+        },
+        {
+          "id": "pv-thunder-peaks",
+          "name": "Thunder Peaks",
+          "type": "Jogo",
+          "priceCents": 2690,
+          "description": "Navegue entre ilhas e descubra histórias à beira-mar. Jogo fictício para aprendizado; compatibilidade cloud ilustrativa.",
+          "activationStore": "Loja de demonstração (fictícia)",
+          "compatibleWith": [
+            "GeForce NOW"
+          ]
+        },
+        {
+          "id": "pv-tidal-legends",
+          "name": "Tidal Legends",
+          "type": "Jogo",
+          "priceCents": 8290,
+          "description": "Defenda uma fortaleza e desvende caminhos secretos. Jogo fictício para aprendizado; compatibilidade cloud ilustrativa.",
+          "activationStore": "Loja de demonstração (fictícia)",
+          "compatibleWith": [
+            "Boosteroid",
+            "GeForce NOW"
+          ]
+        },
+        {
+          "id": "pv-verdant-guardians",
+          "name": "Verdant Guardians",
+          "type": "Jogo",
+          "priceCents": 1990,
+          "description": "Explore florestas luminosas e encontre relíquias perdidas. Jogo fictício para aprendizado; compatibilidade cloud ilustrativa.",
+          "activationStore": "Loja de demonstração (fictícia)",
+          "compatibleWith": [
+            "Boosteroid",
+            "GeForce NOW"
+          ]
+        },
+        {
+          "id": "pv-zenith-frontier",
+          "name": "Zenith Frontier",
+          "type": "Jogo",
+          "priceCents": 5490,
+          "description": "Corra por uma cidade futurista repleta de desafios. Jogo fictício para aprendizado; compatibilidade cloud ilustrativa.",
+          "activationStore": "Loja de demonstração (fictícia)",
+          "compatibleWith": [
+            "Boosteroid"
+          ]
+        }
+      ],
+      "controls": [
+        {
+          "kind": "field",
+          "label": "E-mail",
+          "disabled": false,
+          "type": "email"
+        },
+        {
+          "kind": "field",
+          "label": "Senha",
+          "disabled": false,
+          "type": "password"
+        },
+        {
+          "kind": "button",
+          "label": "Entrar",
+          "disabled": false,
+          "type": "button"
+        },
+        {
+          "kind": "button",
+          "label": "Criar conta",
+          "disabled": false,
+          "type": "button"
+        },
+        {
+          "kind": "button",
+          "label": "Atualizar catálogo da API",
+          "disabled": false,
+          "type": "button"
+        },
+        {
+          "kind": "button",
+          "label": "Exportar dados em JSON",
+          "disabled": false,
+          "type": "button"
+        },
+        {
+          "kind": "button",
+          "label": "Selecionado: Todos",
+          "disabled": false,
+          "type": "button"
+        },
+        {
+          "kind": "button",
+          "label": "GeForce NOW",
+          "disabled": false,
+          "type": "button"
+        },
+        {
+          "kind": "button",
+          "label": "Boosteroid",
+          "disabled": false,
+          "type": "button"
+        },
+        {
+          "kind": "button",
+          "label": "Ver detalhes de Orbit Raiders",
+          "disabled": false,
+          "type": "button"
+        },
+        {
+          "kind": "button",
+          "label": "Ver detalhes de Neon Expansion",
+          "disabled": false,
+          "type": "button"
+        },
+        {
+          "kind": "button",
+          "label": "Ver detalhes de Aurora Quest",
+          "disabled": false,
+          "type": "button"
+        },
+        {
+          "kind": "button",
+          "label": "Ver detalhes de Crystal Harbor",
+          "disabled": false,
+          "type": "button"
+        },
+        {
+          "kind": "button",
+          "label": "Ver detalhes de Solar Drifters",
+          "disabled": false,
+          "type": "button"
+        },
+        {
+          "kind": "button",
+          "label": "Ver detalhes de Ember Citadel",
+          "disabled": false,
+          "type": "button"
+        },
+        {
+          "kind": "button",
+          "label": "Ver detalhes de Moonlight Valley",
+          "disabled": false,
+          "type": "button"
+        },
+        {
+          "kind": "button",
+          "label": "Ver detalhes de Iron Circuit",
+          "disabled": false,
+          "type": "button"
+        },
+        {
+          "kind": "button",
+          "label": "Ver detalhes de Skybound Isles",
+          "disabled": false,
+          "type": "button"
+        },
+        {
+          "kind": "button",
+          "label": "Ver detalhes de Ocean Echoes",
+          "disabled": false,
+          "type": "button"
+        },
+        {
+          "kind": "button",
+          "label": "Ver detalhes de Frostfall Keep",
+          "disabled": false,
+          "type": "button"
+        },
+        {
+          "kind": "button",
+          "label": "Ver detalhes de Desert Horizon",
+          "disabled": false,
+          "type": "button"
+        },
+        {
+          "kind": "button",
+          "label": "Ver detalhes de Prism Runner",
+          "disabled": false,
+          "type": "button"
+        },
+        {
+          "kind": "button",
+          "label": "Ver detalhes de Starlight Nomads",
+          "disabled": false,
+          "type": "button"
+        },
+        {
+          "kind": "button",
+          "label": "Ver detalhes de Verdant Guardians",
+          "disabled": false,
+          "type": "button"
+        },
+        {
+          "kind": "button",
+          "label": "Ver detalhes de Thunder Peaks",
+          "disabled": false,
+          "type": "button"
+        },
+        {
+          "kind": "button",
+          "label": "Sair",
+          "disabled": false,
+          "type": "button"
+        },
+        {
+          "kind": "button",
+          "label": "Catálogo",
+          "disabled": false,
+          "type": null
+        },
+        {
+          "kind": "button",
+          "label": "Carrinho",
+          "disabled": false,
+          "type": null
+        },
+        {
+          "kind": "button",
+          "label": "Biblioteca",
+          "disabled": false,
+          "type": null
+        },
+        {
+          "kind": "button",
+          "label": "Ver detalhes de Coral Odyssey",
+          "disabled": false,
+          "type": "button"
+        },
+        {
+          "kind": "button",
+          "label": "Ver detalhes de Clockwork Haven",
+          "disabled": false,
+          "type": "button"
+        },
+        {
+          "kind": "button",
+          "label": "Ver detalhes de Obsidian Knights",
+          "disabled": false,
+          "type": "button"
+        },
+        {
+          "kind": "button",
+          "label": "Ver detalhes de Comet Trails",
+          "disabled": false,
+          "type": "button"
+        },
+        {
+          "kind": "button",
+          "label": "Ver detalhes de Saffron Dunes",
+          "disabled": false,
+          "type": "button"
+        },
+        {
+          "kind": "button",
+          "label": "Ver detalhes de Misty Outpost",
+          "disabled": false,
+          "type": "button"
+        },
+        {
+          "kind": "button",
+          "label": "Ver detalhes de Glacier Voyage",
+          "disabled": false,
+          "type": "button"
+        },
+        {
+          "kind": "button",
+          "label": "Ver detalhes de Tidal Legends",
+          "disabled": false,
+          "type": "button"
+        },
+        {
+          "kind": "button",
+          "label": "Ver detalhes de Copper Canyon",
+          "disabled": false,
+          "type": "button"
+        },
+        {
+          "kind": "button",
+          "label": "Ver detalhes de Celestial Forge",
+          "disabled": false,
+          "type": "button"
+        },
+        {
+          "kind": "button",
+          "label": "Ver detalhes de Jade Expedition",
+          "disabled": false,
+          "type": "button"
+        },
+        {
+          "kind": "button",
+          "label": "Ver detalhes de Midnight Metro",
+          "disabled": false,
+          "type": "button"
+        },
+        {
+          "kind": "button",
+          "label": "Ver detalhes de Silver Summit",
+          "disabled": false,
+          "type": "button"
+        },
+        {
+          "kind": "button",
+          "label": "Ver detalhes de Sunken Compass",
+          "disabled": false,
+          "type": "button"
+        },
+        {
+          "kind": "button",
+          "label": "Ver detalhes de Crimson Bastion",
+          "disabled": false,
+          "type": "button"
+        },
+        {
+          "kind": "button",
+          "label": "Ver detalhes de Zenith Frontier",
+          "disabled": false,
+          "type": "button"
+        },
+        {
+          "kind": "button",
+          "label": "Todos",
+          "disabled": false,
+          "type": "button"
+        },
+        {
+          "kind": "button",
+          "label": "Selecionado: GeForce NOW",
+          "disabled": false,
+          "type": "button"
+        },
+        {
+          "kind": "button",
+          "label": "Selecionado: Boosteroid",
+          "disabled": false,
+          "type": "button"
+        },
+        {
+          "kind": "button",
+          "label": "Adicionar ao carrinho",
+          "disabled": false,
+          "type": "button"
+        },
+        {
+          "kind": "button",
+          "label": "Ver carrinho (0)",
+          "disabled": false,
+          "type": "button"
+        },
+        {
+          "kind": "button",
+          "label": "Voltar ao catálogo",
+          "disabled": false,
+          "type": "button"
+        },
+        {
+          "kind": "button",
+          "label": "Já está no carrinho",
+          "disabled": false,
+          "type": "button"
+        },
+        {
+          "kind": "button",
+          "label": "Ver carrinho (1)",
+          "disabled": false,
+          "type": "button"
+        },
+        {
+          "kind": "button",
+          "label": "Remover: Zenith Frontier",
+          "disabled": false,
+          "type": "button"
+        },
+        {
+          "kind": "button",
+          "label": "Continuar para checkout",
+          "disabled": false,
+          "type": "button"
+        }
+      ]
+    },
+    {
+      "name": "catalogo-32-imagens-320",
+      "route": "wf01",
+      "width": 320,
+      "height": 568,
+      "options": {
+        "actions": [
+          [
+            "fill",
+            "E-mail",
+            "jogador@pixelvault.example"
+          ],
+          [
+            "fill",
+            "Senha",
+            "demo123"
+          ],
+          [
+            "click",
+            "Entrar"
+          ],
+          [
+            "expect",
+            "WF-03"
+          ],
+          [
+            "catalog-scan",
+            "Todos"
+          ],
+          [
+            "click",
+            "Ver detalhes de Zenith Frontier"
+          ],
+          [
+            "expect",
+            "Zenith Frontier"
+          ],
+          [
+            "click",
+            "Voltar ao catálogo"
+          ],
+          [
+            "catalog-top"
+          ],
+          [
+            "click",
+            "Ver detalhes de Aurora Quest"
+          ],
+          [
+            "expect",
+            "Explore florestas luminosas"
+          ],
+          [
+            "click",
+            "Adicionar ao carrinho"
+          ],
+          [
+            "click",
+            "Ver carrinho (1)"
+          ],
+          [
+            "expect",
+            "R$ 19,90"
+          ]
+        ]
+      },
+      "innerWidth": 320,
+      "innerHeight": 568,
+      "scrollWidth": 320,
+      "scrollHeight": 568,
+      "horizontalOverflowElements": [],
+      "focusedElement": null,
+      "focusedBorderColor": "rgb(0, 0, 0)",
+      "focusedBorderWidth": "0px",
+      "interfaceMarkers": false,
+      "title": "Seu carrinho\nAurora Quest\nTipo: Jogo\nR$ 19,90\nCompatível com: GeForce NOW, Boosteroid\nAtivação em: Loja de demonstração ",
+      "catalogChecks": [
+        {
+          "filter": "Todos",
+          "count": 32,
+          "imagesLoaded": 32,
+          "uniqueImageUrls": 32,
+          "items": [
+            {
+              "id": "orbit-raiders",
+              "name": "Orbit Raiders",
+              "loaded": true,
+              "src": "http://127.0.0.1:8097/assets/assets/covers/orbit-raiders.80c98d8cccd3bb595447985e3a51057e.png"
+            },
+            {
+              "id": "neon-expansion",
+              "name": "Neon Expansion",
+              "loaded": true,
+              "src": "http://127.0.0.1:8097/assets/assets/covers/neon-expansion.6d71c8641cbd9a15c9ab922646e56367.png"
+            },
+            {
+              "id": "pv-aurora-quest",
+              "name": "Aurora Quest",
+              "loaded": true,
+              "src": "http://127.0.0.1:8097/assets/assets/covers/pv-aurora-quest.5f1ce20e9d096ef74854c8ff394ed262.png"
+            },
+            {
+              "id": "pv-crystal-harbor",
+              "name": "Crystal Harbor",
+              "loaded": true,
+              "src": "http://127.0.0.1:8097/assets/assets/covers/pv-crystal-harbor.255a66068ec94e71168f5190af45895d.png"
+            },
+            {
+              "id": "pv-solar-drifters",
+              "name": "Solar Drifters",
+              "loaded": true,
+              "src": "http://127.0.0.1:8097/assets/assets/covers/pv-solar-drifters.9b01944da88ff115bbfc53ac2531e0c0.png"
+            },
+            {
+              "id": "pv-ember-citadel",
+              "name": "Ember Citadel",
+              "loaded": true,
+              "src": "http://127.0.0.1:8097/assets/assets/covers/pv-ember-citadel.c1f673999d4d204d96aa519c9e3fcebf.png"
+            },
+            {
+              "id": "pv-moonlight-valley",
+              "name": "Moonlight Valley",
+              "loaded": true,
+              "src": "http://127.0.0.1:8097/assets/assets/covers/pv-moonlight-valley.6042b08d963fada7ff784e5211b326b9.png"
+            },
+            {
+              "id": "pv-iron-circuit",
+              "name": "Iron Circuit",
+              "loaded": true,
+              "src": "http://127.0.0.1:8097/assets/assets/covers/pv-iron-circuit.4962ba6cf70ab21d95add4d19f70dfc9.png"
+            },
+            {
+              "id": "pv-skybound-isles",
+              "name": "Skybound Isles",
+              "loaded": true,
+              "src": "http://127.0.0.1:8097/assets/assets/covers/pv-skybound-isles.58d48d3d1ab46251b8a1585c3d9aba7b.png"
+            },
+            {
+              "id": "pv-ocean-echoes",
+              "name": "Ocean Echoes",
+              "loaded": true,
+              "src": "http://127.0.0.1:8097/assets/assets/covers/pv-ocean-echoes.54f2412db7206d81df4068a04eeb6e69.png"
+            },
+            {
+              "id": "pv-frostfall-keep",
+              "name": "Frostfall Keep",
+              "loaded": true,
+              "src": "http://127.0.0.1:8097/assets/assets/covers/pv-frostfall-keep.28336fff7cb8e9a841cf02a883d4a82c.png"
+            },
+            {
+              "id": "pv-desert-horizon",
+              "name": "Desert Horizon",
+              "loaded": true,
+              "src": "http://127.0.0.1:8097/assets/assets/covers/pv-desert-horizon.08989cdca1b2346f37fe9f98e9475ec1.png"
+            },
+            {
+              "id": "pv-prism-runner",
+              "name": "Prism Runner",
+              "loaded": true,
+              "src": "http://127.0.0.1:8097/assets/assets/covers/pv-prism-runner.ad7d9b47624b837c5913786444022ab4.png"
+            },
+            {
+              "id": "pv-starlight-nomads",
+              "name": "Starlight Nomads",
+              "loaded": true,
+              "src": "http://127.0.0.1:8097/assets/assets/covers/pv-starlight-nomads.e544be57a2ce23aa1565db166e0f70a0.png"
+            },
+            {
+              "id": "pv-verdant-guardians",
+              "name": "Verdant Guardians",
+              "loaded": true,
+              "src": "http://127.0.0.1:8097/assets/assets/covers/pv-verdant-guardians.059a13a7d26617594f8f2ef7b9b4b5c3.png"
+            },
+            {
+              "id": "pv-thunder-peaks",
+              "name": "Thunder Peaks",
+              "loaded": true,
+              "src": "http://127.0.0.1:8097/assets/assets/covers/pv-thunder-peaks.f8e9361f272569dd28fb2c1e0556c21a.png"
+            },
+            {
+              "id": "pv-coral-odyssey",
+              "name": "Coral Odyssey",
+              "loaded": true,
+              "src": "http://127.0.0.1:8097/assets/assets/covers/pv-coral-odyssey.469b808f7951dc06427c720201683f5d.png"
+            },
+            {
+              "id": "pv-clockwork-haven",
+              "name": "Clockwork Haven",
+              "loaded": true,
+              "src": "http://127.0.0.1:8097/assets/assets/covers/pv-clockwork-haven.a7f86a1599537c2167d54c6a164d6f13.png"
+            },
+            {
+              "id": "pv-obsidian-knights",
+              "name": "Obsidian Knights",
+              "loaded": true,
+              "src": "http://127.0.0.1:8097/assets/assets/covers/pv-obsidian-knights.0d3e9f2b740404a0d5c6f413e6fa2dd2.png"
+            },
+            {
+              "id": "pv-comet-trails",
+              "name": "Comet Trails",
+              "loaded": true,
+              "src": "http://127.0.0.1:8097/assets/assets/covers/pv-comet-trails.f7f05b35fc1b70fb2a4ec66ea62e4bce.png"
+            },
+            {
+              "id": "pv-saffron-dunes",
+              "name": "Saffron Dunes",
+              "loaded": true,
+              "src": "http://127.0.0.1:8097/assets/assets/covers/pv-saffron-dunes.f6a8fb29668529b0125a9d864a1068ba.png"
+            },
+            {
+              "id": "pv-misty-outpost",
+              "name": "Misty Outpost",
+              "loaded": true,
+              "src": "http://127.0.0.1:8097/assets/assets/covers/pv-misty-outpost.b921151a027d2b2474308f13b89806af.png"
+            },
+            {
+              "id": "pv-glacier-voyage",
+              "name": "Glacier Voyage",
+              "loaded": true,
+              "src": "http://127.0.0.1:8097/assets/assets/covers/pv-glacier-voyage.97a10f487f283876ded9eaa7ea045e25.png"
+            },
+            {
+              "id": "pv-tidal-legends",
+              "name": "Tidal Legends",
+              "loaded": true,
+              "src": "http://127.0.0.1:8097/assets/assets/covers/pv-tidal-legends.bebc9a959aa0c62d00e22f94fdd9a9cb.png"
+            },
+            {
+              "id": "pv-copper-canyon",
+              "name": "Copper Canyon",
+              "loaded": true,
+              "src": "http://127.0.0.1:8097/assets/assets/covers/pv-copper-canyon.23195098725e3f86a6f25993f0308a83.png"
+            },
+            {
+              "id": "pv-celestial-forge",
+              "name": "Celestial Forge",
+              "loaded": true,
+              "src": "http://127.0.0.1:8097/assets/assets/covers/pv-celestial-forge.a199d7a3ded23ea873a97a7424777009.png"
+            },
+            {
+              "id": "pv-jade-expedition",
+              "name": "Jade Expedition",
+              "loaded": true,
+              "src": "http://127.0.0.1:8097/assets/assets/covers/pv-jade-expedition.09e2742f52045a1c7ac3d0a6e95da7e2.png"
+            },
+            {
+              "id": "pv-midnight-metro",
+              "name": "Midnight Metro",
+              "loaded": true,
+              "src": "http://127.0.0.1:8097/assets/assets/covers/pv-midnight-metro.c27a8553989dd8d21c46c85a48575205.png"
+            },
+            {
+              "id": "pv-silver-summit",
+              "name": "Silver Summit",
+              "loaded": true,
+              "src": "http://127.0.0.1:8097/assets/assets/covers/pv-silver-summit.227d53d19197a52689c133fe7147bdc2.png"
+            },
+            {
+              "id": "pv-sunken-compass",
+              "name": "Sunken Compass",
+              "loaded": true,
+              "src": "http://127.0.0.1:8097/assets/assets/covers/pv-sunken-compass.dc7fcba40ada359f15b50baa6d155a59.png"
+            },
+            {
+              "id": "pv-crimson-bastion",
+              "name": "Crimson Bastion",
+              "loaded": true,
+              "src": "http://127.0.0.1:8097/assets/assets/covers/pv-crimson-bastion.c0b856c863313f0b6ecacfbe83fc974d.png"
+            },
+            {
+              "id": "pv-zenith-frontier",
+              "name": "Zenith Frontier",
+              "loaded": true,
+              "src": "http://127.0.0.1:8097/assets/assets/covers/pv-zenith-frontier.0f377773590236475d6c5a129217c3de.png"
+            }
+          ]
+        }
+      ],
+      "catalogSnapshot": [
+        {
+          "id": "neon-expansion",
+          "name": "Neon Expansion",
+          "type": "DLC",
+          "priceCents": 2490,
+          "description": "Expansão demonstrativa para a jornada visual do PixelVault.",
+          "activationStore": "Loja de demonstração (fictícia)",
+          "compatibleWith": [
+            "GeForce NOW"
+          ]
+        },
+        {
+          "id": "orbit-raiders",
+          "name": "Orbit Raiders",
+          "type": "Jogo",
+          "priceCents": 7990,
+          "description": "Descrição demonstrativa. O conteúdo final ainda não foi aprovado.",
+          "activationStore": "Loja de demonstração (fictícia)",
+          "compatibleWith": [
+            "Boosteroid",
+            "GeForce NOW"
+          ]
+        },
+        {
+          "id": "pv-aurora-quest",
+          "name": "Aurora Quest",
+          "type": "Jogo",
+          "priceCents": 1990,
+          "description": "Explore florestas luminosas e encontre relíquias perdidas. Jogo fictício para aprendizado; compatibilidade cloud ilustrativa.",
+          "activationStore": "Loja de demonstração (fictícia)",
+          "compatibleWith": [
+            "Boosteroid",
+            "GeForce NOW"
+          ]
+        },
+        {
+          "id": "pv-celestial-forge",
+          "name": "Celestial Forge",
+          "type": "Jogo",
+          "priceCents": 9690,
+          "description": "Corra por uma cidade futurista repleta de desafios. Jogo fictício para aprendizado; compatibilidade cloud ilustrativa.",
+          "activationStore": "Loja de demonstração (fictícia)",
+          "compatibleWith": [
+            "Boosteroid"
+          ]
+        },
+        {
+          "id": "pv-clockwork-haven",
+          "name": "Clockwork Haven",
+          "type": "Jogo",
+          "priceCents": 4090,
+          "description": "Defenda uma fortaleza e desvende caminhos secretos. Jogo fictício para aprendizado; compatibilidade cloud ilustrativa.",
+          "activationStore": "Loja de demonstração (fictícia)",
+          "compatibleWith": [
+            "Boosteroid",
+            "GeForce NOW"
+          ]
+        },
+        {
+          "id": "pv-comet-trails",
+          "name": "Comet Trails",
+          "type": "Jogo",
+          "priceCents": 5490,
+          "description": "Corra por uma cidade futurista repleta de desafios. Jogo fictício para aprendizado; compatibilidade cloud ilustrativa.",
+          "activationStore": "Loja de demonstração (fictícia)",
+          "compatibleWith": [
+            "Boosteroid"
+          ]
+        },
+        {
+          "id": "pv-copper-canyon",
+          "name": "Copper Canyon",
+          "type": "Jogo",
+          "priceCents": 8990,
+          "description": "Atravesse montanhas e vales em uma jornada de exploração. Jogo fictício para aprendizado; compatibilidade cloud ilustrativa.",
+          "activationStore": "Loja de demonstração (fictícia)",
+          "compatibleWith": [
+            "GeForce NOW"
+          ]
+        },
+        {
+          "id": "pv-coral-odyssey",
+          "name": "Coral Odyssey",
+          "type": "Jogo",
+          "priceCents": 3390,
+          "description": "Pilote uma nave por planetas e estações distantes. Jogo fictício para aprendizado; compatibilidade cloud ilustrativa.",
+          "activationStore": "Loja de demonstração (fictícia)",
+          "compatibleWith": [
+            "Boosteroid"
+          ]
+        },
+        {
+          "id": "pv-crimson-bastion",
+          "name": "Crimson Bastion",
+          "type": "Jogo",
+          "priceCents": 4790,
+          "description": "Atravesse montanhas e vales em uma jornada de exploração. Jogo fictício para aprendizado; compatibilidade cloud ilustrativa.",
+          "activationStore": "Loja de demonstração (fictícia)",
+          "compatibleWith": [
+            "GeForce NOW"
+          ]
+        },
+        {
+          "id": "pv-crystal-harbor",
+          "name": "Crystal Harbor",
+          "type": "Jogo",
+          "priceCents": 2690,
+          "description": "Navegue entre ilhas e descubra histórias à beira-mar. Jogo fictício para aprendizado; compatibilidade cloud ilustrativa.",
+          "activationStore": "Loja de demonstração (fictícia)",
+          "compatibleWith": [
+            "GeForce NOW"
+          ]
+        },
+        {
+          "id": "pv-desert-horizon",
+          "name": "Desert Horizon",
+          "type": "Jogo",
+          "priceCents": 8290,
+          "description": "Defenda uma fortaleza e desvende caminhos secretos. Jogo fictício para aprendizado; compatibilidade cloud ilustrativa.",
+          "activationStore": "Loja de demonstração (fictícia)",
+          "compatibleWith": [
+            "Boosteroid",
+            "GeForce NOW"
+          ]
+        },
+        {
+          "id": "pv-ember-citadel",
+          "name": "Ember Citadel",
+          "type": "Jogo",
+          "priceCents": 4090,
+          "description": "Defenda uma fortaleza e desvende caminhos secretos. Jogo fictício para aprendizado; compatibilidade cloud ilustrativa.",
+          "activationStore": "Loja de demonstração (fictícia)",
+          "compatibleWith": [
+            "Boosteroid",
+            "GeForce NOW"
+          ]
+        },
+        {
+          "id": "pv-frostfall-keep",
+          "name": "Frostfall Keep",
+          "type": "Jogo",
+          "priceCents": 7590,
+          "description": "Pilote uma nave por planetas e estações distantes. Jogo fictício para aprendizado; compatibilidade cloud ilustrativa.",
+          "activationStore": "Loja de demonstração (fictícia)",
+          "compatibleWith": [
+            "Boosteroid"
+          ]
+        },
+        {
+          "id": "pv-glacier-voyage",
+          "name": "Glacier Voyage",
+          "type": "Jogo",
+          "priceCents": 7590,
+          "description": "Pilote uma nave por planetas e estações distantes. Jogo fictício para aprendizado; compatibilidade cloud ilustrativa.",
+          "activationStore": "Loja de demonstração (fictícia)",
+          "compatibleWith": [
+            "Boosteroid"
+          ]
+        },
+        {
+          "id": "pv-iron-circuit",
+          "name": "Iron Circuit",
+          "type": "Jogo",
+          "priceCents": 5490,
+          "description": "Corra por uma cidade futurista repleta de desafios. Jogo fictício para aprendizado; compatibilidade cloud ilustrativa.",
+          "activationStore": "Loja de demonstração (fictícia)",
+          "compatibleWith": [
+            "Boosteroid"
+          ]
+        },
+        {
+          "id": "pv-jade-expedition",
+          "name": "Jade Expedition",
+          "type": "Jogo",
+          "priceCents": 1990,
+          "description": "Explore florestas luminosas e encontre relíquias perdidas. Jogo fictício para aprendizado; compatibilidade cloud ilustrativa.",
+          "activationStore": "Loja de demonstração (fictícia)",
+          "compatibleWith": [
+            "Boosteroid",
+            "GeForce NOW"
+          ]
+        },
+        {
+          "id": "pv-midnight-metro",
+          "name": "Midnight Metro",
+          "type": "Jogo",
+          "priceCents": 2690,
+          "description": "Navegue entre ilhas e descubra histórias à beira-mar. Jogo fictício para aprendizado; compatibilidade cloud ilustrativa.",
+          "activationStore": "Loja de demonstração (fictícia)",
+          "compatibleWith": [
+            "GeForce NOW"
+          ]
+        },
+        {
+          "id": "pv-misty-outpost",
+          "name": "Misty Outpost",
+          "type": "Jogo",
+          "priceCents": 6890,
+          "description": "Navegue entre ilhas e descubra histórias à beira-mar. Jogo fictício para aprendizado; compatibilidade cloud ilustrativa.",
+          "activationStore": "Loja de demonstração (fictícia)",
+          "compatibleWith": [
+            "GeForce NOW"
+          ]
+        },
+        {
+          "id": "pv-moonlight-valley",
+          "name": "Moonlight Valley",
+          "type": "Jogo",
+          "priceCents": 4790,
+          "description": "Atravesse montanhas e vales em uma jornada de exploração. Jogo fictício para aprendizado; compatibilidade cloud ilustrativa.",
+          "activationStore": "Loja de demonstração (fictícia)",
+          "compatibleWith": [
+            "GeForce NOW"
+          ]
+        },
+        {
+          "id": "pv-obsidian-knights",
+          "name": "Obsidian Knights",
+          "type": "Jogo",
+          "priceCents": 4790,
+          "description": "Atravesse montanhas e vales em uma jornada de exploração. Jogo fictício para aprendizado; compatibilidade cloud ilustrativa.",
+          "activationStore": "Loja de demonstração (fictícia)",
+          "compatibleWith": [
+            "GeForce NOW"
+          ]
+        },
+        {
+          "id": "pv-ocean-echoes",
+          "name": "Ocean Echoes",
+          "type": "Jogo",
+          "priceCents": 6890,
+          "description": "Navegue entre ilhas e descubra histórias à beira-mar. Jogo fictício para aprendizado; compatibilidade cloud ilustrativa.",
+          "activationStore": "Loja de demonstração (fictícia)",
+          "compatibleWith": [
+            "GeForce NOW"
+          ]
+        },
+        {
+          "id": "pv-prism-runner",
+          "name": "Prism Runner",
+          "type": "Jogo",
+          "priceCents": 8990,
+          "description": "Atravesse montanhas e vales em uma jornada de exploração. Jogo fictício para aprendizado; compatibilidade cloud ilustrativa.",
+          "activationStore": "Loja de demonstração (fictícia)",
+          "compatibleWith": [
+            "GeForce NOW"
+          ]
+        },
+        {
+          "id": "pv-saffron-dunes",
+          "name": "Saffron Dunes",
+          "type": "Jogo",
+          "priceCents": 6190,
+          "description": "Explore florestas luminosas e encontre relíquias perdidas. Jogo fictício para aprendizado; compatibilidade cloud ilustrativa.",
+          "activationStore": "Loja de demonstração (fictícia)",
+          "compatibleWith": [
+            "Boosteroid",
+            "GeForce NOW"
+          ]
+        },
+        {
+          "id": "pv-silver-summit",
+          "name": "Silver Summit",
+          "type": "Jogo",
+          "priceCents": 3390,
+          "description": "Pilote uma nave por planetas e estações distantes. Jogo fictício para aprendizado; compatibilidade cloud ilustrativa.",
+          "activationStore": "Loja de demonstração (fictícia)",
+          "compatibleWith": [
+            "Boosteroid"
+          ]
+        },
+        {
+          "id": "pv-skybound-isles",
+          "name": "Skybound Isles",
+          "type": "Jogo",
+          "priceCents": 6190,
+          "description": "Explore florestas luminosas e encontre relíquias perdidas. Jogo fictício para aprendizado; compatibilidade cloud ilustrativa.",
+          "activationStore": "Loja de demonstração (fictícia)",
+          "compatibleWith": [
+            "Boosteroid",
+            "GeForce NOW"
+          ]
+        },
+        {
+          "id": "pv-solar-drifters",
+          "name": "Solar Drifters",
+          "type": "Jogo",
+          "priceCents": 3390,
+          "description": "Pilote uma nave por planetas e estações distantes. Jogo fictício para aprendizado; compatibilidade cloud ilustrativa.",
+          "activationStore": "Loja de demonstração (fictícia)",
+          "compatibleWith": [
+            "Boosteroid"
+          ]
+        },
+        {
+          "id": "pv-starlight-nomads",
+          "name": "Starlight Nomads",
+          "type": "Jogo",
+          "priceCents": 9690,
+          "description": "Corra por uma cidade futurista repleta de desafios. Jogo fictício para aprendizado; compatibilidade cloud ilustrativa.",
+          "activationStore": "Loja de demonstração (fictícia)",
+          "compatibleWith": [
+            "Boosteroid"
+          ]
+        },
+        {
+          "id": "pv-sunken-compass",
+          "name": "Sunken Compass",
+          "type": "Jogo",
+          "priceCents": 4090,
+          "description": "Defenda uma fortaleza e desvende caminhos secretos. Jogo fictício para aprendizado; compatibilidade cloud ilustrativa.",
+          "activationStore": "Loja de demonstração (fictícia)",
+          "compatibleWith": [
+            "Boosteroid",
+            "GeForce NOW"
+          ]
+        },
+        {
+          "id": "pv-thunder-peaks",
+          "name": "Thunder Peaks",
+          "type": "Jogo",
+          "priceCents": 2690,
+          "description": "Navegue entre ilhas e descubra histórias à beira-mar. Jogo fictício para aprendizado; compatibilidade cloud ilustrativa.",
+          "activationStore": "Loja de demonstração (fictícia)",
+          "compatibleWith": [
+            "GeForce NOW"
+          ]
+        },
+        {
+          "id": "pv-tidal-legends",
+          "name": "Tidal Legends",
+          "type": "Jogo",
+          "priceCents": 8290,
+          "description": "Defenda uma fortaleza e desvende caminhos secretos. Jogo fictício para aprendizado; compatibilidade cloud ilustrativa.",
+          "activationStore": "Loja de demonstração (fictícia)",
+          "compatibleWith": [
+            "Boosteroid",
+            "GeForce NOW"
+          ]
+        },
+        {
+          "id": "pv-verdant-guardians",
+          "name": "Verdant Guardians",
+          "type": "Jogo",
+          "priceCents": 1990,
+          "description": "Explore florestas luminosas e encontre relíquias perdidas. Jogo fictício para aprendizado; compatibilidade cloud ilustrativa.",
+          "activationStore": "Loja de demonstração (fictícia)",
+          "compatibleWith": [
+            "Boosteroid",
+            "GeForce NOW"
+          ]
+        },
+        {
+          "id": "pv-zenith-frontier",
+          "name": "Zenith Frontier",
+          "type": "Jogo",
+          "priceCents": 5490,
+          "description": "Corra por uma cidade futurista repleta de desafios. Jogo fictício para aprendizado; compatibilidade cloud ilustrativa.",
+          "activationStore": "Loja de demonstração (fictícia)",
+          "compatibleWith": [
+            "Boosteroid"
+          ]
+        }
+      ],
+      "controls": [
+        {
+          "kind": "field",
+          "label": "E-mail",
+          "disabled": false,
+          "type": "email"
+        },
+        {
+          "kind": "field",
+          "label": "Senha",
+          "disabled": false,
+          "type": "password"
+        },
+        {
+          "kind": "button",
+          "label": "Entrar",
+          "disabled": false,
+          "type": "button"
+        },
+        {
+          "kind": "button",
+          "label": "Criar conta",
+          "disabled": false,
+          "type": "button"
+        },
+        {
+          "kind": "button",
+          "label": "Atualizar catálogo da API",
+          "disabled": false,
+          "type": "button"
+        },
+        {
+          "kind": "button",
+          "label": "Exportar dados em JSON",
+          "disabled": false,
+          "type": "button"
+        },
+        {
+          "kind": "button",
+          "label": "Selecionado: Todos",
+          "disabled": false,
+          "type": "button"
+        },
+        {
+          "kind": "button",
+          "label": "GeForce NOW",
+          "disabled": false,
+          "type": "button"
+        },
+        {
+          "kind": "button",
+          "label": "Boosteroid",
+          "disabled": false,
+          "type": "button"
+        },
+        {
+          "kind": "button",
+          "label": "Ver detalhes de Orbit Raiders",
+          "disabled": false,
+          "type": "button"
+        },
+        {
+          "kind": "button",
+          "label": "Ver detalhes de Neon Expansion",
+          "disabled": false,
+          "type": "button"
+        },
+        {
+          "kind": "button",
+          "label": "Ver detalhes de Aurora Quest",
+          "disabled": false,
+          "type": "button"
+        },
+        {
+          "kind": "button",
+          "label": "Ver detalhes de Crystal Harbor",
+          "disabled": false,
+          "type": "button"
+        },
+        {
+          "kind": "button",
+          "label": "Ver detalhes de Solar Drifters",
+          "disabled": false,
+          "type": "button"
+        },
+        {
+          "kind": "button",
+          "label": "Ver detalhes de Ember Citadel",
+          "disabled": false,
+          "type": "button"
+        },
+        {
+          "kind": "button",
+          "label": "Ver detalhes de Moonlight Valley",
+          "disabled": false,
+          "type": "button"
+        },
+        {
+          "kind": "button",
+          "label": "Ver detalhes de Iron Circuit",
+          "disabled": false,
+          "type": "button"
+        },
+        {
+          "kind": "button",
+          "label": "Ver detalhes de Skybound Isles",
+          "disabled": false,
+          "type": "button"
+        },
+        {
+          "kind": "button",
+          "label": "Ver detalhes de Ocean Echoes",
+          "disabled": false,
+          "type": "button"
+        },
+        {
+          "kind": "button",
+          "label": "Sair",
+          "disabled": false,
+          "type": "button"
+        },
+        {
+          "kind": "button",
+          "label": "Catálogo",
+          "disabled": false,
+          "type": null
+        },
+        {
+          "kind": "button",
+          "label": "Carrinho",
+          "disabled": false,
+          "type": null
+        },
+        {
+          "kind": "button",
+          "label": "Biblioteca",
+          "disabled": false,
+          "type": null
+        },
+        {
+          "kind": "button",
+          "label": "Ver detalhes de Tidal Legends",
+          "disabled": false,
+          "type": "button"
+        },
+        {
+          "kind": "button",
+          "label": "Ver detalhes de Copper Canyon",
+          "disabled": false,
+          "type": "button"
+        },
+        {
+          "kind": "button",
+          "label": "Ver detalhes de Celestial Forge",
+          "disabled": false,
+          "type": "button"
+        },
+        {
+          "kind": "button",
+          "label": "Ver detalhes de Jade Expedition",
+          "disabled": false,
+          "type": "button"
+        },
+        {
+          "kind": "button",
+          "label": "Ver detalhes de Midnight Metro",
+          "disabled": false,
+          "type": "button"
+        },
+        {
+          "kind": "button",
+          "label": "Ver detalhes de Silver Summit",
+          "disabled": false,
+          "type": "button"
+        },
+        {
+          "kind": "button",
+          "label": "Ver detalhes de Sunken Compass",
+          "disabled": false,
+          "type": "button"
+        },
+        {
+          "kind": "button",
+          "label": "Ver detalhes de Crimson Bastion",
+          "disabled": false,
+          "type": "button"
+        },
+        {
+          "kind": "button",
+          "label": "Ver detalhes de Zenith Frontier",
+          "disabled": false,
+          "type": "button"
+        },
+        {
+          "kind": "button",
+          "label": "Adicionar ao carrinho",
+          "disabled": false,
+          "type": "button"
+        },
+        {
+          "kind": "button",
+          "label": "Ver carrinho (0)",
+          "disabled": false,
+          "type": "button"
+        },
+        {
+          "kind": "button",
+          "label": "Voltar ao catálogo",
+          "disabled": false,
+          "type": "button"
+        },
+        {
+          "kind": "button",
+          "label": "Já está no carrinho",
+          "disabled": false,
+          "type": "button"
+        },
+        {
+          "kind": "button",
+          "label": "Ver carrinho (1)",
+          "disabled": false,
+          "type": "button"
+        },
+        {
+          "kind": "button",
+          "label": "Remover: Aurora Quest",
+          "disabled": false,
+          "type": "button"
+        },
+        {
+          "kind": "button",
+          "label": "Continuar para checkout",
+          "disabled": false,
+          "type": "button"
+        }
+      ]
+    },
+    {
+      "name": "catalogo-fallback-erro-e-recuperacao",
+      "route": "wf01",
+      "width": 390,
+      "height": 844,
+      "options": {
+        "actions": [
+          [
+            "images-offline"
+          ],
+          [
+            "reload",
+            "WF-01"
+          ],
+          [
+            "fill",
+            "E-mail",
+            "jogador@pixelvault.example"
+          ],
+          [
+            "fill",
+            "Senha",
+            "demo123"
+          ],
+          [
+            "click",
+            "Entrar"
+          ],
+          [
+            "expect",
+            "WF-03"
+          ],
+          [
+            "expect",
+            "Imagem indisponível"
+          ],
+          [
+            "images-online"
+          ],
+          [
+            "reload",
+            "WF-01"
+          ],
+          [
+            "fill",
+            "E-mail",
+            "jogador@pixelvault.example"
+          ],
+          [
+            "fill",
+            "Senha",
+            "demo123"
+          ],
+          [
+            "click",
+            "Entrar"
+          ],
+          [
+            "expect",
+            "WF-03"
+          ],
+          [
+            "catalog-scan",
+            "Todos"
+          ]
+        ]
+      },
+      "innerWidth": 390,
+      "innerHeight": 844,
+      "scrollWidth": 390,
+      "scrollHeight": 844,
+      "horizontalOverflowElements": [],
+      "focusedElement": null,
+      "focusedBorderColor": "rgb(0, 0, 0)",
+      "focusedBorderWidth": "0px",
+      "interfaceMarkers": false,
+      "title": "Descobrir jogos\nEncontre jogos e DLCs para seus serviços de cloud gaming. Compatibilidade ilustrativa.\n32 itens encontra",
+      "catalogChecks": [
+        {
+          "filter": "Todos",
+          "count": 32,
+          "imagesLoaded": 32,
+          "uniqueImageUrls": 32,
+          "items": [
+            {
+              "id": "orbit-raiders",
+              "name": "Orbit Raiders",
+              "loaded": true,
+              "src": "http://127.0.0.1:8097/assets/assets/covers/orbit-raiders.80c98d8cccd3bb595447985e3a51057e.png"
+            },
+            {
+              "id": "neon-expansion",
+              "name": "Neon Expansion",
+              "loaded": true,
+              "src": "http://127.0.0.1:8097/assets/assets/covers/neon-expansion.6d71c8641cbd9a15c9ab922646e56367.png"
+            },
+            {
+              "id": "pv-aurora-quest",
+              "name": "Aurora Quest",
+              "loaded": true,
+              "src": "http://127.0.0.1:8097/assets/assets/covers/pv-aurora-quest.5f1ce20e9d096ef74854c8ff394ed262.png"
+            },
+            {
+              "id": "pv-crystal-harbor",
+              "name": "Crystal Harbor",
+              "loaded": true,
+              "src": "http://127.0.0.1:8097/assets/assets/covers/pv-crystal-harbor.255a66068ec94e71168f5190af45895d.png"
+            },
+            {
+              "id": "pv-solar-drifters",
+              "name": "Solar Drifters",
+              "loaded": true,
+              "src": "http://127.0.0.1:8097/assets/assets/covers/pv-solar-drifters.9b01944da88ff115bbfc53ac2531e0c0.png"
+            },
+            {
+              "id": "pv-ember-citadel",
+              "name": "Ember Citadel",
+              "loaded": true,
+              "src": "http://127.0.0.1:8097/assets/assets/covers/pv-ember-citadel.c1f673999d4d204d96aa519c9e3fcebf.png"
+            },
+            {
+              "id": "pv-moonlight-valley",
+              "name": "Moonlight Valley",
+              "loaded": true,
+              "src": "http://127.0.0.1:8097/assets/assets/covers/pv-moonlight-valley.6042b08d963fada7ff784e5211b326b9.png"
+            },
+            {
+              "id": "pv-iron-circuit",
+              "name": "Iron Circuit",
+              "loaded": true,
+              "src": "http://127.0.0.1:8097/assets/assets/covers/pv-iron-circuit.4962ba6cf70ab21d95add4d19f70dfc9.png"
+            },
+            {
+              "id": "pv-skybound-isles",
+              "name": "Skybound Isles",
+              "loaded": true,
+              "src": "http://127.0.0.1:8097/assets/assets/covers/pv-skybound-isles.58d48d3d1ab46251b8a1585c3d9aba7b.png"
+            },
+            {
+              "id": "pv-ocean-echoes",
+              "name": "Ocean Echoes",
+              "loaded": true,
+              "src": "http://127.0.0.1:8097/assets/assets/covers/pv-ocean-echoes.54f2412db7206d81df4068a04eeb6e69.png"
+            },
+            {
+              "id": "pv-frostfall-keep",
+              "name": "Frostfall Keep",
+              "loaded": true,
+              "src": "http://127.0.0.1:8097/assets/assets/covers/pv-frostfall-keep.28336fff7cb8e9a841cf02a883d4a82c.png"
+            },
+            {
+              "id": "pv-desert-horizon",
+              "name": "Desert Horizon",
+              "loaded": true,
+              "src": "http://127.0.0.1:8097/assets/assets/covers/pv-desert-horizon.08989cdca1b2346f37fe9f98e9475ec1.png"
+            },
+            {
+              "id": "pv-prism-runner",
+              "name": "Prism Runner",
+              "loaded": true,
+              "src": "http://127.0.0.1:8097/assets/assets/covers/pv-prism-runner.ad7d9b47624b837c5913786444022ab4.png"
+            },
+            {
+              "id": "pv-starlight-nomads",
+              "name": "Starlight Nomads",
+              "loaded": true,
+              "src": "http://127.0.0.1:8097/assets/assets/covers/pv-starlight-nomads.e544be57a2ce23aa1565db166e0f70a0.png"
+            },
+            {
+              "id": "pv-verdant-guardians",
+              "name": "Verdant Guardians",
+              "loaded": true,
+              "src": "http://127.0.0.1:8097/assets/assets/covers/pv-verdant-guardians.059a13a7d26617594f8f2ef7b9b4b5c3.png"
+            },
+            {
+              "id": "pv-thunder-peaks",
+              "name": "Thunder Peaks",
+              "loaded": true,
+              "src": "http://127.0.0.1:8097/assets/assets/covers/pv-thunder-peaks.f8e9361f272569dd28fb2c1e0556c21a.png"
+            },
+            {
+              "id": "pv-coral-odyssey",
+              "name": "Coral Odyssey",
+              "loaded": true,
+              "src": "http://127.0.0.1:8097/assets/assets/covers/pv-coral-odyssey.469b808f7951dc06427c720201683f5d.png"
+            },
+            {
+              "id": "pv-clockwork-haven",
+              "name": "Clockwork Haven",
+              "loaded": true,
+              "src": "http://127.0.0.1:8097/assets/assets/covers/pv-clockwork-haven.a7f86a1599537c2167d54c6a164d6f13.png"
+            },
+            {
+              "id": "pv-obsidian-knights",
+              "name": "Obsidian Knights",
+              "loaded": true,
+              "src": "http://127.0.0.1:8097/assets/assets/covers/pv-obsidian-knights.0d3e9f2b740404a0d5c6f413e6fa2dd2.png"
+            },
+            {
+              "id": "pv-comet-trails",
+              "name": "Comet Trails",
+              "loaded": true,
+              "src": "http://127.0.0.1:8097/assets/assets/covers/pv-comet-trails.f7f05b35fc1b70fb2a4ec66ea62e4bce.png"
+            },
+            {
+              "id": "pv-saffron-dunes",
+              "name": "Saffron Dunes",
+              "loaded": true,
+              "src": "http://127.0.0.1:8097/assets/assets/covers/pv-saffron-dunes.f6a8fb29668529b0125a9d864a1068ba.png"
+            },
+            {
+              "id": "pv-misty-outpost",
+              "name": "Misty Outpost",
+              "loaded": true,
+              "src": "http://127.0.0.1:8097/assets/assets/covers/pv-misty-outpost.b921151a027d2b2474308f13b89806af.png"
+            },
+            {
+              "id": "pv-glacier-voyage",
+              "name": "Glacier Voyage",
+              "loaded": true,
+              "src": "http://127.0.0.1:8097/assets/assets/covers/pv-glacier-voyage.97a10f487f283876ded9eaa7ea045e25.png"
+            },
+            {
+              "id": "pv-tidal-legends",
+              "name": "Tidal Legends",
+              "loaded": true,
+              "src": "http://127.0.0.1:8097/assets/assets/covers/pv-tidal-legends.bebc9a959aa0c62d00e22f94fdd9a9cb.png"
+            },
+            {
+              "id": "pv-copper-canyon",
+              "name": "Copper Canyon",
+              "loaded": true,
+              "src": "http://127.0.0.1:8097/assets/assets/covers/pv-copper-canyon.23195098725e3f86a6f25993f0308a83.png"
+            },
+            {
+              "id": "pv-celestial-forge",
+              "name": "Celestial Forge",
+              "loaded": true,
+              "src": "http://127.0.0.1:8097/assets/assets/covers/pv-celestial-forge.a199d7a3ded23ea873a97a7424777009.png"
+            },
+            {
+              "id": "pv-jade-expedition",
+              "name": "Jade Expedition",
+              "loaded": true,
+              "src": "http://127.0.0.1:8097/assets/assets/covers/pv-jade-expedition.09e2742f52045a1c7ac3d0a6e95da7e2.png"
+            },
+            {
+              "id": "pv-midnight-metro",
+              "name": "Midnight Metro",
+              "loaded": true,
+              "src": "http://127.0.0.1:8097/assets/assets/covers/pv-midnight-metro.c27a8553989dd8d21c46c85a48575205.png"
+            },
+            {
+              "id": "pv-silver-summit",
+              "name": "Silver Summit",
+              "loaded": true,
+              "src": "http://127.0.0.1:8097/assets/assets/covers/pv-silver-summit.227d53d19197a52689c133fe7147bdc2.png"
+            },
+            {
+              "id": "pv-sunken-compass",
+              "name": "Sunken Compass",
+              "loaded": true,
+              "src": "http://127.0.0.1:8097/assets/assets/covers/pv-sunken-compass.dc7fcba40ada359f15b50baa6d155a59.png"
+            },
+            {
+              "id": "pv-crimson-bastion",
+              "name": "Crimson Bastion",
+              "loaded": true,
+              "src": "http://127.0.0.1:8097/assets/assets/covers/pv-crimson-bastion.c0b856c863313f0b6ecacfbe83fc974d.png"
+            },
+            {
+              "id": "pv-zenith-frontier",
+              "name": "Zenith Frontier",
+              "loaded": true,
+              "src": "http://127.0.0.1:8097/assets/assets/covers/pv-zenith-frontier.0f377773590236475d6c5a129217c3de.png"
+            }
+          ]
+        }
+      ],
+      "catalogSnapshot": [
+        {
+          "id": "neon-expansion",
+          "name": "Neon Expansion",
+          "type": "DLC",
+          "priceCents": 2490,
+          "description": "Expansão demonstrativa para a jornada visual do PixelVault.",
+          "activationStore": "Loja de demonstração (fictícia)",
+          "compatibleWith": [
+            "GeForce NOW"
+          ]
+        },
+        {
+          "id": "orbit-raiders",
+          "name": "Orbit Raiders",
+          "type": "Jogo",
+          "priceCents": 7990,
+          "description": "Descrição demonstrativa. O conteúdo final ainda não foi aprovado.",
+          "activationStore": "Loja de demonstração (fictícia)",
+          "compatibleWith": [
+            "Boosteroid",
+            "GeForce NOW"
+          ]
+        },
+        {
+          "id": "pv-aurora-quest",
+          "name": "Aurora Quest",
+          "type": "Jogo",
+          "priceCents": 1990,
+          "description": "Explore florestas luminosas e encontre relíquias perdidas. Jogo fictício para aprendizado; compatibilidade cloud ilustrativa.",
+          "activationStore": "Loja de demonstração (fictícia)",
+          "compatibleWith": [
+            "Boosteroid",
+            "GeForce NOW"
+          ]
+        },
+        {
+          "id": "pv-celestial-forge",
+          "name": "Celestial Forge",
+          "type": "Jogo",
+          "priceCents": 9690,
+          "description": "Corra por uma cidade futurista repleta de desafios. Jogo fictício para aprendizado; compatibilidade cloud ilustrativa.",
+          "activationStore": "Loja de demonstração (fictícia)",
+          "compatibleWith": [
+            "Boosteroid"
+          ]
+        },
+        {
+          "id": "pv-clockwork-haven",
+          "name": "Clockwork Haven",
+          "type": "Jogo",
+          "priceCents": 4090,
+          "description": "Defenda uma fortaleza e desvende caminhos secretos. Jogo fictício para aprendizado; compatibilidade cloud ilustrativa.",
+          "activationStore": "Loja de demonstração (fictícia)",
+          "compatibleWith": [
+            "Boosteroid",
+            "GeForce NOW"
+          ]
+        },
+        {
+          "id": "pv-comet-trails",
+          "name": "Comet Trails",
+          "type": "Jogo",
+          "priceCents": 5490,
+          "description": "Corra por uma cidade futurista repleta de desafios. Jogo fictício para aprendizado; compatibilidade cloud ilustrativa.",
+          "activationStore": "Loja de demonstração (fictícia)",
+          "compatibleWith": [
+            "Boosteroid"
+          ]
+        },
+        {
+          "id": "pv-copper-canyon",
+          "name": "Copper Canyon",
+          "type": "Jogo",
+          "priceCents": 8990,
+          "description": "Atravesse montanhas e vales em uma jornada de exploração. Jogo fictício para aprendizado; compatibilidade cloud ilustrativa.",
+          "activationStore": "Loja de demonstração (fictícia)",
+          "compatibleWith": [
+            "GeForce NOW"
+          ]
+        },
+        {
+          "id": "pv-coral-odyssey",
+          "name": "Coral Odyssey",
+          "type": "Jogo",
+          "priceCents": 3390,
+          "description": "Pilote uma nave por planetas e estações distantes. Jogo fictício para aprendizado; compatibilidade cloud ilustrativa.",
+          "activationStore": "Loja de demonstração (fictícia)",
+          "compatibleWith": [
+            "Boosteroid"
+          ]
+        },
+        {
+          "id": "pv-crimson-bastion",
+          "name": "Crimson Bastion",
+          "type": "Jogo",
+          "priceCents": 4790,
+          "description": "Atravesse montanhas e vales em uma jornada de exploração. Jogo fictício para aprendizado; compatibilidade cloud ilustrativa.",
+          "activationStore": "Loja de demonstração (fictícia)",
+          "compatibleWith": [
+            "GeForce NOW"
+          ]
+        },
+        {
+          "id": "pv-crystal-harbor",
+          "name": "Crystal Harbor",
+          "type": "Jogo",
+          "priceCents": 2690,
+          "description": "Navegue entre ilhas e descubra histórias à beira-mar. Jogo fictício para aprendizado; compatibilidade cloud ilustrativa.",
+          "activationStore": "Loja de demonstração (fictícia)",
+          "compatibleWith": [
+            "GeForce NOW"
+          ]
+        },
+        {
+          "id": "pv-desert-horizon",
+          "name": "Desert Horizon",
+          "type": "Jogo",
+          "priceCents": 8290,
+          "description": "Defenda uma fortaleza e desvende caminhos secretos. Jogo fictício para aprendizado; compatibilidade cloud ilustrativa.",
+          "activationStore": "Loja de demonstração (fictícia)",
+          "compatibleWith": [
+            "Boosteroid",
+            "GeForce NOW"
+          ]
+        },
+        {
+          "id": "pv-ember-citadel",
+          "name": "Ember Citadel",
+          "type": "Jogo",
+          "priceCents": 4090,
+          "description": "Defenda uma fortaleza e desvende caminhos secretos. Jogo fictício para aprendizado; compatibilidade cloud ilustrativa.",
+          "activationStore": "Loja de demonstração (fictícia)",
+          "compatibleWith": [
+            "Boosteroid",
+            "GeForce NOW"
+          ]
+        },
+        {
+          "id": "pv-frostfall-keep",
+          "name": "Frostfall Keep",
+          "type": "Jogo",
+          "priceCents": 7590,
+          "description": "Pilote uma nave por planetas e estações distantes. Jogo fictício para aprendizado; compatibilidade cloud ilustrativa.",
+          "activationStore": "Loja de demonstração (fictícia)",
+          "compatibleWith": [
+            "Boosteroid"
+          ]
+        },
+        {
+          "id": "pv-glacier-voyage",
+          "name": "Glacier Voyage",
+          "type": "Jogo",
+          "priceCents": 7590,
+          "description": "Pilote uma nave por planetas e estações distantes. Jogo fictício para aprendizado; compatibilidade cloud ilustrativa.",
+          "activationStore": "Loja de demonstração (fictícia)",
+          "compatibleWith": [
+            "Boosteroid"
+          ]
+        },
+        {
+          "id": "pv-iron-circuit",
+          "name": "Iron Circuit",
+          "type": "Jogo",
+          "priceCents": 5490,
+          "description": "Corra por uma cidade futurista repleta de desafios. Jogo fictício para aprendizado; compatibilidade cloud ilustrativa.",
+          "activationStore": "Loja de demonstração (fictícia)",
+          "compatibleWith": [
+            "Boosteroid"
+          ]
+        },
+        {
+          "id": "pv-jade-expedition",
+          "name": "Jade Expedition",
+          "type": "Jogo",
+          "priceCents": 1990,
+          "description": "Explore florestas luminosas e encontre relíquias perdidas. Jogo fictício para aprendizado; compatibilidade cloud ilustrativa.",
+          "activationStore": "Loja de demonstração (fictícia)",
+          "compatibleWith": [
+            "Boosteroid",
+            "GeForce NOW"
+          ]
+        },
+        {
+          "id": "pv-midnight-metro",
+          "name": "Midnight Metro",
+          "type": "Jogo",
+          "priceCents": 2690,
+          "description": "Navegue entre ilhas e descubra histórias à beira-mar. Jogo fictício para aprendizado; compatibilidade cloud ilustrativa.",
+          "activationStore": "Loja de demonstração (fictícia)",
+          "compatibleWith": [
+            "GeForce NOW"
+          ]
+        },
+        {
+          "id": "pv-misty-outpost",
+          "name": "Misty Outpost",
+          "type": "Jogo",
+          "priceCents": 6890,
+          "description": "Navegue entre ilhas e descubra histórias à beira-mar. Jogo fictício para aprendizado; compatibilidade cloud ilustrativa.",
+          "activationStore": "Loja de demonstração (fictícia)",
+          "compatibleWith": [
+            "GeForce NOW"
+          ]
+        },
+        {
+          "id": "pv-moonlight-valley",
+          "name": "Moonlight Valley",
+          "type": "Jogo",
+          "priceCents": 4790,
+          "description": "Atravesse montanhas e vales em uma jornada de exploração. Jogo fictício para aprendizado; compatibilidade cloud ilustrativa.",
+          "activationStore": "Loja de demonstração (fictícia)",
+          "compatibleWith": [
+            "GeForce NOW"
+          ]
+        },
+        {
+          "id": "pv-obsidian-knights",
+          "name": "Obsidian Knights",
+          "type": "Jogo",
+          "priceCents": 4790,
+          "description": "Atravesse montanhas e vales em uma jornada de exploração. Jogo fictício para aprendizado; compatibilidade cloud ilustrativa.",
+          "activationStore": "Loja de demonstração (fictícia)",
+          "compatibleWith": [
+            "GeForce NOW"
+          ]
+        },
+        {
+          "id": "pv-ocean-echoes",
+          "name": "Ocean Echoes",
+          "type": "Jogo",
+          "priceCents": 6890,
+          "description": "Navegue entre ilhas e descubra histórias à beira-mar. Jogo fictício para aprendizado; compatibilidade cloud ilustrativa.",
+          "activationStore": "Loja de demonstração (fictícia)",
+          "compatibleWith": [
+            "GeForce NOW"
+          ]
+        },
+        {
+          "id": "pv-prism-runner",
+          "name": "Prism Runner",
+          "type": "Jogo",
+          "priceCents": 8990,
+          "description": "Atravesse montanhas e vales em uma jornada de exploração. Jogo fictício para aprendizado; compatibilidade cloud ilustrativa.",
+          "activationStore": "Loja de demonstração (fictícia)",
+          "compatibleWith": [
+            "GeForce NOW"
+          ]
+        },
+        {
+          "id": "pv-saffron-dunes",
+          "name": "Saffron Dunes",
+          "type": "Jogo",
+          "priceCents": 6190,
+          "description": "Explore florestas luminosas e encontre relíquias perdidas. Jogo fictício para aprendizado; compatibilidade cloud ilustrativa.",
+          "activationStore": "Loja de demonstração (fictícia)",
+          "compatibleWith": [
+            "Boosteroid",
+            "GeForce NOW"
+          ]
+        },
+        {
+          "id": "pv-silver-summit",
+          "name": "Silver Summit",
+          "type": "Jogo",
+          "priceCents": 3390,
+          "description": "Pilote uma nave por planetas e estações distantes. Jogo fictício para aprendizado; compatibilidade cloud ilustrativa.",
+          "activationStore": "Loja de demonstração (fictícia)",
+          "compatibleWith": [
+            "Boosteroid"
+          ]
+        },
+        {
+          "id": "pv-skybound-isles",
+          "name": "Skybound Isles",
+          "type": "Jogo",
+          "priceCents": 6190,
+          "description": "Explore florestas luminosas e encontre relíquias perdidas. Jogo fictício para aprendizado; compatibilidade cloud ilustrativa.",
+          "activationStore": "Loja de demonstração (fictícia)",
+          "compatibleWith": [
+            "Boosteroid",
+            "GeForce NOW"
+          ]
+        },
+        {
+          "id": "pv-solar-drifters",
+          "name": "Solar Drifters",
+          "type": "Jogo",
+          "priceCents": 3390,
+          "description": "Pilote uma nave por planetas e estações distantes. Jogo fictício para aprendizado; compatibilidade cloud ilustrativa.",
+          "activationStore": "Loja de demonstração (fictícia)",
+          "compatibleWith": [
+            "Boosteroid"
+          ]
+        },
+        {
+          "id": "pv-starlight-nomads",
+          "name": "Starlight Nomads",
+          "type": "Jogo",
+          "priceCents": 9690,
+          "description": "Corra por uma cidade futurista repleta de desafios. Jogo fictício para aprendizado; compatibilidade cloud ilustrativa.",
+          "activationStore": "Loja de demonstração (fictícia)",
+          "compatibleWith": [
+            "Boosteroid"
+          ]
+        },
+        {
+          "id": "pv-sunken-compass",
+          "name": "Sunken Compass",
+          "type": "Jogo",
+          "priceCents": 4090,
+          "description": "Defenda uma fortaleza e desvende caminhos secretos. Jogo fictício para aprendizado; compatibilidade cloud ilustrativa.",
+          "activationStore": "Loja de demonstração (fictícia)",
+          "compatibleWith": [
+            "Boosteroid",
+            "GeForce NOW"
+          ]
+        },
+        {
+          "id": "pv-thunder-peaks",
+          "name": "Thunder Peaks",
+          "type": "Jogo",
+          "priceCents": 2690,
+          "description": "Navegue entre ilhas e descubra histórias à beira-mar. Jogo fictício para aprendizado; compatibilidade cloud ilustrativa.",
+          "activationStore": "Loja de demonstração (fictícia)",
+          "compatibleWith": [
+            "GeForce NOW"
+          ]
+        },
+        {
+          "id": "pv-tidal-legends",
+          "name": "Tidal Legends",
+          "type": "Jogo",
+          "priceCents": 8290,
+          "description": "Defenda uma fortaleza e desvende caminhos secretos. Jogo fictício para aprendizado; compatibilidade cloud ilustrativa.",
+          "activationStore": "Loja de demonstração (fictícia)",
+          "compatibleWith": [
+            "Boosteroid",
+            "GeForce NOW"
+          ]
+        },
+        {
+          "id": "pv-verdant-guardians",
+          "name": "Verdant Guardians",
+          "type": "Jogo",
+          "priceCents": 1990,
+          "description": "Explore florestas luminosas e encontre relíquias perdidas. Jogo fictício para aprendizado; compatibilidade cloud ilustrativa.",
+          "activationStore": "Loja de demonstração (fictícia)",
+          "compatibleWith": [
+            "Boosteroid",
+            "GeForce NOW"
+          ]
+        },
+        {
+          "id": "pv-zenith-frontier",
+          "name": "Zenith Frontier",
+          "type": "Jogo",
+          "priceCents": 5490,
+          "description": "Corra por uma cidade futurista repleta de desafios. Jogo fictício para aprendizado; compatibilidade cloud ilustrativa.",
+          "activationStore": "Loja de demonstração (fictícia)",
+          "compatibleWith": [
+            "Boosteroid"
+          ]
+        }
+      ],
+      "controls": [
+        {
+          "kind": "field",
+          "label": "E-mail",
+          "disabled": false,
+          "type": "email"
+        },
+        {
+          "kind": "field",
+          "label": "Senha",
+          "disabled": false,
+          "type": "password"
+        },
+        {
+          "kind": "button",
+          "label": "Entrar",
+          "disabled": false,
+          "type": "button"
+        },
+        {
+          "kind": "button",
+          "label": "Criar conta",
+          "disabled": false,
+          "type": "button"
+        },
+        {
+          "kind": "button",
+          "label": "Atualizar catálogo da API",
+          "disabled": false,
+          "type": "button"
+        },
+        {
+          "kind": "button",
+          "label": "Exportar dados em JSON",
+          "disabled": false,
+          "type": "button"
+        },
+        {
+          "kind": "button",
+          "label": "Selecionado: Todos",
+          "disabled": false,
+          "type": "button"
+        },
+        {
+          "kind": "button",
+          "label": "GeForce NOW",
+          "disabled": false,
+          "type": "button"
+        },
+        {
+          "kind": "button",
+          "label": "Boosteroid",
+          "disabled": false,
+          "type": "button"
+        },
+        {
+          "kind": "button",
+          "label": "Ver detalhes de Orbit Raiders",
+          "disabled": false,
+          "type": "button"
+        },
+        {
+          "kind": "button",
+          "label": "Ver detalhes de Neon Expansion",
+          "disabled": false,
+          "type": "button"
+        },
+        {
+          "kind": "button",
+          "label": "Ver detalhes de Aurora Quest",
+          "disabled": false,
+          "type": "button"
+        },
+        {
+          "kind": "button",
+          "label": "Ver detalhes de Crystal Harbor",
+          "disabled": false,
+          "type": "button"
+        },
+        {
+          "kind": "button",
+          "label": "Ver detalhes de Solar Drifters",
+          "disabled": false,
+          "type": "button"
+        },
+        {
+          "kind": "button",
+          "label": "Ver detalhes de Ember Citadel",
+          "disabled": false,
+          "type": "button"
+        },
+        {
+          "kind": "button",
+          "label": "Ver detalhes de Moonlight Valley",
+          "disabled": false,
+          "type": "button"
+        },
+        {
+          "kind": "button",
+          "label": "Ver detalhes de Iron Circuit",
+          "disabled": false,
+          "type": "button"
+        },
+        {
+          "kind": "button",
+          "label": "Ver detalhes de Skybound Isles",
+          "disabled": false,
+          "type": "button"
+        },
+        {
+          "kind": "button",
+          "label": "Ver detalhes de Ocean Echoes",
+          "disabled": false,
+          "type": "button"
+        },
+        {
+          "kind": "button",
+          "label": "Ver detalhes de Frostfall Keep",
+          "disabled": false,
+          "type": "button"
+        },
+        {
+          "kind": "button",
+          "label": "Ver detalhes de Desert Horizon",
+          "disabled": false,
+          "type": "button"
+        },
+        {
+          "kind": "button",
+          "label": "Ver detalhes de Prism Runner",
+          "disabled": false,
+          "type": "button"
+        },
+        {
+          "kind": "button",
+          "label": "Ver detalhes de Starlight Nomads",
+          "disabled": false,
+          "type": "button"
+        },
+        {
+          "kind": "button",
+          "label": "Ver detalhes de Verdant Guardians",
+          "disabled": false,
+          "type": "button"
+        },
+        {
+          "kind": "button",
+          "label": "Ver detalhes de Thunder Peaks",
+          "disabled": false,
+          "type": "button"
+        },
+        {
+          "kind": "button",
+          "label": "Sair",
+          "disabled": false,
+          "type": "button"
+        },
+        {
+          "kind": "button",
+          "label": "Catálogo",
+          "disabled": false,
+          "type": null
+        },
+        {
+          "kind": "button",
+          "label": "Carrinho",
+          "disabled": false,
+          "type": null
+        },
+        {
+          "kind": "button",
+          "label": "Biblioteca",
+          "disabled": false,
+          "type": null
+        },
+        {
+          "kind": "button",
+          "label": "Ver detalhes de Coral Odyssey",
+          "disabled": false,
+          "type": "button"
+        },
+        {
+          "kind": "button",
+          "label": "Ver detalhes de Clockwork Haven",
+          "disabled": false,
+          "type": "button"
+        },
+        {
+          "kind": "button",
+          "label": "Ver detalhes de Obsidian Knights",
+          "disabled": false,
+          "type": "button"
+        },
+        {
+          "kind": "button",
+          "label": "Ver detalhes de Comet Trails",
+          "disabled": false,
+          "type": "button"
+        },
+        {
+          "kind": "button",
+          "label": "Ver detalhes de Saffron Dunes",
+          "disabled": false,
+          "type": "button"
+        },
+        {
+          "kind": "button",
+          "label": "Ver detalhes de Misty Outpost",
+          "disabled": false,
+          "type": "button"
+        },
+        {
+          "kind": "button",
+          "label": "Ver detalhes de Glacier Voyage",
+          "disabled": false,
+          "type": "button"
+        },
+        {
+          "kind": "button",
+          "label": "Ver detalhes de Tidal Legends",
+          "disabled": false,
+          "type": "button"
+        },
+        {
+          "kind": "button",
+          "label": "Ver detalhes de Copper Canyon",
+          "disabled": false,
+          "type": "button"
+        },
+        {
+          "kind": "button",
+          "label": "Ver detalhes de Celestial Forge",
+          "disabled": false,
+          "type": "button"
+        },
+        {
+          "kind": "button",
+          "label": "Ver detalhes de Jade Expedition",
+          "disabled": false,
+          "type": "button"
+        },
+        {
+          "kind": "button",
+          "label": "Ver detalhes de Midnight Metro",
+          "disabled": false,
+          "type": "button"
+        },
+        {
+          "kind": "button",
+          "label": "Ver detalhes de Silver Summit",
+          "disabled": false,
+          "type": "button"
+        },
+        {
+          "kind": "button",
+          "label": "Ver detalhes de Sunken Compass",
+          "disabled": false,
+          "type": "button"
+        },
+        {
+          "kind": "button",
+          "label": "Ver detalhes de Crimson Bastion",
+          "disabled": false,
+          "type": "button"
+        },
+        {
+          "kind": "button",
+          "label": "Ver detalhes de Zenith Frontier",
+          "disabled": false,
+          "type": "button"
+        }
+      ]
+    },
+    {
+      "name": "catalogo-capa-generica-id-herdado",
+      "route": "wf01",
+      "width": 320,
+      "height": 568,
+      "options": {
+        "actions": [
+          [
+            "seed-custom-cover"
+          ],
+          [
+            "reload",
+            "WF-01"
+          ],
+          [
+            "fill",
+            "E-mail",
+            "jogador@pixelvault.example"
+          ],
+          [
+            "fill",
+            "Senha",
+            "demo123"
+          ],
+          [
+            "click",
+            "Entrar"
+          ],
+          [
+            "expect",
+            "WF-03"
+          ],
+          [
+            "catalog-bottom"
+          ],
+          [
+            "click",
+            "Ver detalhes de Produto sem capa própria"
+          ],
+          [
+            "expect",
+            "Produto sem capa própria"
+          ],
+          [
+            "generic-cover-loaded"
+          ]
+        ]
+      },
+      "innerWidth": 320,
+      "innerHeight": 568,
+      "scrollWidth": 320,
+      "scrollHeight": 568,
+      "horizontalOverflowElements": [],
+      "focusedElement": null,
+      "focusedBorderColor": "rgb(0, 0, 0)",
+      "focusedBorderWidth": "0px",
+      "interfaceMarkers": false,
+      "title": "Produto sem capa própria\nProduto sem capa própria\nTipo: Jogo\nR$ 79,90\nCompatível com: GeForce NOW, Boosteroid\nSobre este",
+      "catalogChecks": [],
+      "controls": [
+        {
+          "kind": "field",
+          "label": "E-mail",
+          "disabled": false,
+          "type": "email"
+        },
+        {
+          "kind": "field",
+          "label": "Senha",
+          "disabled": false,
+          "type": "password"
+        },
+        {
+          "kind": "button",
+          "label": "Entrar",
+          "disabled": false,
+          "type": "button"
+        },
+        {
+          "kind": "button",
+          "label": "Criar conta",
+          "disabled": false,
+          "type": "button"
+        },
+        {
+          "kind": "button",
+          "label": "Atualizar catálogo da API",
+          "disabled": false,
+          "type": "button"
+        },
+        {
+          "kind": "button",
+          "label": "Exportar dados em JSON",
+          "disabled": false,
+          "type": "button"
+        },
+        {
+          "kind": "button",
+          "label": "Selecionado: Todos",
+          "disabled": false,
+          "type": "button"
+        },
+        {
+          "kind": "button",
+          "label": "GeForce NOW",
+          "disabled": false,
+          "type": "button"
+        },
+        {
+          "kind": "button",
+          "label": "Boosteroid",
+          "disabled": false,
+          "type": "button"
+        },
+        {
+          "kind": "button",
+          "label": "Ver detalhes de Orbit Raiders",
+          "disabled": false,
+          "type": "button"
+        },
+        {
+          "kind": "button",
+          "label": "Ver detalhes de Neon Expansion",
+          "disabled": false,
+          "type": "button"
+        },
+        {
+          "kind": "button",
+          "label": "Ver detalhes de Aurora Quest",
+          "disabled": false,
+          "type": "button"
+        },
+        {
+          "kind": "button",
+          "label": "Ver detalhes de Crystal Harbor",
+          "disabled": false,
+          "type": "button"
+        },
+        {
+          "kind": "button",
+          "label": "Ver detalhes de Solar Drifters",
+          "disabled": false,
+          "type": "button"
+        },
+        {
+          "kind": "button",
+          "label": "Ver detalhes de Ember Citadel",
+          "disabled": false,
+          "type": "button"
+        },
+        {
+          "kind": "button",
+          "label": "Ver detalhes de Moonlight Valley",
+          "disabled": false,
+          "type": "button"
+        },
+        {
+          "kind": "button",
+          "label": "Ver detalhes de Iron Circuit",
+          "disabled": false,
+          "type": "button"
+        },
+        {
+          "kind": "button",
+          "label": "Ver detalhes de Skybound Isles",
+          "disabled": false,
+          "type": "button"
+        },
+        {
+          "kind": "button",
+          "label": "Ver detalhes de Ocean Echoes",
+          "disabled": false,
+          "type": "button"
+        },
+        {
+          "kind": "button",
+          "label": "Sair",
+          "disabled": false,
+          "type": "button"
+        },
+        {
+          "kind": "button",
+          "label": "Catálogo",
+          "disabled": false,
+          "type": null
+        },
+        {
+          "kind": "button",
+          "label": "Carrinho",
+          "disabled": false,
+          "type": null
+        },
+        {
+          "kind": "button",
+          "label": "Biblioteca",
+          "disabled": false,
+          "type": null
+        },
+        {
+          "kind": "button",
+          "label": "Ver detalhes de Copper Canyon",
+          "disabled": false,
+          "type": "button"
+        },
+        {
+          "kind": "button",
+          "label": "Ver detalhes de Celestial Forge",
+          "disabled": false,
+          "type": "button"
+        },
+        {
+          "kind": "button",
+          "label": "Ver detalhes de Jade Expedition",
+          "disabled": false,
+          "type": "button"
+        },
+        {
+          "kind": "button",
+          "label": "Ver detalhes de Midnight Metro",
+          "disabled": false,
+          "type": "button"
+        },
+        {
+          "kind": "button",
+          "label": "Ver detalhes de Silver Summit",
+          "disabled": false,
+          "type": "button"
+        },
+        {
+          "kind": "button",
+          "label": "Ver detalhes de Sunken Compass",
+          "disabled": false,
+          "type": "button"
+        },
+        {
+          "kind": "button",
+          "label": "Ver detalhes de Crimson Bastion",
+          "disabled": false,
+          "type": "button"
+        },
+        {
+          "kind": "button",
+          "label": "Ver detalhes de Zenith Frontier",
+          "disabled": false,
+          "type": "button"
+        },
+        {
+          "kind": "button",
+          "label": "Ver detalhes de Produto sem capa própria",
+          "disabled": false,
+          "type": "button"
+        },
+        {
+          "kind": "button",
+          "label": "Adicionar ao carrinho",
+          "disabled": false,
+          "type": "button"
+        },
+        {
+          "kind": "button",
+          "label": "Ver carrinho (0)",
+          "disabled": false,
+          "type": "button"
+        },
+        {
+          "kind": "button",
+          "label": "Voltar ao catálogo",
+          "disabled": false,
+          "type": "button"
+        }
+      ]
+    },
+    {
+      "name": "catalogo-cache-antigo-atualizado",
+      "route": "wf01",
+      "width": 390,
+      "height": 844,
+      "options": {
+        "actions": [
+          [
+            "seed-legacy-catalog"
+          ],
+          [
+            "reload",
+            "WF-01"
+          ],
+          [
+            "fill",
+            "E-mail",
+            "jogador@pixelvault.example"
+          ],
+          [
+            "fill",
+            "Senha",
+            "demo123"
+          ],
+          [
+            "click",
+            "Entrar"
+          ],
+          [
+            "expect",
+            "WF-03"
+          ],
+          [
+            "catalog-scan",
+            "Todos"
+          ],
+          [
+            "click",
+            "Carrinho"
+          ],
+          [
+            "expect",
+            "Orbit Raiders"
+          ],
+          [
+            "expect",
+            "R$ 79,90"
+          ],
+          [
+            "safe-storage"
+          ]
+        ]
+      },
+      "innerWidth": 390,
+      "innerHeight": 844,
+      "scrollWidth": 390,
+      "scrollHeight": 844,
+      "horizontalOverflowElements": [],
+      "focusedElement": null,
+      "focusedBorderColor": "rgb(0, 0, 0)",
+      "focusedBorderWidth": "0px",
+      "interfaceMarkers": false,
+      "title": "Seu carrinho\nOrbit Raiders\nTipo: Jogo\nR$ 79,90\nCompatível com: GeForce NOW, Boosteroid\nAtivação em: Loja de demonstração",
+      "catalogChecks": [
+        {
+          "filter": "Todos",
+          "count": 32,
+          "imagesLoaded": 32,
+          "uniqueImageUrls": 32,
+          "items": [
+            {
+              "id": "orbit-raiders",
+              "name": "Orbit Raiders",
+              "loaded": true,
+              "src": "http://127.0.0.1:8097/assets/assets/covers/orbit-raiders.80c98d8cccd3bb595447985e3a51057e.png"
+            },
+            {
+              "id": "neon-expansion",
+              "name": "Neon Expansion",
+              "loaded": true,
+              "src": "http://127.0.0.1:8097/assets/assets/covers/neon-expansion.6d71c8641cbd9a15c9ab922646e56367.png"
+            },
+            {
+              "id": "pv-aurora-quest",
+              "name": "Aurora Quest",
+              "loaded": true,
+              "src": "http://127.0.0.1:8097/assets/assets/covers/pv-aurora-quest.5f1ce20e9d096ef74854c8ff394ed262.png"
+            },
+            {
+              "id": "pv-crystal-harbor",
+              "name": "Crystal Harbor",
+              "loaded": true,
+              "src": "http://127.0.0.1:8097/assets/assets/covers/pv-crystal-harbor.255a66068ec94e71168f5190af45895d.png"
+            },
+            {
+              "id": "pv-solar-drifters",
+              "name": "Solar Drifters",
+              "loaded": true,
+              "src": "http://127.0.0.1:8097/assets/assets/covers/pv-solar-drifters.9b01944da88ff115bbfc53ac2531e0c0.png"
+            },
+            {
+              "id": "pv-ember-citadel",
+              "name": "Ember Citadel",
+              "loaded": true,
+              "src": "http://127.0.0.1:8097/assets/assets/covers/pv-ember-citadel.c1f673999d4d204d96aa519c9e3fcebf.png"
+            },
+            {
+              "id": "pv-moonlight-valley",
+              "name": "Moonlight Valley",
+              "loaded": true,
+              "src": "http://127.0.0.1:8097/assets/assets/covers/pv-moonlight-valley.6042b08d963fada7ff784e5211b326b9.png"
+            },
+            {
+              "id": "pv-iron-circuit",
+              "name": "Iron Circuit",
+              "loaded": true,
+              "src": "http://127.0.0.1:8097/assets/assets/covers/pv-iron-circuit.4962ba6cf70ab21d95add4d19f70dfc9.png"
+            },
+            {
+              "id": "pv-skybound-isles",
+              "name": "Skybound Isles",
+              "loaded": true,
+              "src": "http://127.0.0.1:8097/assets/assets/covers/pv-skybound-isles.58d48d3d1ab46251b8a1585c3d9aba7b.png"
+            },
+            {
+              "id": "pv-ocean-echoes",
+              "name": "Ocean Echoes",
+              "loaded": true,
+              "src": "http://127.0.0.1:8097/assets/assets/covers/pv-ocean-echoes.54f2412db7206d81df4068a04eeb6e69.png"
+            },
+            {
+              "id": "pv-frostfall-keep",
+              "name": "Frostfall Keep",
+              "loaded": true,
+              "src": "http://127.0.0.1:8097/assets/assets/covers/pv-frostfall-keep.28336fff7cb8e9a841cf02a883d4a82c.png"
+            },
+            {
+              "id": "pv-desert-horizon",
+              "name": "Desert Horizon",
+              "loaded": true,
+              "src": "http://127.0.0.1:8097/assets/assets/covers/pv-desert-horizon.08989cdca1b2346f37fe9f98e9475ec1.png"
+            },
+            {
+              "id": "pv-prism-runner",
+              "name": "Prism Runner",
+              "loaded": true,
+              "src": "http://127.0.0.1:8097/assets/assets/covers/pv-prism-runner.ad7d9b47624b837c5913786444022ab4.png"
+            },
+            {
+              "id": "pv-starlight-nomads",
+              "name": "Starlight Nomads",
+              "loaded": true,
+              "src": "http://127.0.0.1:8097/assets/assets/covers/pv-starlight-nomads.e544be57a2ce23aa1565db166e0f70a0.png"
+            },
+            {
+              "id": "pv-verdant-guardians",
+              "name": "Verdant Guardians",
+              "loaded": true,
+              "src": "http://127.0.0.1:8097/assets/assets/covers/pv-verdant-guardians.059a13a7d26617594f8f2ef7b9b4b5c3.png"
+            },
+            {
+              "id": "pv-thunder-peaks",
+              "name": "Thunder Peaks",
+              "loaded": true,
+              "src": "http://127.0.0.1:8097/assets/assets/covers/pv-thunder-peaks.f8e9361f272569dd28fb2c1e0556c21a.png"
+            },
+            {
+              "id": "pv-coral-odyssey",
+              "name": "Coral Odyssey",
+              "loaded": true,
+              "src": "http://127.0.0.1:8097/assets/assets/covers/pv-coral-odyssey.469b808f7951dc06427c720201683f5d.png"
+            },
+            {
+              "id": "pv-clockwork-haven",
+              "name": "Clockwork Haven",
+              "loaded": true,
+              "src": "http://127.0.0.1:8097/assets/assets/covers/pv-clockwork-haven.a7f86a1599537c2167d54c6a164d6f13.png"
+            },
+            {
+              "id": "pv-obsidian-knights",
+              "name": "Obsidian Knights",
+              "loaded": true,
+              "src": "http://127.0.0.1:8097/assets/assets/covers/pv-obsidian-knights.0d3e9f2b740404a0d5c6f413e6fa2dd2.png"
+            },
+            {
+              "id": "pv-comet-trails",
+              "name": "Comet Trails",
+              "loaded": true,
+              "src": "http://127.0.0.1:8097/assets/assets/covers/pv-comet-trails.f7f05b35fc1b70fb2a4ec66ea62e4bce.png"
+            },
+            {
+              "id": "pv-saffron-dunes",
+              "name": "Saffron Dunes",
+              "loaded": true,
+              "src": "http://127.0.0.1:8097/assets/assets/covers/pv-saffron-dunes.f6a8fb29668529b0125a9d864a1068ba.png"
+            },
+            {
+              "id": "pv-misty-outpost",
+              "name": "Misty Outpost",
+              "loaded": true,
+              "src": "http://127.0.0.1:8097/assets/assets/covers/pv-misty-outpost.b921151a027d2b2474308f13b89806af.png"
+            },
+            {
+              "id": "pv-glacier-voyage",
+              "name": "Glacier Voyage",
+              "loaded": true,
+              "src": "http://127.0.0.1:8097/assets/assets/covers/pv-glacier-voyage.97a10f487f283876ded9eaa7ea045e25.png"
+            },
+            {
+              "id": "pv-tidal-legends",
+              "name": "Tidal Legends",
+              "loaded": true,
+              "src": "http://127.0.0.1:8097/assets/assets/covers/pv-tidal-legends.bebc9a959aa0c62d00e22f94fdd9a9cb.png"
+            },
+            {
+              "id": "pv-copper-canyon",
+              "name": "Copper Canyon",
+              "loaded": true,
+              "src": "http://127.0.0.1:8097/assets/assets/covers/pv-copper-canyon.23195098725e3f86a6f25993f0308a83.png"
+            },
+            {
+              "id": "pv-celestial-forge",
+              "name": "Celestial Forge",
+              "loaded": true,
+              "src": "http://127.0.0.1:8097/assets/assets/covers/pv-celestial-forge.a199d7a3ded23ea873a97a7424777009.png"
+            },
+            {
+              "id": "pv-jade-expedition",
+              "name": "Jade Expedition",
+              "loaded": true,
+              "src": "http://127.0.0.1:8097/assets/assets/covers/pv-jade-expedition.09e2742f52045a1c7ac3d0a6e95da7e2.png"
+            },
+            {
+              "id": "pv-midnight-metro",
+              "name": "Midnight Metro",
+              "loaded": true,
+              "src": "http://127.0.0.1:8097/assets/assets/covers/pv-midnight-metro.c27a8553989dd8d21c46c85a48575205.png"
+            },
+            {
+              "id": "pv-silver-summit",
+              "name": "Silver Summit",
+              "loaded": true,
+              "src": "http://127.0.0.1:8097/assets/assets/covers/pv-silver-summit.227d53d19197a52689c133fe7147bdc2.png"
+            },
+            {
+              "id": "pv-sunken-compass",
+              "name": "Sunken Compass",
+              "loaded": true,
+              "src": "http://127.0.0.1:8097/assets/assets/covers/pv-sunken-compass.dc7fcba40ada359f15b50baa6d155a59.png"
+            },
+            {
+              "id": "pv-crimson-bastion",
+              "name": "Crimson Bastion",
+              "loaded": true,
+              "src": "http://127.0.0.1:8097/assets/assets/covers/pv-crimson-bastion.c0b856c863313f0b6ecacfbe83fc974d.png"
+            },
+            {
+              "id": "pv-zenith-frontier",
+              "name": "Zenith Frontier",
+              "loaded": true,
+              "src": "http://127.0.0.1:8097/assets/assets/covers/pv-zenith-frontier.0f377773590236475d6c5a129217c3de.png"
+            }
+          ]
+        }
+      ],
+      "catalogSnapshot": [
+        {
+          "id": "neon-expansion",
+          "name": "Neon Expansion",
+          "type": "DLC",
+          "priceCents": 2490,
+          "description": "Expansão demonstrativa para a jornada visual do PixelVault.",
+          "activationStore": "Loja de demonstração (fictícia)",
+          "compatibleWith": [
+            "GeForce NOW"
+          ]
+        },
+        {
+          "id": "orbit-raiders",
+          "name": "Orbit Raiders",
+          "type": "Jogo",
+          "priceCents": 7990,
+          "description": "Descrição demonstrativa. O conteúdo final ainda não foi aprovado.",
+          "activationStore": "Loja de demonstração (fictícia)",
+          "compatibleWith": [
+            "Boosteroid",
+            "GeForce NOW"
+          ]
+        },
+        {
+          "id": "pv-aurora-quest",
+          "name": "Aurora Quest",
+          "type": "Jogo",
+          "priceCents": 1990,
+          "description": "Explore florestas luminosas e encontre relíquias perdidas. Jogo fictício para aprendizado; compatibilidade cloud ilustrativa.",
+          "activationStore": "Loja de demonstração (fictícia)",
+          "compatibleWith": [
+            "Boosteroid",
+            "GeForce NOW"
+          ]
+        },
+        {
+          "id": "pv-celestial-forge",
+          "name": "Celestial Forge",
+          "type": "Jogo",
+          "priceCents": 9690,
+          "description": "Corra por uma cidade futurista repleta de desafios. Jogo fictício para aprendizado; compatibilidade cloud ilustrativa.",
+          "activationStore": "Loja de demonstração (fictícia)",
+          "compatibleWith": [
+            "Boosteroid"
+          ]
+        },
+        {
+          "id": "pv-clockwork-haven",
+          "name": "Clockwork Haven",
+          "type": "Jogo",
+          "priceCents": 4090,
+          "description": "Defenda uma fortaleza e desvende caminhos secretos. Jogo fictício para aprendizado; compatibilidade cloud ilustrativa.",
+          "activationStore": "Loja de demonstração (fictícia)",
+          "compatibleWith": [
+            "Boosteroid",
+            "GeForce NOW"
+          ]
+        },
+        {
+          "id": "pv-comet-trails",
+          "name": "Comet Trails",
+          "type": "Jogo",
+          "priceCents": 5490,
+          "description": "Corra por uma cidade futurista repleta de desafios. Jogo fictício para aprendizado; compatibilidade cloud ilustrativa.",
+          "activationStore": "Loja de demonstração (fictícia)",
+          "compatibleWith": [
+            "Boosteroid"
+          ]
+        },
+        {
+          "id": "pv-copper-canyon",
+          "name": "Copper Canyon",
+          "type": "Jogo",
+          "priceCents": 8990,
+          "description": "Atravesse montanhas e vales em uma jornada de exploração. Jogo fictício para aprendizado; compatibilidade cloud ilustrativa.",
+          "activationStore": "Loja de demonstração (fictícia)",
+          "compatibleWith": [
+            "GeForce NOW"
+          ]
+        },
+        {
+          "id": "pv-coral-odyssey",
+          "name": "Coral Odyssey",
+          "type": "Jogo",
+          "priceCents": 3390,
+          "description": "Pilote uma nave por planetas e estações distantes. Jogo fictício para aprendizado; compatibilidade cloud ilustrativa.",
+          "activationStore": "Loja de demonstração (fictícia)",
+          "compatibleWith": [
+            "Boosteroid"
+          ]
+        },
+        {
+          "id": "pv-crimson-bastion",
+          "name": "Crimson Bastion",
+          "type": "Jogo",
+          "priceCents": 4790,
+          "description": "Atravesse montanhas e vales em uma jornada de exploração. Jogo fictício para aprendizado; compatibilidade cloud ilustrativa.",
+          "activationStore": "Loja de demonstração (fictícia)",
+          "compatibleWith": [
+            "GeForce NOW"
+          ]
+        },
+        {
+          "id": "pv-crystal-harbor",
+          "name": "Crystal Harbor",
+          "type": "Jogo",
+          "priceCents": 2690,
+          "description": "Navegue entre ilhas e descubra histórias à beira-mar. Jogo fictício para aprendizado; compatibilidade cloud ilustrativa.",
+          "activationStore": "Loja de demonstração (fictícia)",
+          "compatibleWith": [
+            "GeForce NOW"
+          ]
+        },
+        {
+          "id": "pv-desert-horizon",
+          "name": "Desert Horizon",
+          "type": "Jogo",
+          "priceCents": 8290,
+          "description": "Defenda uma fortaleza e desvende caminhos secretos. Jogo fictício para aprendizado; compatibilidade cloud ilustrativa.",
+          "activationStore": "Loja de demonstração (fictícia)",
+          "compatibleWith": [
+            "Boosteroid",
+            "GeForce NOW"
+          ]
+        },
+        {
+          "id": "pv-ember-citadel",
+          "name": "Ember Citadel",
+          "type": "Jogo",
+          "priceCents": 4090,
+          "description": "Defenda uma fortaleza e desvende caminhos secretos. Jogo fictício para aprendizado; compatibilidade cloud ilustrativa.",
+          "activationStore": "Loja de demonstração (fictícia)",
+          "compatibleWith": [
+            "Boosteroid",
+            "GeForce NOW"
+          ]
+        },
+        {
+          "id": "pv-frostfall-keep",
+          "name": "Frostfall Keep",
+          "type": "Jogo",
+          "priceCents": 7590,
+          "description": "Pilote uma nave por planetas e estações distantes. Jogo fictício para aprendizado; compatibilidade cloud ilustrativa.",
+          "activationStore": "Loja de demonstração (fictícia)",
+          "compatibleWith": [
+            "Boosteroid"
+          ]
+        },
+        {
+          "id": "pv-glacier-voyage",
+          "name": "Glacier Voyage",
+          "type": "Jogo",
+          "priceCents": 7590,
+          "description": "Pilote uma nave por planetas e estações distantes. Jogo fictício para aprendizado; compatibilidade cloud ilustrativa.",
+          "activationStore": "Loja de demonstração (fictícia)",
+          "compatibleWith": [
+            "Boosteroid"
+          ]
+        },
+        {
+          "id": "pv-iron-circuit",
+          "name": "Iron Circuit",
+          "type": "Jogo",
+          "priceCents": 5490,
+          "description": "Corra por uma cidade futurista repleta de desafios. Jogo fictício para aprendizado; compatibilidade cloud ilustrativa.",
+          "activationStore": "Loja de demonstração (fictícia)",
+          "compatibleWith": [
+            "Boosteroid"
+          ]
+        },
+        {
+          "id": "pv-jade-expedition",
+          "name": "Jade Expedition",
+          "type": "Jogo",
+          "priceCents": 1990,
+          "description": "Explore florestas luminosas e encontre relíquias perdidas. Jogo fictício para aprendizado; compatibilidade cloud ilustrativa.",
+          "activationStore": "Loja de demonstração (fictícia)",
+          "compatibleWith": [
+            "Boosteroid",
+            "GeForce NOW"
+          ]
+        },
+        {
+          "id": "pv-midnight-metro",
+          "name": "Midnight Metro",
+          "type": "Jogo",
+          "priceCents": 2690,
+          "description": "Navegue entre ilhas e descubra histórias à beira-mar. Jogo fictício para aprendizado; compatibilidade cloud ilustrativa.",
+          "activationStore": "Loja de demonstração (fictícia)",
+          "compatibleWith": [
+            "GeForce NOW"
+          ]
+        },
+        {
+          "id": "pv-misty-outpost",
+          "name": "Misty Outpost",
+          "type": "Jogo",
+          "priceCents": 6890,
+          "description": "Navegue entre ilhas e descubra histórias à beira-mar. Jogo fictício para aprendizado; compatibilidade cloud ilustrativa.",
+          "activationStore": "Loja de demonstração (fictícia)",
+          "compatibleWith": [
+            "GeForce NOW"
+          ]
+        },
+        {
+          "id": "pv-moonlight-valley",
+          "name": "Moonlight Valley",
+          "type": "Jogo",
+          "priceCents": 4790,
+          "description": "Atravesse montanhas e vales em uma jornada de exploração. Jogo fictício para aprendizado; compatibilidade cloud ilustrativa.",
+          "activationStore": "Loja de demonstração (fictícia)",
+          "compatibleWith": [
+            "GeForce NOW"
+          ]
+        },
+        {
+          "id": "pv-obsidian-knights",
+          "name": "Obsidian Knights",
+          "type": "Jogo",
+          "priceCents": 4790,
+          "description": "Atravesse montanhas e vales em uma jornada de exploração. Jogo fictício para aprendizado; compatibilidade cloud ilustrativa.",
+          "activationStore": "Loja de demonstração (fictícia)",
+          "compatibleWith": [
+            "GeForce NOW"
+          ]
+        },
+        {
+          "id": "pv-ocean-echoes",
+          "name": "Ocean Echoes",
+          "type": "Jogo",
+          "priceCents": 6890,
+          "description": "Navegue entre ilhas e descubra histórias à beira-mar. Jogo fictício para aprendizado; compatibilidade cloud ilustrativa.",
+          "activationStore": "Loja de demonstração (fictícia)",
+          "compatibleWith": [
+            "GeForce NOW"
+          ]
+        },
+        {
+          "id": "pv-prism-runner",
+          "name": "Prism Runner",
+          "type": "Jogo",
+          "priceCents": 8990,
+          "description": "Atravesse montanhas e vales em uma jornada de exploração. Jogo fictício para aprendizado; compatibilidade cloud ilustrativa.",
+          "activationStore": "Loja de demonstração (fictícia)",
+          "compatibleWith": [
+            "GeForce NOW"
+          ]
+        },
+        {
+          "id": "pv-saffron-dunes",
+          "name": "Saffron Dunes",
+          "type": "Jogo",
+          "priceCents": 6190,
+          "description": "Explore florestas luminosas e encontre relíquias perdidas. Jogo fictício para aprendizado; compatibilidade cloud ilustrativa.",
+          "activationStore": "Loja de demonstração (fictícia)",
+          "compatibleWith": [
+            "Boosteroid",
+            "GeForce NOW"
+          ]
+        },
+        {
+          "id": "pv-silver-summit",
+          "name": "Silver Summit",
+          "type": "Jogo",
+          "priceCents": 3390,
+          "description": "Pilote uma nave por planetas e estações distantes. Jogo fictício para aprendizado; compatibilidade cloud ilustrativa.",
+          "activationStore": "Loja de demonstração (fictícia)",
+          "compatibleWith": [
+            "Boosteroid"
+          ]
+        },
+        {
+          "id": "pv-skybound-isles",
+          "name": "Skybound Isles",
+          "type": "Jogo",
+          "priceCents": 6190,
+          "description": "Explore florestas luminosas e encontre relíquias perdidas. Jogo fictício para aprendizado; compatibilidade cloud ilustrativa.",
+          "activationStore": "Loja de demonstração (fictícia)",
+          "compatibleWith": [
+            "Boosteroid",
+            "GeForce NOW"
+          ]
+        },
+        {
+          "id": "pv-solar-drifters",
+          "name": "Solar Drifters",
+          "type": "Jogo",
+          "priceCents": 3390,
+          "description": "Pilote uma nave por planetas e estações distantes. Jogo fictício para aprendizado; compatibilidade cloud ilustrativa.",
+          "activationStore": "Loja de demonstração (fictícia)",
+          "compatibleWith": [
+            "Boosteroid"
+          ]
+        },
+        {
+          "id": "pv-starlight-nomads",
+          "name": "Starlight Nomads",
+          "type": "Jogo",
+          "priceCents": 9690,
+          "description": "Corra por uma cidade futurista repleta de desafios. Jogo fictício para aprendizado; compatibilidade cloud ilustrativa.",
+          "activationStore": "Loja de demonstração (fictícia)",
+          "compatibleWith": [
+            "Boosteroid"
+          ]
+        },
+        {
+          "id": "pv-sunken-compass",
+          "name": "Sunken Compass",
+          "type": "Jogo",
+          "priceCents": 4090,
+          "description": "Defenda uma fortaleza e desvende caminhos secretos. Jogo fictício para aprendizado; compatibilidade cloud ilustrativa.",
+          "activationStore": "Loja de demonstração (fictícia)",
+          "compatibleWith": [
+            "Boosteroid",
+            "GeForce NOW"
+          ]
+        },
+        {
+          "id": "pv-thunder-peaks",
+          "name": "Thunder Peaks",
+          "type": "Jogo",
+          "priceCents": 2690,
+          "description": "Navegue entre ilhas e descubra histórias à beira-mar. Jogo fictício para aprendizado; compatibilidade cloud ilustrativa.",
+          "activationStore": "Loja de demonstração (fictícia)",
+          "compatibleWith": [
+            "GeForce NOW"
+          ]
+        },
+        {
+          "id": "pv-tidal-legends",
+          "name": "Tidal Legends",
+          "type": "Jogo",
+          "priceCents": 8290,
+          "description": "Defenda uma fortaleza e desvende caminhos secretos. Jogo fictício para aprendizado; compatibilidade cloud ilustrativa.",
+          "activationStore": "Loja de demonstração (fictícia)",
+          "compatibleWith": [
+            "Boosteroid",
+            "GeForce NOW"
+          ]
+        },
+        {
+          "id": "pv-verdant-guardians",
+          "name": "Verdant Guardians",
+          "type": "Jogo",
+          "priceCents": 1990,
+          "description": "Explore florestas luminosas e encontre relíquias perdidas. Jogo fictício para aprendizado; compatibilidade cloud ilustrativa.",
+          "activationStore": "Loja de demonstração (fictícia)",
+          "compatibleWith": [
+            "Boosteroid",
+            "GeForce NOW"
+          ]
+        },
+        {
+          "id": "pv-zenith-frontier",
+          "name": "Zenith Frontier",
+          "type": "Jogo",
+          "priceCents": 5490,
+          "description": "Corra por uma cidade futurista repleta de desafios. Jogo fictício para aprendizado; compatibilidade cloud ilustrativa.",
+          "activationStore": "Loja de demonstração (fictícia)",
+          "compatibleWith": [
+            "Boosteroid"
+          ]
+        }
+      ],
+      "controls": [
+        {
+          "kind": "field",
+          "label": "E-mail",
+          "disabled": false,
+          "type": "email"
+        },
+        {
+          "kind": "field",
+          "label": "Senha",
+          "disabled": false,
+          "type": "password"
+        },
+        {
+          "kind": "button",
+          "label": "Entrar",
+          "disabled": false,
+          "type": "button"
+        },
+        {
+          "kind": "button",
+          "label": "Criar conta",
+          "disabled": false,
+          "type": "button"
+        },
+        {
+          "kind": "button",
+          "label": "Atualizar catálogo da API",
+          "disabled": false,
+          "type": "button"
+        },
+        {
+          "kind": "button",
+          "label": "Exportar dados em JSON",
+          "disabled": false,
+          "type": "button"
+        },
+        {
+          "kind": "button",
+          "label": "Selecionado: Todos",
+          "disabled": false,
+          "type": "button"
+        },
+        {
+          "kind": "button",
+          "label": "GeForce NOW",
+          "disabled": false,
+          "type": "button"
+        },
+        {
+          "kind": "button",
+          "label": "Boosteroid",
+          "disabled": false,
+          "type": "button"
+        },
+        {
+          "kind": "button",
+          "label": "Ver detalhes de Orbit Raiders",
+          "disabled": false,
+          "type": "button"
+        },
+        {
+          "kind": "button",
+          "label": "Ver detalhes de Neon Expansion",
+          "disabled": false,
+          "type": "button"
+        },
+        {
+          "kind": "button",
+          "label": "Ver detalhes de Aurora Quest",
+          "disabled": false,
+          "type": "button"
+        },
+        {
+          "kind": "button",
+          "label": "Ver detalhes de Crystal Harbor",
+          "disabled": false,
+          "type": "button"
+        },
+        {
+          "kind": "button",
+          "label": "Ver detalhes de Solar Drifters",
+          "disabled": false,
+          "type": "button"
+        },
+        {
+          "kind": "button",
+          "label": "Ver detalhes de Ember Citadel",
+          "disabled": false,
+          "type": "button"
+        },
+        {
+          "kind": "button",
+          "label": "Ver detalhes de Moonlight Valley",
+          "disabled": false,
+          "type": "button"
+        },
+        {
+          "kind": "button",
+          "label": "Ver detalhes de Iron Circuit",
+          "disabled": false,
+          "type": "button"
+        },
+        {
+          "kind": "button",
+          "label": "Ver detalhes de Skybound Isles",
+          "disabled": false,
+          "type": "button"
+        },
+        {
+          "kind": "button",
+          "label": "Ver detalhes de Ocean Echoes",
+          "disabled": false,
+          "type": "button"
+        },
+        {
+          "kind": "button",
+          "label": "Ver detalhes de Frostfall Keep",
+          "disabled": false,
+          "type": "button"
+        },
+        {
+          "kind": "button",
+          "label": "Ver detalhes de Desert Horizon",
+          "disabled": false,
+          "type": "button"
+        },
+        {
+          "kind": "button",
+          "label": "Ver detalhes de Prism Runner",
+          "disabled": false,
+          "type": "button"
+        },
+        {
+          "kind": "button",
+          "label": "Ver detalhes de Starlight Nomads",
+          "disabled": false,
+          "type": "button"
+        },
+        {
+          "kind": "button",
+          "label": "Ver detalhes de Verdant Guardians",
+          "disabled": false,
+          "type": "button"
+        },
+        {
+          "kind": "button",
+          "label": "Ver detalhes de Thunder Peaks",
+          "disabled": false,
+          "type": "button"
+        },
+        {
+          "kind": "button",
+          "label": "Sair",
+          "disabled": false,
+          "type": "button"
+        },
+        {
+          "kind": "button",
+          "label": "Catálogo",
+          "disabled": false,
+          "type": null
+        },
+        {
+          "kind": "button",
+          "label": "Carrinho",
+          "disabled": false,
+          "type": null
+        },
+        {
+          "kind": "button",
+          "label": "Biblioteca",
+          "disabled": false,
+          "type": null
+        },
+        {
+          "kind": "button",
+          "label": "Ver detalhes de Coral Odyssey",
+          "disabled": false,
+          "type": "button"
+        },
+        {
+          "kind": "button",
+          "label": "Ver detalhes de Clockwork Haven",
+          "disabled": false,
+          "type": "button"
+        },
+        {
+          "kind": "button",
+          "label": "Ver detalhes de Obsidian Knights",
+          "disabled": false,
+          "type": "button"
+        },
+        {
+          "kind": "button",
+          "label": "Ver detalhes de Comet Trails",
+          "disabled": false,
+          "type": "button"
+        },
+        {
+          "kind": "button",
+          "label": "Ver detalhes de Saffron Dunes",
+          "disabled": false,
+          "type": "button"
+        },
+        {
+          "kind": "button",
+          "label": "Ver detalhes de Misty Outpost",
+          "disabled": false,
+          "type": "button"
+        },
+        {
+          "kind": "button",
+          "label": "Ver detalhes de Glacier Voyage",
+          "disabled": false,
+          "type": "button"
+        },
+        {
+          "kind": "button",
+          "label": "Ver detalhes de Tidal Legends",
+          "disabled": false,
+          "type": "button"
+        },
+        {
+          "kind": "button",
+          "label": "Ver detalhes de Copper Canyon",
+          "disabled": false,
+          "type": "button"
+        },
+        {
+          "kind": "button",
+          "label": "Ver detalhes de Celestial Forge",
+          "disabled": false,
+          "type": "button"
+        },
+        {
+          "kind": "button",
+          "label": "Ver detalhes de Jade Expedition",
+          "disabled": false,
+          "type": "button"
+        },
+        {
+          "kind": "button",
+          "label": "Ver detalhes de Midnight Metro",
+          "disabled": false,
+          "type": "button"
+        },
+        {
+          "kind": "button",
+          "label": "Ver detalhes de Silver Summit",
+          "disabled": false,
+          "type": "button"
+        },
+        {
+          "kind": "button",
+          "label": "Ver detalhes de Sunken Compass",
+          "disabled": false,
+          "type": "button"
+        },
+        {
+          "kind": "button",
+          "label": "Ver detalhes de Crimson Bastion",
+          "disabled": false,
+          "type": "button"
+        },
+        {
+          "kind": "button",
+          "label": "Ver detalhes de Zenith Frontier",
+          "disabled": false,
+          "type": "button"
+        },
+        {
+          "kind": "button",
+          "label": "Remover: Orbit Raiders",
+          "disabled": false,
+          "type": "button"
+        },
+        {
+          "kind": "button",
+          "label": "Continuar para checkout",
+          "disabled": false,
+          "type": "button"
+        }
+      ]
+    }
+  ],
+  "failures": []
+}

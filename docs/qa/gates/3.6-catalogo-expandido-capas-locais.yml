@@ -1,0 +1,104 @@
+schema: 1
+story: '3.6'
+story_title: 'Ampliar catálogo acadêmico e exibir capas locais'
+gate: CONCERNS
+status_reason: 'Os 32 produtos-base e suas capas locais foram verificados, com domínio equivalente no cliente/API, migrações preservando dados e 89 testes/74 jornadas web aprovados. A única ressalva é a execução de imagens, navegação e persistência em dispositivo Android/iOS ainda não realizada.'
+reviewer: 'Quinn (Test Architect)'
+reviewed_revision: 'wt-sha256:d57246ce3ae9851a98b7ab920e8748aaf3e031fb1c59d48e1feacec56e7276fc'
+updated: '2026-11-21T07:59:27.792Z'
+quality_score: 90
+waiver:
+  active: false
+
+top_issues:
+  - id: 'TEST-001'
+    severity: medium
+    finding: 'Não houve execução em dispositivo Android/iOS. Export Android com assets empacotados e E2E web não comprovam renderização de Image, rolagem/teclado ou SQLite no runtime nativo.'
+    suggested_action: 'Executar catálogo, filtro, detalhe, carrinho, fallback e retomada de cache em aparelho/emulador SDK 54; registrar o runtime e os resultados reais.'
+    suggested_owner: dev
+
+resolved_issues:
+  - id: 'REL-001'
+    finding: 'O mapa de capas resolvia propriedades herdadas de IDs válidos como constructor em vez da capa genérica.'
+    resolution: 'Object.hasOwn aplicado ao mapa e ao gerador. QA conferiu a função com IDs herdados; E2E carregou produto customizado constructor com imagem genérica real.'
+  - id: 'REL-002'
+    finding: 'Image no runtime web podia assumir altura intrínseca e perder a proporção prevista.'
+    resolution: 'Moldura 16:9 com preenchimento absoluto; E2E verificou dimensão natural 768x432, proporção renderizada, carregamento de 32 capas e rolagem ao último item em 320/390 px.'
+  - id: 'REQ-001'
+    finding: 'A descrição já existente no domínio não aparecia no detalhe.'
+    resolution: 'Detalhe passou a exibir o campo e recebeu asserção E2E, sem alterar o contrato do produto.'
+
+evidence:
+  tests_reviewed: 89
+  trace:
+    ac_covered: [1, 2, 3, 4, 5, 6, 7, 8]
+    ac_gaps: []
+    note: 'AC 8 conserva a ressalva nativa explicitamente. Regressões antigas usam fixture de dois itens no harness; a massa padrão de 32 foi verificada separadamente.'
+  catalog:
+    original_products_preserved: ['orbit-raiders', 'neon-expansion']
+    added_fictional_games: 30
+    base_products: 32
+    games: 31
+    dlc: 1
+    filters: { Todos: 32, 'GeForce NOW': 22, Boosteroid: 21 }
+    local_api_domain: 'PASS: comparação QA independente dos 32 snapshots por id, nome, tipo, preço em centavos, descrição, loja e compatibilidades canônicas.'
+    artwork: '32 PNGs específicos originais e um genérico, gerados por script determinístico Node/zlib; sem CDN/dependência nova.'
+    packaged_assets: 'QA conferiu os hashes dos 33 PNGs-fonte e sua presença efetiva no export Android; total 262727 bytes.'
+  persistence:
+    existing_database: 'PASS: banco de trabalho 2→32 sem reset, dados protegidos/produtos anteriores preservados, zero violações FK e segunda abertura sem duplicação.'
+    migration: 'Transação aditiva e marcador operacional; não sobrescreve ID existente nem suas compatibilidades, preserva exclusões posteriores e resolve loja/plataforma sem substituir ID customizado.'
+    cache: 'v1 legado e v2 cobertos: preserva edições, legacyDirty/catalogDirty, contas/outbox/DELETE e referências de checkout; acrescenta somente extras ausentes e não repete a expansão após o marcador.'
+    failure: 'Rollback de banco sem marca de versão e falha de escrita de cache sem publicação/perda foram exercitados.'
+  commands:
+    lint: 'PASS (exit 0; zero warnings)'
+    typecheck: 'PASS (exit 0)'
+    test: 'PASS (89/89)'
+    build_android: 'PASS (669 módulos; 33 capas empacotadas)'
+    build_web_local: 'PASS (--clear)'
+    build_web_api: 'PASS (--clear)'
+    coderabbit: 'NOT RUN (desabilitado na story; revisão manual especializada)'
+  e2e:
+    catalog_local: 'PASS (7/7)'
+    catalog_api: 'PASS (6/6; HTTP/SQLite reais)'
+    local_regression: 'PASS (45/45; fixture explícita de dois produtos)'
+    api_regression: 'PASS (6/6; fixture explícita de dois produtos)'
+    checkout_regression: 'PASS (10/10; fixture explícita de dois produtos e provedor simulado)'
+    total_cases: 74
+    horizontal_overflow_failures: 0
+    downloads: 7
+    loaded_images: '32 IDs/títulos, 32 imagens completas e 32 URLs únicas nos scans de Todos; filtros 22 e 21 também carregados. Lista virtualizada percorrida, não presumida inteira no DOM.'
+    interactions: 'Rolagem ao último item, filtros, detalhes/descrição, carrinho/totais, erro real de PNG via bloqueio, recuperação, fallback de ID herdado e cache anterior exercitados.'
+    visual_samples: ['catalogo-lista-inicio-390', 'catalogo-lista-final-320', 'catalogo-fallback-erro-e-recuperacao']
+    artwork_samples: ['orbit-raiders.png', 'pv-crystal-harbor.png', 'pv-zenith-frontier.png']
+    input_method: 'Mouse via CDP e campos DOM em Expo Web; não são cliques de hardware nem validação nativa.'
+  financial_scope: 'Sem mudança de credenciais/contrato financeiro ou nova compra externa nesta story; regressão controlada de checkout não é homologação externa nova.'
+  refs:
+    - 'docs/evidence/sprint-2-story-3.6/README.md'
+    - 'docs/evidence/sprint-2-story-3.6/validation-summary.json'
+    - 'docs/evidence/sprint-2-story-3.6/existing-database-migration.json'
+    - 'docs/evidence/sprint-2-story-3.6/packaged-covers.json'
+    - 'docs/evidence/qa-catalog-local/capture-results.json'
+    - 'docs/evidence/qa-catalog-api/capture-results.json'
+    - 'docs/evidence/qa-full-local-catalog-regression/capture-results.json'
+    - 'docs/evidence/qa-full-api-catalog-regression/capture-results.json'
+    - 'docs/evidence/qa-full-payment-catalog-regression/capture-results.json'
+
+nfr_validation:
+  security:
+    status: PASS
+    notes: 'Imagens locais por IDs estáticos, guardadas por propriedade própria; nenhum campo arbitrário de URL, segredo ou nova dependência. Helper SQL usa tabelas fixas internas e valores parametrizados.'
+  reliability:
+    status: CONCERNS
+    notes: 'Migrações, exclusões, conflitos de ID, rollback, cache pendente, PNGs e fallback passaram. Execução nativa permanece pendente.'
+  performance:
+    status: PASS
+    notes: 'Assets locais somam 262727 bytes; lista de 32 itens foi percorrida em 320/390 px e 74 jornadas concluíram sem overflow. Não constitui teste de carga.'
+  maintainability:
+    status: PASS
+    notes: 'Manifesto compartilhado e gerador reproduzível evitam duplicação de massa; migração, fixtures e limites documentados, sem dependência adicional.'
+
+recommendations:
+  immediate: []
+  future:
+    - action: 'Executar TEST-001 no dispositivo e anexar evidência antes de afirmar funcionamento nativo completo.'
+      refs: ['docs/evidence/sprint-2-story-3.6/README.md']

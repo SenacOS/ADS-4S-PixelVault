@@ -1,0 +1,428 @@
+{
+  "capturedAt": "2026-11-20T16:29:40.464Z",
+  "runtime": "Expo Web + Chrome headless CDP",
+  "results": [
+    {
+      "name": "crud-servidor",
+      "route": "wf01",
+      "width": 390,
+      "height": 844,
+      "options": {
+        "actions": [
+          [
+            "click",
+            "Preencher administrador"
+          ],
+          [
+            "click",
+            "Entrar"
+          ],
+          [
+            "expect",
+            "WF-09"
+          ],
+          [
+            "click",
+            "Novo item"
+          ],
+          [
+            "fill",
+            "Nome do produto",
+            "CRUD integrado"
+          ],
+          [
+            "click",
+            "Jogo"
+          ],
+          [
+            "fill",
+            "Preço",
+            "12,50"
+          ],
+          [
+            "fill",
+            "Descrição",
+            "Descrição fictícia"
+          ],
+          [
+            "click",
+            "Boosteroid"
+          ],
+          [
+            "fill",
+            "Ativação em",
+            "Loja fictícia"
+          ],
+          [
+            "click",
+            "Cadastrar item"
+          ],
+          [
+            "expect",
+            "Item cadastrado na lista local."
+          ],
+          [
+            "click",
+            "Sincronizar catálogo"
+          ],
+          [
+            "expect",
+            "Catálogo sincronizado com o servidor."
+          ],
+          [
+            "server-expect",
+            "CRUD integrado",
+            true
+          ],
+          [
+            "click",
+            "Editar CRUD integrado"
+          ],
+          [
+            "fill",
+            "Nome do produto",
+            "CRUD alterado"
+          ],
+          [
+            "fill",
+            "Preço",
+            "25,90"
+          ],
+          [
+            "click",
+            "Salvar alterações"
+          ],
+          [
+            "click",
+            "Sincronizar catálogo"
+          ],
+          [
+            "expect",
+            "Catálogo sincronizado com o servidor."
+          ],
+          [
+            "server-expect",
+            "CRUD alterado",
+            true
+          ],
+          [
+            "reload",
+            "WF-01"
+          ],
+          [
+            "click",
+            "Preencher administrador"
+          ],
+          [
+            "click",
+            "Entrar"
+          ],
+          [
+            "expect",
+            "WF-09"
+          ],
+          [
+            "expect",
+            "CRUD alterado"
+          ],
+          [
+            "click",
+            "Excluir CRUD alterado"
+          ],
+          [
+            "click",
+            "Confirmar exclusão"
+          ],
+          [
+            "click",
+            "Sincronizar catálogo"
+          ],
+          [
+            "expect",
+            "Catálogo sincronizado com o servidor."
+          ],
+          [
+            "server-expect",
+            "CRUD alterado",
+            false
+          ],
+          [
+            "safe-storage"
+          ]
+        ]
+      },
+      "innerWidth": 390,
+      "innerHeight": 844,
+      "scrollWidth": 390,
+      "scrollHeight": 844,
+      "horizontalOverflowElements": [],
+      "focusedElement": null,
+      "title": "WF-09 · ADMINISTRAÇÃO\nManutenção do catálogo\nPerfil: administrador/curador · Catálogo local e sincronização\nInformação: "
+    },
+    {
+      "name": "retomada-offline",
+      "route": "wf01",
+      "width": 390,
+      "height": 844,
+      "options": {
+        "actions": [
+          [
+            "click",
+            "Preencher administrador"
+          ],
+          [
+            "click",
+            "Entrar"
+          ],
+          [
+            "expect",
+            "WF-09"
+          ],
+          [
+            "api-offline"
+          ],
+          [
+            "click",
+            "Novo item"
+          ],
+          [
+            "fill",
+            "Nome do produto",
+            "Criado offline"
+          ],
+          [
+            "click",
+            "Jogo"
+          ],
+          [
+            "fill",
+            "Preço",
+            "12,50"
+          ],
+          [
+            "fill",
+            "Descrição",
+            "Descrição fictícia"
+          ],
+          [
+            "click",
+            "Boosteroid"
+          ],
+          [
+            "fill",
+            "Ativação em",
+            "Loja fictícia"
+          ],
+          [
+            "click",
+            "Cadastrar item"
+          ],
+          [
+            "expect",
+            "Item cadastrado na lista local."
+          ],
+          [
+            "click",
+            "Sincronizar catálogo"
+          ],
+          [
+            "expect",
+            "Sincronização pendente"
+          ],
+          [
+            "reload",
+            "WF-01"
+          ],
+          [
+            "click",
+            "Preencher administrador"
+          ],
+          [
+            "click",
+            "Entrar"
+          ],
+          [
+            "expect",
+            "WF-09"
+          ],
+          [
+            "expect",
+            "1 alterações pendentes"
+          ],
+          [
+            "api-online"
+          ],
+          [
+            "click",
+            "Sair do perfil administrativo"
+          ],
+          [
+            "click",
+            "Preencher administrador"
+          ],
+          [
+            "click",
+            "Entrar"
+          ],
+          [
+            "expect",
+            "WF-09"
+          ],
+          [
+            "click",
+            "Sincronizar catálogo"
+          ],
+          [
+            "expect",
+            "Catálogo sincronizado com o servidor."
+          ],
+          [
+            "server-expect",
+            "Criado offline",
+            true
+          ],
+          [
+            "safe-storage"
+          ]
+        ],
+        "scrollToText": "Criado offline"
+      },
+      "innerWidth": 390,
+      "innerHeight": 844,
+      "scrollWidth": 390,
+      "scrollHeight": 844,
+      "horizontalOverflowElements": [],
+      "focusedElement": null,
+      "title": "WF-09 · ADMINISTRAÇÃO\nManutenção do catálogo\nPerfil: administrador/curador · Catálogo local e sincronização\nInformação: "
+    },
+    {
+      "name": "conflito-resolvido",
+      "route": "wf01",
+      "width": 320,
+      "height": 568,
+      "options": {
+        "actions": [
+          [
+            "click",
+            "Preencher administrador"
+          ],
+          [
+            "click",
+            "Entrar"
+          ],
+          [
+            "expect",
+            "WF-09"
+          ],
+          [
+            "click",
+            "Novo item"
+          ],
+          [
+            "fill",
+            "Nome do produto",
+            "Item conflito"
+          ],
+          [
+            "click",
+            "Jogo"
+          ],
+          [
+            "fill",
+            "Preço",
+            "12,50"
+          ],
+          [
+            "fill",
+            "Descrição",
+            "Descrição fictícia"
+          ],
+          [
+            "click",
+            "Boosteroid"
+          ],
+          [
+            "fill",
+            "Ativação em",
+            "Loja fictícia"
+          ],
+          [
+            "click",
+            "Cadastrar item"
+          ],
+          [
+            "expect",
+            "Item cadastrado na lista local."
+          ],
+          [
+            "click",
+            "Sincronizar catálogo"
+          ],
+          [
+            "expect",
+            "Catálogo sincronizado com o servidor."
+          ],
+          [
+            "click",
+            "Editar Item conflito"
+          ],
+          [
+            "fill",
+            "Nome do produto",
+            "Versão local"
+          ],
+          [
+            "click",
+            "Salvar alterações"
+          ],
+          [
+            "server-edit",
+            "Item conflito",
+            "Versão remota"
+          ],
+          [
+            "click",
+            "Sincronizar catálogo"
+          ],
+          [
+            "expect",
+            "O produto mudou no servidor"
+          ],
+          [
+            "server-expect",
+            "Versão remota",
+            true
+          ],
+          [
+            "click",
+            "Recarregar versão do servidor"
+          ],
+          [
+            "click",
+            "Confirmar descarte e recarregar"
+          ],
+          [
+            "expect",
+            "Catálogo do servidor recuperado"
+          ],
+          [
+            "expect",
+            "0 alterações pendentes"
+          ],
+          [
+            "expect",
+            "Versão remota"
+          ]
+        ],
+        "scrollToText": "Versão remota"
+      },
+      "innerWidth": 320,
+      "innerHeight": 568,
+      "scrollWidth": 320,
+      "scrollHeight": 568,
+      "horizontalOverflowElements": [],
+      "focusedElement": null,
+      "title": "WF-09 · ADMINISTRAÇÃO\nManutenção do catálogo\nPerfil: administrador/curador · Catálogo local e sincronização\nInformação: "
+    }
+  ]
+}

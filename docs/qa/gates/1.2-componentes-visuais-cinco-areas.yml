@@ -1,0 +1,81 @@
+schema: 1
+story: '1.2'
+story_title: 'Componentes visuais e cinco áreas funcionais iniciais'
+gate: CONCERNS
+status_reason: 'Os 16 critérios foram atendidos no recorte visual, com gates, navegação e 27 capturas verificadas. Permanecem limitações não bloqueantes de validação nativa e vulnerabilidades transitivas do Expo SDK 54 sem correção compatível.'
+reviewer: 'Quinn (Test Architect)'
+reviewed_revision: 'wt-sha256:02d2b08207871d76dabd09497a4945152a11829f657c002ee92b2f0b52197d2b'
+updated: '2026-09-14T15:36:52Z'
+
+top_issues:
+  - id: 'TEST-001'
+    severity: medium
+    finding: 'Não havia dispositivo/emulador ADB, teclado virtual móvel ou leitor de tela disponível; foco, rolagem, semântica e escala tipográfica foram verificados no Expo Web, mas a interação nativa permanece sem execução.'
+    suggested_action: 'Repetir UXT-14 em Expo Go/emulador com teclado virtual e leitor de tela antes da demonstração final ou durante o Prompt 12.'
+    suggested_owner: dev
+  - id: 'SEC-001'
+    severity: medium
+    finding: 'O npm audit reporta 16 vulnerabilidades transitivas (7 moderadas e 9 altas) na árvore Expo/Metro do SDK 54; não há crítica e a correção automática exige migração incompatível para Expo 57.'
+    suggested_action: 'Monitorar correções compatíveis com o SDK 54 e reavaliar a árvore na futura migração de SDK; não aplicar npm audit fix --force nesta story.'
+    suggested_owner: dev
+  - id: 'MNT-001'
+    severity: low
+    finding: 'O qa-master-checklist.md referenciado pelas tasks não existe neste checkout e o template declarado em development/templates está somente em product/templates.'
+    suggested_action: 'Corrigir as referências do framework AIOX em manutenção própria, sem alterar o produto PixelVault nesta story.'
+    suggested_owner: dev
+
+waiver:
+  active: false
+
+quality_score: 80
+expires: '2026-09-28T15:36:52Z'
+
+evidence:
+  tests_reviewed: 9
+  risks_identified: 3
+  trace:
+    ac_covered: [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16]
+    ac_gaps: []
+  commands:
+    lint: 'PASS (exit 0)'
+    typecheck: 'PASS (exit 0)'
+    test: 'PASS (exit 0; 9/9)'
+    build: 'PASS (exit 0; Android, 598 módulos)'
+    expo_install_check: 'PASS (Dependencies are up to date)'
+    expo_doctor: 'PASS (18/18)'
+    git_diff_check: 'PASS (exit 0; somente avisos de normalização LF/CRLF)'
+    expo_start: 'PASS (Metro offline alcançou waiting na porta 8099 e encerrou com exit 0)'
+    npm_audit_critical: 'PASS para nível critical; 16 transitivas abaixo de critical permanecem documentadas'
+  visual:
+    captures: 27
+    inventory_routes: 17
+    inspected_pngs: 14
+    viewports: ['390x844', '360x844', '320x568']
+    horizontal_overflow_failures: 0
+    navigation_by_click: ['UXT-03 -> WF-03', 'UXT-04 -> WF-09']
+    font_scale: '1.3 no runtime web de evidência'
+    native_keyboard: 'não executado; dispositivo/emulador indisponível'
+
+nfr_validation:
+  security:
+    status: CONCERNS
+    notes: 'Sem segredos, autenticação, API ou pagamento real; 16 advisories transitivos do toolchain Expo/Metro permanecem sem correção compatível com SDK 54.'
+  performance:
+    status: PASS
+    notes: 'Build Android concluído; lote visual não registrou overflow horizontal nas 27 viewports.'
+  reliability:
+    status: PASS
+    notes: 'Dados centralizados mantêm dois produtos, quantidade e total; rotas inválidas retornam ao login e Metro iniciou/encerrou de forma controlada.'
+  maintainability:
+    status: PASS
+    notes: 'Estrutura pequena, componentes motivados por repetição, dados locais centralizados e nove regressões estáticas sem dependência de framework de UI/estado.'
+
+recommendations:
+  immediate: []
+  future:
+    - action: 'Executar a matriz nativa de teclado e leitor de tela em dispositivo/emulador.'
+      refs: ['docs/evidence/prompt-11/README.md', 'src/components/ScreenShell.js', 'src/components/LabeledField.js']
+    - action: 'Reavaliar advisories transitivos ao planejar migração compatível do Expo SDK.'
+      refs: ['package-lock.json', 'README.md']
+    - action: 'Restaurar o checklist/template QA nos caminhos declarados pelo framework.'
+      refs: ['.aiox-core/development/tasks/qa-review-story.md', '.aiox-core/development/tasks/qa-gate.md']

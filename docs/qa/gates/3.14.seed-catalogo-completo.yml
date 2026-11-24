@@ -1,0 +1,23 @@
+schema: 1
+story: '3.14'
+story_title: 'Incluir os 30 novos jogos e compatibilidades na seed SQL'
+gate: PASS
+status_reason: 'SQL direto gera o catálogo completo e corresponde ao JSON; bootstrap simplificado, atualização legada preservada e banco de uso intacto.'
+reviewer: 'Quinn (Test Architect)'
+updated: '2026-11-21'
+top_issues: []
+evidence:
+  ac_covered: [1, 2, 3, 4, 5, 6]
+  focused_test: 'QA executou schema e seed SQL sozinhos criam o catálogo completo e mantêm paridade com o JSON: PASS em memória.'
+  catalog: '32 produtos, 31 jogos, 1 DLC, 43 compatibilidades; 30 adicionais correspondem ao JSON; FK zero.'
+  migration: 'Expansão após seed insere zero; chamada redundante retirada do init, migração API/cache mantida.'
+  gates: 'Lint/typecheck PASS conforme executor; log tmp/seed-3.14-tests.log conferido: 94/94 PASS, zero falhas/skips/cancelamentos.'
+  primary_database_sha256: 'd9f07101a4265a11d42fd35422d39cf999727a87a453f976b133f7c5b47eeb43'
+  preservation: 'Hash recalculado independentemente pela QA; nenhum db:init sobre banco de uso.'
+  coderabbit: 'Indisponível; revisão local realizada.'
+  refs:
+    - 'docs/evidence/sprint-2-story-3.14/README.md'
+    - 'tests/catalog-expansion.test.mjs'
+recommendations:
+  immediate: []
+  future: []

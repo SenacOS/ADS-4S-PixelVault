@@ -1,0 +1,93 @@
+schema: 1
+story: '3.8'
+story_title: 'Aplicar visual branco e ouro e revisar textos da interface'
+gate: PASS
+status_reason: 'Adaptação visual e textual validada, com contraste corrigido, estados reais de interação, contratos preservados e 93 testes/110 cenários web aprovados. Relatório atual revisado com histórico intacto.'
+reviewer: 'Quinn (Test Architect)'
+reviewed_revision: 'wt-sha256:b432d841289f859df2a2ae2803e135275e463de4d08422274fa0c1b372bed4d4'
+updated: '2026-11-21T15:21:10Z'
+quality_score: 100
+waiver:
+  active: false
+top_issues: []
+resolved_issues:
+  - id: 'A11Y-001'
+    finding: 'Contorno e preenchimento ouro do botão primário tinham contraste 2,62:1 contra branco, abaixo dos 3:1 previstos.'
+    resolution: 'Borda accentDark no primário normal/pressionado. Teste consulta o token da borda efetivamente usada; texto escuro sobre ouro, foco e pares semânticos também verificados.'
+
+evidence:
+  trace:
+    ac_covered: [1, 2, 3, 4, 5, 6, 7, 8, 9, 10]
+    ac_gaps: []
+  source_review:
+    revision_method: '111 arquivos: App/index, package/lockfile, jsconfig/eslint, src/server/assets/tests/scripts, SQL em database, Matriz Checklist, documento Integração Visual e relatórios DOCX/PDF atuais. SHA256 das linhas caminho:sha256 ordenadas e unidas por LF; ambientes privados e banco de execução excluídos.'
+    source_repository: 'C:/PI4/ADS-4S-PixelVault; leitura somente.'
+    source_baseline_files_unchanged: 42
+    protected_destination_files_unchanged: 74
+    destination_baseline_files_unchanged_total: 87
+    baseline_changed: 'Somente 15 arquivos previstos de componentes/telas, tokens, App e teste estrutural. Scripts de captura adaptados separadamente.'
+    main_database_unchanged: true
+    contracts: 'Hashes e revisão preservam backend, SQL, persistência, sessão, autorização, outbox, cálculo, gateway, integrações, dados e capas. Controlador alterado somente em apresentação/mensagem/testID.'
+    copy: 'Sem WF/ST ou atalhos de preenchimento perceptíveis. Avisos de sessão local efêmera, fila/conflito, simulação, pagamento de teste e chaves fictícias mantidos.'
+  commands:
+    lint: 'PASS; zero warnings.'
+    typecheck: PASS
+    test: '93/93 PASS; zero falhas, cancelados ou skips. Cobertura funcional anterior preservada.'
+    web_local: PASS
+    web_api: 'PASS; export limpo com URL API correta. Harness rejeita variante incompatível antes dos cenários.'
+    coderabbit: 'NOT RUN; desabilitado na story, revisão manual.'
+  web:
+    visual_and_interaction: '36/36 PASS'
+    local_regression: '45/45 PASS'
+    api_regression: '6/6 PASS; API/banco isolados reais.'
+    checkout_regression: '10/10 PASS; provedor controlado, sem nova compra externa.'
+    catalog_local: '7/7 PASS'
+    catalog_api: '6/6 PASS'
+    total_scenarios: 110
+    functional_regression_scenarios: 74
+    failures: 0
+    horizontal_overflow: 0
+    visible_internal_markers: 0
+    downloads: 7
+    verification: 'QA recomputou contagens e ausência de falhas/overflow/marcadores nos seis manifests finais.'
+    catalog: '32 IDs e 32 imagens completas/URLs únicas; filtros Todos32/GeForce22/Boosteroid21. Rolagem ao último item, detalhe/descrição, carrinho, erro real de imagem, recuperação e fallback conferidos em local/API.'
+    viewport: '320/360/390 px, fonte 130%, campos/botões/foco/feedbacks e cinco áreas.'
+    interaction: 'Mouse pressionado mediu fill RGB174,132,38; foco 3px RGB90,67,16; Tab e Enter acionaram login e rota esperada. Disabled permaneceu sem ação.'
+    visual_qa_samples: ['wf-01-login-390x844', 'wf-04-detalhes-390x844', 'wf-05-carrinho-320x568', 'wf-08-biblioteca-390x844', 'wf-11-exclusao-390x844', 'fonte-130-admin-320x568', 'fonte-130-checkout-320x568', 'ux-foco-botao-secundario-wf01-390x844', 'ux-foco-navegacao-wf03-390x844']
+  documents:
+    pages: 106
+    docx_sha256: '6a234c182590f7363f2565ad84627913bd5cc4e1f25cf64ae2dac19463b43052'
+    pdf_sha256: '99af87775b80830d54748f3b287417275d0ba4e9555ec5e4ee05669f605a1233'
+    previous_edition: 'documentos/historico/story-3.7/; QA recomputou hashes binários idênticos aos do gate 3.7.'
+    sprint1_preserved: 'Original intacto; 66 mídias históricas preservadas e seis RAs conferidos.'
+    visual_review: '81 páginas de conteúdo idêntico à edição 3.7 aprovada, comprovadas independentemente por QA via SHA de pixels excluindo rodapé. As 25 alteradas foram inspecionadas individualmente em resolução original: QA páginas3,4,81–89; executor90–95,97–103,106. Sem novo corte, sobreposição ou legenda separada.'
+    historical_payment: 'Figura6 conserva aprovação externa anterior como histórico; figura7 identifica explicitamente biblioteca no novo tema como simulação local. Não atribui novo visual à compra antiga.'
+    pending: 'HU-12, gravação do vídeo, criação/inspeção de pacote e submissão permanecem pendentes, fora do aceite visual.'
+  refs:
+    - 'docs/evidence/sprint-2-story-3.8/README.md'
+    - 'docs/evidence/sprint-2-story-3.8/validation-summary.json'
+    - 'docs/evidence/sprint-2-story-3.8/document-validation.json'
+    - 'docs/evidence/qa-visual-3.8/capture-results.json'
+    - 'docs/evidence/qa-full-local-visual-3.8/capture-results.json'
+    - 'docs/evidence/qa-full-api-visual-3.8/capture-results.json'
+    - 'docs/evidence/qa-full-payment-visual-3.8/capture-results.json'
+    - 'docs/evidence/qa-catalog-local-visual-3.8/capture-results.json'
+    - 'docs/evidence/qa-catalog-api-visual-3.8/capture-results.json'
+
+nfr_validation:
+  security:
+    status: PASS
+    notes: 'Credenciais/configuração privada e isolamento por conta preservados; nenhum segredo ou banco copiado da origem. Pagamento permanece exclusivamente teste.'
+  reliability:
+    status: PASS
+    notes: 'Regressões de persistência, API, recuperação, checkout, catálogo e JSON aprovadas sem alterar contratos.'
+  accessibility:
+    status: PASS
+    notes: 'Pares reais de texto, contorno e foco conferidos; seleção/erro/sucesso/desabilitado têm texto e semântica, além de cor. Foco, Tab/Enter e fonte130% verificados no web.'
+  maintainability:
+    status: PASS
+    notes: 'Tokens compartilhados e adaptação seletiva; sem dependência nova, mantendo evidências históricas e atualizações identificadas.'
+
+recommendations:
+  immediate: []
+  future: []

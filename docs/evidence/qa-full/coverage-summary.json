@@ -1,0 +1,18 @@
+{
+  "cases": 51,
+  "buttonTemplatesObserved": 49,
+  "buttonTemplatesWithoutAction": [],
+  "fieldLabels": [
+    "Ativação em",
+    "Descrição",
+    "E-mail",
+    "Nome",
+    "Nome do produto",
+    "Nome impresso fictício",
+    "Número do cartão fictício",
+    "Preço",
+    "Senha"
+  ],
+  "downloads": 6,
+  "overflow": 0
+}

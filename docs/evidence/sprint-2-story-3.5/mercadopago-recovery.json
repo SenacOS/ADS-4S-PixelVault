@@ -1,0 +1,15 @@
+{
+  "checkedAt": "2026-11-21T02:40:59.489Z",
+  "environment": "test",
+  "sellerId": "3860552857",
+  "buyerId": "3860552859",
+  "checkoutId": "pixelvault-test-smoke-20261120",
+  "orderId": "a30a0a1b-88b6-4927-99a2-dc6c2d78e330",
+  "totalCents": 10480,
+  "checkoutCreated": true,
+  "checkoutHostname": "www.mercadopago.com.br",
+  "status": "PENDENTE",
+  "submittedPayment": false,
+  "recoveryCheck": true,
+  "note": "Preferência real de teste e consulta; compra não realizada por este script."
+}

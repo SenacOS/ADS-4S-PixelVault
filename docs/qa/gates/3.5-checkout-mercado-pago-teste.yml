@@ -1,0 +1,186 @@
+schema: 1
+story: "3.5"
+story_title: Checkout Pro Mercado Pago exclusivamente em ambiente de teste
+gate: CONCERNS
+status_reason: A compra externa de teste foi aprovada e validada pelo gateway
+  real; reconciliação, repetição sem duplicação, isolamento e biblioteca após
+  reinício/reautenticação foram comprovados na API e no app web. Gates locais
+  permanecem aprovados; a única ressalva aberta é a execução em dispositivo
+  Android/iOS.
+reviewer: Quinn (Test Architect)
+reviewed_revision: wt-sha256:e63d4fba4a4a2303c9bef47867f804549427fb4621458ed891ee7ee0313975ac
+updated: 2026-11-21T03:27:33.503Z
+quality_score: 90
+waiver:
+  active: false
+top_issues:
+  - id: TEST-002
+    severity: medium
+    finding: Navegador externo, retorno manual e SQLite no dispositivo Android/iOS
+      não foram executados; export Android e Chrome web não comprovam o runtime
+      nativo.
+    suggested_action: Executar o fluxo crítico em aparelho/emulador SDK 54 e
+      registrar resultados, conservando a distinção entre build e teste nativo.
+    suggested_owner: dev
+resolved_issues:
+  - id: TEST-001
+    finding: A revisão anterior não tinha evidência de compra externa de teste
+      aprovada/reconciliada.
+    resolution: Pagamento de teste 190842627252 APROVADO, confirmado
+      independentemente por QA usando o gateway real. Referência,
+      vendedor/comprador esperados, BRL/10480 centavos, metadados de
+      pedido/teste e ausência de reembolso validados; três reconciliações sem
+      duplicação; isolamento e biblioteca restaurados após reinício de API/app
+      web e novo login.
+    limitation: A fixture já continha os dois itens/chaves demonstrativos. A
+      aprovação externa os reutilizou sem duplicar; inserção de itens novos foi
+      comprovada nos testes transacionais com outro usuário, não nessa compra
+      externa.
+  - id: SEC-001
+    finding: Biblioteca legada sem sessão/dono permitia acesso por troca de userId.
+    resolution: Rota exige autenticação e propriedade em todos os modos; regressões
+      401/403 adicionadas.
+  - id: SEC-002
+    finding: Alternar para modo simulated permitia atingir pedido remoto pela rota
+      legada de pagamento.
+    resolution: Vínculo em checkout_operation impede simulação desse pedido,
+      inclusive após reinício com outro modo; regressão HTTP no mesmo banco.
+  - id: SEC-003
+    finding: Rotas diretas sem perfil podiam selecionar cache remoto do jogador padrão.
+    resolution: Com API configurada e perfil ausente, dados pessoais são vazios; E2E
+      cobre biblioteca/resultado após reload.
+  - id: REL-001
+    finding: Novo pedido após reload e retomada com carrinho vazio tinham caminhos
+      sem ação/acesso.
+    resolution: Novo pedido verifica APROVADO no servidor e carrinho vazio conserva
+      acesso à referência pendente; E2E específico.
+  - id: REL-002
+    finding: Produto somente local recusado antes da criação prendia a referência
+      antiga.
+    resolution: Limpeza somente após 404 autenticado comprovar ausência de pedido;
+      correção do carrinho e nova preparação exercitadas.
+evidence:
+  tests_reviewed: 82
+  trace:
+    ac_covered:
+      - 1
+      - 2
+      - 3
+      - 4
+      - 5
+      - 6
+      - 7
+      - 8
+      - 9
+      - 10
+      - 11
+      - 12
+    ac_gaps: []
+    note: Aprovação externa e restauração web reais complementam os contratos
+      locais. Inserção nova versus reutilização de itens da fixture é
+      distinguida explicitamente. AC 9 usa retorno manual/consulta autenticada e
+      conserva a ressalva nativa, sem entrega de webhook público.
+  commands:
+    lint: PASS (exit 0; zero warnings)
+    typecheck: PASS (exit 0)
+    test: PASS (82/82; zero falhas)
+    build_android: PASS (633 módulos; --clear)
+    build_web_api: PASS (--clear; API isolada)
+    build_web_local: PASS (--clear; sem API)
+    coderabbit: NOT RUN (desabilitado na story; revisão manual especializada)
+  e2e:
+    payment: PASS (10/10; API/SQLite reais, provedor Mercado Pago simulado)
+    local_regression: PASS (45/45)
+    api_regression: PASS (6/6)
+    total_cases: 61
+    horizontal_overflow_failures: 0
+    downloads: 7
+    late_response: "PASS: gateway bloqueado durante criação, logout/troca para ADMIN
+      e resposta liberada sem publicar resumo/feedback/rota no novo perfil."
+    session_unit: Função createSessionRequest real usada pelo hook foi exercitada,
+      cancelando sucesso e rejeição tardios de sessão antiga, inclusive após
+      novo login do mesmo usuário; usuário divergente é recusado.
+    visual_samples:
+      - checkout-pendente
+      - checkout-retomada-carrinho-vazio
+    input_method: Eventos de mouse via CDP e campos DOM no runtime web; sem alegação
+      de hardware/navegador nativo.
+  external:
+    environment: test
+    seller_identity: 3860552857, MLB, /users/me com tag test_user
+    buyer_identity: 3860552859, recurso de teste criado pelo MCP; consulta pública
+      omite tags, ID/país conferidos
+    checkout_creation: "PASS: preferência de teste real; total 10480 centavos;
+      domínio www.mercadopago.com.br"
+    recovery: "PASS: mesmo pedido recuperado por /checkout/preferences/search e GET
+      da preferência, sem novo POST"
+    reconciliation: "PASS: APROVADO, validado pelo gateway real e novamente pela
+      revisão QA; três repetições mantêm um pagamento, dois itens e duas
+      chaves."
+    submitted_payment: true
+    approved_purchase: "PASS: usuário executou a compra de teste; paymentId
+      190842627252, pedido a30a0a1b-88b6-4927-99a2-dc6c2d78e330, BRL/10480
+      centavos."
+    webhook: NOT CONFIGURED — sem URL pública/chave; fora do incremento local definido
+    submitted_by_validation_script: false
+    web_restore: "PASS: API/SQLite e aquisição externa reais, sem mock; login,
+      biblioteca de dois produtos, reinício API + reload app, novo login e
+      atualização explícita. Três leituras de biblioteca HTTP 200, sem segredo
+      no cache e sem overflow."
+    fresh_grant_limit: A fixture já continha itens/chaves demo; a compra real
+      validou reaproveitamento idempotente e biblioteca confirmada. Inserção
+      nova é evidência separada dos testes transacionais.
+  refs:
+    - docs/evidence/sprint-2-story-3.5/README.md
+    - docs/evidence/sprint-2-story-3.5/validation-summary.json
+    - docs/evidence/sprint-2-story-3.5/mercadopago-smoke.json
+    - docs/evidence/sprint-2-story-3.5/mercadopago-recovery.json
+    - docs/evidence/qa-full-payment/capture-results.json
+    - docs/evidence/qa-full-local-checkout-regression/capture-results.json
+    - docs/evidence/qa-full-api-checkout-regression/capture-results.json
+    - docs/evidence/sprint-2-story-3.5/mercadopago-approved.json
+    - docs/evidence/sprint-2-story-3.5/mercadopago-approved-app-restore.json
+    - docs/evidence/sprint-2-story-3.5/mercadopago-approved-library-web.png
+nfr_validation:
+  security:
+    status: PASS
+    notes: Findings locais corrigidos. Test seller validado, sessão/dono nas rotas,
+      corpo permitido, snapshot de preço, reconciliação autenticada e erros
+      sanitizados. Token permanece no arquivo privado ignorado; não foi
+      reproduzido no gate.
+  reliability:
+    status: CONCERNS
+    notes: Concorrência, reinício, resposta perdida, recuperação, rollback e
+      concessão única passaram localmente. Aprovação externa real, isolamento,
+      idempotência e restauração no app web também passaram. Falta execução do
+      runtime nativo.
+  performance:
+    status: PASS
+    notes: Timeout por chamada, nenhuma transação SQLite aberta durante rede e 61
+      jornadas concluídas. Não constitui teste de carga ou prontidão produtiva.
+  maintainability:
+    status: PASS
+    notes: Sem novas dependências; migração aditiva, fronteira de gateway injetável,
+      matriz e regressões específicas; configuração e comandos documentados.
+recommendations:
+  immediate: []
+  future:
+    - action: Executar TEST-002 no runtime nativo.
+      refs:
+        - docs/evidence/sprint-2-story-3.5/README.md
+    - action: Se houver incremento de webhook público, exigir HTTPS, verificação de
+        assinatura e reconciliação; não tratar retorno de navegador como prova.
+      refs:
+        - docs/architecture/project-decisions/3.5-checkout-mercado-pago-teste.md
+review_history:
+  - date: 2026-11-20
+    gate: FAIL
+    quality_score: 70
+    reason: "TEST-001: aprovação externa/concessão ainda sem evidência; TEST-002:
+      runtime nativo pendente."
+  - date: 2026-11-21
+    gate: CONCERNS
+    quality_score: 90
+    reason: TEST-001 resolvido com compra real de teste, validação independente e
+      restauração web; TEST-002 permanece aberto. Nenhuma alteração de código
+      entre as revisões.

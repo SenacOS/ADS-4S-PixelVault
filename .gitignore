@@ -1,41 +1,108 @@
-# Learn more https://docs.github.com/en/get-started/getting-started-with-git/ignoring-files
-
-# dependencies
+# Dependencias sao reinstaladas pelo package-lock.json; copias locais so aumentam o repositorio.
 node_modules/
+.pnp
+.pnp.*
 
-# Expo
+# Estado e caches gerados por Expo, Metro, TypeScript e ferramentas de analise nao sao fonte.
 .expo/
-dist/
-web-build/
 expo-env.d.ts
+.metro-health-check*
+.cache/
+.eslintcache
+.prettiercache
+*.tsbuildinfo
 
-# Native
+# Exports, builds e relatorios de cobertura sao recriados pelos scripts do package.json.
+/dist/
+/dist-web/
+/web-build/
+/build/
+/coverage/
+/.nyc_output/
+/test-results/
+
+# No fluxo Expo CNG, os projetos nativos sao gerados novamente a partir de app.json e dependencias.
+/android/
+/ios/
 .kotlin/
-*.orig.*
+
+# Arquivos de ambiente podem conter segredos ou valores da maquina; exemplos sem segredo ficam versionados.
+.env
+.env.*
+!.env.example
+!.env.*.example
+
+# Chaves e certificados de assinatura sao credenciais privadas e nunca devem ir para o Git.
 *.jks
+*.keystore
 *.p8
 *.p12
 *.key
-*.mobileprovision
-
-# Metro
-.metro-health-check*
-
-# debug
-npm-debug.*
-yarn-debug.*
-yarn-error.*
-
-# macOS
-.DS_Store
 *.pem
+*.mobileprovision
+credentials.json
 
-# local env files
-.env*.local
+# Bancos SQLite e seus journals sao estado local recriavel; schema.sql e seed.sql continuam versionados.
+/database/*.sqlite
+/database/*.sqlite-*
+/database/*.sqlite3
+/database/*.sqlite3-*
+/database/*.db
+/database/*.db-*
 
-# typescript
-*.tsbuildinfo
+# Logs de execucao e depuracao variam por maquina e nao fazem parte do produto.
+*.log
+/logs/
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+lerna-debug.log*
 
-# generated native folders
-/ios
-/android
+# Temporarios e backups de ferramentas nao sao entradas reproduziveis do projeto.
+/tmp/
+/temp/
+*.tmp
+*.temp
+*.swp
+*.swo
+*~
+*.orig
+*.orig.*
+*.bak
+*.backup
+
+# Metadados locais do sistema operacional e do editor nao devem gerar diffs entre colaboradores.
+.DS_Store
+.DS_Store?
+._*
+Thumbs.db
+ehthumbs.db
+Desktop.ini
+.idea/
+.vscode/settings.json
+.vscode/*.code-workspace
+*.sublime-workspace
+*.sublime-project
+
+# Cache, logs e configuracoes privadas do AIOX sao locais; artefatos de decisao em .ai/ permanecem versionaveis.
+.aiox-core/local/
+.aiox-core/*.local.yaml
+.aiox-core/logs/
+.aiox-core/cache/
+.aiox-core/core-config.yaml.backup*
+.aiox/install-log.txt
+.ai/debug-log.md
+.claude/settings.local.json
+
+# Projecoes AIOX para IDEs desativadas no core-config sao derivadas; .codex/ permanece versionavel por estar ativo.
+/.antigravity/
+/.cursor/
+/.gemini/
+/.kimi/
+/.claude/commands/
+/.claude/skills/
+/.github/agents/
+
+# Instalador de terceiro usado como utilitario local; nao e codigo, dependencia npm ou documento do PixelVault.
+/documentos/cpu-z_3.01-en.exe

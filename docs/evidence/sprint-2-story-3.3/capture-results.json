@@ -1,0 +1,360 @@
+{
+  "capturedAt": "2026-11-20T21:13:33.586Z",
+  "runtime": "Expo Web + Chrome headless CDP",
+  "results": [
+    {
+      "name": "export-catalogo",
+      "route": "wf01",
+      "width": 390,
+      "height": 844,
+      "options": {
+        "actions": [
+          [
+            "click",
+            "Preencher jogador"
+          ],
+          [
+            "click",
+            "Entrar"
+          ],
+          [
+            "expect",
+            "WF-03"
+          ],
+          [
+            "export-json",
+            {
+              "catalogo": 2,
+              "carrinho": 0,
+              "biblioteca": 0
+            }
+          ],
+          [
+            "expect",
+            "Download do arquivo JSON solicitado."
+          ]
+        ]
+      },
+      "innerWidth": 390,
+      "innerHeight": 844,
+      "scrollWidth": 390,
+      "scrollHeight": 844,
+      "horizontalOverflowElements": [],
+      "focusedElement": null,
+      "title": "WF-03 · CATÁLOGO\nDescobrir jogos\nCatálogo local demonstrativo. Compatibilidade cloud pode mudar.\nCatálogo disponível no ",
+      "downloadedFiles": [
+        {
+          "name": "pixelvault-dados-2026-11-20T21-13-21-168Z.json",
+          "bytes": 1080,
+          "catalogo": 2,
+          "carrinho": 0,
+          "biblioteca": 0,
+          "pendentes": 0
+        }
+      ]
+    },
+    {
+      "name": "export-conta-atual",
+      "route": "wf01",
+      "width": 390,
+      "height": 844,
+      "options": {
+        "actions": [
+          [
+            "click",
+            "Preencher jogador"
+          ],
+          [
+            "click",
+            "Entrar"
+          ],
+          [
+            "expect",
+            "WF-03"
+          ],
+          [
+            "click",
+            "Ver detalhes de Orbit Raiders"
+          ],
+          [
+            "click",
+            "Adicionar ao carrinho"
+          ],
+          [
+            "click",
+            "Voltar ao catálogo"
+          ],
+          [
+            "click",
+            "Ver detalhes de Neon Expansion"
+          ],
+          [
+            "click",
+            "Adicionar ao carrinho"
+          ],
+          [
+            "click",
+            "Ver carrinho (2)"
+          ],
+          [
+            "click",
+            "Continuar para checkout"
+          ],
+          [
+            "fill",
+            "Número do cartão fictício",
+            "0000 DEMO"
+          ],
+          [
+            "fill",
+            "Nome impresso fictício",
+            "Pessoa Fictícia"
+          ],
+          [
+            "click",
+            "Confirmar simulação"
+          ],
+          [
+            "expect",
+            "WF-07"
+          ],
+          [
+            "click",
+            "Abrir biblioteca"
+          ],
+          [
+            "click",
+            "Catálogo"
+          ],
+          [
+            "export-json",
+            {
+              "catalogo": 2,
+              "carrinho": 2,
+              "biblioteca": 2,
+              "totalPedido": 10480
+            }
+          ],
+          [
+            "click",
+            "Sair do perfil"
+          ],
+          [
+            "click",
+            "Criar conta"
+          ],
+          [
+            "fill",
+            "Nome",
+            "Outra conta"
+          ],
+          [
+            "fill",
+            "E-mail",
+            "outra@pixelvault.example"
+          ],
+          [
+            "fill",
+            "Senha",
+            "demo456"
+          ],
+          [
+            "click",
+            "Cadastrar conta demonstrativa"
+          ],
+          [
+            "click",
+            "Entrar"
+          ],
+          [
+            "export-json",
+            {
+              "catalogo": 2,
+              "carrinho": 0,
+              "biblioteca": 0
+            }
+          ]
+        ]
+      },
+      "innerWidth": 390,
+      "innerHeight": 844,
+      "scrollWidth": 390,
+      "scrollHeight": 844,
+      "horizontalOverflowElements": [],
+      "focusedElement": null,
+      "title": "WF-03 · CATÁLOGO\nDescobrir jogos\nCatálogo local demonstrativo. Compatibilidade cloud pode mudar.\nCatálogo disponível no ",
+      "downloadedFiles": [
+        {
+          "name": "pixelvault-dados-2026-11-20T21-13-25-418Z.json",
+          "bytes": 3330,
+          "catalogo": 2,
+          "carrinho": 2,
+          "biblioteca": 2,
+          "pendentes": 0
+        },
+        {
+          "name": "pixelvault-dados-2026-11-20T21-13-27-021Z.json",
+          "bytes": 1080,
+          "catalogo": 2,
+          "carrinho": 0,
+          "biblioteca": 0,
+          "pendentes": 0
+        }
+      ]
+    },
+    {
+      "name": "export-admin-offline",
+      "route": "wf01",
+      "width": 320,
+      "height": 568,
+      "options": {
+        "actions": [
+          [
+            "click",
+            "Preencher administrador"
+          ],
+          [
+            "click",
+            "Entrar"
+          ],
+          [
+            "expect",
+            "WF-09"
+          ],
+          [
+            "click",
+            "Novo item"
+          ],
+          [
+            "fill",
+            "Nome do produto",
+            "Produto offline"
+          ],
+          [
+            "click",
+            "Jogo"
+          ],
+          [
+            "fill",
+            "Preço",
+            "12,50"
+          ],
+          [
+            "fill",
+            "Descrição",
+            "Descrição fictícia"
+          ],
+          [
+            "click",
+            "Boosteroid"
+          ],
+          [
+            "fill",
+            "Ativação em",
+            "Loja fictícia"
+          ],
+          [
+            "click",
+            "Cadastrar item"
+          ],
+          [
+            "expect",
+            "Item cadastrado na lista local."
+          ],
+          [
+            "export-json",
+            {
+              "catalogo": 3,
+              "carrinho": 0,
+              "biblioteca": 0,
+              "pendentes": 1
+            }
+          ]
+        ],
+        "scrollToText": "Download do arquivo JSON solicitado."
+      },
+      "innerWidth": 320,
+      "innerHeight": 568,
+      "scrollWidth": 320,
+      "scrollHeight": 568,
+      "horizontalOverflowElements": [],
+      "focusedElement": null,
+      "title": "WF-09 · ADMINISTRAÇÃO\nManutenção do catálogo\nPerfil: administrador/curador · Catálogo local e sincronização\nInformação: ",
+      "downloadedFiles": [
+        {
+          "name": "pixelvault-dados-2026-11-20T21-13-30-307Z.json",
+          "bytes": 1364,
+          "catalogo": 3,
+          "carrinho": 0,
+          "biblioteca": 0,
+          "pendentes": 1
+        }
+      ]
+    },
+    {
+      "name": "export-erro-retentativa",
+      "route": "wf01",
+      "width": 390,
+      "height": 844,
+      "options": {
+        "actions": [
+          [
+            "click",
+            "Preencher jogador"
+          ],
+          [
+            "click",
+            "Entrar"
+          ],
+          [
+            "expect",
+            "WF-03"
+          ],
+          [
+            "fail-export"
+          ],
+          [
+            "click",
+            "Exportar dados em JSON"
+          ],
+          [
+            "expect",
+            "Não foi possível exportar o JSON."
+          ],
+          [
+            "restore-export"
+          ],
+          [
+            "export-json",
+            {
+              "catalogo": 2,
+              "carrinho": 0,
+              "biblioteca": 0
+            }
+          ],
+          [
+            "expect",
+            "Download do arquivo JSON solicitado."
+          ]
+        ]
+      },
+      "innerWidth": 390,
+      "innerHeight": 844,
+      "scrollWidth": 390,
+      "scrollHeight": 844,
+      "horizontalOverflowElements": [],
+      "focusedElement": null,
+      "title": "WF-03 · CATÁLOGO\nDescobrir jogos\nCatálogo local demonstrativo. Compatibilidade cloud pode mudar.\nCatálogo disponível no ",
+      "downloadedFiles": [
+        {
+          "name": "pixelvault-dados-2026-11-20T21-13-32-677Z.json",
+          "bytes": 1080,
+          "catalogo": 2,
+          "carrinho": 0,
+          "biblioteca": 0,
+          "pendentes": 0
+        }
+      ]
+    }
+  ]
+}

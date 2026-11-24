@@ -1,0 +1,1001 @@
+{
+  "capturedAt": "2026-11-21T15:02:37.987Z",
+  "runtime": "Expo Web + Chrome headless CDP",
+  "catalogFixture": "original-two-items",
+  "results": [
+    {
+      "name": "wf-01-login-390x844",
+      "route": "wf01",
+      "width": 390,
+      "height": 844,
+      "options": {},
+      "innerWidth": 390,
+      "innerHeight": 844,
+      "scrollWidth": 390,
+      "scrollHeight": 844,
+      "horizontalOverflowElements": [],
+      "focusedElement": null,
+      "focusedBorderColor": "rgb(0, 0, 0)",
+      "focusedBorderWidth": "0px",
+      "interfaceMarkers": false,
+      "title": "PixelVault\nSeu catálogo de jogos em um só lugar\nE-mail\nSenha\nEntrar\nCriar conta",
+      "controls": []
+    },
+    {
+      "name": "wf-02-cadastro-390x844",
+      "route": "wf02",
+      "width": 390,
+      "height": 844,
+      "options": {},
+      "innerWidth": 390,
+      "innerHeight": 844,
+      "scrollWidth": 390,
+      "scrollHeight": 844,
+      "horizontalOverflowElements": [],
+      "focusedElement": null,
+      "focusedBorderColor": "rgb(0, 0, 0)",
+      "focusedBorderWidth": "0px",
+      "interfaceMarkers": false,
+      "title": "Criar conta\nEsta conta é local e vale apenas nesta sessão. Ela não será cadastrada no servidor.\nNome\nE-mail\nSenha\nCadast",
+      "controls": []
+    },
+    {
+      "name": "wf-03-catalogo-390x844",
+      "route": "wf03",
+      "width": 390,
+      "height": 844,
+      "options": {},
+      "innerWidth": 390,
+      "innerHeight": 844,
+      "scrollWidth": 390,
+      "scrollHeight": 844,
+      "horizontalOverflowElements": [],
+      "focusedElement": null,
+      "focusedBorderColor": "rgb(0, 0, 0)",
+      "focusedBorderWidth": "0px",
+      "interfaceMarkers": false,
+      "title": "Descobrir jogos\nEncontre jogos e DLCs para seus serviços de cloud gaming. Compatibilidade ilustrativa.\n2 itens encontrad",
+      "controls": []
+    },
+    {
+      "name": "wf-04-detalhes-390x844",
+      "route": "wf04",
+      "width": 390,
+      "height": 844,
+      "options": {},
+      "innerWidth": 390,
+      "innerHeight": 844,
+      "scrollWidth": 390,
+      "scrollHeight": 844,
+      "horizontalOverflowElements": [],
+      "focusedElement": null,
+      "focusedBorderColor": "rgb(0, 0, 0)",
+      "focusedBorderWidth": "0px",
+      "interfaceMarkers": false,
+      "title": "Orbit Raiders\nOrbit Raiders\nTipo: Jogo\nR$ 79,90\nCompatível com: GeForce NOW, Boosteroid\nSobre este item\nDescrição demons",
+      "controls": []
+    },
+    {
+      "name": "wf-05-carrinho-390x844",
+      "route": "wf05",
+      "width": 390,
+      "height": 844,
+      "options": {},
+      "innerWidth": 390,
+      "innerHeight": 844,
+      "scrollWidth": 390,
+      "scrollHeight": 844,
+      "horizontalOverflowElements": [],
+      "focusedElement": null,
+      "focusedBorderColor": "rgb(0, 0, 0)",
+      "focusedBorderWidth": "0px",
+      "interfaceMarkers": false,
+      "title": "Seu carrinho\nNenhum item no carrinho\nAdicione itens para habilitar o checkout. Total atual: R$ 0,00.\nExplorar catálogo\nR",
+      "controls": []
+    },
+    {
+      "name": "wf-06-checkout-390x844",
+      "route": "wf06",
+      "width": 390,
+      "height": 844,
+      "options": {},
+      "innerWidth": 390,
+      "innerHeight": 844,
+      "scrollWidth": 390,
+      "scrollHeight": 844,
+      "horizontalOverflowElements": [],
+      "focusedElement": null,
+      "focusedBorderColor": "rgb(0, 0, 0)",
+      "focusedBorderWidth": "0px",
+      "interfaceMarkers": false,
+      "title": "Finalizar compra simulada\nResumo\nQuantidade: 0\nTotal: R$ 0,00\nInformação: Pagamento simulado — nenhuma cobrança será rea",
+      "controls": []
+    },
+    {
+      "name": "wf-07-resultado-390x844",
+      "route": "wf07",
+      "width": 390,
+      "height": 844,
+      "options": {},
+      "innerWidth": 390,
+      "innerHeight": 844,
+      "scrollWidth": 390,
+      "scrollHeight": 844,
+      "horizontalOverflowElements": [],
+      "focusedElement": null,
+      "focusedBorderColor": "rgb(0, 0, 0)",
+      "focusedBorderWidth": "0px",
+      "interfaceMarkers": false,
+      "title": "Simulação concluída\nSucesso: Resultado demonstrativo. Não houve cobrança.\nPedido\nPEDIDO-DEMO-PENDENTE (identificador fic",
+      "controls": []
+    },
+    {
+      "name": "wf-08-biblioteca-390x844",
+      "route": "wf08",
+      "width": 390,
+      "height": 844,
+      "options": {},
+      "innerWidth": 390,
+      "innerHeight": 844,
+      "scrollWidth": 390,
+      "scrollHeight": 844,
+      "horizontalOverflowElements": [],
+      "focusedElement": null,
+      "focusedBorderColor": "rgb(0, 0, 0)",
+      "focusedBorderWidth": "0px",
+      "interfaceMarkers": false,
+      "title": "Minha biblioteca\nAquisições simuladas; chaves e lojas são fictícias.\nBiblioteca vazia\nNão há aquisições demonstrativas n",
+      "controls": []
+    },
+    {
+      "name": "wf-09-admin-390x844",
+      "route": "wf09",
+      "width": 390,
+      "height": 844,
+      "options": {},
+      "innerWidth": 390,
+      "innerHeight": 844,
+      "scrollWidth": 390,
+      "scrollHeight": 844,
+      "horizontalOverflowElements": [],
+      "focusedElement": null,
+      "focusedBorderColor": "rgb(0, 0, 0)",
+      "focusedBorderWidth": "0px",
+      "interfaceMarkers": false,
+      "title": "Manutenção do catálogo\nGerencie os produtos e acompanhe a sincronização do catálogo.\nInformação: Catálogo disponível no ",
+      "controls": []
+    },
+    {
+      "name": "wf-10-novo-item-390x844",
+      "route": "wf10-new",
+      "width": 390,
+      "height": 844,
+      "options": {},
+      "innerWidth": 390,
+      "innerHeight": 844,
+      "scrollWidth": 390,
+      "scrollHeight": 844,
+      "horizontalOverflowElements": [],
+      "focusedElement": null,
+      "focusedBorderColor": "rgb(0, 0, 0)",
+      "focusedBorderWidth": "0px",
+      "interfaceMarkers": false,
+      "title": "Novo item\nAlterações salvas no dispositivo; envio ao servidor ao sincronizar.\nNome do produto\nTipo\nJogo\nDLC\nPreço\nDescri",
+      "controls": []
+    },
+    {
+      "name": "wf-10-editar-item-390x844",
+      "route": "wf10-edit",
+      "width": 390,
+      "height": 844,
+      "options": {},
+      "innerWidth": 390,
+      "innerHeight": 844,
+      "scrollWidth": 390,
+      "scrollHeight": 844,
+      "horizontalOverflowElements": [],
+      "focusedElement": null,
+      "focusedBorderColor": "rgb(0, 0, 0)",
+      "focusedBorderWidth": "0px",
+      "interfaceMarkers": false,
+      "title": "Editar item\nAlterações salvas no dispositivo; envio ao servidor ao sincronizar.\nNome do produto\nTipo\nJogo\nDLC\nPreço\nDesc",
+      "controls": []
+    },
+    {
+      "name": "wf-11-exclusao-390x844",
+      "route": "wf11",
+      "width": 390,
+      "height": 844,
+      "options": {},
+      "innerWidth": 390,
+      "innerHeight": 844,
+      "scrollWidth": 390,
+      "scrollHeight": 844,
+      "horizontalOverflowElements": [],
+      "focusedElement": null,
+      "focusedBorderColor": "rgb(0, 0, 0)",
+      "focusedBorderWidth": "0px",
+      "interfaceMarkers": false,
+      "title": "Confirmar exclusão\nExcluir Orbit Raiders?\nA exclusão será salva no dispositivo e enviada ao servidor ao sincronizar. Pro",
+      "controls": []
+    },
+    {
+      "name": "st-01-login-erro-390x844",
+      "route": "st01",
+      "width": 390,
+      "height": 844,
+      "options": {},
+      "innerWidth": 390,
+      "innerHeight": 844,
+      "scrollWidth": 390,
+      "scrollHeight": 844,
+      "horizontalOverflowElements": [],
+      "focusedElement": null,
+      "focusedBorderColor": "rgb(0, 0, 0)",
+      "focusedBorderWidth": "0px",
+      "interfaceMarkers": false,
+      "title": "PixelVault\nSeu catálogo de jogos em um só lugar\nErro: Não foi possível entrar. Revise o campo indicado e tente novamente",
+      "controls": []
+    },
+    {
+      "name": "st-02-catalogo-vazio-390x844",
+      "route": "st02",
+      "width": 390,
+      "height": 844,
+      "options": {},
+      "innerWidth": 390,
+      "innerHeight": 844,
+      "scrollWidth": 390,
+      "scrollHeight": 844,
+      "horizontalOverflowElements": [],
+      "focusedElement": null,
+      "focusedBorderColor": "rgb(0, 0, 0)",
+      "focusedBorderWidth": "0px",
+      "interfaceMarkers": false,
+      "title": "Descobrir jogos\nEncontre jogos e DLCs para seus serviços de cloud gaming. Compatibilidade ilustrativa.\n0 itens encontrad",
+      "controls": []
+    },
+    {
+      "name": "st-03-carrinho-vazio-390x844",
+      "route": "st03",
+      "width": 390,
+      "height": 844,
+      "options": {},
+      "innerWidth": 390,
+      "innerHeight": 844,
+      "scrollWidth": 390,
+      "scrollHeight": 844,
+      "horizontalOverflowElements": [],
+      "focusedElement": null,
+      "focusedBorderColor": "rgb(0, 0, 0)",
+      "focusedBorderWidth": "0px",
+      "interfaceMarkers": false,
+      "title": "Seu carrinho\nNenhum item no carrinho\nAdicione itens para habilitar o checkout. Total atual: R$ 0,00.\nExplorar catálogo\nR",
+      "controls": []
+    },
+    {
+      "name": "st-04-biblioteca-vazia-390x844",
+      "route": "st04",
+      "width": 390,
+      "height": 844,
+      "options": {},
+      "innerWidth": 390,
+      "innerHeight": 844,
+      "scrollWidth": 390,
+      "scrollHeight": 844,
+      "horizontalOverflowElements": [],
+      "focusedElement": null,
+      "focusedBorderColor": "rgb(0, 0, 0)",
+      "focusedBorderWidth": "0px",
+      "interfaceMarkers": false,
+      "title": "Minha biblioteca\nAquisições simuladas; chaves e lojas são fictícias.\nBiblioteca vazia\nNão há aquisições demonstrativas n",
+      "controls": []
+    },
+    {
+      "name": "st-05-checkout-erro-390x844",
+      "route": "st05",
+      "width": 390,
+      "height": 844,
+      "options": {},
+      "innerWidth": 390,
+      "innerHeight": 844,
+      "scrollWidth": 390,
+      "scrollHeight": 844,
+      "horizontalOverflowElements": [],
+      "focusedElement": null,
+      "focusedBorderColor": "rgb(0, 0, 0)",
+      "focusedBorderWidth": "0px",
+      "interfaceMarkers": false,
+      "title": "Finalizar compra simulada\nResumo\nQuantidade: 0\nTotal: R$ 0,00\nInformação: Pagamento simulado — nenhuma cobrança será rea",
+      "controls": []
+    },
+    {
+      "name": "wf-03-catalogo-360x844",
+      "route": "wf03",
+      "width": 360,
+      "height": 844,
+      "options": {},
+      "innerWidth": 360,
+      "innerHeight": 844,
+      "scrollWidth": 360,
+      "scrollHeight": 844,
+      "horizontalOverflowElements": [],
+      "focusedElement": null,
+      "focusedBorderColor": "rgb(0, 0, 0)",
+      "focusedBorderWidth": "0px",
+      "interfaceMarkers": false,
+      "title": "Descobrir jogos\nEncontre jogos e DLCs para seus serviços de cloud gaming. Compatibilidade ilustrativa.\n2 itens encontrad",
+      "controls": []
+    },
+    {
+      "name": "wf-03-catalogo-320x568",
+      "route": "wf03",
+      "width": 320,
+      "height": 568,
+      "options": {},
+      "innerWidth": 320,
+      "innerHeight": 568,
+      "scrollWidth": 320,
+      "scrollHeight": 568,
+      "horizontalOverflowElements": [],
+      "focusedElement": null,
+      "focusedBorderColor": "rgb(0, 0, 0)",
+      "focusedBorderWidth": "0px",
+      "interfaceMarkers": false,
+      "title": "Descobrir jogos\nEncontre jogos e DLCs para seus serviços de cloud gaming. Compatibilidade ilustrativa.\n2 itens encontrad",
+      "controls": []
+    },
+    {
+      "name": "wf-05-carrinho-320x568",
+      "route": "wf05",
+      "width": 320,
+      "height": 568,
+      "options": {},
+      "innerWidth": 320,
+      "innerHeight": 568,
+      "scrollWidth": 320,
+      "scrollHeight": 568,
+      "horizontalOverflowElements": [],
+      "focusedElement": null,
+      "focusedBorderColor": "rgb(0, 0, 0)",
+      "focusedBorderWidth": "0px",
+      "interfaceMarkers": false,
+      "title": "Seu carrinho\nNenhum item no carrinho\nAdicione itens para habilitar o checkout. Total atual: R$ 0,00.\nExplorar catálogo\nR",
+      "controls": []
+    },
+    {
+      "name": "wf-09-admin-320x568",
+      "route": "wf09",
+      "width": 320,
+      "height": 568,
+      "options": {},
+      "innerWidth": 320,
+      "innerHeight": 568,
+      "scrollWidth": 320,
+      "scrollHeight": 568,
+      "horizontalOverflowElements": [],
+      "focusedElement": null,
+      "focusedBorderColor": "rgb(0, 0, 0)",
+      "focusedBorderWidth": "0px",
+      "interfaceMarkers": false,
+      "title": "Manutenção do catálogo\nGerencie os produtos e acompanhe a sincronização do catálogo.\nInformação: Catálogo disponível no ",
+      "controls": []
+    },
+    {
+      "name": "wf-02-cadastro-fonte-130-390x844",
+      "route": "wf02",
+      "width": 390,
+      "height": 844,
+      "options": {
+        "fontScale": 1.3
+      },
+      "innerWidth": 390,
+      "innerHeight": 844,
+      "scrollWidth": 390,
+      "scrollHeight": 844,
+      "horizontalOverflowElements": [],
+      "focusedElement": null,
+      "focusedBorderColor": "rgb(0, 0, 0)",
+      "focusedBorderWidth": "0px",
+      "interfaceMarkers": false,
+      "title": "Criar conta\nEsta conta é local e vale apenas nesta sessão. Ela não será cadastrada no servidor.\nNome\nE-mail\nSenha\nCadast",
+      "controls": []
+    },
+    {
+      "name": "wf-06-checkout-campo-focado-390x844",
+      "route": "wf06",
+      "width": 390,
+      "height": 844,
+      "options": {
+        "focusFirstField": true
+      },
+      "innerWidth": 390,
+      "innerHeight": 844,
+      "scrollWidth": 390,
+      "scrollHeight": 844,
+      "horizontalOverflowElements": [],
+      "focusedElement": "Número do cartão fictício",
+      "focusedBorderColor": "rgb(90, 67, 16)",
+      "focusedBorderWidth": "3px",
+      "interfaceMarkers": false,
+      "title": "Finalizar compra simulada\nResumo\nQuantidade: 0\nTotal: R$ 0,00\nInformação: Pagamento simulado — nenhuma cobrança será rea",
+      "controls": []
+    },
+    {
+      "name": "uxt-03-jogador-abre-catalogo-390x844",
+      "route": "wf01",
+      "width": 390,
+      "height": 844,
+      "options": {
+        "actions": [
+          [
+            "fill",
+            "E-mail",
+            "jogador@pixelvault.example"
+          ],
+          [
+            "fill",
+            "Senha",
+            "demo123"
+          ],
+          [
+            "click",
+            "Entrar"
+          ],
+          [
+            "expect",
+            "WF-03"
+          ]
+        ]
+      },
+      "innerWidth": 390,
+      "innerHeight": 844,
+      "scrollWidth": 390,
+      "scrollHeight": 844,
+      "horizontalOverflowElements": [],
+      "focusedElement": null,
+      "focusedBorderColor": "rgb(0, 0, 0)",
+      "focusedBorderWidth": "0px",
+      "interfaceMarkers": false,
+      "title": "Descobrir jogos\nEncontre jogos e DLCs para seus serviços de cloud gaming. Compatibilidade ilustrativa.\n2 itens encontrad",
+      "controls": [
+        {
+          "kind": "field",
+          "label": "E-mail",
+          "disabled": false,
+          "type": "email"
+        },
+        {
+          "kind": "field",
+          "label": "Senha",
+          "disabled": false,
+          "type": "password"
+        },
+        {
+          "kind": "button",
+          "label": "Entrar",
+          "disabled": false,
+          "type": "button"
+        },
+        {
+          "kind": "button",
+          "label": "Criar conta",
+          "disabled": false,
+          "type": "button"
+        },
+        {
+          "kind": "button",
+          "label": "Atualizar catálogo da API",
+          "disabled": false,
+          "type": "button"
+        },
+        {
+          "kind": "button",
+          "label": "Exportar dados em JSON",
+          "disabled": false,
+          "type": "button"
+        },
+        {
+          "kind": "button",
+          "label": "Selecionado: Todos",
+          "disabled": false,
+          "type": "button"
+        },
+        {
+          "kind": "button",
+          "label": "GeForce NOW",
+          "disabled": false,
+          "type": "button"
+        },
+        {
+          "kind": "button",
+          "label": "Boosteroid",
+          "disabled": false,
+          "type": "button"
+        },
+        {
+          "kind": "button",
+          "label": "Ver detalhes de Orbit Raiders",
+          "disabled": false,
+          "type": "button"
+        },
+        {
+          "kind": "button",
+          "label": "Ver detalhes de Neon Expansion",
+          "disabled": false,
+          "type": "button"
+        },
+        {
+          "kind": "button",
+          "label": "Sair",
+          "disabled": false,
+          "type": "button"
+        },
+        {
+          "kind": "button",
+          "label": "Catálogo",
+          "disabled": false,
+          "type": null
+        },
+        {
+          "kind": "button",
+          "label": "Carrinho",
+          "disabled": false,
+          "type": null
+        },
+        {
+          "kind": "button",
+          "label": "Biblioteca",
+          "disabled": false,
+          "type": null
+        }
+      ]
+    },
+    {
+      "name": "uxt-04-admin-abre-manutencao-390x844",
+      "route": "wf01",
+      "width": 390,
+      "height": 844,
+      "options": {
+        "actions": [
+          [
+            "fill",
+            "E-mail",
+            "admin@pixelvault.example"
+          ],
+          [
+            "fill",
+            "Senha",
+            "demo123"
+          ],
+          [
+            "click",
+            "Entrar"
+          ],
+          [
+            "expect",
+            "WF-09"
+          ]
+        ]
+      },
+      "innerWidth": 390,
+      "innerHeight": 844,
+      "scrollWidth": 390,
+      "scrollHeight": 844,
+      "horizontalOverflowElements": [],
+      "focusedElement": null,
+      "focusedBorderColor": "rgb(0, 0, 0)",
+      "focusedBorderWidth": "0px",
+      "interfaceMarkers": false,
+      "title": "Manutenção do catálogo\nGerencie os produtos e acompanhe a sincronização do catálogo.\nInformação: Catálogo disponível no ",
+      "controls": [
+        {
+          "kind": "field",
+          "label": "E-mail",
+          "disabled": false,
+          "type": "email"
+        },
+        {
+          "kind": "field",
+          "label": "Senha",
+          "disabled": false,
+          "type": "password"
+        },
+        {
+          "kind": "button",
+          "label": "Entrar",
+          "disabled": false,
+          "type": "button"
+        },
+        {
+          "kind": "button",
+          "label": "Criar conta",
+          "disabled": false,
+          "type": "button"
+        },
+        {
+          "kind": "button",
+          "label": "Sincronizar catálogo",
+          "disabled": false,
+          "type": "button"
+        },
+        {
+          "kind": "button",
+          "label": "Exportar dados em JSON",
+          "disabled": false,
+          "type": "button"
+        },
+        {
+          "kind": "button",
+          "label": "Novo item",
+          "disabled": false,
+          "type": "button"
+        },
+        {
+          "kind": "button",
+          "label": "Editar Orbit Raiders",
+          "disabled": false,
+          "type": "button"
+        },
+        {
+          "kind": "button",
+          "label": "Excluir Orbit Raiders",
+          "disabled": false,
+          "type": "button"
+        },
+        {
+          "kind": "button",
+          "label": "Editar Neon Expansion",
+          "disabled": false,
+          "type": "button"
+        },
+        {
+          "kind": "button",
+          "label": "Excluir Neon Expansion",
+          "disabled": false,
+          "type": "button"
+        },
+        {
+          "kind": "button",
+          "label": "Sair",
+          "disabled": false,
+          "type": "button"
+        }
+      ]
+    },
+    {
+      "name": "ux-foco-botao-secundario-wf01-390x844",
+      "route": "wf01",
+      "width": 390,
+      "height": 844,
+      "options": {
+        "focusInteractiveLabel": "Criar conta"
+      },
+      "innerWidth": 390,
+      "innerHeight": 844,
+      "scrollWidth": 390,
+      "scrollHeight": 844,
+      "horizontalOverflowElements": [],
+      "focusedElement": "Criar conta",
+      "focusedBorderColor": "rgb(90, 67, 16)",
+      "focusedBorderWidth": "3px",
+      "interfaceMarkers": false,
+      "title": "PixelVault\nSeu catálogo de jogos em um só lugar\nE-mail\nSenha\nEntrar\nCriar conta",
+      "controls": []
+    },
+    {
+      "name": "ux-foco-navegacao-wf03-390x844",
+      "route": "wf03",
+      "width": 390,
+      "height": 844,
+      "options": {
+        "focusInteractiveLabel": "Carrinho"
+      },
+      "innerWidth": 390,
+      "innerHeight": 844,
+      "scrollWidth": 390,
+      "scrollHeight": 844,
+      "horizontalOverflowElements": [],
+      "focusedElement": "Carrinho",
+      "focusedBorderColor": "rgb(90, 67, 16)",
+      "focusedBorderWidth": "3px",
+      "interfaceMarkers": false,
+      "title": "Descobrir jogos\nEncontre jogos e DLCs para seus serviços de cloud gaming. Compatibilidade ilustrativa.\n2 itens encontrad",
+      "controls": []
+    },
+    {
+      "name": "area-acesso-320x568",
+      "route": "wf01",
+      "width": 320,
+      "height": 568,
+      "options": {},
+      "innerWidth": 320,
+      "innerHeight": 568,
+      "scrollWidth": 320,
+      "scrollHeight": 568,
+      "horizontalOverflowElements": [],
+      "focusedElement": null,
+      "focusedBorderColor": "rgb(0, 0, 0)",
+      "focusedBorderWidth": "0px",
+      "interfaceMarkers": false,
+      "title": "PixelVault\nSeu catálogo de jogos em um só lugar\nE-mail\nSenha\nEntrar\nCriar conta",
+      "controls": []
+    },
+    {
+      "name": "area-biblioteca-320x568",
+      "route": "wf08",
+      "width": 320,
+      "height": 568,
+      "options": {},
+      "innerWidth": 320,
+      "innerHeight": 568,
+      "scrollWidth": 320,
+      "scrollHeight": 568,
+      "horizontalOverflowElements": [],
+      "focusedElement": null,
+      "focusedBorderColor": "rgb(0, 0, 0)",
+      "focusedBorderWidth": "0px",
+      "interfaceMarkers": false,
+      "title": "Minha biblioteca\nAquisições simuladas; chaves e lojas são fictícias.\nBiblioteca vazia\nNão há aquisições demonstrativas n",
+      "controls": []
+    },
+    {
+      "name": "area-acesso-360x844",
+      "route": "wf01",
+      "width": 360,
+      "height": 844,
+      "options": {},
+      "innerWidth": 360,
+      "innerHeight": 844,
+      "scrollWidth": 360,
+      "scrollHeight": 844,
+      "horizontalOverflowElements": [],
+      "focusedElement": null,
+      "focusedBorderColor": "rgb(0, 0, 0)",
+      "focusedBorderWidth": "0px",
+      "interfaceMarkers": false,
+      "title": "PixelVault\nSeu catálogo de jogos em um só lugar\nE-mail\nSenha\nEntrar\nCriar conta",
+      "controls": []
+    },
+    {
+      "name": "area-compra-360x844",
+      "route": "wf06",
+      "width": 360,
+      "height": 844,
+      "options": {},
+      "innerWidth": 360,
+      "innerHeight": 844,
+      "scrollWidth": 360,
+      "scrollHeight": 844,
+      "horizontalOverflowElements": [],
+      "focusedElement": null,
+      "focusedBorderColor": "rgb(0, 0, 0)",
+      "focusedBorderWidth": "0px",
+      "interfaceMarkers": false,
+      "title": "Finalizar compra simulada\nResumo\nQuantidade: 0\nTotal: R$ 0,00\nInformação: Pagamento simulado — nenhuma cobrança será rea",
+      "controls": []
+    },
+    {
+      "name": "area-administracao-360x844",
+      "route": "wf09",
+      "width": 360,
+      "height": 844,
+      "options": {},
+      "innerWidth": 360,
+      "innerHeight": 844,
+      "scrollWidth": 360,
+      "scrollHeight": 844,
+      "horizontalOverflowElements": [],
+      "focusedElement": null,
+      "focusedBorderColor": "rgb(0, 0, 0)",
+      "focusedBorderWidth": "0px",
+      "interfaceMarkers": false,
+      "title": "Manutenção do catálogo\nGerencie os produtos e acompanhe a sincronização do catálogo.\nInformação: Catálogo disponível no ",
+      "controls": []
+    },
+    {
+      "name": "area-biblioteca-360x844",
+      "route": "wf08",
+      "width": 360,
+      "height": 844,
+      "options": {},
+      "innerWidth": 360,
+      "innerHeight": 844,
+      "scrollWidth": 360,
+      "scrollHeight": 844,
+      "horizontalOverflowElements": [],
+      "focusedElement": null,
+      "focusedBorderColor": "rgb(0, 0, 0)",
+      "focusedBorderWidth": "0px",
+      "interfaceMarkers": false,
+      "title": "Minha biblioteca\nAquisições simuladas; chaves e lojas são fictícias.\nBiblioteca vazia\nNão há aquisições demonstrativas n",
+      "controls": []
+    },
+    {
+      "name": "fonte-130-admin-320x568",
+      "route": "wf10-edit",
+      "width": 320,
+      "height": 568,
+      "options": {
+        "fontScale": 1.3,
+        "focusField": "Nome do produto"
+      },
+      "innerWidth": 320,
+      "innerHeight": 568,
+      "scrollWidth": 320,
+      "scrollHeight": 568,
+      "horizontalOverflowElements": [],
+      "focusedElement": "Nome do produto",
+      "focusedBorderColor": "rgb(90, 67, 16)",
+      "focusedBorderWidth": "3px",
+      "interfaceMarkers": false,
+      "title": "Editar item\nAlterações salvas no dispositivo; envio ao servidor ao sincronizar.\nNome do produto\nTipo\nJogo\nDLC\nPreço\nDesc",
+      "controls": []
+    },
+    {
+      "name": "fonte-130-checkout-320x568",
+      "route": "wf06",
+      "width": 320,
+      "height": 568,
+      "options": {
+        "fontScale": 1.3,
+        "focusField": "Nome impresso fictício"
+      },
+      "innerWidth": 320,
+      "innerHeight": 568,
+      "scrollWidth": 320,
+      "scrollHeight": 568,
+      "horizontalOverflowElements": [],
+      "focusedElement": "Nome impresso fictício",
+      "focusedBorderColor": "rgb(90, 67, 16)",
+      "focusedBorderWidth": "3px",
+      "interfaceMarkers": false,
+      "title": "Finalizar compra simulada\nResumo\nQuantidade: 0\nTotal: R$ 0,00\nInformação: Pagamento simulado — nenhuma cobrança será rea",
+      "controls": []
+    },
+    {
+      "name": "botao-pressionado-teclado-390x844",
+      "route": "wf01",
+      "width": 390,
+      "height": 844,
+      "options": {
+        "actions": [
+          [
+            "fill",
+            "E-mail",
+            "jogador@pixelvault.example"
+          ],
+          [
+            "fill",
+            "Senha",
+            "demo123"
+          ],
+          [
+            "button-states"
+          ],
+          [
+            "expect",
+            "WF-03"
+          ]
+        ]
+      },
+      "innerWidth": 390,
+      "innerHeight": 844,
+      "scrollWidth": 390,
+      "scrollHeight": 844,
+      "horizontalOverflowElements": [],
+      "focusedElement": null,
+      "focusedBorderColor": "rgb(0, 0, 0)",
+      "focusedBorderWidth": "0px",
+      "interfaceMarkers": false,
+      "title": "Descobrir jogos\nEncontre jogos e DLCs para seus serviços de cloud gaming. Compatibilidade ilustrativa.\n2 itens encontrad",
+      "interactionChecks": [
+        {
+          "primaryPressed": {
+            "background": "rgb(174, 132, 38)",
+            "border": "rgb(90, 67, 16)"
+          },
+          "keyboardFocus": {
+            "label": "Entrar",
+            "border": "rgb(90, 67, 16)",
+            "width": "3px"
+          },
+          "activation": "Enter; rota de destino verificada pela próxima asserção"
+        }
+      ],
+      "controls": [
+        {
+          "kind": "field",
+          "label": "E-mail",
+          "disabled": false,
+          "type": "email"
+        },
+        {
+          "kind": "field",
+          "label": "Senha",
+          "disabled": false,
+          "type": "password"
+        },
+        {
+          "kind": "button",
+          "label": "Entrar",
+          "disabled": false,
+          "type": "button"
+        },
+        {
+          "kind": "button",
+          "label": "Criar conta",
+          "disabled": false,
+          "type": "button"
+        },
+        {
+          "kind": "button",
+          "label": "Atualizar catálogo da API",
+          "disabled": false,
+          "type": "button"
+        },
+        {
+          "kind": "button",
+          "label": "Exportar dados em JSON",
+          "disabled": false,
+          "type": "button"
+        },
+        {
+          "kind": "button",
+          "label": "Selecionado: Todos",
+          "disabled": false,
+          "type": "button"
+        },
+        {
+          "kind": "button",
+          "label": "GeForce NOW",
+          "disabled": false,
+          "type": "button"
+        },
+        {
+          "kind": "button",
+          "label": "Boosteroid",
+          "disabled": false,
+          "type": "button"
+        },
+        {
+          "kind": "button",
+          "label": "Ver detalhes de Orbit Raiders",
+          "disabled": false,
+          "type": "button"
+        },
+        {
+          "kind": "button",
+          "label": "Ver detalhes de Neon Expansion",
+          "disabled": false,
+          "type": "button"
+        },
+        {
+          "kind": "button",
+          "label": "Sair",
+          "disabled": false,
+          "type": "button"
+        },
+        {
+          "kind": "button",
+          "label": "Catálogo",
+          "disabled": false,
+          "type": null
+        },
+        {
+          "kind": "button",
+          "label": "Carrinho",
+          "disabled": false,
+          "type": null
+        },
+        {
+          "kind": "button",
+          "label": "Biblioteca",
+          "disabled": false,
+          "type": null
+        }
+      ]
+    }
+  ],
+  "failures": []
+}

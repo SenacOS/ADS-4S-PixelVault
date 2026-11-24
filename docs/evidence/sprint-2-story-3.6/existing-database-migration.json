@@ -1,0 +1,11 @@
+{
+  "checkedAt": "2026-11-21T07:46:58.671Z",
+  "database": "database/pixelvault.sqlite",
+  "productsBefore": 2,
+  "productsAfter": 32,
+  "added": 30,
+  "protectedDataUnchanged": true,
+  "existingProductFieldsAndPlatformsPreserved": true,
+  "foreignKeyViolations": 0,
+  "secondStartupDidNotDuplicate": true
+}

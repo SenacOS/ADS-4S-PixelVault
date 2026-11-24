@@ -1,0 +1,85 @@
+schema: 1
+story: '3.4'
+story_title: 'Regressão completa dos controles antes do pagamento'
+gate: CONCERNS
+status_reason: 'A rodada final passou 68 testes, 45 jornadas locais e seis com API real, com os defeitos reproduzidos corrigidos e cobertura rastreável dos controles atuais. Validação nativa permanece pendente por ausência de aparelho/emulador; o aceite não representa prontidão para pagamentos reais.'
+reviewer: 'Quinn (Test Architect)'
+reviewed_revision: 'wt-sha256:de7b020c3e73e03c51b9f0fab090d950dd30ce43f99f02b04aa9f8b345465d4b'
+updated: '2026-11-20T23:55:56Z'
+expires: '2026-12-04T23:55:56Z'
+
+top_issues:
+  - id: 'TEST-001'
+    severity: medium
+    finding: 'O ADB permanece sem aparelho/emulador. Os eventos CDP e exports não comprovam teclado/leitor de tela nativos, execução do driver SQLite nem arquivo/compartilhamento no dispositivo.'
+    suggested_action: 'Executar a matriz crítica no aparelho compatível com SDK 54 e anexar resultados reais antes da apresentação; conservar as ressalvas das Stories 3.1 a 3.3.'
+    suggested_owner: dev
+waiver:
+  active: false
+quality_score: 90
+
+evidence:
+  tests_reviewed: 68
+  risks_identified: 1
+  trace:
+    ac_covered: [1, 2, 3, 4, 5, 6, 7, 8, 9]
+    ac_gaps: []
+    native_runtime_validation: 'PENDING — limite explícito dos AC 7 e 9, sem falso aceite de hardware.'
+    baseline: '38/40 jornadas locais, com duas falhas de UI preservadas; testes adicionais reproduziram divergências de contrato antes da correção.'
+    fixes_reviewed:
+      - 'Cadastro rejeita e-mail repetido normalizado, normaliza nome/e-mail e preserva senha exata.'
+      - 'Formulário e cliente REST rejeitam subcentavos e valores fora dos limites do servidor, inclusive em cache/fila antigos.'
+      - 'Descrição multilinha aceita LF/CR/tab; NUL e controles inválidos continuam rejeitados.'
+      - 'Conta criada na sessão entra em modo local explícito somente como player registered-*, sem credencial/permissão de servidor; seed e HTTP 401 não usam esse fallback.'
+      - 'Texto do formulário administrativo foi alinhado à persistência e sincronização existentes.'
+  commands:
+    lint: 'PASS (exit 0; zero warnings)'
+    typecheck: 'PASS (exit 0)'
+    test: 'PASS (exit 0; 68/68)'
+    build: 'PASS (exit 0; Android --clear, 632 módulos)'
+    build_web_local: 'PASS (exit 0; export --clear sem API)'
+    build_web_api: 'PASS (exit 0; export --clear com API temporária)'
+    git_diff_check: 'PASS (exit 0; somente avisos de normalização LF/CRLF)'
+    native_device_inventory: 'adb devices: lista vazia'
+    coderabbit: 'NOT RUN (integração desabilitada; revisão manual e testes reais)'
+  e2e:
+    local: 'PASS (45/45, nenhuma falha)'
+    real_api: 'PASS (6/6, nenhuma falha)'
+    total_cases: 51
+    horizontal_overflow_failures: 0
+    downloads_referenced_in_final_run: 6
+    button_templates_observed: 49
+    button_templates_without_action: []
+    distinct_field_labels: 9
+    form_field_positions: 11
+    visual_sample_inspected: ['cadastro-duplicado', 'admin-campos-tipos-precos', 'api-campos-multilinha-ocupado', 'api-cadastro-local-explicito']
+    coverage_scope: 'Matriz por template/callback e ações/asserções; inventário observado não é aprovação estática nem prova de todas as combinações possíveis.'
+    input_method: 'Eventos de mouse e Enter via CDP; preenchimento de campos e foco no runtime web. Não são testes de hardware ou teclado nativo.'
+    refs:
+      - 'docs/evidence/qa-full/README.md'
+      - 'docs/evidence/qa-full/coverage-summary.json'
+      - 'docs/evidence/qa-full-local/capture-results.json'
+      - 'docs/evidence/qa-full-local-final/capture-results.json'
+      - 'docs/evidence/qa-full-api-final/capture-results.json'
+
+nfr_validation:
+  security:
+    status: PASS
+    notes: 'Modo efêmero limitado à conta player criada na sessão, sem token e com sessão anterior revogada. Senha exata, controle ADMIN no servidor e exclusão de credenciais dos artefatos exportados permanecem preservados.'
+  performance:
+    status: PASS
+    notes: 'Sem novas dependências; builds e 51 cenários concluídos. Botão de sincronização ocupado/desabilitado exercitado sob latência controlada de 600 ms.'
+  reliability:
+    status: CONCERNS
+    notes: 'Negativos, cancelamentos, persistência, erros de leitura/escrita, recuperação, fila, conflito, exportação e contratos estão cobertos. Falta execução nativa.'
+  maintainability:
+    status: PASS
+    notes: 'Cenários reutilizáveis, falhas com screenshots e exit code, baseline preservada, matriz rastreável e regressões permanentes para os defeitos corrigidos.'
+
+recommendations:
+  immediate: []
+  future:
+    - action: 'Executar TEST-001 em aparelho e registrar dispositivo, runtime e resultados reais.'
+      refs: ['docs/evidence/qa-full/README.md']
+    - action: 'Discutir a integração Mercado Pago em incremento separado; esta revisão não autoriza declarar cobrança externa nem autenticação persistente concluídas.'
+      refs: ['docs/stories/3.4.regressao-completa-pre-pagamento.md', 'documentos/PixelVault_Rodada_QA_Pre_Mercado_Pago.md']

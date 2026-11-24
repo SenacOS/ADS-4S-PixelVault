@@ -1,0 +1,347 @@
+{
+  "capturedAt": "2026-11-20T15:51:52.740Z",
+  "runtime": "Expo Web + Chrome headless CDP",
+  "results": [
+    {
+      "name": "cart-restored",
+      "route": "wf01",
+      "width": 390,
+      "height": 844,
+      "options": {
+        "actions": [
+          [
+            "click",
+            "Preencher jogador"
+          ],
+          [
+            "click",
+            "Entrar"
+          ],
+          [
+            "expect",
+            "WF-03"
+          ],
+          [
+            "click",
+            "Ver detalhes de Orbit Raiders"
+          ],
+          [
+            "click",
+            "Adicionar ao carrinho"
+          ],
+          [
+            "reload",
+            "WF-01"
+          ],
+          [
+            "click",
+            "Preencher jogador"
+          ],
+          [
+            "click",
+            "Entrar"
+          ],
+          [
+            "expect",
+            "WF-03"
+          ],
+          [
+            "click",
+            "Carrinho"
+          ],
+          [
+            "expect",
+            "Orbit Raiders"
+          ],
+          [
+            "expect",
+            "R$ 79,90"
+          ]
+        ]
+      },
+      "innerWidth": 390,
+      "innerHeight": 844,
+      "scrollWidth": 390,
+      "scrollHeight": 844,
+      "horizontalOverflowElements": [],
+      "focusedElement": null,
+      "title": "WF-05 · CARRINHO\nSeu carrinho\nCAPA ILUSTRATIVA\nOR\nOrbit Raiders\nTipo: Jogo\nR$ 79,90\nCompatível com: GeForce NOW, Booster"
+    },
+    {
+      "name": "library-restored",
+      "route": "wf01",
+      "width": 390,
+      "height": 844,
+      "options": {
+        "actions": [
+          [
+            "click",
+            "Preencher jogador"
+          ],
+          [
+            "click",
+            "Entrar"
+          ],
+          [
+            "expect",
+            "WF-03"
+          ],
+          [
+            "click",
+            "Ver detalhes de Orbit Raiders"
+          ],
+          [
+            "click",
+            "Adicionar ao carrinho"
+          ],
+          [
+            "click",
+            "Voltar ao catálogo"
+          ],
+          [
+            "click",
+            "Ver detalhes de Neon Expansion"
+          ],
+          [
+            "click",
+            "Adicionar ao carrinho"
+          ],
+          [
+            "click",
+            "Ver carrinho (2)"
+          ],
+          [
+            "click",
+            "Continuar para checkout"
+          ],
+          [
+            "fill",
+            "Número do cartão fictício",
+            "0000 DEMO"
+          ],
+          [
+            "fill",
+            "Nome impresso fictício",
+            "Pessoa Fictícia"
+          ],
+          [
+            "click",
+            "Confirmar simulação"
+          ],
+          [
+            "expect",
+            "WF-07"
+          ],
+          [
+            "reload",
+            "WF-01"
+          ],
+          [
+            "click",
+            "Preencher jogador"
+          ],
+          [
+            "click",
+            "Entrar"
+          ],
+          [
+            "expect",
+            "WF-03"
+          ],
+          [
+            "click",
+            "Biblioteca"
+          ],
+          [
+            "expect",
+            "Orbit Raiders"
+          ],
+          [
+            "expect",
+            "Neon Expansion"
+          ],
+          [
+            "safe-storage"
+          ]
+        ]
+      },
+      "innerWidth": 390,
+      "innerHeight": 844,
+      "scrollWidth": 390,
+      "scrollHeight": 844,
+      "horizontalOverflowElements": [],
+      "focusedElement": null,
+      "title": "WF-08 · BIBLIOTECA\nMinha biblioteca\nAquisições simuladas; chaves e lojas são fictícias.\nCAPA ILUSTRATIVA\nOR\nOrbit Raider"
+    },
+    {
+      "name": "admin-crud-restored",
+      "route": "wf01",
+      "width": 390,
+      "height": 844,
+      "options": {
+        "actions": [
+          [
+            "click",
+            "Preencher administrador"
+          ],
+          [
+            "click",
+            "Entrar"
+          ],
+          [
+            "expect",
+            "WF-09"
+          ],
+          [
+            "click",
+            "Novo item"
+          ],
+          [
+            "fill",
+            "Nome do produto",
+            "Item persistente"
+          ],
+          [
+            "click",
+            "Jogo"
+          ],
+          [
+            "fill",
+            "Preço",
+            "12,50"
+          ],
+          [
+            "fill",
+            "Descrição",
+            "Descrição fictícia"
+          ],
+          [
+            "click",
+            "Boosteroid"
+          ],
+          [
+            "fill",
+            "Ativação em",
+            "Loja fictícia"
+          ],
+          [
+            "click",
+            "Cadastrar item"
+          ],
+          [
+            "expect",
+            "Item cadastrado na lista local."
+          ],
+          [
+            "reload",
+            "WF-01"
+          ],
+          [
+            "click",
+            "Preencher administrador"
+          ],
+          [
+            "click",
+            "Entrar"
+          ],
+          [
+            "expect",
+            "WF-09"
+          ],
+          [
+            "expect",
+            "Item persistente"
+          ]
+        ],
+        "scrollToText": "Item persistente"
+      },
+      "innerWidth": 390,
+      "innerHeight": 844,
+      "scrollWidth": 390,
+      "scrollHeight": 844,
+      "horizontalOverflowElements": [],
+      "focusedElement": null,
+      "title": "WF-09 · ADMINISTRAÇÃO\nManutenção do catálogo\nPerfil: administrador/curador · Fonte: lista local demonstrativa\nNovo item\n"
+    },
+    {
+      "name": "user-isolation",
+      "route": "wf01",
+      "width": 320,
+      "height": 568,
+      "options": {
+        "actions": [
+          [
+            "click",
+            "Preencher jogador"
+          ],
+          [
+            "click",
+            "Entrar"
+          ],
+          [
+            "expect",
+            "WF-03"
+          ],
+          [
+            "click",
+            "Ver detalhes de Orbit Raiders"
+          ],
+          [
+            "click",
+            "Adicionar ao carrinho"
+          ],
+          [
+            "click",
+            "Voltar ao catálogo"
+          ],
+          [
+            "click",
+            "Sair do perfil"
+          ],
+          [
+            "click",
+            "Criar conta"
+          ],
+          [
+            "fill",
+            "Nome",
+            "Outro jogador"
+          ],
+          [
+            "fill",
+            "E-mail",
+            "outro@pixelvault.example"
+          ],
+          [
+            "fill",
+            "Senha",
+            "demo456"
+          ],
+          [
+            "click",
+            "Cadastrar conta demonstrativa"
+          ],
+          [
+            "click",
+            "Entrar"
+          ],
+          [
+            "click",
+            "Carrinho"
+          ],
+          [
+            "expect",
+            "Nenhum item no carrinho"
+          ]
+        ]
+      },
+      "innerWidth": 320,
+      "innerHeight": 568,
+      "scrollWidth": 320,
+      "scrollHeight": 568,
+      "horizontalOverflowElements": [],
+      "focusedElement": null,
+      "title": "ST-03 · CARRINHO VAZIO\nSeu carrinho\nNenhum item no carrinho\nAdicione itens para habilitar o checkout. Total atual: R$ 0,"
+    }
+  ]
+}

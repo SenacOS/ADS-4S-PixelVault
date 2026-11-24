@@ -1,0 +1,62 @@
+schema: 1
+story: '3.12'
+story_title: 'Padronizar Sprint Review e Relatório de Status no DOCX'
+gate: PASS
+status_reason: 'Títulos, prosa e tabelas alinhados à referência real da Sprint 1; Status nas sete subdivisões, fatos preservados e páginas afetadas legíveis. Original e PDF intactos, sem nova geração de PDF.'
+reviewer: 'Quinn (Test Architect)'
+reviewed_revision: 'docx-sha256:2434e514a8b0b561c3dafde4dd05cba8e79d146ceb4247c201fc92065cd6d53e'
+updated: '2026-11-21'
+waiver:
+  active: false
+top_issues: []
+evidence:
+  trace:
+    ac_covered: [1, 2, 3, 4, 5, 6]
+    ac_gaps: []
+  reference:
+    pages: [79, 80]
+    section: '1.6.1 Relatório de Status da Sprint 1'
+    review_note: 'Fonte sem seção autônoma de Sprint Review; padrão real de títulos/prosa/tabelas do Status aplicado à Review.'
+  visual_review:
+    rendering: 'Microsoft Word, EMF convertido diretamente em PNG, sem PDF.'
+    total_pages: 107
+    qa_pages_inspected: [82, 83, 84, 85, 86]
+    result: 'Hierarquia e tabelas coerentes com referência; cabeçalhos repetidos, texto legível e sem cortes/sobreposições nas páginas examinadas.'
+    scope_limit: 'Não constitui revisão visual integral das 107 páginas.'
+  content:
+    status_subsections: 7
+    preservation: 'Validação OOXML revisada: textos fora do escopo conservados, exceto quatro títulos adjacentes renumerados e sumário atualizado; valores de cálculo incorporados ao Resultado.'
+    facts: 'Métricas e pendências atuais preservadas; sem eventos ou aprovações inventadas.'
+  preservation:
+    sprint1_sha256: '5c959ea731a5bd8d9fd347c0b88bfbd071baa8c8e31b7ad877dd4d4c7caddccd'
+    unchanged_pdf_sha256: '99af87775b80830d54748f3b287417275d0ba4e9555ec5e4ee05669f605a1233'
+    hash_verification: 'QA recalculou independentemente os hashes protegidos e do DOCX final.'
+    media_byte_identical: 73
+    document_relationships_byte_identical: true
+    comparison: 'QA comparou streams ZIP de before.docx e DOCX final.'
+    pdf_generated: false
+  commands:
+    application_tests: 'Não executados; edição estritamente documental.'
+    coderabbit: 'Não aplicado à revisão documental; sem alegação de aprovação automática.'
+  refs:
+    - 'docs/evidence/sprint-2-story-3.12/README.md'
+    - 'documentos/PixelVault_Relatorio_Final_Sprint2.docx'
+  working_refs:
+    - 'tmp/docx-format-3.12/checks.json'
+    - 'tmp/docx-format-3.12/audit.json'
+    - 'tmp/docx-format-3.12/artifact.md'
+    - 'tmp/docx-format-3.12/final-render-v2/'
+    - 'tmp/docx-format-3.12/reference-render/'
+nfr_validation:
+  reliability:
+    status: PASS
+    notes: 'Formatação e organização modificadas sem alterar fatos de entrega ou pendências.'
+  maintainability:
+    status: PASS
+    notes: 'Hierarquia numerada e sete subdivisões do Status permitem navegação consistente com a referência.'
+  security:
+    status: PASS
+    notes: 'Sem alteração de aplicativo ou arquivos privados; original e PDF protegidos por hash.'
+recommendations:
+  immediate: []
+  future: []

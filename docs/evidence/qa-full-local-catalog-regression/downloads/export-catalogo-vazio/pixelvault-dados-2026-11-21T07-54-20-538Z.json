@@ -1,0 +1,18 @@
+{
+  "formato": "pixelvault-dados",
+  "versao": 1,
+  "geradoEm": "2026-11-21T07:54:20.538Z",
+  "demonstrativo": true,
+  "origem": "cache-local",
+  "moeda": "BRL",
+  "sincronizacao": {
+    "catalogoAlteradoLocalmente": true,
+    "alteracoesPendentes": 2,
+    "legadoSemHistorico": false
+  },
+  "catalogo": [],
+  "carrinho": [],
+  "totalCarrinhoCentavos": 0,
+  "biblioteca": [],
+  "pedido": null
+}

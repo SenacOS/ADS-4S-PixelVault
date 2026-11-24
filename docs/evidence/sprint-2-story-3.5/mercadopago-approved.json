@@ -1,0 +1,41 @@
+{
+  "checkedAt": "2026-11-21T03:22:20.428Z",
+  "environment": "test",
+  "checkoutId": "pixelvault-test-smoke-20261120",
+  "purchaseReportedByUser": true,
+  "submittedByValidationScript": false,
+  "remoteValidated": {
+    "status": "APROVADO",
+    "paymentId": "190842627252",
+    "orderId": "a30a0a1b-88b6-4927-99a2-dc6c2d78e330",
+    "totalCents": 10480,
+    "checks": [
+      "seller test identity",
+      "expected buyer",
+      "external reference",
+      "order metadata",
+      "test metadata",
+      "BRL",
+      "full amount",
+      "no partial refund"
+    ]
+  },
+  "before": {
+    "payments": 1,
+    "libraryItems": 2,
+    "keys": 2
+  },
+  "afterRepeated": {
+    "payments": 1,
+    "libraryItems": 2,
+    "keys": 2
+  },
+  "confirmedLibrary": [
+    "neon-expansion",
+    "orbit-raiders"
+  ],
+  "otherUserIsolated": true,
+  "restartAndReauthentication": "PASS",
+  "idempotency": "PASS",
+  "note": "Confirmed remote library contains the two purchased products. The isolated fixture already had demo library entries; approval reused them without duplicating or replacing fictional keys. Fresh item insertion is covered by transactional contract tests."
+}

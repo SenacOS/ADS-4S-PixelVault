@@ -1,0 +1,54 @@
+schema: 1
+story: '3.11'
+story_title: 'Simplificar compra e restringir ações de catálogo ao administrador'
+gate: PASS
+status_reason: 'Textos de compra neutros e ações de atualização/exportação exclusivas de administrador; quatro cenários web e regressão aprovados, sem alteração do ambiente de pagamento.'
+reviewer: 'Quinn (Test Architect)'
+updated: '2026-11-21'
+waiver:
+  active: false
+top_issues: []
+resolved_issues:
+  - id: 'COPY-001'
+    finding: 'Guarda local de carrinho vazio ainda citava simulação.'
+    resolution: 'Executor substituiu por confirmar a compra; literal final conferido pela QA.'
+evidence:
+  trace:
+    ac_covered: [1, 2, 3, 4, 5]
+    ac_gaps: []
+  commands:
+    lint: 'PASS conforme execução do executor.'
+    typecheck: 'PASS conforme execução do executor.'
+    test: '93/93 PASS, zero falhas/skips/cancelamentos; log tmp/ui-3.11-tests.log conferido.'
+    coderabbit: 'Indisponível; revisão local realizada.'
+  browser:
+    runtime: 'Expo Web + Chrome headless CDP'
+    scenarios: 4
+    failures: 0
+    horizontal_overflow_elements: 0
+    widths: [320, 390]
+    verification: 'Jogador sem atualização/exportação, administrador com ambas e download JSON, troca de perfil, compra local e compra remota reconciliada por provedor isolado.'
+    visual_review: 'QA inspecionou capturas finais de confirmação local e remota.'
+    payment_requested_externally: false
+    catalog_fixture: 'original-two-items'
+  refs:
+    - 'docs/evidence/sprint-2-story-3.11/README.md'
+    - 'docs/evidence/qa-full-local-ui-3.11/capture-results.json'
+    - 'docs/evidence/qa-full-payment-ui-3.11/capture-results.json'
+  preservation:
+    payment_environment: 'test, validado ainda por mapCheckout; sem promoção a produção.'
+    delivery_document: 'Não atualizado nesta tarefa conforme registro do executor.'
+    readme: 'Não atualizado nesta tarefa conforme registro do executor.'
+nfr_validation:
+  security:
+    status: PASS
+    notes: 'Sem alteração de credenciais, autenticação ou contratos backend; botões técnicos restritos pelo perfil existente.'
+  reliability:
+    status: PASS
+    notes: 'Estados de pedido preservados; confirmação remota depende da reconciliação aprovada.'
+  maintainability:
+    status: PASS
+    notes: 'Alteração pontual de composição/copy e seletores de teste; sem dependências novas.'
+recommendations:
+  immediate: []
+  future: []

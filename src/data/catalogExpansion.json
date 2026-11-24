@@ -1,0 +1,282 @@
+[
+  {
+    "id": "pv-aurora-quest",
+    "name": "Aurora Quest",
+    "priceCents": 1990,
+    "compatibleWith": [
+      "GeForce NOW",
+      "Boosteroid"
+    ],
+    "description": "Explore florestas luminosas e encontre relíquias perdidas. Jogo fictício para aprendizado; compatibilidade cloud ilustrativa."
+  },
+  {
+    "id": "pv-crystal-harbor",
+    "name": "Crystal Harbor",
+    "priceCents": 2690,
+    "compatibleWith": [
+      "GeForce NOW"
+    ],
+    "description": "Navegue entre ilhas e descubra histórias à beira-mar. Jogo fictício para aprendizado; compatibilidade cloud ilustrativa."
+  },
+  {
+    "id": "pv-solar-drifters",
+    "name": "Solar Drifters",
+    "priceCents": 3390,
+    "compatibleWith": [
+      "Boosteroid"
+    ],
+    "description": "Pilote uma nave por planetas e estações distantes. Jogo fictício para aprendizado; compatibilidade cloud ilustrativa."
+  },
+  {
+    "id": "pv-ember-citadel",
+    "name": "Ember Citadel",
+    "priceCents": 4090,
+    "compatibleWith": [
+      "GeForce NOW",
+      "Boosteroid"
+    ],
+    "description": "Defenda uma fortaleza e desvende caminhos secretos. Jogo fictício para aprendizado; compatibilidade cloud ilustrativa."
+  },
+  {
+    "id": "pv-moonlight-valley",
+    "name": "Moonlight Valley",
+    "priceCents": 4790,
+    "compatibleWith": [
+      "GeForce NOW"
+    ],
+    "description": "Atravesse montanhas e vales em uma jornada de exploração. Jogo fictício para aprendizado; compatibilidade cloud ilustrativa."
+  },
+  {
+    "id": "pv-iron-circuit",
+    "name": "Iron Circuit",
+    "priceCents": 5490,
+    "compatibleWith": [
+      "Boosteroid"
+    ],
+    "description": "Corra por uma cidade futurista repleta de desafios. Jogo fictício para aprendizado; compatibilidade cloud ilustrativa."
+  },
+  {
+    "id": "pv-skybound-isles",
+    "name": "Skybound Isles",
+    "priceCents": 6190,
+    "compatibleWith": [
+      "GeForce NOW",
+      "Boosteroid"
+    ],
+    "description": "Explore florestas luminosas e encontre relíquias perdidas. Jogo fictício para aprendizado; compatibilidade cloud ilustrativa."
+  },
+  {
+    "id": "pv-ocean-echoes",
+    "name": "Ocean Echoes",
+    "priceCents": 6890,
+    "compatibleWith": [
+      "GeForce NOW"
+    ],
+    "description": "Navegue entre ilhas e descubra histórias à beira-mar. Jogo fictício para aprendizado; compatibilidade cloud ilustrativa."
+  },
+  {
+    "id": "pv-frostfall-keep",
+    "name": "Frostfall Keep",
+    "priceCents": 7590,
+    "compatibleWith": [
+      "Boosteroid"
+    ],
+    "description": "Pilote uma nave por planetas e estações distantes. Jogo fictício para aprendizado; compatibilidade cloud ilustrativa."
+  },
+  {
+    "id": "pv-desert-horizon",
+    "name": "Desert Horizon",
+    "priceCents": 8290,
+    "compatibleWith": [
+      "GeForce NOW",
+      "Boosteroid"
+    ],
+    "description": "Defenda uma fortaleza e desvende caminhos secretos. Jogo fictício para aprendizado; compatibilidade cloud ilustrativa."
+  },
+  {
+    "id": "pv-prism-runner",
+    "name": "Prism Runner",
+    "priceCents": 8990,
+    "compatibleWith": [
+      "GeForce NOW"
+    ],
+    "description": "Atravesse montanhas e vales em uma jornada de exploração. Jogo fictício para aprendizado; compatibilidade cloud ilustrativa."
+  },
+  {
+    "id": "pv-starlight-nomads",
+    "name": "Starlight Nomads",
+    "priceCents": 9690,
+    "compatibleWith": [
+      "Boosteroid"
+    ],
+    "description": "Corra por uma cidade futurista repleta de desafios. Jogo fictício para aprendizado; compatibilidade cloud ilustrativa."
+  },
+  {
+    "id": "pv-verdant-guardians",
+    "name": "Verdant Guardians",
+    "priceCents": 1990,
+    "compatibleWith": [
+      "GeForce NOW",
+      "Boosteroid"
+    ],
+    "description": "Explore florestas luminosas e encontre relíquias perdidas. Jogo fictício para aprendizado; compatibilidade cloud ilustrativa."
+  },
+  {
+    "id": "pv-thunder-peaks",
+    "name": "Thunder Peaks",
+    "priceCents": 2690,
+    "compatibleWith": [
+      "GeForce NOW"
+    ],
+    "description": "Navegue entre ilhas e descubra histórias à beira-mar. Jogo fictício para aprendizado; compatibilidade cloud ilustrativa."
+  },
+  {
+    "id": "pv-coral-odyssey",
+    "name": "Coral Odyssey",
+    "priceCents": 3390,
+    "compatibleWith": [
+      "Boosteroid"
+    ],
+    "description": "Pilote uma nave por planetas e estações distantes. Jogo fictício para aprendizado; compatibilidade cloud ilustrativa."
+  },
+  {
+    "id": "pv-clockwork-haven",
+    "name": "Clockwork Haven",
+    "priceCents": 4090,
+    "compatibleWith": [
+      "GeForce NOW",
+      "Boosteroid"
+    ],
+    "description": "Defenda uma fortaleza e desvende caminhos secretos. Jogo fictício para aprendizado; compatibilidade cloud ilustrativa."
+  },
+  {
+    "id": "pv-obsidian-knights",
+    "name": "Obsidian Knights",
+    "priceCents": 4790,
+    "compatibleWith": [
+      "GeForce NOW"
+    ],
+    "description": "Atravesse montanhas e vales em uma jornada de exploração. Jogo fictício para aprendizado; compatibilidade cloud ilustrativa."
+  },
+  {
+    "id": "pv-comet-trails",
+    "name": "Comet Trails",
+    "priceCents": 5490,
+    "compatibleWith": [
+      "Boosteroid"
+    ],
+    "description": "Corra por uma cidade futurista repleta de desafios. Jogo fictício para aprendizado; compatibilidade cloud ilustrativa."
+  },
+  {
+    "id": "pv-saffron-dunes",
+    "name": "Saffron Dunes",
+    "priceCents": 6190,
+    "compatibleWith": [
+      "GeForce NOW",
+      "Boosteroid"
+    ],
+    "description": "Explore florestas luminosas e encontre relíquias perdidas. Jogo fictício para aprendizado; compatibilidade cloud ilustrativa."
+  },
+  {
+    "id": "pv-misty-outpost",
+    "name": "Misty Outpost",
+    "priceCents": 6890,
+    "compatibleWith": [
+      "GeForce NOW"
+    ],
+    "description": "Navegue entre ilhas e descubra histórias à beira-mar. Jogo fictício para aprendizado; compatibilidade cloud ilustrativa."
+  },
+  {
+    "id": "pv-glacier-voyage",
+    "name": "Glacier Voyage",
+    "priceCents": 7590,
+    "compatibleWith": [
+      "Boosteroid"
+    ],
+    "description": "Pilote uma nave por planetas e estações distantes. Jogo fictício para aprendizado; compatibilidade cloud ilustrativa."
+  },
+  {
+    "id": "pv-tidal-legends",
+    "name": "Tidal Legends",
+    "priceCents": 8290,
+    "compatibleWith": [
+      "GeForce NOW",
+      "Boosteroid"
+    ],
+    "description": "Defenda uma fortaleza e desvende caminhos secretos. Jogo fictício para aprendizado; compatibilidade cloud ilustrativa."
+  },
+  {
+    "id": "pv-copper-canyon",
+    "name": "Copper Canyon",
+    "priceCents": 8990,
+    "compatibleWith": [
+      "GeForce NOW"
+    ],
+    "description": "Atravesse montanhas e vales em uma jornada de exploração. Jogo fictício para aprendizado; compatibilidade cloud ilustrativa."
+  },
+  {
+    "id": "pv-celestial-forge",
+    "name": "Celestial Forge",
+    "priceCents": 9690,
+    "compatibleWith": [
+      "Boosteroid"
+    ],
+    "description": "Corra por uma cidade futurista repleta de desafios. Jogo fictício para aprendizado; compatibilidade cloud ilustrativa."
+  },
+  {
+    "id": "pv-jade-expedition",
+    "name": "Jade Expedition",
+    "priceCents": 1990,
+    "compatibleWith": [
+      "GeForce NOW",
+      "Boosteroid"
+    ],
+    "description": "Explore florestas luminosas e encontre relíquias perdidas. Jogo fictício para aprendizado; compatibilidade cloud ilustrativa."
+  },
+  {
+    "id": "pv-midnight-metro",
+    "name": "Midnight Metro",
+    "priceCents": 2690,
+    "compatibleWith": [
+      "GeForce NOW"
+    ],
+    "description": "Navegue entre ilhas e descubra histórias à beira-mar. Jogo fictício para aprendizado; compatibilidade cloud ilustrativa."
+  },
+  {
+    "id": "pv-silver-summit",
+    "name": "Silver Summit",
+    "priceCents": 3390,
+    "compatibleWith": [
+      "Boosteroid"
+    ],
+    "description": "Pilote uma nave por planetas e estações distantes. Jogo fictício para aprendizado; compatibilidade cloud ilustrativa."
+  },
+  {
+    "id": "pv-sunken-compass",
+    "name": "Sunken Compass",
+    "priceCents": 4090,
+    "compatibleWith": [
+      "GeForce NOW",
+      "Boosteroid"
+    ],
+    "description": "Defenda uma fortaleza e desvende caminhos secretos. Jogo fictício para aprendizado; compatibilidade cloud ilustrativa."
+  },
+  {
+    "id": "pv-crimson-bastion",
+    "name": "Crimson Bastion",
+    "priceCents": 4790,
+    "compatibleWith": [
+      "GeForce NOW"
+    ],
+    "description": "Atravesse montanhas e vales em uma jornada de exploração. Jogo fictício para aprendizado; compatibilidade cloud ilustrativa."
+  },
+  {
+    "id": "pv-zenith-frontier",
+    "name": "Zenith Frontier",
+    "priceCents": 5490,
+    "compatibleWith": [
+      "Boosteroid"
+    ],
+    "description": "Corra por uma cidade futurista repleta de desafios. Jogo fictício para aprendizado; compatibilidade cloud ilustrativa."
+  }
+]

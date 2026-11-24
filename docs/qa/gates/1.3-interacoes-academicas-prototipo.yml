@@ -1,0 +1,79 @@
+schema: 1
+story: '1.3'
+story_title: 'Interações acadêmicas do protótipo'
+gate: CONCERNS
+status_reason: 'Os 17 critérios foram atendidos, com quatro gates, 17 testes e 21 evidências verificadas. Permanecem limitações não bloqueantes de validação nativa do UXT-14 e vulnerabilidades transitivas do Expo SDK 54 sem correção compatível.'
+reviewer: 'Quinn (Test Architect)'
+reviewed_revision: 'wt-sha256:43a0fe07c61239a73af6d7e8dac33452bc6f15cde1ed1a4e824fe687efa8c511'
+updated: '2026-09-14T20:50:36Z'
+
+top_issues:
+  - id: 'TEST-001'
+    severity: medium
+    finding: 'UXT-14 confirmou foco, escala tipográfica de 130% e ausência de overflow no Expo Web, mas teclado virtual e leitor de tela nativos não foram executados porque o ADB não encontrou dispositivo/emulador.'
+    suggested_action: 'Repetir cadastro, login, CRUD e checkout no Expo Go/emulador com teclado virtual e leitor de tela antes da demonstração final.'
+    suggested_owner: dev
+  - id: 'SEC-001'
+    severity: medium
+    finding: 'O npm audit confirma 16 vulnerabilidades transitivas (7 moderadas e 9 altas) na árvore Expo/Metro do SDK 54; não há nível crítico e a correção automática proposta exige migração incompatível para Expo 57.'
+    suggested_action: 'Monitorar correções compatíveis com o SDK 54 e reavaliar na futura migração; não aplicar npm audit fix --force nesta story.'
+    suggested_owner: dev
+
+waiver:
+  active: false
+
+quality_score: 80
+expires: '2026-09-28T20:50:36Z'
+
+evidence:
+  tests_reviewed: 17
+  risks_identified: 2
+  trace:
+    ac_covered: [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17]
+    ac_gaps: []
+    feedbacks_covered: ['FB-01', 'FB-02', 'FB-03', 'FB-04', 'FB-05', 'FB-06']
+    corrections_covered: ['COR-01', 'COR-02', 'COR-03', 'COR-04', 'COR-05', 'COR-06']
+    uxt_pass: ['UXT-01', 'UXT-02', 'UXT-03', 'UXT-04', 'UXT-05', 'UXT-06', 'UXT-07', 'UXT-08', 'UXT-09', 'UXT-10', 'UXT-11', 'UXT-12', 'UXT-13']
+    uxt_partial: ['UXT-14']
+  commands:
+    lint: 'PASS (exit 0)'
+    typecheck: 'PASS (exit 0)'
+    test: 'PASS (exit 0; 17/17)'
+    build: 'PASS (exit 0; export Android, 599 módulos)'
+    expo_install_check: 'PASS (Dependencies are up to date; repetição com acesso ao registro após falha de rede no sandbox)'
+    expo_doctor: 'PASS (18/18)'
+    git_diff_check: 'PASS (exit 0; somente avisos de normalização LF/CRLF)'
+    expo_start: 'PASS (Metro offline alcançou waiting na porta 8099 e encerrou com exit 0)'
+    npm_audit: 'CONCERNS (16 transitivas: 7 moderadas, 9 altas, 0 críticas; correção sugerida requer Expo 57)'
+    coderabbit: 'NOT RUN (CLI indisponível no ambiente WSL; não instalado pela revisão)'
+  visual:
+    captures: 21
+    inspected_pngs: 21
+    viewports: ['390x844', '360x844', '320x568']
+    horizontal_overflow_failures: 0
+    font_scale: '1.3 em cadastro e checkout no runtime web de evidência'
+    native_keyboard_and_screen_reader: 'não executados; adb devices -l retornou lista vazia'
+
+nfr_validation:
+  security:
+    status: CONCERNS
+    notes: 'Sem segredos, API, autenticação ou pagamento real; 16 advisories transitivos do toolchain Expo/Metro permanecem sem correção compatível com SDK 54.'
+  performance:
+    status: PASS
+    notes: 'Build Android e Metro passaram; 21 capturas não registraram overflow horizontal nas três larguras.'
+  reliability:
+    status: PASS
+    notes: 'Regras puras e jornadas preservam identidade, não duplicidade, quantidade, total, pedido e biblioteca; 17/17 testes passaram.'
+  maintainability:
+    status: PASS
+    notes: 'Estado local centralizado, regras separadas do JSX, listas virtualizadas e nenhuma nova dependência de estado, formulário ou navegação.'
+
+recommendations:
+  immediate: []
+  future:
+    - action: 'Executar a parcela nativa do UXT-14 em dispositivo/emulador com tecnologias assistivas.'
+      refs: ['docs/evidence/prompt-12/README.md', 'src/components/ScreenShell.js', 'src/components/LabeledField.js']
+    - action: 'Reavaliar advisories transitivos ao planejar migração compatível do Expo SDK.'
+      refs: ['package-lock.json', 'README.md']
+    - action: 'Em futura ampliação dos testes, adicionar cobertura de componente para os feedbacks intermediários FB-02 e FB-05.'
+      refs: ['src/screens/PixelVaultApp.js', 'scripts/capture-evidence.mjs']

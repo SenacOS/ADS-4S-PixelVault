@@ -1,0 +1,19 @@
+{
+  "docxSha256": "6a234c182590f7363f2565ad84627913bd5cc4e1f25cf64ae2dac19463b43052",
+  "pdfSha256": "99af87775b80830d54748f3b287417275d0ba4e9555ec5e4ee05669f605a1233",
+  "pages": 106,
+  "originalSprint1Unchanged": true,
+  "historicalMediaPreserved": 66,
+  "coverRAs": 6,
+  "tocUpdated": true,
+  "placeholders": 0,
+  "replacementGlyphs": 0,
+  "secretScan": "PASS",
+  "previousEdition": "documentos/historico/story-3.7/",
+  "visualReview": {
+    "status": "PASS",
+    "changedPagesInspectedIndividually": 25,
+    "identicalContentPagesVerifiedIndependently": 81,
+    "comparison": "SHA256 dos pixels de conteúdo, excluindo os 65 pixels inferiores do rodapé; sumário e paginação conferidos na versão final"
+  }
+}
